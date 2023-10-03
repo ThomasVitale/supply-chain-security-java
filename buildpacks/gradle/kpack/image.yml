@@ -1,0 +1,20 @@
+apiVersion: kpack.io/v1alpha2
+kind: Image
+metadata:
+  name: demo
+  namespace: default
+spec:
+  tag: ghcr.io/thomasvitale/demo
+  serviceAccountName: supply-chain
+  builder:
+    name: default
+    kind: ClusterBuilder
+  source:
+    git:
+      url: https://github.com/ThomasVitale/supply-chain-security-java
+      revision: main
+    subPath: buildpacks/gradle
+  build:
+    env:
+      - name: BP_JAVA_VERSION
+        value: "21"

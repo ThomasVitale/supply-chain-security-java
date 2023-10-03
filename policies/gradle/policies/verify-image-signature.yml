@@ -1,0 +1,24 @@
+---
+apiVersion: kyverno.io/v1
+kind: Policy
+metadata:
+  name: verify-image-signature
+  namespace: default
+spec:
+  validationFailureAction: Enforce
+  webhookTimeoutSeconds: 30
+  rules:
+    - name: verify-signature
+      match:
+        any:
+          - resources:
+              kinds:
+                - Pod
+      verifyImages:
+        - imageReferences:
+            - "ghcr.io/thomasvitale/*"
+          attestors:
+            - entries:
+                - keyless:
+                    subject: "https://github.com/ThomasVitale/supply-chain-security-java/.github/workflows/commit-stage.yml@refs/*"
+                    issuer: "https://token.actions.githubusercontent.com"

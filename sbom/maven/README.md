@@ -1,10 +1,10 @@
-# SBOM for Java applications using Gradle
+# SBOM for Java applications using Maven
 
 ## Generating a SBOM from an artifact using Syft
 
 ```shell
-./gradlew bootJar
-syft build/libs/demo-0.0.1-SNAPSHOT.jar -o cyclonedx-json --file bom-syft-cyclonedx.json
+./mvnw package
+syft target/demo-0.0.1-SNAPSHOT.jar -o cyclonedx-json --file bom-syft-cyclonedx.json
 ```
 
 ## Generating a SBOM from the source code using cdxgen
@@ -16,11 +16,11 @@ FETCH_LICENSE=true cdxgen -o bom-cdxgen-cyclonedx.json --spec-version 1.4
 ## Generating a SBOM at build time using CycloneDX
 
 ```shell
-./gradlew build
+./mvnw package
 ```
 
 ## Scanning a SBOM for security vulnerabilities with Trivy
 
 ```shell
-trivy sbom build/reports/bom.json
+trivy sbom target/bom.json
 ```
