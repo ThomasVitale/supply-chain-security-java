@@ -50,12 +50,12 @@ jobs:
           name: trivy-results-source-code.sarif
           path: trivy-results-source-code.sarif
 
-      # - name: Upload vulnerability report
-      #   uses: github/codeql-action/upload-sarif@v2
-      #   if: success() || failure()
-      #   with:
-      #     sarif_file: 'trivy-results-source-code.sarif'
-      #     category: "source-code"
+      - name: Upload vulnerability report
+        uses: github/codeql-action/upload-sarif@v2
+        if: success() || failure()
+        with:
+          sarif_file: 'trivy-results-source-code.sarif'
+          category: "source-code"
 
       - name: Package as OCI image
         run: |
@@ -69,12 +69,12 @@ jobs:
           format: 'sarif'
           output: 'trivy-results-oci-image.sarif'
 
-      # - name: Upload vulnerability report
-      #   uses: github/codeql-action/upload-sarif@v2
-      #   if: success() || failure()
-      #   with:
-      #     sarif_file: 'trivy-results-oci-image.sarif'
-      #     category: "oci-image"
+      - name: Upload vulnerability report
+        uses: github/codeql-action/upload-sarif@v2
+        if: success() || failure()
+        with:
+          sarif_file: 'trivy-results-oci-image.sarif'
+          category: "oci-image"
 
       - name: Authenticate with the container registry
         uses: docker/login-action@v3
