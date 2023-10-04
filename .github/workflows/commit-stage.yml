@@ -40,7 +40,7 @@ jobs:
         uses: aquasecurity/trivy-action@master
         with:
           scan-type: 'sbom'
-          scan-ref: 'policies/gradle/build/reports/bom.json'
+          image-ref: 'policies/gradle/build/reports/bom.json'
           format: 'sarif'
           output: 'trivy-results-source-code.sarif'
       
