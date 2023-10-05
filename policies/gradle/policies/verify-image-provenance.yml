@@ -3,6 +3,7 @@ apiVersion: kyverno.io/v1
 kind: Policy
 metadata:
   name: verify-image-provenance
+  namespace: default
 spec:
   validationFailureAction: enforce
   webhookTimeoutSeconds: 30
@@ -17,7 +18,7 @@ spec:
         - imageReferences:
             - "ghcr.io/thomasvitale/*"
           attestations:
-            - predicateType: https://slsa.dev/provenance/v1.0
+            - predicateType: https://slsa.dev/provenance/v0.2
               attestors:
                 - count: 1
                   entries:

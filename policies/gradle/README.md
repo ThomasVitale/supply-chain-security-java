@@ -15,5 +15,6 @@ cosign verify \
 IMAGE=ghcr.io/thomasvitale/demo
 IMAGE="${IMAGE}@"$(crane digest "${IMAGE}")
 slsa-verifier verify-image "$IMAGE" \
-  --source-uri github.com/ThomasVitale/supply-chain-security-java
+  --source-uri github.com/ThomasVitale/supply-chain-security-java \
+  --print-provenance
 ```
