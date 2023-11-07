@@ -1,0 +1,2688 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:d4384b97-1761-42aa-b2a2-cf3dd00526cd",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2023-11-07T17:34:40.060Z",
+    "tools": [
+      {
+        "vendor": "cyclonedx",
+        "name": "cdxgen",
+        "version": "9.9.2"
+      }
+    ],
+    "authors": [
+      {
+        "name": "OWASP Foundation"
+      }
+    ],
+    "component": {
+      "name": "demo-sbom-cdx-gradle",
+      "type": "application",
+      "group": "com.thomasvitale",
+      "version": "1.0",
+      "properties": [
+        {
+          "name": "buildFile",
+          "value": "/Users/thomasvitale/Developer/supply-chain-security-java/sbom/cyclonedx/gradle/build.gradle"
+        },
+        {
+          "name": "projectDir",
+          "value": "/Users/thomasvitale/Developer/supply-chain-security-java/sbom/cyclonedx/gradle"
+        },
+        {
+          "name": "rootDir",
+          "value": "/Users/thomasvitale/Developer/supply-chain-security-java/sbom/cyclonedx/gradle"
+        }
+      ],
+      "purl": "pkg:maven/com.thomasvitale/demo-sbom-cdx-gradle@1.0?type=jar",
+      "bom-ref": "pkg:maven/com.thomasvitale/demo-sbom-cdx-gradle@1.0?type=jar",
+      "components": [
+        {
+          "group": "",
+          "name": "gradle",
+          "version": "latest",
+          "type": "application",
+          "bom-ref": "pkg:maven/gradle@latest",
+          "purl": "pkg:maven/gradle@latest"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "publisher": "VMware, Inc.",
+      "group": "org.springframework.boot",
+      "name": "spring-boot-starter-web",
+      "version": "3.1.4",
+      "description": "Starter for building web, including RESTful, applications using Spring MVC. Uses Tomcat as the default embedded container",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-starter-web@3.1.4?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/spring-projects/spring-boot"
+        }
+      ],
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.springframework.boot/spring-boot-starter-web@3.1.4?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotCompileClasspath"
+        }
+      ]
+    },
+    {
+      "publisher": "VMware, Inc.",
+      "group": "org.springframework.boot",
+      "name": "spring-boot-starter",
+      "version": "3.1.4",
+      "description": "Core starter, including auto-configuration support, logging and YAML",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-starter@3.1.4?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/spring-projects/spring-boot"
+        }
+      ],
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.springframework.boot/spring-boot-starter@3.1.4?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotCompileClasspath"
+        }
+      ]
+    },
+    {
+      "publisher": "VMware, Inc.",
+      "group": "org.springframework.boot",
+      "name": "spring-boot",
+      "version": "3.1.4",
+      "description": "Spring Boot",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.springframework.boot/spring-boot@3.1.4?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/spring-projects/spring-boot"
+        }
+      ],
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.springframework.boot/spring-boot@3.1.4?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotCompileClasspath"
+        }
+      ]
+    },
+    {
+      "publisher": "Spring IO",
+      "group": "org.springframework",
+      "name": "spring-core",
+      "version": "6.0.12",
+      "description": "Spring Core",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.springframework/spring-core@6.0.12?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/spring-projects/spring-framework"
+        }
+      ],
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.springframework/spring-core@6.0.12?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotCompileClasspath"
+        }
+      ]
+    },
+    {
+      "publisher": "Spring IO",
+      "group": "org.springframework",
+      "name": "spring-jcl",
+      "version": "6.0.12",
+      "description": "Spring Commons Logging Bridge",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.springframework/spring-jcl@6.0.12?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/spring-projects/spring-framework"
+        }
+      ],
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.springframework/spring-jcl@6.0.12?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotCompileClasspath"
+        }
+      ]
+    },
+    {
+      "publisher": "Spring IO",
+      "group": "org.springframework",
+      "name": "spring-context",
+      "version": "6.0.12",
+      "description": "Spring Context",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.springframework/spring-context@6.0.12?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/spring-projects/spring-framework"
+        }
+      ],
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.springframework/spring-context@6.0.12?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotCompileClasspath"
+        }
+      ]
+    },
+    {
+      "publisher": "Spring IO",
+      "group": "org.springframework",
+      "name": "spring-aop",
+      "version": "6.0.12",
+      "description": "Spring AOP",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.springframework/spring-aop@6.0.12?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/spring-projects/spring-framework"
+        }
+      ],
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.springframework/spring-aop@6.0.12?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotCompileClasspath"
+        }
+      ]
+    },
+    {
+      "publisher": "Spring IO",
+      "group": "org.springframework",
+      "name": "spring-beans",
+      "version": "6.0.12",
+      "description": "Spring Beans",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.springframework/spring-beans@6.0.12?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/spring-projects/spring-framework"
+        }
+      ],
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.springframework/spring-beans@6.0.12?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotCompileClasspath"
+        }
+      ]
+    },
+    {
+      "publisher": "Spring IO",
+      "group": "org.springframework",
+      "name": "spring-expression",
+      "version": "6.0.12",
+      "description": "Spring Expression Language (SpEL)",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.springframework/spring-expression@6.0.12?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/spring-projects/spring-framework"
+        }
+      ],
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.springframework/spring-expression@6.0.12?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotCompileClasspath"
+        }
+      ]
+    },
+    {
+      "publisher": "VMware, Inc.",
+      "group": "org.springframework.boot",
+      "name": "spring-boot-autoconfigure",
+      "version": "3.1.4",
+      "description": "Spring Boot AutoConfigure",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-autoconfigure@3.1.4?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/spring-projects/spring-boot"
+        }
+      ],
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.springframework.boot/spring-boot-autoconfigure@3.1.4?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotCompileClasspath"
+        }
+      ]
+    },
+    {
+      "publisher": "VMware, Inc.",
+      "group": "org.springframework.boot",
+      "name": "spring-boot-starter-logging",
+      "version": "3.1.4",
+      "description": "Starter for logging using Logback. Default logging starter",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-starter-logging@3.1.4?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/spring-projects/spring-boot"
+        }
+      ],
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.springframework.boot/spring-boot-starter-logging@3.1.4?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotCompileClasspath"
+        }
+      ]
+    },
+    {
+      "publisher": "QOS.ch",
+      "group": "ch.qos.logback",
+      "name": "logback-classic",
+      "version": "1.4.11",
+      "description": "logback-classic module",
+      "licenses": [
+        {
+          "license": {
+            "id": "EPL-1.0",
+            "url": "https://opensource.org/licenses/EPL-1.0"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1-only",
+            "url": "https://opensource.org/licenses/LGPL-2.1-only"
+          }
+        }
+      ],
+      "purl": "pkg:maven/ch.qos.logback/logback-classic@1.4.11?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/qos-ch/logback"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:maven/ch.qos.logback/logback-classic@1.4.11?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotCompileClasspath"
+        }
+      ]
+    },
+    {
+      "publisher": "QOS.ch",
+      "group": "ch.qos.logback",
+      "name": "logback-core",
+      "version": "1.4.11",
+      "description": "logback-core module",
+      "licenses": [
+        {
+          "license": {
+            "id": "EPL-1.0",
+            "url": "https://opensource.org/licenses/EPL-1.0"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1-only",
+            "url": "https://opensource.org/licenses/LGPL-2.1-only"
+          }
+        }
+      ],
+      "purl": "pkg:maven/ch.qos.logback/logback-core@1.4.11?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/qos-ch/logback"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:maven/ch.qos.logback/logback-core@1.4.11?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotCompileClasspath"
+        }
+      ]
+    },
+    {
+      "publisher": "QOS.ch",
+      "group": "org.slf4j",
+      "name": "slf4j-api",
+      "version": "2.0.9",
+      "description": "The slf4j API",
+      "purl": "pkg:maven/org.slf4j/slf4j-api@2.0.9?type=jar",
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.slf4j/slf4j-api@2.0.9?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotCompileClasspath"
+        }
+      ]
+    },
+    {
+      "group": "org.apache.logging.log4j",
+      "name": "log4j-to-slf4j",
+      "version": "2.20.0",
+      "description": "The Apache Log4j binding between Log4j 2 API and SLF4J.",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.apache.logging.log4j/log4j-to-slf4j@2.20.0?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/apache/logging-log4j2"
+        }
+      ],
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.apache.logging.log4j/log4j-to-slf4j@2.20.0?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotCompileClasspath"
+        }
+      ]
+    },
+    {
+      "group": "org.apache.logging.log4j",
+      "name": "log4j-api",
+      "version": "2.20.0",
+      "description": "The Apache Log4j API",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.apache.logging.log4j/log4j-api@2.20.0?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/apache/logging-log4j2"
+        }
+      ],
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.apache.logging.log4j/log4j-api@2.20.0?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotCompileClasspath"
+        }
+      ]
+    },
+    {
+      "publisher": "QOS.ch",
+      "group": "org.slf4j",
+      "name": "jul-to-slf4j",
+      "version": "2.0.9",
+      "description": "JUL to SLF4J bridge",
+      "purl": "pkg:maven/org.slf4j/jul-to-slf4j@2.0.9?type=jar",
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.slf4j/jul-to-slf4j@2.0.9?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotCompileClasspath"
+        }
+      ]
+    },
+    {
+      "publisher": "Eclipse Foundation",
+      "group": "jakarta.annotation",
+      "name": "jakarta.annotation-api",
+      "version": "2.1.1",
+      "description": "Jakarta Annotations API",
+      "licenses": [
+        {
+          "license": {
+            "id": "EPL-2.0",
+            "url": "https://opensource.org/licenses/EPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-with-classpath-exception",
+            "url": "https://opensource.org/licenses/GPL-2.0-with-classpath-exception"
+          }
+        }
+      ],
+      "purl": "pkg:maven/jakarta.annotation/jakarta.annotation-api@2.1.1?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/eclipse-ee4j/common-annotations-api"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:maven/jakarta.annotation/jakarta.annotation-api@2.1.1?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotCompileClasspath"
+        }
+      ]
+    },
+    {
+      "group": "org.yaml",
+      "name": "snakeyaml",
+      "version": "1.33",
+      "description": "YAML 1.1 parser and emitter for Java",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.yaml/snakeyaml@1.33?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://bitbucket.org/snakeyaml/snakeyaml/src"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:maven/org.yaml/snakeyaml@1.33?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotCompileClasspath"
+        }
+      ]
+    },
+    {
+      "publisher": "VMware, Inc.",
+      "group": "org.springframework.boot",
+      "name": "spring-boot-starter-json",
+      "version": "3.1.4",
+      "description": "Starter for reading and writing json",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-starter-json@3.1.4?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/spring-projects/spring-boot"
+        }
+      ],
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.springframework.boot/spring-boot-starter-json@3.1.4?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotCompileClasspath"
+        }
+      ]
+    },
+    {
+      "publisher": "Spring IO",
+      "group": "org.springframework",
+      "name": "spring-web",
+      "version": "6.0.12",
+      "description": "Spring Web",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.springframework/spring-web@6.0.12?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/spring-projects/spring-framework"
+        }
+      ],
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.springframework/spring-web@6.0.12?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotCompileClasspath"
+        }
+      ]
+    },
+    {
+      "group": "io.micrometer",
+      "name": "micrometer-observation",
+      "version": "1.11.4",
+      "description": "Module containing Observation related code",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/io.micrometer/micrometer-observation@1.11.4?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "git@github.com:micrometer-metrics/micrometer.git"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:maven/io.micrometer/micrometer-observation@1.11.4?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotCompileClasspath"
+        }
+      ]
+    },
+    {
+      "group": "io.micrometer",
+      "name": "micrometer-commons",
+      "version": "1.11.4",
+      "description": "Module containing common code",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/io.micrometer/micrometer-commons@1.11.4?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "git@github.com:micrometer-metrics/micrometer.git"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:maven/io.micrometer/micrometer-commons@1.11.4?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotCompileClasspath"
+        }
+      ]
+    },
+    {
+      "group": "com.fasterxml.jackson.core",
+      "name": "jackson-databind",
+      "version": "2.15.2",
+      "description": "General data-binding functionality for Jackson: works on core streaming API",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.15.2?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/FasterXML/jackson-databind"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.15.2?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotCompileClasspath"
+        }
+      ]
+    },
+    {
+      "publisher": "FasterXML",
+      "group": "com.fasterxml.jackson.core",
+      "name": "jackson-annotations",
+      "version": "2.15.2",
+      "description": "Core annotations used for value types, used by Jackson data binding package.\n  ",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.15.2?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/FasterXML/jackson-annotations"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.15.2?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotCompileClasspath"
+        }
+      ]
+    },
+    {
+      "publisher": "FasterXML",
+      "group": "com.fasterxml.jackson",
+      "name": "jackson-bom",
+      "version": "2.15.2",
+      "description": "Bill of Materials pom for getting full, complete set of compatible versions\nof Jackson components maintained by FasterXML.com\n  ",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/com.fasterxml.jackson/jackson-bom@2.15.2?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/FasterXML/jackson-bom"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:maven/com.fasterxml.jackson/jackson-bom@2.15.2?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotCompileClasspath"
+        }
+      ]
+    },
+    {
+      "group": "com.fasterxml.jackson.core",
+      "name": "jackson-core",
+      "version": "2.15.2",
+      "description": "Core Jackson processing abstractions (aka Streaming API), implementation for JSON",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.15.2?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/FasterXML/jackson-core"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.15.2?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotCompileClasspath"
+        }
+      ]
+    },
+    {
+      "group": "com.fasterxml.jackson.datatype",
+      "name": "jackson-datatype-jdk8",
+      "version": "2.15.2",
+      "description": "Add-on module for Jackson (http://jackson.codehaus.org) to support\nJDK 8 data types.\n  ",
+      "licenses": [
+        {
+          "license": {
+            "url": "https://github.com/FasterXML/jackson-modules-java8/blob/2.16/LICENSE",
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jdk8@2.15.2?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "http://github.com/FasterXML/jackson-modules-java8"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jdk8@2.15.2?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotCompileClasspath"
+        }
+      ]
+    },
+    {
+      "group": "com.fasterxml.jackson.datatype",
+      "name": "jackson-datatype-jsr310",
+      "version": "2.15.2",
+      "description": "Add-on module to support JSR-310 (Java 8 Date & Time API) data types.",
+      "licenses": [
+        {
+          "license": {
+            "url": "https://github.com/FasterXML/jackson-modules-java8/blob/2.16/LICENSE",
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jsr310@2.15.2?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "http://github.com/FasterXML/jackson-modules-java8"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jsr310@2.15.2?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotCompileClasspath"
+        }
+      ]
+    },
+    {
+      "group": "com.fasterxml.jackson.module",
+      "name": "jackson-module-parameter-names",
+      "version": "2.15.2",
+      "description": "Add-on module for Jackson (http://jackson.codehaus.org) to support\nintrospection of method/constructor parameter names, without having to add explicit property name annotation.\n",
+      "licenses": [
+        {
+          "license": {
+            "url": "https://github.com/FasterXML/jackson-modules-java8/blob/2.16/LICENSE",
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/com.fasterxml.jackson.module/jackson-module-parameter-names@2.15.2?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "http://github.com/FasterXML/jackson-modules-java8"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:maven/com.fasterxml.jackson.module/jackson-module-parameter-names@2.15.2?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotCompileClasspath"
+        }
+      ]
+    },
+    {
+      "publisher": "VMware, Inc.",
+      "group": "org.springframework.boot",
+      "name": "spring-boot-starter-tomcat",
+      "version": "3.1.4",
+      "description": "Starter for using Tomcat as the embedded servlet container. Default servlet container starter used by spring-boot-starter-web",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-starter-tomcat@3.1.4?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/spring-projects/spring-boot"
+        }
+      ],
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.springframework.boot/spring-boot-starter-tomcat@3.1.4?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotCompileClasspath"
+        }
+      ]
+    },
+    {
+      "group": "org.apache.tomcat.embed",
+      "name": "tomcat-embed-core",
+      "version": "10.1.13",
+      "description": "Core Tomcat implementation",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.13?type=jar",
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.13?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotCompileClasspath"
+        }
+      ]
+    },
+    {
+      "group": "org.apache.tomcat.embed",
+      "name": "tomcat-embed-el",
+      "version": "10.1.13",
+      "description": "Core Tomcat implementation",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-el@10.1.13?type=jar",
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-el@10.1.13?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotCompileClasspath"
+        }
+      ]
+    },
+    {
+      "group": "org.apache.tomcat.embed",
+      "name": "tomcat-embed-websocket",
+      "version": "10.1.13",
+      "description": "Core Tomcat implementation",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.13?type=jar",
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.13?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotCompileClasspath"
+        }
+      ]
+    },
+    {
+      "publisher": "Spring IO",
+      "group": "org.springframework",
+      "name": "spring-webmvc",
+      "version": "6.0.12",
+      "description": "Spring Web MVC",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.springframework/spring-webmvc@6.0.12?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/spring-projects/spring-framework"
+        }
+      ],
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.springframework/spring-webmvc@6.0.12?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotCompileClasspath"
+        }
+      ]
+    },
+    {
+      "group": "org.springframework.boot",
+      "name": "spring-boot-dependencies",
+      "version": "3.1.4",
+      "description": "Spring Boot Dependencies",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-dependencies@3.1.4?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/spring-projects/spring-boot"
+        }
+      ],
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.springframework.boot/spring-boot-dependencies@3.1.4?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotTestCompileClasspath"
+        }
+      ]
+    },
+    {
+      "group": "org.junit.platform",
+      "name": "junit-platform-launcher",
+      "version": "1.9.3",
+      "description": "Module \"junit-platform-launcher\" of JUnit 5.",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "EPL-2.0",
+            "url": "https://opensource.org/licenses/EPL-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.junit.platform/junit-platform-launcher@1.9.3?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/junit-team/junit5"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:maven/org.junit.platform/junit-platform-launcher@1.9.3?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotTestCompileClasspath"
+        }
+      ]
+    },
+    {
+      "publisher": "VMware, Inc.",
+      "group": "org.springframework.boot",
+      "name": "spring-boot-starter-test",
+      "version": "3.1.4",
+      "description": "Starter for testing Spring Boot applications with libraries including JUnit Jupiter, Hamcrest and Mockito",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-starter-test@3.1.4?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/spring-projects/spring-boot"
+        }
+      ],
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.springframework.boot/spring-boot-starter-test@3.1.4?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotTestCompileClasspath"
+        }
+      ]
+    },
+    {
+      "publisher": "VMware, Inc.",
+      "group": "org.springframework.boot",
+      "name": "spring-boot-test",
+      "version": "3.1.4",
+      "description": "Spring Boot Test",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-test@3.1.4?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/spring-projects/spring-boot"
+        }
+      ],
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.springframework.boot/spring-boot-test@3.1.4?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotTestCompileClasspath"
+        }
+      ]
+    },
+    {
+      "publisher": "VMware, Inc.",
+      "group": "org.springframework.boot",
+      "name": "spring-boot-test-autoconfigure",
+      "version": "3.1.4",
+      "description": "Spring Boot Test AutoConfigure",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-test-autoconfigure@3.1.4?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/spring-projects/spring-boot"
+        }
+      ],
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.springframework.boot/spring-boot-test-autoconfigure@3.1.4?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotTestCompileClasspath"
+        }
+      ]
+    },
+    {
+      "group": "com.jayway.jsonpath",
+      "name": "json-path",
+      "version": "2.8.0",
+      "description": "A library to query and verify JSON",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/com.jayway.jsonpath/json-path@2.8.0?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "scm:git:git://github.com/jayway/JsonPath.git"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:maven/com.jayway.jsonpath/json-path@2.8.0?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotTestCompileClasspath"
+        }
+      ]
+    },
+    {
+      "group": "jakarta.xml.bind",
+      "name": "jakarta.xml.bind-api",
+      "version": "4.0.1",
+      "description": "Jakarta XML Binding API",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "name": "Eclipse Distribution License - v 1.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/jakarta.xml.bind/jakarta.xml.bind-api@4.0.1?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/eclipse-ee4j/jaxb-api.git"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:maven/jakarta.xml.bind/jakarta.xml.bind-api@4.0.1?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotTestCompileClasspath"
+        }
+      ]
+    },
+    {
+      "publisher": "Chemouni Uriel",
+      "group": "net.minidev",
+      "name": "json-smart",
+      "version": "2.4.11",
+      "description": "JSON (JavaScript Object Notation) is a lightweight data-interchange format. It is easy for humans to read and write. It is easy for machines to parse and generate. It is based on a subset of the JavaScript Programming Language, Standard ECMA-262 3rd Edition - December 1999. JSON is a text format that is completely language independent but uses conventions that are familiar to programmers of the C-family of languages, including C, C++, C#, Java, JavaScript, Perl, Python, and many others. These properties make JSON an ideal data-interchange language.",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/net.minidev/json-smart@2.4.11?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/netplex/json-smart-v2"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:maven/net.minidev/json-smart@2.4.11?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotTestCompileClasspath"
+        }
+      ]
+    },
+    {
+      "group": "org.assertj",
+      "name": "assertj-core",
+      "version": "3.24.2",
+      "description": "Rich and fluent assertions for testing in Java",
+      "scope": "optional",
+      "purl": "pkg:maven/org.assertj/assertj-core@3.24.2?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/org.assertj/assertj-core@3.24.2?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotTestCompileClasspath"
+        }
+      ]
+    },
+    {
+      "group": "org.hamcrest",
+      "name": "hamcrest",
+      "version": "2.2",
+      "description": "Core API and libraries of hamcrest matcher framework.",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "name": "BSD License 3"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.hamcrest/hamcrest@2.2?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/hamcrest/JavaHamcrest"
+        }
+      ],
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.hamcrest/hamcrest@2.2?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotTestCompileClasspath"
+        }
+      ]
+    },
+    {
+      "group": "org.junit.jupiter",
+      "name": "junit-jupiter",
+      "version": "5.9.3",
+      "description": "Module \"junit-jupiter\" of JUnit 5.",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "EPL-2.0",
+            "url": "https://opensource.org/licenses/EPL-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.junit.jupiter/junit-jupiter@5.9.3?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/junit-team/junit5"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:maven/org.junit.jupiter/junit-jupiter@5.9.3?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotTestCompileClasspath"
+        }
+      ]
+    },
+    {
+      "group": "org.mockito",
+      "name": "mockito-core",
+      "version": "5.3.1",
+      "description": "Mockito mock objects library core API and implementation",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.mockito/mockito-core@5.3.1?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/mockito/mockito.git"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:maven/org.mockito/mockito-core@5.3.1?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotTestCompileClasspath"
+        }
+      ]
+    },
+    {
+      "group": "org.mockito",
+      "name": "mockito-junit-jupiter",
+      "version": "5.3.1",
+      "description": "Mockito JUnit 5 support",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.mockito/mockito-junit-jupiter@5.3.1?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/mockito/mockito.git"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:maven/org.mockito/mockito-junit-jupiter@5.3.1?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotTestCompileClasspath"
+        }
+      ]
+    },
+    {
+      "group": "org.skyscreamer",
+      "name": "jsonassert",
+      "version": "1.5.1",
+      "description": "A library to develop RESTful but flexible APIs",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.skyscreamer/jsonassert@1.5.1?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "git@github.com:skyscreamer/JSONassert.git"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:maven/org.skyscreamer/jsonassert@1.5.1?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotTestCompileClasspath"
+        }
+      ]
+    },
+    {
+      "publisher": "Spring IO",
+      "group": "org.springframework",
+      "name": "spring-test",
+      "version": "6.0.12",
+      "description": "Spring TestContext Framework",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.springframework/spring-test@6.0.12?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/spring-projects/spring-framework"
+        }
+      ],
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.springframework/spring-test@6.0.12?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotTestCompileClasspath"
+        }
+      ]
+    },
+    {
+      "publisher": "XMLUnit",
+      "group": "org.xmlunit",
+      "name": "xmlunit-core",
+      "version": "2.9.1",
+      "description": "XMLUnit for Java",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.xmlunit/xmlunit-core@2.9.1?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "git@github.com:xmlunit/xmlunit.git"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:maven/org.xmlunit/xmlunit-core@2.9.1?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotTestCompileClasspath"
+        }
+      ]
+    },
+    {
+      "group": "org.junit.platform",
+      "name": "junit-platform-console",
+      "version": "1.9.3",
+      "description": "Module \"junit-platform-console\" of JUnit 5.",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "EPL-2.0",
+            "url": "https://opensource.org/licenses/EPL-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.junit.platform/junit-platform-console@1.9.3?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/junit-team/junit5"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:maven/org.junit.platform/junit-platform-console@1.9.3?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotTestCompileClasspath"
+        }
+      ]
+    },
+    {
+      "publisher": "Eclipse Foundation",
+      "group": "jakarta.activation",
+      "name": "jakarta.activation-api",
+      "version": "2.1.2",
+      "description": "${project.name} ${spec.version} Specification",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "name": "EDL 1.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/jakarta.activation/jakarta.activation-api@2.1.2?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/jakartaee/jaf-api"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:maven/jakarta.activation/jakarta.activation-api@2.1.2?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotTestCompileClasspath"
+        }
+      ]
+    },
+    {
+      "group": "net.bytebuddy",
+      "name": "byte-buddy",
+      "version": "1.14.8",
+      "description": "Byte Buddy is a Java library for creating Java classes at run time.\r\n        This artifact is a build of Byte Buddy with all ASM dependencies repackaged into its own name space.",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/net.bytebuddy/byte-buddy@1.14.8?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "${repository.url}"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:maven/net.bytebuddy/byte-buddy@1.14.8?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotTestCompileClasspath"
+        }
+      ]
+    },
+    {
+      "group": "org.junit.jupiter",
+      "name": "junit-jupiter-api",
+      "version": "5.9.3",
+      "description": "Module \"junit-jupiter-api\" of JUnit 5.",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "EPL-2.0",
+            "url": "https://opensource.org/licenses/EPL-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.junit.jupiter/junit-jupiter-api@5.9.3?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/junit-team/junit5"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:maven/org.junit.jupiter/junit-jupiter-api@5.9.3?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotTestCompileClasspath"
+        }
+      ]
+    },
+    {
+      "group": "org.junit.jupiter",
+      "name": "junit-jupiter-params",
+      "version": "5.9.3",
+      "description": "Module \"junit-jupiter-params\" of JUnit 5.",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "EPL-2.0",
+            "url": "https://opensource.org/licenses/EPL-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.junit.jupiter/junit-jupiter-params@5.9.3?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/junit-team/junit5"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:maven/org.junit.jupiter/junit-jupiter-params@5.9.3?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotTestCompileClasspath"
+        }
+      ]
+    },
+    {
+      "group": "org.junit.jupiter",
+      "name": "junit-jupiter-engine",
+      "version": "5.9.3",
+      "description": "Module \"junit-jupiter-engine\" of JUnit 5.",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "EPL-2.0",
+            "url": "https://opensource.org/licenses/EPL-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.junit.jupiter/junit-jupiter-engine@5.9.3?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/junit-team/junit5"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:maven/org.junit.jupiter/junit-jupiter-engine@5.9.3?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotTestCompileClasspath"
+        }
+      ]
+    },
+    {
+      "group": "net.bytebuddy",
+      "name": "byte-buddy-agent",
+      "version": "1.14.8",
+      "description": "The Byte Buddy agent offers convenience for attaching an agent to the local or a remote VM.",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/net.bytebuddy/byte-buddy-agent@1.14.8?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "${repository.url}"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:maven/net.bytebuddy/byte-buddy-agent@1.14.8?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotTestCompileClasspath"
+        }
+      ]
+    },
+    {
+      "group": "org.junit.platform",
+      "name": "junit-platform-engine",
+      "version": "1.9.3",
+      "description": "Module \"junit-platform-engine\" of JUnit 5.",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "EPL-2.0",
+            "url": "https://opensource.org/licenses/EPL-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.junit.platform/junit-platform-engine@1.9.3?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/junit-team/junit5"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:maven/org.junit.platform/junit-platform-engine@1.9.3?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotTestCompileClasspath"
+        }
+      ]
+    },
+    {
+      "group": "org.junit.platform",
+      "name": "junit-platform-reporting",
+      "version": "1.9.3",
+      "description": "Module \"junit-platform-reporting\" of JUnit 5.",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "EPL-2.0",
+            "url": "https://opensource.org/licenses/EPL-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.junit.platform/junit-platform-reporting@1.9.3?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/junit-team/junit5"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:maven/org.junit.platform/junit-platform-reporting@1.9.3?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotTestCompileClasspath"
+        }
+      ]
+    },
+    {
+      "group": "org.junit.platform",
+      "name": "junit-platform-commons",
+      "version": "1.9.3",
+      "description": "Module \"junit-platform-commons\" of JUnit 5.",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "EPL-2.0",
+            "url": "https://opensource.org/licenses/EPL-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.junit.platform/junit-platform-commons@1.9.3?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/junit-team/junit5"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:maven/org.junit.platform/junit-platform-commons@1.9.3?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotTestCompileClasspath"
+        }
+      ]
+    },
+    {
+      "group": "org.junit",
+      "name": "junit-bom",
+      "version": "5.10.0",
+      "description": "This Bill of Materials POM can be used to ease dependency management when referencing multiple JUnit artifacts using Gradle or Maven.",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "EPL-2.0",
+            "url": "https://opensource.org/licenses/EPL-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.junit/junit-bom@5.10.0?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/junit-team/junit5"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:maven/org.junit/junit-bom@5.10.0?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotTestCompileClasspath"
+        }
+      ]
+    },
+    {
+      "group": "org.opentest4j",
+      "name": "opentest4j",
+      "version": "1.2.0",
+      "description": "Open Test Alliance for the JVM",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.opentest4j/opentest4j@1.2.0?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/ota4j-team/opentest4j"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:maven/org.opentest4j/opentest4j@1.2.0?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotTestCompileClasspath"
+        }
+      ]
+    },
+    {
+      "publisher": "Chemouni Uriel",
+      "group": "net.minidev",
+      "name": "accessors-smart",
+      "version": "2.4.11",
+      "description": "Java reflect give poor performance on getter setter an constructor calls, accessors-smart use ASM to speed up those calls.",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/net.minidev/accessors-smart@2.4.11?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/netplex/json-smart-v2"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:maven/net.minidev/accessors-smart@2.4.11?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotTestCompileClasspath"
+        }
+      ]
+    },
+    {
+      "publisher": "OW2",
+      "group": "org.ow2.asm",
+      "name": "asm",
+      "version": "9.3",
+      "description": "ASM, a very small and fast Java bytecode manipulation framework",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause",
+            "url": "https://opensource.org/licenses/BSD-3-Clause"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.ow2.asm/asm@9.3?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://gitlab.ow2.org/asm/asm/"
+        }
+      ],
+      "type": "framework",
+      "bom-ref": "pkg:maven/org.ow2.asm/asm@9.3?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotTestCompileClasspath"
+        }
+      ]
+    },
+    {
+      "publisher": "Joe Walnes, Henri Tremblay, Leonardo Mesquita",
+      "group": "org.objenesis",
+      "name": "objenesis",
+      "version": "3.3",
+      "description": "A library for instantiating Java objects",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.objenesis/objenesis@3.3?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/easymock/objenesis"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:maven/org.objenesis/objenesis@3.3?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotTestCompileClasspath"
+        }
+      ]
+    },
+    {
+      "group": "com.vaadin.external.google",
+      "name": "android-json",
+      "version": "0.0.20131108.vaadin1",
+      "description": "\n      JSON (JavaScript Object Notation) is a lightweight data-interchange format.\n      This is the org.json compatible Android implementation extracted from the Android SDK\n    ",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/com.vaadin.external.google/android-json@0.0.20131108.vaadin1?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "http://developer.android.com/sdk/"
+        }
+      ],
+      "type": "framework",
+      "bom-ref": "pkg:maven/com.vaadin.external.google/android-json@0.0.20131108.vaadin1?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotTestCompileClasspath"
+        }
+      ]
+    },
+    {
+      "group": "org.graalvm.buildtools",
+      "name": "junit-platform-native",
+      "version": "0.9.27",
+      "description": "JUnit Platform support for GraalVM Native Image",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "name": "Universal Permissive License Version 1.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.graalvm.buildtools/junit-platform-native@0.9.27?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/graalvm/native-build-tools/tree/master"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:maven/org.graalvm.buildtools/junit-platform-native@0.9.27?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotTestCompileClasspath"
+        }
+      ]
+    },
+    {
+      "group": "org.junit",
+      "name": "junit-bom",
+      "version": "5.9.3",
+      "description": "This Bill of Materials POM can be used to ease dependency management when referencing multiple JUnit artifacts using Gradle or Maven.",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "EPL-2.0",
+            "url": "https://opensource.org/licenses/EPL-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.junit/junit-bom@5.9.3?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/junit-team/junit5"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:maven/org.junit/junit-bom@5.9.3?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "testCompileClasspath"
+        }
+      ]
+    },
+    {
+      "group": "org.apiguardian",
+      "name": "apiguardian-api",
+      "version": "1.1.2",
+      "description": "@API Guardian",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0",
+            "url": "https://opensource.org/licenses/Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.apiguardian/apiguardian-api@1.1.2?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/apiguardian-team/apiguardian"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:maven/org.apiguardian/apiguardian-api@1.1.2?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "testCompileClasspath"
+        }
+      ]
+    },
+    {
+      "group": "gradle",
+      "name": "gradle",
+      "version": "wrapper",
+      "purl": "pkg:maven/gradle/gradle@wrapper?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/gradle/gradle@wrapper?type=jar",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "gradle-wrapper.jar"
+        }
+      ]
+    },
+    {
+      "group": "demo-sbom-cdx-gradle",
+      "name": "demo-sbom-cdx-gradle",
+      "version": "1.0",
+      "purl": "pkg:maven/demo-sbom-cdx-gradle/demo-sbom-cdx-gradle@1.0?type=jar",
+      "type": "library",
+      "bom-ref": "pkg:maven/demo-sbom-cdx-gradle/demo-sbom-cdx-gradle@1.0?type=jar",
+      "properties": [
+        {
+          "name": "SrcFile",
+          "value": "demo-sbom-cdx-gradle-1.0.jar"
+        }
+      ]
+    }
+  ],
+  "services": [],
+  "dependencies": [
+    {
+      "ref": "pkg:maven/com.thomasvitale/demo-sbom-cdx-gradle@1.0?type=jar",
+      "dependsOn": [
+        "pkg:maven/org.graalvm.buildtools/junit-platform-native@0.9.27?type=jar",
+        "pkg:maven/org.junit.platform/junit-platform-launcher@1.9.3?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-dependencies@3.1.4?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-starter-test@3.1.4?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-starter-web@3.1.4?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.springframework.boot/spring-boot-starter-web@3.1.4?type=jar",
+      "dependsOn": [
+        "pkg:maven/org.springframework.boot/spring-boot-starter-json@3.1.4?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-starter-tomcat@3.1.4?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-starter@3.1.4?type=jar",
+        "pkg:maven/org.springframework/spring-web@6.0.12?type=jar",
+        "pkg:maven/org.springframework/spring-webmvc@6.0.12?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.springframework.boot/spring-boot-starter@3.1.4?type=jar",
+      "dependsOn": [
+        "pkg:maven/jakarta.annotation/jakarta.annotation-api@2.1.1?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-autoconfigure@3.1.4?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-starter-logging@3.1.4?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot@3.1.4?type=jar",
+        "pkg:maven/org.springframework/spring-core@6.0.12?type=jar",
+        "pkg:maven/org.yaml/snakeyaml@1.33?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.springframework.boot/spring-boot@3.1.4?type=jar",
+      "dependsOn": [
+        "pkg:maven/org.springframework/spring-context@6.0.12?type=jar",
+        "pkg:maven/org.springframework/spring-core@6.0.12?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.springframework/spring-core@6.0.12?type=jar",
+      "dependsOn": [
+        "pkg:maven/org.springframework/spring-jcl@6.0.12?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.springframework/spring-jcl@6.0.12?type=jar",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.springframework/spring-context@6.0.12?type=jar",
+      "dependsOn": [
+        "pkg:maven/org.springframework/spring-aop@6.0.12?type=jar",
+        "pkg:maven/org.springframework/spring-beans@6.0.12?type=jar",
+        "pkg:maven/org.springframework/spring-core@6.0.12?type=jar",
+        "pkg:maven/org.springframework/spring-expression@6.0.12?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.springframework/spring-aop@6.0.12?type=jar",
+      "dependsOn": [
+        "pkg:maven/org.springframework/spring-beans@6.0.12?type=jar",
+        "pkg:maven/org.springframework/spring-core@6.0.12?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.springframework/spring-beans@6.0.12?type=jar",
+      "dependsOn": [
+        "pkg:maven/org.springframework/spring-core@6.0.12?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.springframework/spring-expression@6.0.12?type=jar",
+      "dependsOn": [
+        "pkg:maven/org.springframework/spring-core@6.0.12?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.springframework.boot/spring-boot-autoconfigure@3.1.4?type=jar",
+      "dependsOn": [
+        "pkg:maven/org.springframework.boot/spring-boot@3.1.4?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.springframework.boot/spring-boot-starter-logging@3.1.4?type=jar",
+      "dependsOn": [
+        "pkg:maven/ch.qos.logback/logback-classic@1.4.11?type=jar",
+        "pkg:maven/org.apache.logging.log4j/log4j-to-slf4j@2.20.0?type=jar",
+        "pkg:maven/org.slf4j/jul-to-slf4j@2.0.9?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/ch.qos.logback/logback-classic@1.4.11?type=jar",
+      "dependsOn": [
+        "pkg:maven/ch.qos.logback/logback-core@1.4.11?type=jar",
+        "pkg:maven/org.slf4j/slf4j-api@2.0.9?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/ch.qos.logback/logback-core@1.4.11?type=jar",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.slf4j/slf4j-api@2.0.9?type=jar",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.apache.logging.log4j/log4j-to-slf4j@2.20.0?type=jar",
+      "dependsOn": [
+        "pkg:maven/org.apache.logging.log4j/log4j-api@2.20.0?type=jar",
+        "pkg:maven/org.slf4j/slf4j-api@2.0.9?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.apache.logging.log4j/log4j-api@2.20.0?type=jar",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.slf4j/jul-to-slf4j@2.0.9?type=jar",
+      "dependsOn": [
+        "pkg:maven/org.slf4j/slf4j-api@2.0.9?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/jakarta.annotation/jakarta.annotation-api@2.1.1?type=jar",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.yaml/snakeyaml@1.33?type=jar",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.springframework.boot/spring-boot-starter-json@3.1.4?type=jar",
+      "dependsOn": [
+        "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.15.2?type=jar",
+        "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jdk8@2.15.2?type=jar",
+        "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jsr310@2.15.2?type=jar",
+        "pkg:maven/com.fasterxml.jackson.module/jackson-module-parameter-names@2.15.2?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-starter@3.1.4?type=jar",
+        "pkg:maven/org.springframework/spring-web@6.0.12?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.springframework/spring-web@6.0.12?type=jar",
+      "dependsOn": [
+        "pkg:maven/io.micrometer/micrometer-observation@1.11.4?type=jar",
+        "pkg:maven/org.springframework/spring-beans@6.0.12?type=jar",
+        "pkg:maven/org.springframework/spring-core@6.0.12?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/io.micrometer/micrometer-observation@1.11.4?type=jar",
+      "dependsOn": [
+        "pkg:maven/io.micrometer/micrometer-commons@1.11.4?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/io.micrometer/micrometer-commons@1.11.4?type=jar",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.15.2?type=jar",
+      "dependsOn": [
+        "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.15.2?type=jar",
+        "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.15.2?type=jar",
+        "pkg:maven/com.fasterxml.jackson/jackson-bom@2.15.2?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.15.2?type=jar",
+      "dependsOn": [
+        "pkg:maven/com.fasterxml.jackson/jackson-bom@2.15.2?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/com.fasterxml.jackson/jackson-bom@2.15.2?type=jar",
+      "dependsOn": [
+        "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.15.2?type=jar",
+        "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.15.2?type=jar",
+        "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.15.2?type=jar",
+        "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jdk8@2.15.2?type=jar",
+        "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jsr310@2.15.2?type=jar",
+        "pkg:maven/com.fasterxml.jackson.module/jackson-module-parameter-names@2.15.2?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.15.2?type=jar",
+      "dependsOn": [
+        "pkg:maven/com.fasterxml.jackson/jackson-bom@2.15.2?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jdk8@2.15.2?type=jar",
+      "dependsOn": [
+        "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.15.2?type=jar",
+        "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.15.2?type=jar",
+        "pkg:maven/com.fasterxml.jackson/jackson-bom@2.15.2?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jsr310@2.15.2?type=jar",
+      "dependsOn": [
+        "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.15.2?type=jar",
+        "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.15.2?type=jar",
+        "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.15.2?type=jar",
+        "pkg:maven/com.fasterxml.jackson/jackson-bom@2.15.2?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/com.fasterxml.jackson.module/jackson-module-parameter-names@2.15.2?type=jar",
+      "dependsOn": [
+        "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.15.2?type=jar",
+        "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.15.2?type=jar",
+        "pkg:maven/com.fasterxml.jackson/jackson-bom@2.15.2?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.springframework.boot/spring-boot-starter-tomcat@3.1.4?type=jar",
+      "dependsOn": [
+        "pkg:maven/jakarta.annotation/jakarta.annotation-api@2.1.1?type=jar",
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.13?type=jar",
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-el@10.1.13?type=jar",
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.13?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.13?type=jar",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-el@10.1.13?type=jar",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.13?type=jar",
+      "dependsOn": [
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.13?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.springframework/spring-webmvc@6.0.12?type=jar",
+      "dependsOn": [
+        "pkg:maven/org.springframework/spring-aop@6.0.12?type=jar",
+        "pkg:maven/org.springframework/spring-beans@6.0.12?type=jar",
+        "pkg:maven/org.springframework/spring-context@6.0.12?type=jar",
+        "pkg:maven/org.springframework/spring-core@6.0.12?type=jar",
+        "pkg:maven/org.springframework/spring-expression@6.0.12?type=jar",
+        "pkg:maven/org.springframework/spring-web@6.0.12?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.springframework.boot/spring-boot-dependencies@3.1.4?type=jar",
+      "dependsOn": [
+        "pkg:maven/ch.qos.logback/logback-classic@1.4.11?type=jar",
+        "pkg:maven/ch.qos.logback/logback-core@1.4.11?type=jar",
+        "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.15.2?type=jar",
+        "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.15.2?type=jar",
+        "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.15.2?type=jar",
+        "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jdk8@2.15.2?type=jar",
+        "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jsr310@2.15.2?type=jar",
+        "pkg:maven/com.fasterxml.jackson.module/jackson-module-parameter-names@2.15.2?type=jar",
+        "pkg:maven/com.jayway.jsonpath/json-path@2.8.0?type=jar",
+        "pkg:maven/io.micrometer/micrometer-commons@1.11.4?type=jar",
+        "pkg:maven/io.micrometer/micrometer-observation@1.11.4?type=jar",
+        "pkg:maven/jakarta.activation/jakarta.activation-api@2.1.2?type=jar",
+        "pkg:maven/jakarta.annotation/jakarta.annotation-api@2.1.1?type=jar",
+        "pkg:maven/jakarta.xml.bind/jakarta.xml.bind-api@4.0.1?type=jar",
+        "pkg:maven/net.bytebuddy/byte-buddy-agent@1.14.8?type=jar",
+        "pkg:maven/net.bytebuddy/byte-buddy@1.14.8?type=jar",
+        "pkg:maven/net.minidev/json-smart@2.4.11?type=jar",
+        "pkg:maven/org.apache.logging.log4j/log4j-api@2.20.0?type=jar",
+        "pkg:maven/org.apache.logging.log4j/log4j-to-slf4j@2.20.0?type=jar",
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.13?type=jar",
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-el@10.1.13?type=jar",
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.13?type=jar",
+        "pkg:maven/org.assertj/assertj-core@3.24.2?type=jar",
+        "pkg:maven/org.hamcrest/hamcrest@2.2?type=jar",
+        "pkg:maven/org.junit.jupiter/junit-jupiter-api@5.9.3?type=jar",
+        "pkg:maven/org.junit.jupiter/junit-jupiter-engine@5.9.3?type=jar",
+        "pkg:maven/org.junit.jupiter/junit-jupiter-params@5.9.3?type=jar",
+        "pkg:maven/org.junit.jupiter/junit-jupiter@5.9.3?type=jar",
+        "pkg:maven/org.junit.platform/junit-platform-commons@1.9.3?type=jar",
+        "pkg:maven/org.junit.platform/junit-platform-console@1.9.3?type=jar",
+        "pkg:maven/org.junit.platform/junit-platform-engine@1.9.3?type=jar",
+        "pkg:maven/org.junit.platform/junit-platform-launcher@1.9.3?type=jar",
+        "pkg:maven/org.junit.platform/junit-platform-reporting@1.9.3?type=jar",
+        "pkg:maven/org.mockito/mockito-core@5.3.1?type=jar",
+        "pkg:maven/org.mockito/mockito-junit-jupiter@5.3.1?type=jar",
+        "pkg:maven/org.skyscreamer/jsonassert@1.5.1?type=jar",
+        "pkg:maven/org.slf4j/jul-to-slf4j@2.0.9?type=jar",
+        "pkg:maven/org.slf4j/slf4j-api@2.0.9?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-autoconfigure@3.1.4?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-starter-json@3.1.4?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-starter-logging@3.1.4?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-starter-test@3.1.4?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-starter-tomcat@3.1.4?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-starter-web@3.1.4?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-starter@3.1.4?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-test-autoconfigure@3.1.4?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-test@3.1.4?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot@3.1.4?type=jar",
+        "pkg:maven/org.springframework/spring-aop@6.0.12?type=jar",
+        "pkg:maven/org.springframework/spring-beans@6.0.12?type=jar",
+        "pkg:maven/org.springframework/spring-context@6.0.12?type=jar",
+        "pkg:maven/org.springframework/spring-core@6.0.12?type=jar",
+        "pkg:maven/org.springframework/spring-expression@6.0.12?type=jar",
+        "pkg:maven/org.springframework/spring-jcl@6.0.12?type=jar",
+        "pkg:maven/org.springframework/spring-test@6.0.12?type=jar",
+        "pkg:maven/org.springframework/spring-web@6.0.12?type=jar",
+        "pkg:maven/org.springframework/spring-webmvc@6.0.12?type=jar",
+        "pkg:maven/org.xmlunit/xmlunit-core@2.9.1?type=jar",
+        "pkg:maven/org.yaml/snakeyaml@1.33?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.junit.platform/junit-platform-launcher@1.9.3?type=jar",
+      "dependsOn": [
+        "pkg:maven/org.junit.platform/junit-platform-engine@1.9.3?type=jar",
+        "pkg:maven/org.junit/junit-bom@5.10.0?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.springframework.boot/spring-boot-starter-test@3.1.4?type=jar",
+      "dependsOn": [
+        "pkg:maven/com.jayway.jsonpath/json-path@2.8.0?type=jar",
+        "pkg:maven/jakarta.xml.bind/jakarta.xml.bind-api@4.0.1?type=jar",
+        "pkg:maven/net.minidev/json-smart@2.4.11?type=jar",
+        "pkg:maven/org.assertj/assertj-core@3.24.2?type=jar",
+        "pkg:maven/org.hamcrest/hamcrest@2.2?type=jar",
+        "pkg:maven/org.junit.jupiter/junit-jupiter@5.9.3?type=jar",
+        "pkg:maven/org.mockito/mockito-core@5.3.1?type=jar",
+        "pkg:maven/org.mockito/mockito-junit-jupiter@5.3.1?type=jar",
+        "pkg:maven/org.skyscreamer/jsonassert@1.5.1?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-starter@3.1.4?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-test-autoconfigure@3.1.4?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-test@3.1.4?type=jar",
+        "pkg:maven/org.springframework/spring-core@6.0.12?type=jar",
+        "pkg:maven/org.springframework/spring-test@6.0.12?type=jar",
+        "pkg:maven/org.xmlunit/xmlunit-core@2.9.1?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.springframework.boot/spring-boot-test@3.1.4?type=jar",
+      "dependsOn": [
+        "pkg:maven/org.springframework.boot/spring-boot@3.1.4?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.springframework.boot/spring-boot-test-autoconfigure@3.1.4?type=jar",
+      "dependsOn": [
+        "pkg:maven/org.springframework.boot/spring-boot-autoconfigure@3.1.4?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-test@3.1.4?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot@3.1.4?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/com.jayway.jsonpath/json-path@2.8.0?type=jar",
+      "dependsOn": [
+        "pkg:maven/net.minidev/json-smart@2.4.11?type=jar",
+        "pkg:maven/org.slf4j/slf4j-api@2.0.9?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/jakarta.xml.bind/jakarta.xml.bind-api@4.0.1?type=jar",
+      "dependsOn": [
+        "pkg:maven/jakarta.activation/jakarta.activation-api@2.1.2?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/net.minidev/json-smart@2.4.11?type=jar",
+      "dependsOn": [
+        "pkg:maven/net.minidev/accessors-smart@2.4.11?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.assertj/assertj-core@3.24.2?type=jar",
+      "dependsOn": [
+        "pkg:maven/net.bytebuddy/byte-buddy@1.14.8?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.hamcrest/hamcrest@2.2?type=jar",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.junit.jupiter/junit-jupiter@5.9.3?type=jar",
+      "dependsOn": [
+        "pkg:maven/org.junit.jupiter/junit-jupiter-api@5.9.3?type=jar",
+        "pkg:maven/org.junit.jupiter/junit-jupiter-engine@5.9.3?type=jar",
+        "pkg:maven/org.junit.jupiter/junit-jupiter-params@5.9.3?type=jar",
+        "pkg:maven/org.junit/junit-bom@5.10.0?type=jar",
+        "pkg:maven/org.junit/junit-bom@5.9.3?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.mockito/mockito-core@5.3.1?type=jar",
+      "dependsOn": [
+        "pkg:maven/net.bytebuddy/byte-buddy-agent@1.14.8?type=jar",
+        "pkg:maven/net.bytebuddy/byte-buddy@1.14.8?type=jar",
+        "pkg:maven/org.objenesis/objenesis@3.3?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.mockito/mockito-junit-jupiter@5.3.1?type=jar",
+      "dependsOn": [
+        "pkg:maven/org.junit.jupiter/junit-jupiter-api@5.9.3?type=jar",
+        "pkg:maven/org.mockito/mockito-core@5.3.1?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.skyscreamer/jsonassert@1.5.1?type=jar",
+      "dependsOn": [
+        "pkg:maven/com.vaadin.external.google/android-json@0.0.20131108.vaadin1?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.springframework/spring-test@6.0.12?type=jar",
+      "dependsOn": [
+        "pkg:maven/org.springframework/spring-core@6.0.12?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.xmlunit/xmlunit-core@2.9.1?type=jar",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.junit.platform/junit-platform-console@1.9.3?type=jar",
+      "dependsOn": [
+        "pkg:maven/org.junit.platform/junit-platform-reporting@1.9.3?type=jar",
+        "pkg:maven/org.junit/junit-bom@5.10.0?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/jakarta.activation/jakarta.activation-api@2.1.2?type=jar",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/net.bytebuddy/byte-buddy@1.14.8?type=jar",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.junit.jupiter/junit-jupiter-api@5.9.3?type=jar",
+      "dependsOn": [
+        "pkg:maven/org.apiguardian/apiguardian-api@1.1.2?type=jar",
+        "pkg:maven/org.junit.platform/junit-platform-commons@1.9.3?type=jar",
+        "pkg:maven/org.junit/junit-bom@5.10.0?type=jar",
+        "pkg:maven/org.junit/junit-bom@5.9.3?type=jar",
+        "pkg:maven/org.opentest4j/opentest4j@1.2.0?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.junit.jupiter/junit-jupiter-params@5.9.3?type=jar",
+      "dependsOn": [
+        "pkg:maven/org.apiguardian/apiguardian-api@1.1.2?type=jar",
+        "pkg:maven/org.junit.jupiter/junit-jupiter-api@5.9.3?type=jar",
+        "pkg:maven/org.junit/junit-bom@5.10.0?type=jar",
+        "pkg:maven/org.junit/junit-bom@5.9.3?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.junit.jupiter/junit-jupiter-engine@5.9.3?type=jar",
+      "dependsOn": [
+        "pkg:maven/org.junit.jupiter/junit-jupiter-api@5.9.3?type=jar",
+        "pkg:maven/org.junit.platform/junit-platform-engine@1.9.3?type=jar",
+        "pkg:maven/org.junit/junit-bom@5.10.0?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/net.bytebuddy/byte-buddy-agent@1.14.8?type=jar",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.junit.platform/junit-platform-engine@1.9.3?type=jar",
+      "dependsOn": [
+        "pkg:maven/org.junit.platform/junit-platform-commons@1.9.3?type=jar",
+        "pkg:maven/org.junit/junit-bom@5.10.0?type=jar",
+        "pkg:maven/org.opentest4j/opentest4j@1.2.0?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.junit.platform/junit-platform-reporting@1.9.3?type=jar",
+      "dependsOn": [
+        "pkg:maven/org.junit.platform/junit-platform-launcher@1.9.3?type=jar",
+        "pkg:maven/org.junit/junit-bom@5.10.0?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.junit.platform/junit-platform-commons@1.9.3?type=jar",
+      "dependsOn": [
+        "pkg:maven/org.apiguardian/apiguardian-api@1.1.2?type=jar",
+        "pkg:maven/org.junit/junit-bom@5.10.0?type=jar",
+        "pkg:maven/org.junit/junit-bom@5.9.3?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.junit/junit-bom@5.10.0?type=jar",
+      "dependsOn": [
+        "pkg:maven/org.junit.jupiter/junit-jupiter-api@5.9.3?type=jar",
+        "pkg:maven/org.junit.jupiter/junit-jupiter-engine@5.9.3?type=jar",
+        "pkg:maven/org.junit.jupiter/junit-jupiter-params@5.9.3?type=jar",
+        "pkg:maven/org.junit.jupiter/junit-jupiter@5.9.3?type=jar",
+        "pkg:maven/org.junit.platform/junit-platform-commons@1.9.3?type=jar",
+        "pkg:maven/org.junit.platform/junit-platform-console@1.9.3?type=jar",
+        "pkg:maven/org.junit.platform/junit-platform-engine@1.9.3?type=jar",
+        "pkg:maven/org.junit.platform/junit-platform-launcher@1.9.3?type=jar",
+        "pkg:maven/org.junit.platform/junit-platform-reporting@1.9.3?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.opentest4j/opentest4j@1.2.0?type=jar",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/net.minidev/accessors-smart@2.4.11?type=jar",
+      "dependsOn": [
+        "pkg:maven/org.ow2.asm/asm@9.3?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.ow2.asm/asm@9.3?type=jar",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.objenesis/objenesis@3.3?type=jar",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/com.vaadin.external.google/android-json@0.0.20131108.vaadin1?type=jar",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:maven/org.graalvm.buildtools/junit-platform-native@0.9.27?type=jar",
+      "dependsOn": [
+        "pkg:maven/org.junit.jupiter/junit-jupiter@5.9.3?type=jar",
+        "pkg:maven/org.junit.platform/junit-platform-console@1.9.3?type=jar",
+        "pkg:maven/org.junit.platform/junit-platform-launcher@1.9.3?type=jar",
+        "pkg:maven/org.junit/junit-bom@5.10.0?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.junit/junit-bom@5.9.3?type=jar",
+      "dependsOn": [
+        "pkg:maven/org.junit.jupiter/junit-jupiter-api@5.9.3?type=jar",
+        "pkg:maven/org.junit.jupiter/junit-jupiter-params@5.9.3?type=jar",
+        "pkg:maven/org.junit.jupiter/junit-jupiter@5.9.3?type=jar",
+        "pkg:maven/org.junit.platform/junit-platform-commons@1.9.3?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.apiguardian/apiguardian-api@1.1.2?type=jar",
+      "dependsOn": []
+    }
+  ]
+}

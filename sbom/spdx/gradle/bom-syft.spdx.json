@@ -1,0 +1,3236 @@
+{
+ "spdxVersion": "SPDX-2.3",
+ "dataLicense": "CC0-1.0",
+ "SPDXID": "SPDXRef-DOCUMENT",
+ "name": "demo-sbom-spdx-gradle-1.0.jar",
+ "documentNamespace": "https://anchore.com/syft/file/demo-sbom-spdx-gradle-1.0.jar-181623c1-ed44-48c2-8414-d5c158efea11",
+ "creationInfo": {
+  "licenseListVersion": "3.22",
+  "creators": [
+   "Organization: Anchore, Inc",
+   "Tool: syft-0.94.0"
+  ],
+  "created": "2023-11-07T17:44:07Z"
+ },
+ "packages": [
+  {
+   "name": "demo-sbom-spdx-gradle",
+   "SPDXID": "SPDXRef-Package-java-archive-demo-sbom-spdx-gradle-725474679807060f",
+   "versionInfo": "1.0",
+   "supplier": "NOASSERTION",
+   "downloadLocation": "NOASSERTION",
+   "filesAnalyzed": false,
+   "checksums": [
+    {
+     "algorithm": "SHA1",
+     "checksumValue": "a21e583f8f62d3f9f3acfb3775227d74d9ead136"
+    }
+   ],
+   "sourceInfo": "acquired package info from installed java archive: /demo-sbom-spdx-gradle-1.0.jar",
+   "licenseConcluded": "NOASSERTION",
+   "licenseDeclared": "NOASSERTION",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:demo-sbom-spdx-gradle:demo-sbom-spdx-gradle:1.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:demo-sbom-spdx-gradle:demo_sbom_spdx_gradle:1.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:demo_sbom_spdx_gradle:demo-sbom-spdx-gradle:1.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:demo_sbom_spdx_gradle:demo_sbom_spdx_gradle:1.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:springframework:demo-sbom-spdx-gradle:1.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:springframework:demo_sbom_spdx_gradle:1.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:demo-sbom-spdx:demo-sbom-spdx-gradle:1.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:demo-sbom-spdx:demo_sbom_spdx_gradle:1.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:demo_sbom_spdx:demo-sbom-spdx-gradle:1.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:demo_sbom_spdx:demo_sbom_spdx_gradle:1.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:JarLauncher:demo-sbom-spdx-gradle:1.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:JarLauncher:demo_sbom_spdx_gradle:1.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:demo-sbom-spdx-gradle:JarLauncher:1.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:demo_sbom_spdx_gradle:JarLauncher:1.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:demo-sbom:demo-sbom-spdx-gradle:1.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:demo-sbom:demo_sbom_spdx_gradle:1.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:demo_sbom:demo-sbom-spdx-gradle:1.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:demo_sbom:demo_sbom_spdx_gradle:1.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:demo-sbom-spdx-gradle:loader:1.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:demo_sbom_spdx_gradle:loader:1.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:loader:demo-sbom-spdx-gradle:1.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:loader:demo_sbom_spdx_gradle:1.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:springframework:JarLauncher:1.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:boot:demo-sbom-spdx-gradle:1.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:boot:demo_sbom_spdx_gradle:1.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:demo-sbom-spdx-gradle:boot:1.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:demo-sbom-spdx:JarLauncher:1.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:demo:demo-sbom-spdx-gradle:1.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:demo:demo_sbom_spdx_gradle:1.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:demo_sbom_spdx:JarLauncher:1.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:demo_sbom_spdx_gradle:boot:1.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:JarLauncher:JarLauncher:1.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:springframework:loader:1.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:demo-sbom-spdx:loader:1.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:demo-sbom:JarLauncher:1.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:demo_sbom:JarLauncher:1.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:demo_sbom_spdx:loader:1.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:springframework:boot:1.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:demo-sbom-spdx:boot:1.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:demo_sbom_spdx:boot:1.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:JarLauncher:loader:1.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:loader:JarLauncher:1.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:JarLauncher:boot:1.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:boot:JarLauncher:1.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:demo-sbom:loader:1.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:demo:JarLauncher:1.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:demo_sbom:loader:1.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:demo-sbom:boot:1.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:demo_sbom:boot:1.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:loader:loader:1.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:boot:loader:1.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:demo:loader:1.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:loader:boot:1.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:boot:boot:1.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:demo:boot:1.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:maven/org.springframework.boot.loader.JarLauncher/demo-sbom-spdx-gradle@1.0"
+    }
+   ]
+  },
+  {
+   "name": "jackson-annotations",
+   "SPDXID": "SPDXRef-Package-java-archive-jackson-annotations-8b13dd8b6634ebee",
+   "versionInfo": "2.15.2",
+   "supplier": "NOASSERTION",
+   "downloadLocation": "NOASSERTION",
+   "filesAnalyzed": false,
+   "checksums": [
+    {
+     "algorithm": "SHA1",
+     "checksumValue": "4724a65ac8e8d156a24898d50fd5dbd3642870b8"
+    }
+   ],
+   "sourceInfo": "acquired package info from installed java archive: /demo-sbom-spdx-gradle-1.0.jar",
+   "licenseConcluded": "NOASSERTION",
+   "licenseDeclared": "LicenseRef-https---www.apache.org-licenses-LICENSE-2.0.txt",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson-annotations:jackson-annotations:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson-annotations:jackson_annotations:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson_annotations:jackson-annotations:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson_annotations:jackson_annotations:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:fasterxml:jackson-annotations:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:fasterxml:jackson_annotations:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson-annotations:jackson:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson:jackson-annotations:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson:jackson_annotations:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson_annotations:jackson:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:core:jackson-annotations:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:core:jackson_annotations:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:fasterxml:jackson:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson:jackson:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:core:jackson:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.15.2"
+    }
+   ]
+  },
+  {
+   "name": "jackson-core",
+   "SPDXID": "SPDXRef-Package-java-archive-jackson-core-c7701ce1e545b1ab",
+   "versionInfo": "2.15.2",
+   "supplier": "NOASSERTION",
+   "downloadLocation": "NOASSERTION",
+   "filesAnalyzed": false,
+   "checksums": [
+    {
+     "algorithm": "SHA1",
+     "checksumValue": "a6fe1836469a69b3ff66037c324d75fc66ef137c"
+    }
+   ],
+   "sourceInfo": "acquired package info from installed java archive: /demo-sbom-spdx-gradle-1.0.jar",
+   "licenseConcluded": "NOASSERTION",
+   "licenseDeclared": "LicenseRef-https---www.apache.org-licenses-LICENSE-2.0.txt",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson-core:jackson-core:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson-core:jackson_core:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson_core:jackson-core:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson_core:jackson_core:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:fasterxml:jackson-core:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:fasterxml:jackson_core:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson-core:jackson:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson:jackson-core:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson:jackson_core:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson_core:jackson:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:core:jackson-core:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:core:jackson_core:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:fasterxml:jackson:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson-core:core:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson_core:core:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson:jackson:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:fasterxml:core:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:core:jackson:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson:core:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:core:core:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.15.2"
+    }
+   ]
+  },
+  {
+   "name": "jackson-databind",
+   "SPDXID": "SPDXRef-Package-java-archive-jackson-databind-ce55ffbb3026b665",
+   "versionInfo": "2.15.2",
+   "supplier": "NOASSERTION",
+   "downloadLocation": "NOASSERTION",
+   "filesAnalyzed": false,
+   "checksums": [
+    {
+     "algorithm": "SHA1",
+     "checksumValue": "9353b021f10c307c00328f52090de2bdb4b6ff9c"
+    }
+   ],
+   "sourceInfo": "acquired package info from installed java archive: /demo-sbom-spdx-gradle-1.0.jar",
+   "licenseConcluded": "NOASSERTION",
+   "licenseDeclared": "LicenseRef-https---www.apache.org-licenses-LICENSE-2.0.txt",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson-databind:jackson-databind:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson-databind:jackson_databind:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson_databind:jackson-databind:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson_databind:jackson_databind:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:fasterxml:jackson-databind:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:fasterxml:jackson_databind:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson-databind:jackson:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson:jackson-databind:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson:jackson_databind:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson_databind:jackson:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:core:jackson-databind:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:core:jackson_databind:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:fasterxml:jackson:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson:jackson:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:core:jackson:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.15.2"
+    }
+   ]
+  },
+  {
+   "name": "jackson-datatype-jdk8",
+   "SPDXID": "SPDXRef-Package-java-archive-jackson-datatype-jdk8-2a725a1ef0c6dba6",
+   "versionInfo": "2.15.2",
+   "supplier": "NOASSERTION",
+   "downloadLocation": "NOASSERTION",
+   "filesAnalyzed": false,
+   "checksums": [
+    {
+     "algorithm": "SHA1",
+     "checksumValue": "66a50e089cfd2f93896b9b6f7a734cea7bcf2f31"
+    }
+   ],
+   "sourceInfo": "acquired package info from installed java archive: /demo-sbom-spdx-gradle-1.0.jar",
+   "licenseConcluded": "NOASSERTION",
+   "licenseDeclared": "LicenseRef-http---www.apache.org-licenses-LICENSE-2.0.txt",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson-datatype-jdk8:jackson-datatype-jdk8:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson-datatype-jdk8:jackson_datatype_jdk8:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson_datatype_jdk8:jackson-datatype-jdk8:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson_datatype_jdk8:jackson_datatype_jdk8:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson-datatype:jackson-datatype-jdk8:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson-datatype:jackson_datatype_jdk8:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson_datatype:jackson-datatype-jdk8:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson_datatype:jackson_datatype_jdk8:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:fasterxml:jackson-datatype-jdk8:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:fasterxml:jackson_datatype_jdk8:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:datatype:jackson-datatype-jdk8:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:datatype:jackson_datatype_jdk8:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson-datatype-jdk8:jackson:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson:jackson-datatype-jdk8:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson:jackson_datatype_jdk8:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson_datatype_jdk8:jackson:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson-datatype:jackson:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson_datatype:jackson:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:fasterxml:jackson:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:datatype:jackson:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson:jackson:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jdk8@2.15.2"
+    }
+   ]
+  },
+  {
+   "name": "jackson-datatype-jsr310",
+   "SPDXID": "SPDXRef-Package-java-archive-jackson-datatype-jsr310-cbc29b97d95ae0bd",
+   "versionInfo": "2.15.2",
+   "supplier": "NOASSERTION",
+   "downloadLocation": "NOASSERTION",
+   "filesAnalyzed": false,
+   "checksums": [
+    {
+     "algorithm": "SHA1",
+     "checksumValue": "30d16ec2aef6d8094c5e2dce1d95034ca8b6cb42"
+    }
+   ],
+   "sourceInfo": "acquired package info from installed java archive: /demo-sbom-spdx-gradle-1.0.jar",
+   "licenseConcluded": "NOASSERTION",
+   "licenseDeclared": "LicenseRef-http---www.apache.org-licenses-LICENSE-2.0.txt",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson-datatype-jsr310:jackson-datatype-jsr310:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson-datatype-jsr310:jackson_datatype_jsr310:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson_datatype_jsr310:jackson-datatype-jsr310:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson_datatype_jsr310:jackson_datatype_jsr310:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson-datatype:jackson-datatype-jsr310:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson-datatype:jackson_datatype_jsr310:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson_datatype:jackson-datatype-jsr310:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson_datatype:jackson_datatype_jsr310:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:fasterxml:jackson-datatype-jsr310:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:fasterxml:jackson_datatype_jsr310:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:datatype:jackson-datatype-jsr310:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:datatype:jackson_datatype_jsr310:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson-datatype-jsr310:jackson:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson:jackson-datatype-jsr310:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson:jackson_datatype_jsr310:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson_datatype_jsr310:jackson:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson-datatype:jackson:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson_datatype:jackson:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:fasterxml:jackson:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:datatype:jackson:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson:jackson:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jsr310@2.15.2"
+    }
+   ]
+  },
+  {
+   "name": "jackson-module-parameter-names",
+   "SPDXID": "SPDXRef-Package-java-archive-jackson-module-parameter-names-5e7532acba614581",
+   "versionInfo": "2.15.2",
+   "supplier": "NOASSERTION",
+   "downloadLocation": "NOASSERTION",
+   "filesAnalyzed": false,
+   "checksums": [
+    {
+     "algorithm": "SHA1",
+     "checksumValue": "75f8d2788db20f6c587c7a19e94fb6248c314241"
+    }
+   ],
+   "sourceInfo": "acquired package info from installed java archive: /demo-sbom-spdx-gradle-1.0.jar",
+   "licenseConcluded": "NOASSERTION",
+   "licenseDeclared": "LicenseRef-http---www.apache.org-licenses-LICENSE-2.0.txt",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson-module-parameter-names:jackson-module-parameter-names:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson-module-parameter-names:jackson_module_parameter_names:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson_module_parameter_names:jackson-module-parameter-names:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson_module_parameter_names:jackson_module_parameter_names:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson-module-parameter:jackson-module-parameter-names:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson-module-parameter:jackson_module_parameter_names:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson_module_parameter:jackson-module-parameter-names:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson_module_parameter:jackson_module_parameter_names:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson-module:jackson-module-parameter-names:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson-module:jackson_module_parameter_names:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson_module:jackson-module-parameter-names:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson_module:jackson_module_parameter_names:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:fasterxml:jackson-module-parameter-names:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:fasterxml:jackson_module_parameter_names:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson-module-parameter-names:jackson:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson:jackson-module-parameter-names:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson:jackson_module_parameter_names:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson_module_parameter_names:jackson:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:module:jackson-module-parameter-names:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:module:jackson_module_parameter_names:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson-module-parameter:jackson:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson_module_parameter:jackson:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson-module:jackson:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson_module:jackson:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:fasterxml:jackson:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jackson:jackson:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:module:jackson:2.15.2:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:maven/com.fasterxml.jackson.module/jackson-module-parameter-names@2.15.2"
+    }
+   ]
+  },
+  {
+   "name": "jakarta.annotation-api",
+   "SPDXID": "SPDXRef-Package-java-archive-jakarta.annotation-api-73cfda8f8578abaa",
+   "versionInfo": "2.1.1",
+   "supplier": "NOASSERTION",
+   "downloadLocation": "NOASSERTION",
+   "filesAnalyzed": false,
+   "checksums": [
+    {
+     "algorithm": "SHA1",
+     "checksumValue": "48b9bda22b091b1f48b13af03fe36db3be6e1ae3"
+    }
+   ],
+   "sourceInfo": "acquired package info from installed java archive: /demo-sbom-spdx-gradle-1.0.jar",
+   "licenseConcluded": "NOASSERTION",
+   "licenseDeclared": "LicenseRef-85a9a90b97292e5203565dd71a1a086ca3fe4d8ccea74453294fee37d5b0c7ae",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jakarta.annotation-api:jakarta.annotation-api:2.1.1:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jakarta.annotation-api:jakarta.annotation_api:2.1.1:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jakarta.annotation_api:jakarta.annotation-api:2.1.1:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jakarta.annotation_api:jakarta.annotation_api:2.1.1:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:eclipse-foundation:jakarta.annotation-api:2.1.1:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:eclipse-foundation:jakarta.annotation_api:2.1.1:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:eclipse_foundation:jakarta.annotation-api:2.1.1:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:eclipse_foundation:jakarta.annotation_api:2.1.1:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jakarta.annotation:jakarta.annotation-api:2.1.1:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jakarta.annotation:jakarta.annotation_api:2.1.1:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:glassfish:jakarta.annotation-api:2.1.1:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:glassfish:jakarta.annotation_api:2.1.1:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:maven/jakarta.annotation/jakarta.annotation-api@2.1.1"
+    }
+   ]
+  },
+  {
+   "name": "jul-to-slf4j",
+   "SPDXID": "SPDXRef-Package-java-archive-jul-to-slf4j-e0270f234bb76e37",
+   "versionInfo": "2.0.9",
+   "supplier": "NOASSERTION",
+   "downloadLocation": "NOASSERTION",
+   "filesAnalyzed": false,
+   "checksums": [
+    {
+     "algorithm": "SHA1",
+     "checksumValue": "09ef7c70b248185845f013f49a33ff9ca65b7975"
+    }
+   ],
+   "sourceInfo": "acquired package info from installed java archive: /demo-sbom-spdx-gradle-1.0.jar",
+   "licenseConcluded": "NOASSERTION",
+   "licenseDeclared": "LicenseRef-http---www.opensource.org-licenses-mit-license.php",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jul-to-slf4j:jul-to-slf4j:2.0.9:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jul-to-slf4j:jul_to_slf4j:2.0.9:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jul_to_slf4j:jul-to-slf4j:2.0.9:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jul_to_slf4j:jul_to_slf4j:2.0.9:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jul-to:jul-to-slf4j:2.0.9:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jul-to:jul_to_slf4j:2.0.9:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jul_to:jul-to-slf4j:2.0.9:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jul_to:jul_to_slf4j:2.0.9:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:slf4j:jul-to-slf4j:2.0.9:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:slf4j:jul_to_slf4j:2.0.9:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jul:jul-to-slf4j:2.0.9:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:jul:jul_to_slf4j:2.0.9:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:maven/org.slf4j/jul-to-slf4j@2.0.9"
+    }
+   ]
+  },
+  {
+   "name": "log4j-api",
+   "SPDXID": "SPDXRef-Package-java-archive-log4j-api-f92033cee7941ab3",
+   "versionInfo": "2.20.0",
+   "supplier": "NOASSERTION",
+   "downloadLocation": "NOASSERTION",
+   "filesAnalyzed": false,
+   "checksums": [
+    {
+     "algorithm": "SHA1",
+     "checksumValue": "1fe6082e660daf07c689a89c94dc0f49c26b44bb"
+    }
+   ],
+   "sourceInfo": "acquired package info from installed java archive: /demo-sbom-spdx-gradle-1.0.jar",
+   "licenseConcluded": "NOASSERTION",
+   "licenseDeclared": "LicenseRef-https---www.apache.org-licenses-LICENSE-2.0.txt",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:apache:log4j-api:2.20.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:apache:log4j_api:2.20.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:apache:log4j:2.20.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:apache:api:2.20.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:maven/org.apache.logging.log4j/log4j-api@2.20.0"
+    }
+   ]
+  },
+  {
+   "name": "log4j-to-slf4j",
+   "SPDXID": "SPDXRef-Package-java-archive-log4j-to-slf4j-d1d568fb58408cf3",
+   "versionInfo": "2.20.0",
+   "supplier": "NOASSERTION",
+   "downloadLocation": "NOASSERTION",
+   "filesAnalyzed": false,
+   "checksums": [
+    {
+     "algorithm": "SHA1",
+     "checksumValue": "d37f81f8978e2672bc32c82712ab4b3f66624adc"
+    }
+   ],
+   "sourceInfo": "acquired package info from installed java archive: /demo-sbom-spdx-gradle-1.0.jar",
+   "licenseConcluded": "NOASSERTION",
+   "licenseDeclared": "LicenseRef-https---www.apache.org-licenses-LICENSE-2.0.txt",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:apache:log4j-to-slf4j:2.20.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:apache:log4j_to_slf4j:2.20.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:apache:to-slf4j:2.20.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:apache:to_slf4j:2.20.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:apache:log4j:2.20.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:apache:slf4j:2.20.0:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:maven/org.apache.logging.log4j/log4j-to-slf4j@2.20.0"
+    }
+   ]
+  },
+  {
+   "name": "logback-classic",
+   "SPDXID": "SPDXRef-Package-java-archive-logback-classic-7b0a76cf35c354bf",
+   "versionInfo": "1.4.11",
+   "supplier": "NOASSERTION",
+   "downloadLocation": "NOASSERTION",
+   "filesAnalyzed": false,
+   "checksums": [
+    {
+     "algorithm": "SHA1",
+     "checksumValue": "54450c0c783e896a1a6d88c043bd2f1daba1c382"
+    }
+   ],
+   "sourceInfo": "acquired package info from installed java archive: /demo-sbom-spdx-gradle-1.0.jar",
+   "licenseConcluded": "NOASSERTION",
+   "licenseDeclared": "LicenseRef-b997c307e688e15a53c7603c100d346cb7dc9726146cb5644d66bddc7ed1c8ca",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:logback-classic:logback-classic:1.4.11:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:logback-classic:logback_classic:1.4.11:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:logback_classic:logback-classic:1.4.11:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:logback_classic:logback_classic:1.4.11:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:logback:logback-classic:1.4.11:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:logback:logback_classic:1.4.11:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:qos-ch:logback-classic:1.4.11:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:qos-ch:logback_classic:1.4.11:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:qos_ch:logback-classic:1.4.11:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:qos_ch:logback_classic:1.4.11:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:maven/ch.qos.logback/logback-classic@1.4.11"
+    }
+   ]
+  },
+  {
+   "name": "logback-core",
+   "SPDXID": "SPDXRef-Package-java-archive-logback-core-b80bab6d4e7d6cbe",
+   "versionInfo": "1.4.11",
+   "supplier": "NOASSERTION",
+   "downloadLocation": "NOASSERTION",
+   "filesAnalyzed": false,
+   "checksums": [
+    {
+     "algorithm": "SHA1",
+     "checksumValue": "2f9f280219a9922a74200eaf7138c4c17fb87c0f"
+    }
+   ],
+   "sourceInfo": "acquired package info from installed java archive: /demo-sbom-spdx-gradle-1.0.jar",
+   "licenseConcluded": "NOASSERTION",
+   "licenseDeclared": "LicenseRef-b997c307e688e15a53c7603c100d346cb7dc9726146cb5644d66bddc7ed1c8ca",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:logback-core:logback-core:1.4.11:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:logback-core:logback_core:1.4.11:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:logback_core:logback-core:1.4.11:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:logback_core:logback_core:1.4.11:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:logback:logback-core:1.4.11:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:logback:logback_core:1.4.11:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:qos-ch:logback-core:1.4.11:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:qos-ch:logback_core:1.4.11:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:qos_ch:logback-core:1.4.11:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:qos_ch:logback_core:1.4.11:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:maven/ch.qos.logback/logback-core@1.4.11"
+    }
+   ]
+  },
+  {
+   "name": "micrometer-commons",
+   "SPDXID": "SPDXRef-Package-java-archive-micrometer-commons-67a9d072534046fe",
+   "versionInfo": "1.11.4",
+   "supplier": "NOASSERTION",
+   "downloadLocation": "NOASSERTION",
+   "filesAnalyzed": false,
+   "checksums": [
+    {
+     "algorithm": "SHA1",
+     "checksumValue": "6dfbbc07ecad294bffacff0648d6eaa4de78f332"
+    }
+   ],
+   "sourceInfo": "acquired package info from installed java archive: /demo-sbom-spdx-gradle-1.0.jar",
+   "licenseConcluded": "Apache-2.0",
+   "licenseDeclared": "NOASSERTION",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:micrometer\\#micrometer-commons:micrometer-commons:1.11.4:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:micrometer\\#micrometer-commons:micrometer_commons:1.11.4:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:micrometer\\#micrometer_commons:micrometer-commons:1.11.4:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:micrometer\\#micrometer_commons:micrometer_commons:1.11.4:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:micrometer\\#micrometer:micrometer-commons:1.11.4:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:micrometer\\#micrometer:micrometer_commons:1.11.4:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:micrometer-commons:micrometer-commons:1.11.4:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:micrometer-commons:micrometer_commons:1.11.4:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:micrometer_commons:micrometer-commons:1.11.4:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:micrometer_commons:micrometer_commons:1.11.4:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:micrometer:micrometer-commons:1.11.4:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:micrometer:micrometer_commons:1.11.4:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:maven/io.micrometer%23micrometer-commons/micrometer-commons@1.11.4"
+    }
+   ]
+  },
+  {
+   "name": "micrometer-observation",
+   "SPDXID": "SPDXRef-Package-java-archive-micrometer-observation-72e75b6420f208e5",
+   "versionInfo": "1.11.4",
+   "supplier": "NOASSERTION",
+   "downloadLocation": "NOASSERTION",
+   "filesAnalyzed": false,
+   "checksums": [
+    {
+     "algorithm": "SHA1",
+     "checksumValue": "1aa2f6ba1dae42c403543bd14ea5f302d7ed6d85"
+    }
+   ],
+   "sourceInfo": "acquired package info from installed java archive: /demo-sbom-spdx-gradle-1.0.jar",
+   "licenseConcluded": "Apache-2.0",
+   "licenseDeclared": "NOASSERTION",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:micrometer\\#micrometer-observation:micrometer-observation:1.11.4:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:micrometer\\#micrometer-observation:micrometer_observation:1.11.4:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:micrometer\\#micrometer_observation:micrometer-observation:1.11.4:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:micrometer\\#micrometer_observation:micrometer_observation:1.11.4:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:micrometer-observation:micrometer-observation:1.11.4:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:micrometer-observation:micrometer_observation:1.11.4:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:micrometer_observation:micrometer-observation:1.11.4:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:micrometer_observation:micrometer_observation:1.11.4:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:micrometer\\#micrometer:micrometer-observation:1.11.4:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:micrometer\\#micrometer:micrometer_observation:1.11.4:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:micrometer:micrometer-observation:1.11.4:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:micrometer:micrometer_observation:1.11.4:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:maven/io.micrometer%23micrometer-observation/micrometer-observation@1.11.4"
+    }
+   ]
+  },
+  {
+   "name": "slf4j-api",
+   "SPDXID": "SPDXRef-Package-java-archive-slf4j-api-19db4e9ddbc77c9e",
+   "versionInfo": "2.0.9",
+   "supplier": "NOASSERTION",
+   "downloadLocation": "NOASSERTION",
+   "filesAnalyzed": false,
+   "checksums": [
+    {
+     "algorithm": "SHA1",
+     "checksumValue": "7cf2726fdcfbc8610f9a71fb3ed639871f315340"
+    }
+   ],
+   "sourceInfo": "acquired package info from installed java archive: /demo-sbom-spdx-gradle-1.0.jar",
+   "licenseConcluded": "NOASSERTION",
+   "licenseDeclared": "LicenseRef-http---www.opensource.org-licenses-mit-license.php",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:slf4j-api:slf4j-api:2.0.9:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:slf4j-api:slf4j_api:2.0.9:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:slf4j_api:slf4j-api:2.0.9:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:slf4j_api:slf4j_api:2.0.9:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:slf4j:slf4j-api:2.0.9:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:slf4j:slf4j_api:2.0.9:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:maven/org.slf4j/slf4j-api@2.0.9"
+    }
+   ]
+  },
+  {
+   "name": "snakeyaml",
+   "SPDXID": "SPDXRef-Package-java-archive-snakeyaml-da5c408288c4aae5",
+   "versionInfo": "1.33",
+   "supplier": "NOASSERTION",
+   "downloadLocation": "NOASSERTION",
+   "filesAnalyzed": false,
+   "checksums": [
+    {
+     "algorithm": "SHA1",
+     "checksumValue": "2cd0a87ff7df953f810c344bdf2fe3340b954c69"
+    }
+   ],
+   "sourceInfo": "acquired package info from installed java archive: /demo-sbom-spdx-gradle-1.0.jar",
+   "licenseConcluded": "NOASSERTION",
+   "licenseDeclared": "LicenseRef-http---www.apache.org-licenses-LICENSE-2.0.txt",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:snakeyaml:snakeyaml:1.33:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:yaml:snakeyaml:1.33:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:maven/org.yaml/snakeyaml@1.33"
+    }
+   ]
+  },
+  {
+   "name": "spring-aop",
+   "SPDXID": "SPDXRef-Package-java-archive-spring-aop-86ab5bb4612034fd",
+   "versionInfo": "6.0.12",
+   "supplier": "NOASSERTION",
+   "downloadLocation": "NOASSERTION",
+   "filesAnalyzed": false,
+   "checksums": [
+    {
+     "algorithm": "SHA1",
+     "checksumValue": "ba7ecdbdc2abaf172d49692b8110f65ecd2d250c"
+    }
+   ],
+   "sourceInfo": "acquired package info from installed java archive: /demo-sbom-spdx-gradle-1.0.jar",
+   "licenseConcluded": "Apache-2.0 AND BSD-3-Clause",
+   "licenseDeclared": "NOASSERTION",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring-aop:spring-aop:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring-aop:spring_aop:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring_aop:spring-aop:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring_aop:spring_aop:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring:spring-aop:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring:spring_aop:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:maven/spring-aop/spring-aop@6.0.12"
+    }
+   ]
+  },
+  {
+   "name": "spring-beans",
+   "SPDXID": "SPDXRef-Package-java-archive-spring-beans-cc128b1d5bdce6aa",
+   "versionInfo": "6.0.12",
+   "supplier": "NOASSERTION",
+   "downloadLocation": "NOASSERTION",
+   "filesAnalyzed": false,
+   "checksums": [
+    {
+     "algorithm": "SHA1",
+     "checksumValue": "dfa53afbf1ab65f36c60333443ed1109ed331504"
+    }
+   ],
+   "sourceInfo": "acquired package info from installed java archive: /demo-sbom-spdx-gradle-1.0.jar",
+   "licenseConcluded": "Apache-2.0 AND BSD-3-Clause",
+   "licenseDeclared": "NOASSERTION",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:springframework:spring-beans:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:springframework:spring_beans:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring-beans:spring-beans:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring-beans:spring_beans:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring_beans:spring-beans:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring_beans:spring_beans:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring:spring-beans:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring:spring_beans:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:maven/org.springframework/spring-beans@6.0.12"
+    }
+   ]
+  },
+  {
+   "name": "spring-boot",
+   "SPDXID": "SPDXRef-Package-java-archive-spring-boot-54a4b1d73b0d44bd",
+   "versionInfo": "3.1.4",
+   "supplier": "NOASSERTION",
+   "downloadLocation": "NOASSERTION",
+   "filesAnalyzed": false,
+   "checksums": [
+    {
+     "algorithm": "SHA1",
+     "checksumValue": "7a0a6349e28227a93f2b4efde897e87b3343bf3a"
+    }
+   ],
+   "sourceInfo": "acquired package info from installed java archive: /demo-sbom-spdx-gradle-1.0.jar",
+   "licenseConcluded": "Apache-2.0",
+   "licenseDeclared": "NOASSERTION",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:springframework:spring-boot:3.1.4:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:springframework:spring_boot:3.1.4:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring-boot:spring-boot:3.1.4:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring-boot:spring_boot:3.1.4:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring_boot:spring-boot:3.1.4:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring_boot:spring_boot:3.1.4:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:springframework:boot:3.1.4:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring:spring-boot:3.1.4:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring:spring_boot:3.1.4:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:boot:spring-boot:3.1.4:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:boot:spring_boot:3.1.4:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring-boot:boot:3.1.4:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring_boot:boot:3.1.4:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring:boot:3.1.4:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:boot:boot:3.1.4:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:maven/org.springframework.boot/spring-boot@3.1.4"
+    }
+   ]
+  },
+  {
+   "name": "spring-boot-autoconfigure",
+   "SPDXID": "SPDXRef-Package-java-archive-spring-boot-autoconfigure-8ee564c732bd7ae8",
+   "versionInfo": "3.1.4",
+   "supplier": "NOASSERTION",
+   "downloadLocation": "NOASSERTION",
+   "filesAnalyzed": false,
+   "checksums": [
+    {
+     "algorithm": "SHA1",
+     "checksumValue": "ae53253f6330787f8b77a13aa90d6514597a20d0"
+    }
+   ],
+   "sourceInfo": "acquired package info from installed java archive: /demo-sbom-spdx-gradle-1.0.jar",
+   "licenseConcluded": "Apache-2.0",
+   "licenseDeclared": "NOASSERTION",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring-boot-autoconfigure:spring-boot-autoconfigure:3.1.4:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring-boot-autoconfigure:spring_boot_autoconfigure:3.1.4:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring_boot_autoconfigure:spring-boot-autoconfigure:3.1.4:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring_boot_autoconfigure:spring_boot_autoconfigure:3.1.4:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring-boot:spring-boot-autoconfigure:3.1.4:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring-boot:spring_boot_autoconfigure:3.1.4:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring_boot:spring-boot-autoconfigure:3.1.4:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring_boot:spring_boot_autoconfigure:3.1.4:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring:spring-boot-autoconfigure:3.1.4:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring:spring_boot_autoconfigure:3.1.4:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:maven/spring-boot-autoconfigure/spring-boot-autoconfigure@3.1.4"
+    }
+   ]
+  },
+  {
+   "name": "spring-boot-jarmode-layertools",
+   "SPDXID": "SPDXRef-Package-java-archive-spring-boot-jarmode-layertools-6f44b017c13418f9",
+   "versionInfo": "3.1.4",
+   "supplier": "NOASSERTION",
+   "downloadLocation": "NOASSERTION",
+   "filesAnalyzed": false,
+   "checksums": [
+    {
+     "algorithm": "SHA1",
+     "checksumValue": "f67313d3ff115a899c79288aed47285224a81c0a"
+    }
+   ],
+   "sourceInfo": "acquired package info from installed java archive: /demo-sbom-spdx-gradle-1.0.jar",
+   "licenseConcluded": "Apache-2.0",
+   "licenseDeclared": "NOASSERTION",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring-boot-jarmode-layertools:spring-boot-jarmode-layertools:3.1.4:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring-boot-jarmode-layertools:spring_boot_jarmode_layertools:3.1.4:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring_boot_jarmode_layertools:spring-boot-jarmode-layertools:3.1.4:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring_boot_jarmode_layertools:spring_boot_jarmode_layertools:3.1.4:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring-boot-jarmode:spring-boot-jarmode-layertools:3.1.4:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring-boot-jarmode:spring_boot_jarmode_layertools:3.1.4:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring_boot_jarmode:spring-boot-jarmode-layertools:3.1.4:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring_boot_jarmode:spring_boot_jarmode_layertools:3.1.4:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring-boot:spring-boot-jarmode-layertools:3.1.4:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring-boot:spring_boot_jarmode_layertools:3.1.4:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring_boot:spring-boot-jarmode-layertools:3.1.4:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring_boot:spring_boot_jarmode_layertools:3.1.4:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring:spring-boot-jarmode-layertools:3.1.4:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring:spring_boot_jarmode_layertools:3.1.4:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:maven/spring-boot-jarmode-layertools/spring-boot-jarmode-layertools@3.1.4"
+    }
+   ]
+  },
+  {
+   "name": "spring-context",
+   "SPDXID": "SPDXRef-Package-java-archive-spring-context-5f378b2dd860794e",
+   "versionInfo": "6.0.12",
+   "supplier": "NOASSERTION",
+   "downloadLocation": "NOASSERTION",
+   "filesAnalyzed": false,
+   "checksums": [
+    {
+     "algorithm": "SHA1",
+     "checksumValue": "f1964518e07796b2fdc1b9be2108485ffe1b4566"
+    }
+   ],
+   "sourceInfo": "acquired package info from installed java archive: /demo-sbom-spdx-gradle-1.0.jar",
+   "licenseConcluded": "Apache-2.0 AND BSD-3-Clause",
+   "licenseDeclared": "NOASSERTION",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring-context:spring-context:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring-context:spring_context:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring_context:spring-context:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring_context:spring_context:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring:spring-context:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring:spring_context:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:maven/spring-context/spring-context@6.0.12"
+    }
+   ]
+  },
+  {
+   "name": "spring-core",
+   "SPDXID": "SPDXRef-Package-java-archive-spring-core-b2394e68b90916a8",
+   "versionInfo": "6.0.12",
+   "supplier": "NOASSERTION",
+   "downloadLocation": "NOASSERTION",
+   "filesAnalyzed": false,
+   "checksums": [
+    {
+     "algorithm": "SHA1",
+     "checksumValue": "a55e70359371b03ee29dacd75c3b40d0baf3a656"
+    }
+   ],
+   "sourceInfo": "acquired package info from installed java archive: /demo-sbom-spdx-gradle-1.0.jar",
+   "licenseConcluded": "Apache-2.0 AND BSD-3-Clause",
+   "licenseDeclared": "NOASSERTION",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:springsource-spring-framework:springsource_spring_framework:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:springsource_spring_framework:springsource_spring_framework:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:springsource-spring:springsource_spring_framework:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:springsource_spring:springsource_spring_framework:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:pivotal_software:springsource_spring_framework:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring-framework:springsource_spring_framework:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring_framework:springsource_spring_framework:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:springsource-spring-framework:spring_framework:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:springsource_spring_framework:spring_framework:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:springframework:springsource_spring_framework:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:springsource:springsource_spring_framework:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring-core:springsource_spring_framework:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring_core:springsource_spring_framework:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:springsource-spring-framework:spring-core:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:springsource-spring-framework:spring_core:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:springsource_spring_framework:spring-core:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:springsource_spring_framework:spring_core:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring:springsource_spring_framework:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:springsource-spring:spring_framework:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:springsource_spring:spring_framework:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:vmware:springsource_spring_framework:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:pivotal_software:spring_framework:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring-framework:spring_framework:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring_framework:spring_framework:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:springframework:spring_framework:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:springsource-spring:spring-core:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:springsource-spring:spring_core:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:springsource_spring:spring-core:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:springsource_spring:spring_core:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:springsource:spring_framework:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:pivotal_software:spring-core:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:pivotal_software:spring_core:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring-core:spring_framework:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring-framework:spring-core:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring-framework:spring_core:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring_core:spring_framework:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring_framework:spring-core:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring_framework:spring_core:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:springframework:spring-core:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:springframework:spring_core:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:springsource:spring-core:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:springsource:spring_core:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring-core:spring-core:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring-core:spring_core:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring:spring_framework:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring_core:spring-core:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring_core:spring_core:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:vmware:spring_framework:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring:spring-core:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring:spring_core:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:vmware:spring-core:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:vmware:spring_core:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:maven/org.springframework/spring-core@6.0.12"
+    }
+   ]
+  },
+  {
+   "name": "spring-expression",
+   "SPDXID": "SPDXRef-Package-java-archive-spring-expression-a8a1d2e1693ef518",
+   "versionInfo": "6.0.12",
+   "supplier": "NOASSERTION",
+   "downloadLocation": "NOASSERTION",
+   "filesAnalyzed": false,
+   "checksums": [
+    {
+     "algorithm": "SHA1",
+     "checksumValue": "9283ad418f06f918e834b1981998a5f62a05b355"
+    }
+   ],
+   "sourceInfo": "acquired package info from installed java archive: /demo-sbom-spdx-gradle-1.0.jar",
+   "licenseConcluded": "Apache-2.0 AND BSD-3-Clause",
+   "licenseDeclared": "NOASSERTION",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring-expression:spring-expression:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring-expression:spring_expression:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring_expression:spring-expression:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring_expression:spring_expression:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:springframework:spring-expression:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:springframework:spring_expression:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring:spring-expression:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring:spring_expression:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:maven/org.springframework/spring-expression@6.0.12"
+    }
+   ]
+  },
+  {
+   "name": "spring-jcl",
+   "SPDXID": "SPDXRef-Package-java-archive-spring-jcl-614a3f66cb69921d",
+   "versionInfo": "6.0.12",
+   "supplier": "NOASSERTION",
+   "downloadLocation": "NOASSERTION",
+   "filesAnalyzed": false,
+   "checksums": [
+    {
+     "algorithm": "SHA1",
+     "checksumValue": "44a1d1d105063d4eb9c5dc705245ef6fa4162520"
+    }
+   ],
+   "sourceInfo": "acquired package info from installed java archive: /demo-sbom-spdx-gradle-1.0.jar",
+   "licenseConcluded": "Apache-2.0 AND BSD-3-Clause",
+   "licenseDeclared": "NOASSERTION",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring-jcl:spring-jcl:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring-jcl:spring_jcl:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring_jcl:spring-jcl:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring_jcl:spring_jcl:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring:spring-jcl:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring:spring_jcl:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:maven/spring-jcl/spring-jcl@6.0.12"
+    }
+   ]
+  },
+  {
+   "name": "spring-web",
+   "SPDXID": "SPDXRef-Package-java-archive-spring-web-053ea4a2cb2a2921",
+   "versionInfo": "6.0.12",
+   "supplier": "NOASSERTION",
+   "downloadLocation": "NOASSERTION",
+   "filesAnalyzed": false,
+   "checksums": [
+    {
+     "algorithm": "SHA1",
+     "checksumValue": "89a20bbd7c1f973dc246b1d790b34e0b3e28e74d"
+    }
+   ],
+   "sourceInfo": "acquired package info from installed java archive: /demo-sbom-spdx-gradle-1.0.jar",
+   "licenseConcluded": "Apache-2.0 AND BSD-3-Clause",
+   "licenseDeclared": "NOASSERTION",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:springframework:spring-web:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:springframework:spring_web:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring-web:spring-web:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring-web:spring_web:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring_web:spring-web:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring_web:spring_web:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring:spring-web:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring:spring_web:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:maven/org.springframework/spring-web@6.0.12"
+    }
+   ]
+  },
+  {
+   "name": "spring-webmvc",
+   "SPDXID": "SPDXRef-Package-java-archive-spring-webmvc-a8b4a57d4a28bd02",
+   "versionInfo": "6.0.12",
+   "supplier": "NOASSERTION",
+   "downloadLocation": "NOASSERTION",
+   "filesAnalyzed": false,
+   "checksums": [
+    {
+     "algorithm": "SHA1",
+     "checksumValue": "c7cf897d23da555a20e570d170f8f1541b04564d"
+    }
+   ],
+   "sourceInfo": "acquired package info from installed java archive: /demo-sbom-spdx-gradle-1.0.jar",
+   "licenseConcluded": "Apache-2.0 AND BSD-3-Clause",
+   "licenseDeclared": "NOASSERTION",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:springframework:spring-webmvc:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:springframework:spring_webmvc:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring-webmvc:spring-webmvc:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring-webmvc:spring_webmvc:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring_webmvc:spring-webmvc:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring_webmvc:spring_webmvc:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring:spring-webmvc:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:spring:spring_webmvc:6.0.12:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:maven/org.springframework/spring-webmvc@6.0.12"
+    }
+   ]
+  },
+  {
+   "name": "tomcat-embed-core",
+   "SPDXID": "SPDXRef-Package-java-archive-tomcat-embed-core-fb44a0cc3cb53ab5",
+   "versionInfo": "10.1.13",
+   "supplier": "NOASSERTION",
+   "downloadLocation": "NOASSERTION",
+   "filesAnalyzed": false,
+   "checksums": [
+    {
+     "algorithm": "SHA1",
+     "checksumValue": "6909967f2ed6c323108c2cc7f20586d6f7eb6455"
+    }
+   ],
+   "sourceInfo": "acquired package info from installed java archive: /demo-sbom-spdx-gradle-1.0.jar",
+   "licenseConcluded": "Apache-2.0 AND CDDL-1.0 AND EPL-2.0",
+   "licenseDeclared": "NOASSERTION",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:apache:tomcat-embed-core:10.1.13:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:apache:tomcat_embed_core:10.1.13:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:maven/org.apache.tomcat-embed-core/tomcat-embed-core@10.1.13"
+    }
+   ]
+  },
+  {
+   "name": "tomcat-embed-el",
+   "SPDXID": "SPDXRef-Package-java-archive-tomcat-embed-el-cdc76b858de537ae",
+   "versionInfo": "10.1.13",
+   "supplier": "NOASSERTION",
+   "downloadLocation": "NOASSERTION",
+   "filesAnalyzed": false,
+   "checksums": [
+    {
+     "algorithm": "SHA1",
+     "checksumValue": "22c8845f7528334905c582e48a3eeefab616b0a5"
+    }
+   ],
+   "sourceInfo": "acquired package info from installed java archive: /demo-sbom-spdx-gradle-1.0.jar",
+   "licenseConcluded": "Apache-2.0",
+   "licenseDeclared": "NOASSERTION",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:apache:tomcat-embed-jasper-el:10.1.13:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:apache:tomcat_embed_jasper_el:10.1.13:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:apache:tomcat-embed-el:10.1.13:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:apache:tomcat_embed_el:10.1.13:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:maven/org.apache.tomcat-embed-jasper-el/tomcat-embed-el@10.1.13"
+    }
+   ]
+  },
+  {
+   "name": "tomcat-embed-websocket",
+   "SPDXID": "SPDXRef-Package-java-archive-tomcat-embed-websocket-9ab95e7ab8e7745c",
+   "versionInfo": "10.1.13",
+   "supplier": "NOASSERTION",
+   "downloadLocation": "NOASSERTION",
+   "filesAnalyzed": false,
+   "checksums": [
+    {
+     "algorithm": "SHA1",
+     "checksumValue": "540a79df9699435e4f7cb8983daab272d29d093f"
+    }
+   ],
+   "sourceInfo": "acquired package info from installed java archive: /demo-sbom-spdx-gradle-1.0.jar",
+   "licenseConcluded": "Apache-2.0",
+   "licenseDeclared": "NOASSERTION",
+   "copyrightText": "NOASSERTION",
+   "externalRefs": [
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:apache:tomcat-embed-websocket:10.1.13:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "SECURITY",
+     "referenceType": "cpe23Type",
+     "referenceLocator": "cpe:2.3:a:apache:tomcat_embed_websocket:10.1.13:*:*:*:*:*:*:*"
+    },
+    {
+     "referenceCategory": "PACKAGE-MANAGER",
+     "referenceType": "purl",
+     "referenceLocator": "pkg:maven/org.apache.tomcat-embed-websocket/tomcat-embed-websocket@10.1.13"
+    }
+   ]
+  },
+  {
+   "name": "demo-sbom-spdx-gradle-1.0.jar",
+   "SPDXID": "SPDXRef-DocumentRoot-File-demo-sbom-spdx-gradle-1.0.jar",
+   "versionInfo": "sha256:sha256:4c35c79ae03724a010c40011669b83a3c761d132acf40ed11f53e935c0ae9bc4",
+   "supplier": "NOASSERTION",
+   "downloadLocation": "NOASSERTION",
+   "filesAnalyzed": false,
+   "checksums": [
+    {
+     "algorithm": "SHA256",
+     "checksumValue": "4c35c79ae03724a010c40011669b83a3c761d132acf40ed11f53e935c0ae9bc4"
+    }
+   ],
+   "primaryPackagePurpose": "FILE"
+  }
+ ],
+ "files": [
+  {
+   "fileName": "/demo-sbom-spdx-gradle-1.0.jar",
+   "SPDXID": "SPDXRef-File-demo-sbom-spdx-gradle-1.0.jar-41b56d61ebc644e9",
+   "checksums": [
+    {
+     "algorithm": "SHA1",
+     "checksumValue": "0000000000000000000000000000000000000000"
+    }
+   ],
+   "licenseConcluded": "NOASSERTION",
+   "copyrightText": ""
+  }
+ ],
+ "hasExtractedLicensingInfos": [
+  {
+   "licenseId": "LicenseRef-85a9a90b97292e5203565dd71a1a086ca3fe4d8ccea74453294fee37d5b0c7ae",
+   "extractedText": "http://www.eclipse.org/legal/epl-2.0, https://www.gnu.org/software/classpath/license.html"
+  },
+  {
+   "licenseId": "LicenseRef-b997c307e688e15a53c7603c100d346cb7dc9726146cb5644d66bddc7ed1c8ca",
+   "extractedText": "http://www.eclipse.org/legal/epl-v10.html, http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"
+  },
+  {
+   "licenseId": "LicenseRef-http---www.apache.org-licenses-LICENSE-2.0.txt",
+   "extractedText": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+  },
+  {
+   "licenseId": "LicenseRef-http---www.opensource.org-licenses-mit-license.php",
+   "extractedText": "http://www.opensource.org/licenses/mit-license.php"
+  },
+  {
+   "licenseId": "LicenseRef-https---www.apache.org-licenses-LICENSE-2.0.txt",
+   "extractedText": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+  }
+ ],
+ "relationships": [
+  {
+   "spdxElementId": "SPDXRef-Package-java-archive-spring-web-053ea4a2cb2a2921",
+   "relatedSpdxElement": "SPDXRef-File-demo-sbom-spdx-gradle-1.0.jar-41b56d61ebc644e9",
+   "relationshipType": "OTHER",
+   "comment": "evident-by: indicates the package's existence is evident by the given file"
+  },
+  {
+   "spdxElementId": "SPDXRef-Package-java-archive-slf4j-api-19db4e9ddbc77c9e",
+   "relatedSpdxElement": "SPDXRef-File-demo-sbom-spdx-gradle-1.0.jar-41b56d61ebc644e9",
+   "relationshipType": "OTHER",
+   "comment": "evident-by: indicates the package's existence is evident by the given file"
+  },
+  {
+   "spdxElementId": "SPDXRef-Package-java-archive-jackson-datatype-jdk8-2a725a1ef0c6dba6",
+   "relatedSpdxElement": "SPDXRef-File-demo-sbom-spdx-gradle-1.0.jar-41b56d61ebc644e9",
+   "relationshipType": "OTHER",
+   "comment": "evident-by: indicates the package's existence is evident by the given file"
+  },
+  {
+   "spdxElementId": "SPDXRef-Package-java-archive-spring-boot-54a4b1d73b0d44bd",
+   "relatedSpdxElement": "SPDXRef-File-demo-sbom-spdx-gradle-1.0.jar-41b56d61ebc644e9",
+   "relationshipType": "OTHER",
+   "comment": "evident-by: indicates the package's existence is evident by the given file"
+  },
+  {
+   "spdxElementId": "SPDXRef-Package-java-archive-jackson-module-parameter-names-5e7532acba614581",
+   "relatedSpdxElement": "SPDXRef-File-demo-sbom-spdx-gradle-1.0.jar-41b56d61ebc644e9",
+   "relationshipType": "OTHER",
+   "comment": "evident-by: indicates the package's existence is evident by the given file"
+  },
+  {
+   "spdxElementId": "SPDXRef-Package-java-archive-spring-context-5f378b2dd860794e",
+   "relatedSpdxElement": "SPDXRef-File-demo-sbom-spdx-gradle-1.0.jar-41b56d61ebc644e9",
+   "relationshipType": "OTHER",
+   "comment": "evident-by: indicates the package's existence is evident by the given file"
+  },
+  {
+   "spdxElementId": "SPDXRef-Package-java-archive-spring-jcl-614a3f66cb69921d",
+   "relatedSpdxElement": "SPDXRef-File-demo-sbom-spdx-gradle-1.0.jar-41b56d61ebc644e9",
+   "relationshipType": "OTHER",
+   "comment": "evident-by: indicates the package's existence is evident by the given file"
+  },
+  {
+   "spdxElementId": "SPDXRef-Package-java-archive-micrometer-commons-67a9d072534046fe",
+   "relatedSpdxElement": "SPDXRef-File-demo-sbom-spdx-gradle-1.0.jar-41b56d61ebc644e9",
+   "relationshipType": "OTHER",
+   "comment": "evident-by: indicates the package's existence is evident by the given file"
+  },
+  {
+   "spdxElementId": "SPDXRef-Package-java-archive-spring-boot-jarmode-layertools-6f44b017c13418f9",
+   "relatedSpdxElement": "SPDXRef-File-demo-sbom-spdx-gradle-1.0.jar-41b56d61ebc644e9",
+   "relationshipType": "OTHER",
+   "comment": "evident-by: indicates the package's existence is evident by the given file"
+  },
+  {
+   "spdxElementId": "SPDXRef-Package-java-archive-demo-sbom-spdx-gradle-725474679807060f",
+   "relatedSpdxElement": "SPDXRef-File-demo-sbom-spdx-gradle-1.0.jar-41b56d61ebc644e9",
+   "relationshipType": "OTHER",
+   "comment": "evident-by: indicates the package's existence is evident by the given file"
+  },
+  {
+   "spdxElementId": "SPDXRef-Package-java-archive-micrometer-observation-72e75b6420f208e5",
+   "relatedSpdxElement": "SPDXRef-File-demo-sbom-spdx-gradle-1.0.jar-41b56d61ebc644e9",
+   "relationshipType": "OTHER",
+   "comment": "evident-by: indicates the package's existence is evident by the given file"
+  },
+  {
+   "spdxElementId": "SPDXRef-Package-java-archive-jakarta.annotation-api-73cfda8f8578abaa",
+   "relatedSpdxElement": "SPDXRef-File-demo-sbom-spdx-gradle-1.0.jar-41b56d61ebc644e9",
+   "relationshipType": "OTHER",
+   "comment": "evident-by: indicates the package's existence is evident by the given file"
+  },
+  {
+   "spdxElementId": "SPDXRef-Package-java-archive-logback-classic-7b0a76cf35c354bf",
+   "relatedSpdxElement": "SPDXRef-File-demo-sbom-spdx-gradle-1.0.jar-41b56d61ebc644e9",
+   "relationshipType": "OTHER",
+   "comment": "evident-by: indicates the package's existence is evident by the given file"
+  },
+  {
+   "spdxElementId": "SPDXRef-Package-java-archive-spring-aop-86ab5bb4612034fd",
+   "relatedSpdxElement": "SPDXRef-File-demo-sbom-spdx-gradle-1.0.jar-41b56d61ebc644e9",
+   "relationshipType": "OTHER",
+   "comment": "evident-by: indicates the package's existence is evident by the given file"
+  },
+  {
+   "spdxElementId": "SPDXRef-Package-java-archive-jackson-annotations-8b13dd8b6634ebee",
+   "relatedSpdxElement": "SPDXRef-File-demo-sbom-spdx-gradle-1.0.jar-41b56d61ebc644e9",
+   "relationshipType": "OTHER",
+   "comment": "evident-by: indicates the package's existence is evident by the given file"
+  },
+  {
+   "spdxElementId": "SPDXRef-Package-java-archive-spring-boot-autoconfigure-8ee564c732bd7ae8",
+   "relatedSpdxElement": "SPDXRef-File-demo-sbom-spdx-gradle-1.0.jar-41b56d61ebc644e9",
+   "relationshipType": "OTHER",
+   "comment": "evident-by: indicates the package's existence is evident by the given file"
+  },
+  {
+   "spdxElementId": "SPDXRef-Package-java-archive-tomcat-embed-websocket-9ab95e7ab8e7745c",
+   "relatedSpdxElement": "SPDXRef-File-demo-sbom-spdx-gradle-1.0.jar-41b56d61ebc644e9",
+   "relationshipType": "OTHER",
+   "comment": "evident-by: indicates the package's existence is evident by the given file"
+  },
+  {
+   "spdxElementId": "SPDXRef-Package-java-archive-spring-expression-a8a1d2e1693ef518",
+   "relatedSpdxElement": "SPDXRef-File-demo-sbom-spdx-gradle-1.0.jar-41b56d61ebc644e9",
+   "relationshipType": "OTHER",
+   "comment": "evident-by: indicates the package's existence is evident by the given file"
+  },
+  {
+   "spdxElementId": "SPDXRef-Package-java-archive-spring-webmvc-a8b4a57d4a28bd02",
+   "relatedSpdxElement": "SPDXRef-File-demo-sbom-spdx-gradle-1.0.jar-41b56d61ebc644e9",
+   "relationshipType": "OTHER",
+   "comment": "evident-by: indicates the package's existence is evident by the given file"
+  },
+  {
+   "spdxElementId": "SPDXRef-Package-java-archive-spring-core-b2394e68b90916a8",
+   "relatedSpdxElement": "SPDXRef-File-demo-sbom-spdx-gradle-1.0.jar-41b56d61ebc644e9",
+   "relationshipType": "OTHER",
+   "comment": "evident-by: indicates the package's existence is evident by the given file"
+  },
+  {
+   "spdxElementId": "SPDXRef-Package-java-archive-logback-core-b80bab6d4e7d6cbe",
+   "relatedSpdxElement": "SPDXRef-File-demo-sbom-spdx-gradle-1.0.jar-41b56d61ebc644e9",
+   "relationshipType": "OTHER",
+   "comment": "evident-by: indicates the package's existence is evident by the given file"
+  },
+  {
+   "spdxElementId": "SPDXRef-Package-java-archive-jackson-core-c7701ce1e545b1ab",
+   "relatedSpdxElement": "SPDXRef-File-demo-sbom-spdx-gradle-1.0.jar-41b56d61ebc644e9",
+   "relationshipType": "OTHER",
+   "comment": "evident-by: indicates the package's existence is evident by the given file"
+  },
+  {
+   "spdxElementId": "SPDXRef-Package-java-archive-jackson-datatype-jsr310-cbc29b97d95ae0bd",
+   "relatedSpdxElement": "SPDXRef-File-demo-sbom-spdx-gradle-1.0.jar-41b56d61ebc644e9",
+   "relationshipType": "OTHER",
+   "comment": "evident-by: indicates the package's existence is evident by the given file"
+  },
+  {
+   "spdxElementId": "SPDXRef-Package-java-archive-spring-beans-cc128b1d5bdce6aa",
+   "relatedSpdxElement": "SPDXRef-File-demo-sbom-spdx-gradle-1.0.jar-41b56d61ebc644e9",
+   "relationshipType": "OTHER",
+   "comment": "evident-by: indicates the package's existence is evident by the given file"
+  },
+  {
+   "spdxElementId": "SPDXRef-Package-java-archive-tomcat-embed-el-cdc76b858de537ae",
+   "relatedSpdxElement": "SPDXRef-File-demo-sbom-spdx-gradle-1.0.jar-41b56d61ebc644e9",
+   "relationshipType": "OTHER",
+   "comment": "evident-by: indicates the package's existence is evident by the given file"
+  },
+  {
+   "spdxElementId": "SPDXRef-Package-java-archive-jackson-databind-ce55ffbb3026b665",
+   "relatedSpdxElement": "SPDXRef-File-demo-sbom-spdx-gradle-1.0.jar-41b56d61ebc644e9",
+   "relationshipType": "OTHER",
+   "comment": "evident-by: indicates the package's existence is evident by the given file"
+  },
+  {
+   "spdxElementId": "SPDXRef-Package-java-archive-log4j-to-slf4j-d1d568fb58408cf3",
+   "relatedSpdxElement": "SPDXRef-File-demo-sbom-spdx-gradle-1.0.jar-41b56d61ebc644e9",
+   "relationshipType": "OTHER",
+   "comment": "evident-by: indicates the package's existence is evident by the given file"
+  },
+  {
+   "spdxElementId": "SPDXRef-Package-java-archive-snakeyaml-da5c408288c4aae5",
+   "relatedSpdxElement": "SPDXRef-File-demo-sbom-spdx-gradle-1.0.jar-41b56d61ebc644e9",
+   "relationshipType": "OTHER",
+   "comment": "evident-by: indicates the package's existence is evident by the given file"
+  },
+  {
+   "spdxElementId": "SPDXRef-Package-java-archive-jul-to-slf4j-e0270f234bb76e37",
+   "relatedSpdxElement": "SPDXRef-File-demo-sbom-spdx-gradle-1.0.jar-41b56d61ebc644e9",
+   "relationshipType": "OTHER",
+   "comment": "evident-by: indicates the package's existence is evident by the given file"
+  },
+  {
+   "spdxElementId": "SPDXRef-Package-java-archive-log4j-api-f92033cee7941ab3",
+   "relatedSpdxElement": "SPDXRef-File-demo-sbom-spdx-gradle-1.0.jar-41b56d61ebc644e9",
+   "relationshipType": "OTHER",
+   "comment": "evident-by: indicates the package's existence is evident by the given file"
+  },
+  {
+   "spdxElementId": "SPDXRef-Package-java-archive-tomcat-embed-core-fb44a0cc3cb53ab5",
+   "relatedSpdxElement": "SPDXRef-File-demo-sbom-spdx-gradle-1.0.jar-41b56d61ebc644e9",
+   "relationshipType": "OTHER",
+   "comment": "evident-by: indicates the package's existence is evident by the given file"
+  },
+  {
+   "spdxElementId": "SPDXRef-DocumentRoot-File-demo-sbom-spdx-gradle-1.0.jar",
+   "relatedSpdxElement": "SPDXRef-Package-java-archive-demo-sbom-spdx-gradle-725474679807060f",
+   "relationshipType": "CONTAINS"
+  },
+  {
+   "spdxElementId": "SPDXRef-DocumentRoot-File-demo-sbom-spdx-gradle-1.0.jar",
+   "relatedSpdxElement": "SPDXRef-Package-java-archive-jackson-annotations-8b13dd8b6634ebee",
+   "relationshipType": "CONTAINS"
+  },
+  {
+   "spdxElementId": "SPDXRef-DocumentRoot-File-demo-sbom-spdx-gradle-1.0.jar",
+   "relatedSpdxElement": "SPDXRef-Package-java-archive-jackson-core-c7701ce1e545b1ab",
+   "relationshipType": "CONTAINS"
+  },
+  {
+   "spdxElementId": "SPDXRef-DocumentRoot-File-demo-sbom-spdx-gradle-1.0.jar",
+   "relatedSpdxElement": "SPDXRef-Package-java-archive-jackson-databind-ce55ffbb3026b665",
+   "relationshipType": "CONTAINS"
+  },
+  {
+   "spdxElementId": "SPDXRef-DocumentRoot-File-demo-sbom-spdx-gradle-1.0.jar",
+   "relatedSpdxElement": "SPDXRef-Package-java-archive-jackson-datatype-jdk8-2a725a1ef0c6dba6",
+   "relationshipType": "CONTAINS"
+  },
+  {
+   "spdxElementId": "SPDXRef-DocumentRoot-File-demo-sbom-spdx-gradle-1.0.jar",
+   "relatedSpdxElement": "SPDXRef-Package-java-archive-jackson-datatype-jsr310-cbc29b97d95ae0bd",
+   "relationshipType": "CONTAINS"
+  },
+  {
+   "spdxElementId": "SPDXRef-DocumentRoot-File-demo-sbom-spdx-gradle-1.0.jar",
+   "relatedSpdxElement": "SPDXRef-Package-java-archive-jackson-module-parameter-names-5e7532acba614581",
+   "relationshipType": "CONTAINS"
+  },
+  {
+   "spdxElementId": "SPDXRef-DocumentRoot-File-demo-sbom-spdx-gradle-1.0.jar",
+   "relatedSpdxElement": "SPDXRef-Package-java-archive-jakarta.annotation-api-73cfda8f8578abaa",
+   "relationshipType": "CONTAINS"
+  },
+  {
+   "spdxElementId": "SPDXRef-DocumentRoot-File-demo-sbom-spdx-gradle-1.0.jar",
+   "relatedSpdxElement": "SPDXRef-Package-java-archive-jul-to-slf4j-e0270f234bb76e37",
+   "relationshipType": "CONTAINS"
+  },
+  {
+   "spdxElementId": "SPDXRef-DocumentRoot-File-demo-sbom-spdx-gradle-1.0.jar",
+   "relatedSpdxElement": "SPDXRef-Package-java-archive-log4j-api-f92033cee7941ab3",
+   "relationshipType": "CONTAINS"
+  },
+  {
+   "spdxElementId": "SPDXRef-DocumentRoot-File-demo-sbom-spdx-gradle-1.0.jar",
+   "relatedSpdxElement": "SPDXRef-Package-java-archive-log4j-to-slf4j-d1d568fb58408cf3",
+   "relationshipType": "CONTAINS"
+  },
+  {
+   "spdxElementId": "SPDXRef-DocumentRoot-File-demo-sbom-spdx-gradle-1.0.jar",
+   "relatedSpdxElement": "SPDXRef-Package-java-archive-logback-classic-7b0a76cf35c354bf",
+   "relationshipType": "CONTAINS"
+  },
+  {
+   "spdxElementId": "SPDXRef-DocumentRoot-File-demo-sbom-spdx-gradle-1.0.jar",
+   "relatedSpdxElement": "SPDXRef-Package-java-archive-logback-core-b80bab6d4e7d6cbe",
+   "relationshipType": "CONTAINS"
+  },
+  {
+   "spdxElementId": "SPDXRef-DocumentRoot-File-demo-sbom-spdx-gradle-1.0.jar",
+   "relatedSpdxElement": "SPDXRef-Package-java-archive-micrometer-commons-67a9d072534046fe",
+   "relationshipType": "CONTAINS"
+  },
+  {
+   "spdxElementId": "SPDXRef-DocumentRoot-File-demo-sbom-spdx-gradle-1.0.jar",
+   "relatedSpdxElement": "SPDXRef-Package-java-archive-micrometer-observation-72e75b6420f208e5",
+   "relationshipType": "CONTAINS"
+  },
+  {
+   "spdxElementId": "SPDXRef-DocumentRoot-File-demo-sbom-spdx-gradle-1.0.jar",
+   "relatedSpdxElement": "SPDXRef-Package-java-archive-slf4j-api-19db4e9ddbc77c9e",
+   "relationshipType": "CONTAINS"
+  },
+  {
+   "spdxElementId": "SPDXRef-DocumentRoot-File-demo-sbom-spdx-gradle-1.0.jar",
+   "relatedSpdxElement": "SPDXRef-Package-java-archive-snakeyaml-da5c408288c4aae5",
+   "relationshipType": "CONTAINS"
+  },
+  {
+   "spdxElementId": "SPDXRef-DocumentRoot-File-demo-sbom-spdx-gradle-1.0.jar",
+   "relatedSpdxElement": "SPDXRef-Package-java-archive-spring-aop-86ab5bb4612034fd",
+   "relationshipType": "CONTAINS"
+  },
+  {
+   "spdxElementId": "SPDXRef-DocumentRoot-File-demo-sbom-spdx-gradle-1.0.jar",
+   "relatedSpdxElement": "SPDXRef-Package-java-archive-spring-beans-cc128b1d5bdce6aa",
+   "relationshipType": "CONTAINS"
+  },
+  {
+   "spdxElementId": "SPDXRef-DocumentRoot-File-demo-sbom-spdx-gradle-1.0.jar",
+   "relatedSpdxElement": "SPDXRef-Package-java-archive-spring-boot-54a4b1d73b0d44bd",
+   "relationshipType": "CONTAINS"
+  },
+  {
+   "spdxElementId": "SPDXRef-DocumentRoot-File-demo-sbom-spdx-gradle-1.0.jar",
+   "relatedSpdxElement": "SPDXRef-Package-java-archive-spring-boot-autoconfigure-8ee564c732bd7ae8",
+   "relationshipType": "CONTAINS"
+  },
+  {
+   "spdxElementId": "SPDXRef-DocumentRoot-File-demo-sbom-spdx-gradle-1.0.jar",
+   "relatedSpdxElement": "SPDXRef-Package-java-archive-spring-boot-jarmode-layertools-6f44b017c13418f9",
+   "relationshipType": "CONTAINS"
+  },
+  {
+   "spdxElementId": "SPDXRef-DocumentRoot-File-demo-sbom-spdx-gradle-1.0.jar",
+   "relatedSpdxElement": "SPDXRef-Package-java-archive-spring-context-5f378b2dd860794e",
+   "relationshipType": "CONTAINS"
+  },
+  {
+   "spdxElementId": "SPDXRef-DocumentRoot-File-demo-sbom-spdx-gradle-1.0.jar",
+   "relatedSpdxElement": "SPDXRef-Package-java-archive-spring-core-b2394e68b90916a8",
+   "relationshipType": "CONTAINS"
+  },
+  {
+   "spdxElementId": "SPDXRef-DocumentRoot-File-demo-sbom-spdx-gradle-1.0.jar",
+   "relatedSpdxElement": "SPDXRef-Package-java-archive-spring-expression-a8a1d2e1693ef518",
+   "relationshipType": "CONTAINS"
+  },
+  {
+   "spdxElementId": "SPDXRef-DocumentRoot-File-demo-sbom-spdx-gradle-1.0.jar",
+   "relatedSpdxElement": "SPDXRef-Package-java-archive-spring-jcl-614a3f66cb69921d",
+   "relationshipType": "CONTAINS"
+  },
+  {
+   "spdxElementId": "SPDXRef-DocumentRoot-File-demo-sbom-spdx-gradle-1.0.jar",
+   "relatedSpdxElement": "SPDXRef-Package-java-archive-spring-web-053ea4a2cb2a2921",
+   "relationshipType": "CONTAINS"
+  },
+  {
+   "spdxElementId": "SPDXRef-DocumentRoot-File-demo-sbom-spdx-gradle-1.0.jar",
+   "relatedSpdxElement": "SPDXRef-Package-java-archive-spring-webmvc-a8b4a57d4a28bd02",
+   "relationshipType": "CONTAINS"
+  },
+  {
+   "spdxElementId": "SPDXRef-DocumentRoot-File-demo-sbom-spdx-gradle-1.0.jar",
+   "relatedSpdxElement": "SPDXRef-Package-java-archive-tomcat-embed-core-fb44a0cc3cb53ab5",
+   "relationshipType": "CONTAINS"
+  },
+  {
+   "spdxElementId": "SPDXRef-DocumentRoot-File-demo-sbom-spdx-gradle-1.0.jar",
+   "relatedSpdxElement": "SPDXRef-Package-java-archive-tomcat-embed-el-cdc76b858de537ae",
+   "relationshipType": "CONTAINS"
+  },
+  {
+   "spdxElementId": "SPDXRef-DocumentRoot-File-demo-sbom-spdx-gradle-1.0.jar",
+   "relatedSpdxElement": "SPDXRef-Package-java-archive-tomcat-embed-websocket-9ab95e7ab8e7745c",
+   "relationshipType": "CONTAINS"
+  },
+  {
+   "spdxElementId": "SPDXRef-DOCUMENT",
+   "relatedSpdxElement": "SPDXRef-DocumentRoot-File-demo-sbom-spdx-gradle-1.0.jar",
+   "relationshipType": "DESCRIBES"
+  }
+ ]
+}

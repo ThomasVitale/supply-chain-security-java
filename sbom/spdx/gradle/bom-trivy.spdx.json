@@ -1,0 +1,1657 @@
+{
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": ".",
+  "documentNamespace": "http://aquasecurity.github.io/trivy/filesystem/.-e622ce5c-bb6c-4172-b533-036bdda1e6bf",
+  "creationInfo": {
+    "licenseListVersion": "",
+    "creators": [
+      "Organization: aquasecurity",
+      "Tool: trivy-0.47.0"
+    ],
+    "created": "2023-11-07T18:37:50Z"
+  },
+  "packages": [
+    {
+      "name": ".",
+      "SPDXID": "SPDXRef-Filesystem-1465386cfbe4e9c7",
+      "downloadLocation": "NONE",
+      "copyrightText": "",
+      "attributionTexts": [
+        "SchemaVersion: 2"
+      ],
+      "primaryPackagePurpose": "SOURCE"
+    },
+    {
+      "name": "ch.qos.logback:logback-classic",
+      "SPDXID": "SPDXRef-Package-f5183c4696941b11",
+      "versionInfo": "1.4.11",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/ch.qos.logback/logback-classic@1.4.11"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "ch.qos.logback:logback-core",
+      "SPDXID": "SPDXRef-Package-853d83c8707b2d0f",
+      "versionInfo": "1.4.11",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/ch.qos.logback/logback-core@1.4.11"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "com.fasterxml.jackson.core:jackson-annotations",
+      "SPDXID": "SPDXRef-Package-c825cc080df4f063",
+      "versionInfo": "2.15.3",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.15.3"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "com.fasterxml.jackson.core:jackson-core",
+      "SPDXID": "SPDXRef-Package-67c578b2669c6172",
+      "versionInfo": "2.15.3",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.15.3"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "com.fasterxml.jackson.core:jackson-databind",
+      "SPDXID": "SPDXRef-Package-7a897a88c88e9f61",
+      "versionInfo": "2.15.3",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.15.3"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "com.fasterxml.jackson.datatype:jackson-datatype-jdk8",
+      "SPDXID": "SPDXRef-Package-39e72ae92470f7fe",
+      "versionInfo": "2.15.3",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jdk8@2.15.3"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "com.fasterxml.jackson.datatype:jackson-datatype-jsr310",
+      "SPDXID": "SPDXRef-Package-6efcad6600cb92d3",
+      "versionInfo": "2.15.3",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jsr310@2.15.3"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "com.fasterxml.jackson.module:jackson-module-parameter-names",
+      "SPDXID": "SPDXRef-Package-12f3a505ee4b68e4",
+      "versionInfo": "2.15.3",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/com.fasterxml.jackson.module/jackson-module-parameter-names@2.15.3"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "com.fasterxml.jackson:jackson-bom",
+      "SPDXID": "SPDXRef-Package-54ebcecec1335a26",
+      "versionInfo": "2.15.3",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/com.fasterxml.jackson/jackson-bom@2.15.3"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "com.jayway.jsonpath:json-path",
+      "SPDXID": "SPDXRef-Package-d2c3c4aef5994021",
+      "versionInfo": "2.8.0",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/com.jayway.jsonpath/json-path@2.8.0"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "com.vaadin.external.google:android-json",
+      "SPDXID": "SPDXRef-Package-3030bd6b2c6de0c5",
+      "versionInfo": "0.0.20131108.vaadin1",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/com.vaadin.external.google/android-json@0.0.20131108.vaadin1"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "gradle",
+      "SPDXID": "SPDXRef-Application-6124002ba2abb497",
+      "downloadLocation": "NONE",
+      "sourceInfo": "gradle.lockfile",
+      "copyrightText": "",
+      "primaryPackagePurpose": "APPLICATION"
+    },
+    {
+      "name": "io.micrometer:micrometer-commons",
+      "SPDXID": "SPDXRef-Package-ab3de380245cfaa",
+      "versionInfo": "1.11.5",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/io.micrometer/micrometer-commons@1.11.5"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "io.micrometer:micrometer-observation",
+      "SPDXID": "SPDXRef-Package-d2f93efe723b06a6",
+      "versionInfo": "1.11.5",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/io.micrometer/micrometer-observation@1.11.5"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "jakarta.activation:jakarta.activation-api",
+      "SPDXID": "SPDXRef-Package-b46c1290c4795e0",
+      "versionInfo": "2.1.2",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/jakarta.activation/jakarta.activation-api@2.1.2"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "jakarta.annotation:jakarta.annotation-api",
+      "SPDXID": "SPDXRef-Package-a396285d80b6c236",
+      "versionInfo": "2.1.1",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/jakarta.annotation/jakarta.annotation-api@2.1.1"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "jakarta.xml.bind:jakarta.xml.bind-api",
+      "SPDXID": "SPDXRef-Package-6945ababefd977f6",
+      "versionInfo": "4.0.1",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/jakarta.xml.bind/jakarta.xml.bind-api@4.0.1"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "net.bytebuddy:byte-buddy",
+      "SPDXID": "SPDXRef-Package-9f7a2def378fe165",
+      "versionInfo": "1.14.9",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/net.bytebuddy/byte-buddy@1.14.9"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "net.bytebuddy:byte-buddy-agent",
+      "SPDXID": "SPDXRef-Package-70a8db43b8c8b8d7",
+      "versionInfo": "1.14.9",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/net.bytebuddy/byte-buddy-agent@1.14.9"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "net.minidev:accessors-smart",
+      "SPDXID": "SPDXRef-Package-b2fbd5cbbf176b01",
+      "versionInfo": "2.4.11",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/net.minidev/accessors-smart@2.4.11"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "net.minidev:json-smart",
+      "SPDXID": "SPDXRef-Package-24c5836095183b66",
+      "versionInfo": "2.4.11",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/net.minidev/json-smart@2.4.11"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "org.apache.logging.log4j:log4j-api",
+      "SPDXID": "SPDXRef-Package-45456b284192e2da",
+      "versionInfo": "2.20.0",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/org.apache.logging.log4j/log4j-api@2.20.0"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "org.apache.logging.log4j:log4j-to-slf4j",
+      "SPDXID": "SPDXRef-Package-a4208dd33e383e26",
+      "versionInfo": "2.20.0",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/org.apache.logging.log4j/log4j-to-slf4j@2.20.0"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "org.apache.tomcat.embed:tomcat-embed-core",
+      "SPDXID": "SPDXRef-Package-236b82d041a2986",
+      "versionInfo": "10.1.15",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.15"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "org.apache.tomcat.embed:tomcat-embed-el",
+      "SPDXID": "SPDXRef-Package-cf01e1b4416f142f",
+      "versionInfo": "10.1.15",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-el@10.1.15"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "org.apache.tomcat.embed:tomcat-embed-websocket",
+      "SPDXID": "SPDXRef-Package-da45e3eca6c27b73",
+      "versionInfo": "10.1.15",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.15"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "org.apiguardian:apiguardian-api",
+      "SPDXID": "SPDXRef-Package-21646d78cdeec5ff",
+      "versionInfo": "1.1.2",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/org.apiguardian/apiguardian-api@1.1.2"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "org.assertj:assertj-core",
+      "SPDXID": "SPDXRef-Package-8300aaa5aa79dba7",
+      "versionInfo": "3.24.2",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/org.assertj/assertj-core@3.24.2"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "org.graalvm.buildtools:junit-platform-native",
+      "SPDXID": "SPDXRef-Package-93e4642fa6a34462",
+      "versionInfo": "0.9.27",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/org.graalvm.buildtools/junit-platform-native@0.9.27"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "org.hamcrest:hamcrest",
+      "SPDXID": "SPDXRef-Package-edb1ab57ded19340",
+      "versionInfo": "2.2",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/org.hamcrest/hamcrest@2.2"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "org.junit.jupiter:junit-jupiter",
+      "SPDXID": "SPDXRef-Package-a719a26006fe5151",
+      "versionInfo": "5.9.3",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/org.junit.jupiter/junit-jupiter@5.9.3"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "org.junit.jupiter:junit-jupiter-api",
+      "SPDXID": "SPDXRef-Package-8ea013d14e0a6273",
+      "versionInfo": "5.9.3",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/org.junit.jupiter/junit-jupiter-api@5.9.3"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "org.junit.jupiter:junit-jupiter-engine",
+      "SPDXID": "SPDXRef-Package-f7c743787ec71964",
+      "versionInfo": "5.9.3",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/org.junit.jupiter/junit-jupiter-engine@5.9.3"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "org.junit.jupiter:junit-jupiter-params",
+      "SPDXID": "SPDXRef-Package-a344d2d28fac6444",
+      "versionInfo": "5.9.3",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/org.junit.jupiter/junit-jupiter-params@5.9.3"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "org.junit.platform:junit-platform-commons",
+      "SPDXID": "SPDXRef-Package-5449d2078ac0d71a",
+      "versionInfo": "1.9.3",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/org.junit.platform/junit-platform-commons@1.9.3"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "org.junit.platform:junit-platform-console",
+      "SPDXID": "SPDXRef-Package-60335a4cc14e1579",
+      "versionInfo": "1.9.3",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/org.junit.platform/junit-platform-console@1.9.3"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "org.junit.platform:junit-platform-engine",
+      "SPDXID": "SPDXRef-Package-8872ef409b840147",
+      "versionInfo": "1.9.3",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/org.junit.platform/junit-platform-engine@1.9.3"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "org.junit.platform:junit-platform-launcher",
+      "SPDXID": "SPDXRef-Package-2d87c236059c0da3",
+      "versionInfo": "1.9.3",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/org.junit.platform/junit-platform-launcher@1.9.3"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "org.junit.platform:junit-platform-reporting",
+      "SPDXID": "SPDXRef-Package-ce8f71617c61b41e",
+      "versionInfo": "1.9.3",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/org.junit.platform/junit-platform-reporting@1.9.3"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "org.junit:junit-bom",
+      "SPDXID": "SPDXRef-Package-19176ad797a82076",
+      "versionInfo": "5.9.3",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/org.junit/junit-bom@5.9.3"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "org.junit:junit-bom",
+      "SPDXID": "SPDXRef-Package-624ced15dd9b10bd",
+      "versionInfo": "5.10.0",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/org.junit/junit-bom@5.10.0"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "org.mockito:mockito-core",
+      "SPDXID": "SPDXRef-Package-e50d3c6a8f7df67f",
+      "versionInfo": "5.3.1",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/org.mockito/mockito-core@5.3.1"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "org.mockito:mockito-junit-jupiter",
+      "SPDXID": "SPDXRef-Package-633b95f01e24a5ad",
+      "versionInfo": "5.3.1",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/org.mockito/mockito-junit-jupiter@5.3.1"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "org.objenesis:objenesis",
+      "SPDXID": "SPDXRef-Package-792b8336f367a4d9",
+      "versionInfo": "3.3",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/org.objenesis/objenesis@3.3"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "org.opentest4j:opentest4j",
+      "SPDXID": "SPDXRef-Package-d51ab4dd486ac734",
+      "versionInfo": "1.2.0",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/org.opentest4j/opentest4j@1.2.0"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "org.ow2.asm:asm",
+      "SPDXID": "SPDXRef-Package-57b19530223d190a",
+      "versionInfo": "9.3",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/org.ow2.asm/asm@9.3"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "org.skyscreamer:jsonassert",
+      "SPDXID": "SPDXRef-Package-b9b550c6b58117f1",
+      "versionInfo": "1.5.1",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/org.skyscreamer/jsonassert@1.5.1"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "org.slf4j:jul-to-slf4j",
+      "SPDXID": "SPDXRef-Package-270b7ef06731ecaa",
+      "versionInfo": "2.0.9",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/org.slf4j/jul-to-slf4j@2.0.9"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "org.slf4j:slf4j-api",
+      "SPDXID": "SPDXRef-Package-b6a2524d8dbb1158",
+      "versionInfo": "2.0.9",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/org.slf4j/slf4j-api@2.0.9"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "org.springframework.boot:spring-boot",
+      "SPDXID": "SPDXRef-Package-702bc04c918adf89",
+      "versionInfo": "3.1.5",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/org.springframework.boot/spring-boot@3.1.5"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "org.springframework.boot:spring-boot-autoconfigure",
+      "SPDXID": "SPDXRef-Package-5a1a610fa285a016",
+      "versionInfo": "3.1.5",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/org.springframework.boot/spring-boot-autoconfigure@3.1.5"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "org.springframework.boot:spring-boot-dependencies",
+      "SPDXID": "SPDXRef-Package-5b6fac923a67fb0f",
+      "versionInfo": "3.1.5",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/org.springframework.boot/spring-boot-dependencies@3.1.5"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "org.springframework.boot:spring-boot-starter",
+      "SPDXID": "SPDXRef-Package-8c37c55528a259af",
+      "versionInfo": "3.1.5",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/org.springframework.boot/spring-boot-starter@3.1.5"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "org.springframework.boot:spring-boot-starter-json",
+      "SPDXID": "SPDXRef-Package-d9adc9b332af7477",
+      "versionInfo": "3.1.5",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/org.springframework.boot/spring-boot-starter-json@3.1.5"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "org.springframework.boot:spring-boot-starter-logging",
+      "SPDXID": "SPDXRef-Package-273431311a056010",
+      "versionInfo": "3.1.5",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/org.springframework.boot/spring-boot-starter-logging@3.1.5"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "org.springframework.boot:spring-boot-starter-test",
+      "SPDXID": "SPDXRef-Package-2d3497320e85f8a8",
+      "versionInfo": "3.1.5",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/org.springframework.boot/spring-boot-starter-test@3.1.5"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "org.springframework.boot:spring-boot-starter-tomcat",
+      "SPDXID": "SPDXRef-Package-d35f990f7f1cd63a",
+      "versionInfo": "3.1.5",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/org.springframework.boot/spring-boot-starter-tomcat@3.1.5"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "org.springframework.boot:spring-boot-starter-web",
+      "SPDXID": "SPDXRef-Package-921a7fca599dc63a",
+      "versionInfo": "3.1.5",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/org.springframework.boot/spring-boot-starter-web@3.1.5"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "org.springframework.boot:spring-boot-test",
+      "SPDXID": "SPDXRef-Package-f84a7db7a052f041",
+      "versionInfo": "3.1.5",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/org.springframework.boot/spring-boot-test@3.1.5"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "org.springframework.boot:spring-boot-test-autoconfigure",
+      "SPDXID": "SPDXRef-Package-4820f58cf7384291",
+      "versionInfo": "3.1.5",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/org.springframework.boot/spring-boot-test-autoconfigure@3.1.5"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "org.springframework:spring-aop",
+      "SPDXID": "SPDXRef-Package-94af6bf18f1ccf9e",
+      "versionInfo": "6.0.13",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/org.springframework/spring-aop@6.0.13"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "org.springframework:spring-beans",
+      "SPDXID": "SPDXRef-Package-6b5e42b2e9d6e29d",
+      "versionInfo": "6.0.13",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/org.springframework/spring-beans@6.0.13"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "org.springframework:spring-context",
+      "SPDXID": "SPDXRef-Package-4d9bc1041ff509ce",
+      "versionInfo": "6.0.13",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/org.springframework/spring-context@6.0.13"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "org.springframework:spring-core",
+      "SPDXID": "SPDXRef-Package-f3a2ce518e697d1d",
+      "versionInfo": "6.0.13",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/org.springframework/spring-core@6.0.13"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "org.springframework:spring-expression",
+      "SPDXID": "SPDXRef-Package-ca2a42844a8b32f3",
+      "versionInfo": "6.0.13",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/org.springframework/spring-expression@6.0.13"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "org.springframework:spring-jcl",
+      "SPDXID": "SPDXRef-Package-b993d940cb4d15ea",
+      "versionInfo": "6.0.13",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/org.springframework/spring-jcl@6.0.13"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "org.springframework:spring-test",
+      "SPDXID": "SPDXRef-Package-a384f9cda834e96f",
+      "versionInfo": "6.0.13",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/org.springframework/spring-test@6.0.13"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "org.springframework:spring-web",
+      "SPDXID": "SPDXRef-Package-50d5bd84ad828b8e",
+      "versionInfo": "6.0.13",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/org.springframework/spring-web@6.0.13"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "org.springframework:spring-webmvc",
+      "SPDXID": "SPDXRef-Package-d4f4527e6c2d756c",
+      "versionInfo": "6.0.13",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/org.springframework/spring-webmvc@6.0.13"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "org.xmlunit:xmlunit-core",
+      "SPDXID": "SPDXRef-Package-f38cca415f3fb61f",
+      "versionInfo": "2.9.1",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/org.xmlunit/xmlunit-core@2.9.1"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    },
+    {
+      "name": "org.yaml:snakeyaml",
+      "SPDXID": "SPDXRef-Package-b6a44c004eefd33b",
+      "versionInfo": "1.33",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "NONE",
+      "licenseDeclared": "NONE",
+      "copyrightText": "",
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:maven/org.yaml/snakeyaml@1.33"
+        }
+      ],
+      "primaryPackagePurpose": "LIBRARY"
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relatedSpdxElement": "SPDXRef-Filesystem-1465386cfbe4e9c7",
+      "relationshipType": "DESCRIBES"
+    },
+    {
+      "spdxElementId": "SPDXRef-Filesystem-1465386cfbe4e9c7",
+      "relatedSpdxElement": "SPDXRef-Application-6124002ba2abb497",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-f5183c4696941b11",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-853d83c8707b2d0f",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-c825cc080df4f063",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-67c578b2669c6172",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-7a897a88c88e9f61",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-39e72ae92470f7fe",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-6efcad6600cb92d3",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-12f3a505ee4b68e4",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-54ebcecec1335a26",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-d2c3c4aef5994021",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-3030bd6b2c6de0c5",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-ab3de380245cfaa",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-d2f93efe723b06a6",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-b46c1290c4795e0",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-a396285d80b6c236",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-6945ababefd977f6",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-9f7a2def378fe165",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-70a8db43b8c8b8d7",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-b2fbd5cbbf176b01",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-24c5836095183b66",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-45456b284192e2da",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-a4208dd33e383e26",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-236b82d041a2986",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-cf01e1b4416f142f",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-da45e3eca6c27b73",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-21646d78cdeec5ff",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-8300aaa5aa79dba7",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-93e4642fa6a34462",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-edb1ab57ded19340",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-a719a26006fe5151",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-8ea013d14e0a6273",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-f7c743787ec71964",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-a344d2d28fac6444",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-5449d2078ac0d71a",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-60335a4cc14e1579",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-8872ef409b840147",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-2d87c236059c0da3",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-ce8f71617c61b41e",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-624ced15dd9b10bd",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-19176ad797a82076",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-e50d3c6a8f7df67f",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-633b95f01e24a5ad",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-792b8336f367a4d9",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-d51ab4dd486ac734",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-57b19530223d190a",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-b9b550c6b58117f1",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-270b7ef06731ecaa",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-b6a2524d8dbb1158",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-702bc04c918adf89",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-5a1a610fa285a016",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-5b6fac923a67fb0f",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-8c37c55528a259af",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-d9adc9b332af7477",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-273431311a056010",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-2d3497320e85f8a8",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-d35f990f7f1cd63a",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-921a7fca599dc63a",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-f84a7db7a052f041",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-4820f58cf7384291",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-94af6bf18f1ccf9e",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-6b5e42b2e9d6e29d",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-4d9bc1041ff509ce",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-f3a2ce518e697d1d",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-ca2a42844a8b32f3",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-b993d940cb4d15ea",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-a384f9cda834e96f",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-50d5bd84ad828b8e",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-d4f4527e6c2d756c",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-f38cca415f3fb61f",
+      "relationshipType": "CONTAINS"
+    },
+    {
+      "spdxElementId": "SPDXRef-Application-6124002ba2abb497",
+      "relatedSpdxElement": "SPDXRef-Package-b6a44c004eefd33b",
+      "relationshipType": "CONTAINS"
+    }
+  ]
+}
