@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.thomasvitale</groupId>
-    <artifactId>demo-sbom-cdx-maven</artifactId>
+    <artifactId>demo-sbom-cdx-maven-native</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>maven</name>
     <description>maven</description>
@@ -31,6 +31,15 @@
 
     <build>
         <plugins>
+            <plugin>
+                <groupId>org.graalvm.buildtools</groupId>
+                <artifactId>native-maven-plugin</artifactId>
+                <configuration>
+                    <buildArgs combine.children="append">
+                        <buildArg>--enable-sbom=cyclonedx,export</buildArg>
+                    </buildArgs>
+                </configuration>
+            </plugin>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>

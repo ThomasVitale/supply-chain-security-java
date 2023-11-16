@@ -3,6 +3,7 @@ plugins {
     id 'java'
     id 'org.springframework.boot' version '3.1.5'
     id 'io.spring.dependency-management' version '1.1.3'
+    id 'org.graalvm.buildtools.native' version '0.9.27'
     id 'org.cyclonedx.bom' version '1.8.1'
 }
 
@@ -37,6 +38,14 @@ cyclonedxBom {
     schemaVersion = "1.5"
 }
 tasks.bootJar.finalizedBy 'cyclonedxBom'
+
+graalvmNative {
+    binaries {
+        configureEach {
+            buildArgs.add("--enable-sbom=cyclonedx,export")
+        }
+    }
+}
 
 tasks.bootBuildImage {
     if (System.getProperty( "os.arch" ).toLowerCase().startsWith('aarch')) {
