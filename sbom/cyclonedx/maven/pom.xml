@@ -74,7 +74,7 @@
                     <projectType>application</projectType>
                     <includeTestScope>false</includeTestScope>
                     <outputFormat>json</outputFormat>
-                    <schemaVersion>1.4</schemaVersion>
+                    <schemaVersion>1.5</schemaVersion>
                 </configuration>
             </plugin>
         </plugins>

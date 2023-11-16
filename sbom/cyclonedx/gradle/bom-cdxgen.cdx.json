@@ -1,17 +1,24 @@
 {
   "bomFormat": "CycloneDX",
-  "specVersion": "1.4",
-  "serialNumber": "urn:uuid:d4384b97-1761-42aa-b2a2-cf3dd00526cd",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:d4bc8f77-891c-4aae-bf30-1952ffe149e3",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-11-07T17:34:40.060Z",
-    "tools": [
-      {
-        "vendor": "cyclonedx",
-        "name": "cdxgen",
-        "version": "9.9.2"
-      }
-    ],
+    "timestamp": "2023-11-09T21:37:54.048Z",
+    "tools": {
+      "components": [
+        {
+          "group": "@cyclonedx",
+          "name": "cdxgen",
+          "version": "9.9.3",
+          "purl": "pkg:npm/%40cyclonedx/cdxgen@9.9.3",
+          "type": "application",
+          "bom-ref": "pkg:npm/@cyclonedx/cdxgen@9.9.3",
+          "author": "OWASP Foundation",
+          "publisher": "OWASP Foundation"
+        }
+      ]
+    },
     "authors": [
       {
         "name": "OWASP Foundation"
@@ -55,7 +62,7 @@
       "publisher": "VMware, Inc.",
       "group": "org.springframework.boot",
       "name": "spring-boot-starter-web",
-      "version": "3.1.4",
+      "version": "3.1.5",
       "description": "Starter for building web, including RESTful, applications using Spring MVC. Uses Tomcat as the default embedded container",
       "licenses": [
         {
@@ -65,7 +72,7 @@
           }
         }
       ],
-      "purl": "pkg:maven/org.springframework.boot/spring-boot-starter-web@3.1.4?type=jar",
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-starter-web@3.1.5?type=jar",
       "externalReferences": [
         {
           "type": "vcs",
@@ -73,7 +80,7 @@
         }
       ],
       "type": "framework",
-      "bom-ref": "pkg:maven/org.springframework.boot/spring-boot-starter-web@3.1.4?type=jar",
+      "bom-ref": "pkg:maven/org.springframework.boot/spring-boot-starter-web@3.1.5?type=jar",
       "properties": [
         {
           "name": "GradleProfileName",
@@ -85,7 +92,7 @@
       "publisher": "VMware, Inc.",
       "group": "org.springframework.boot",
       "name": "spring-boot-starter",
-      "version": "3.1.4",
+      "version": "3.1.5",
       "description": "Core starter, including auto-configuration support, logging and YAML",
       "licenses": [
         {
@@ -95,7 +102,7 @@
           }
         }
       ],
-      "purl": "pkg:maven/org.springframework.boot/spring-boot-starter@3.1.4?type=jar",
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-starter@3.1.5?type=jar",
       "externalReferences": [
         {
           "type": "vcs",
@@ -103,7 +110,7 @@
         }
       ],
       "type": "framework",
-      "bom-ref": "pkg:maven/org.springframework.boot/spring-boot-starter@3.1.4?type=jar",
+      "bom-ref": "pkg:maven/org.springframework.boot/spring-boot-starter@3.1.5?type=jar",
       "properties": [
         {
           "name": "GradleProfileName",
@@ -115,7 +122,7 @@
       "publisher": "VMware, Inc.",
       "group": "org.springframework.boot",
       "name": "spring-boot",
-      "version": "3.1.4",
+      "version": "3.1.5",
       "description": "Spring Boot",
       "licenses": [
         {
@@ -125,7 +132,7 @@
           }
         }
       ],
-      "purl": "pkg:maven/org.springframework.boot/spring-boot@3.1.4?type=jar",
+      "purl": "pkg:maven/org.springframework.boot/spring-boot@3.1.5?type=jar",
       "externalReferences": [
         {
           "type": "vcs",
@@ -133,7 +140,7 @@
         }
       ],
       "type": "framework",
-      "bom-ref": "pkg:maven/org.springframework.boot/spring-boot@3.1.4?type=jar",
+      "bom-ref": "pkg:maven/org.springframework.boot/spring-boot@3.1.5?type=jar",
       "properties": [
         {
           "name": "GradleProfileName",
@@ -145,7 +152,7 @@
       "publisher": "Spring IO",
       "group": "org.springframework",
       "name": "spring-core",
-      "version": "6.0.12",
+      "version": "6.0.13",
       "description": "Spring Core",
       "licenses": [
         {
@@ -155,7 +162,7 @@
           }
         }
       ],
-      "purl": "pkg:maven/org.springframework/spring-core@6.0.12?type=jar",
+      "purl": "pkg:maven/org.springframework/spring-core@6.0.13?type=jar",
       "externalReferences": [
         {
           "type": "vcs",
@@ -163,7 +170,7 @@
         }
       ],
       "type": "framework",
-      "bom-ref": "pkg:maven/org.springframework/spring-core@6.0.12?type=jar",
+      "bom-ref": "pkg:maven/org.springframework/spring-core@6.0.13?type=jar",
       "properties": [
         {
           "name": "GradleProfileName",
@@ -175,7 +182,7 @@
       "publisher": "Spring IO",
       "group": "org.springframework",
       "name": "spring-jcl",
-      "version": "6.0.12",
+      "version": "6.0.13",
       "description": "Spring Commons Logging Bridge",
       "licenses": [
         {
@@ -185,7 +192,7 @@
           }
         }
       ],
-      "purl": "pkg:maven/org.springframework/spring-jcl@6.0.12?type=jar",
+      "purl": "pkg:maven/org.springframework/spring-jcl@6.0.13?type=jar",
       "externalReferences": [
         {
           "type": "vcs",
@@ -193,7 +200,7 @@
         }
       ],
       "type": "framework",
-      "bom-ref": "pkg:maven/org.springframework/spring-jcl@6.0.12?type=jar",
+      "bom-ref": "pkg:maven/org.springframework/spring-jcl@6.0.13?type=jar",
       "properties": [
         {
           "name": "GradleProfileName",
@@ -205,7 +212,7 @@
       "publisher": "Spring IO",
       "group": "org.springframework",
       "name": "spring-context",
-      "version": "6.0.12",
+      "version": "6.0.13",
       "description": "Spring Context",
       "licenses": [
         {
@@ -215,7 +222,7 @@
           }
         }
       ],
-      "purl": "pkg:maven/org.springframework/spring-context@6.0.12?type=jar",
+      "purl": "pkg:maven/org.springframework/spring-context@6.0.13?type=jar",
       "externalReferences": [
         {
           "type": "vcs",
@@ -223,7 +230,7 @@
         }
       ],
       "type": "framework",
-      "bom-ref": "pkg:maven/org.springframework/spring-context@6.0.12?type=jar",
+      "bom-ref": "pkg:maven/org.springframework/spring-context@6.0.13?type=jar",
       "properties": [
         {
           "name": "GradleProfileName",
@@ -235,7 +242,7 @@
       "publisher": "Spring IO",
       "group": "org.springframework",
       "name": "spring-aop",
-      "version": "6.0.12",
+      "version": "6.0.13",
       "description": "Spring AOP",
       "licenses": [
         {
@@ -245,7 +252,7 @@
           }
         }
       ],
-      "purl": "pkg:maven/org.springframework/spring-aop@6.0.12?type=jar",
+      "purl": "pkg:maven/org.springframework/spring-aop@6.0.13?type=jar",
       "externalReferences": [
         {
           "type": "vcs",
@@ -253,7 +260,7 @@
         }
       ],
       "type": "framework",
-      "bom-ref": "pkg:maven/org.springframework/spring-aop@6.0.12?type=jar",
+      "bom-ref": "pkg:maven/org.springframework/spring-aop@6.0.13?type=jar",
       "properties": [
         {
           "name": "GradleProfileName",
@@ -265,7 +272,7 @@
       "publisher": "Spring IO",
       "group": "org.springframework",
       "name": "spring-beans",
-      "version": "6.0.12",
+      "version": "6.0.13",
       "description": "Spring Beans",
       "licenses": [
         {
@@ -275,7 +282,7 @@
           }
         }
       ],
-      "purl": "pkg:maven/org.springframework/spring-beans@6.0.12?type=jar",
+      "purl": "pkg:maven/org.springframework/spring-beans@6.0.13?type=jar",
       "externalReferences": [
         {
           "type": "vcs",
@@ -283,7 +290,7 @@
         }
       ],
       "type": "framework",
-      "bom-ref": "pkg:maven/org.springframework/spring-beans@6.0.12?type=jar",
+      "bom-ref": "pkg:maven/org.springframework/spring-beans@6.0.13?type=jar",
       "properties": [
         {
           "name": "GradleProfileName",
@@ -295,7 +302,7 @@
       "publisher": "Spring IO",
       "group": "org.springframework",
       "name": "spring-expression",
-      "version": "6.0.12",
+      "version": "6.0.13",
       "description": "Spring Expression Language (SpEL)",
       "licenses": [
         {
@@ -305,7 +312,7 @@
           }
         }
       ],
-      "purl": "pkg:maven/org.springframework/spring-expression@6.0.12?type=jar",
+      "purl": "pkg:maven/org.springframework/spring-expression@6.0.13?type=jar",
       "externalReferences": [
         {
           "type": "vcs",
@@ -313,7 +320,7 @@
         }
       ],
       "type": "framework",
-      "bom-ref": "pkg:maven/org.springframework/spring-expression@6.0.12?type=jar",
+      "bom-ref": "pkg:maven/org.springframework/spring-expression@6.0.13?type=jar",
       "properties": [
         {
           "name": "GradleProfileName",
@@ -325,7 +332,7 @@
       "publisher": "VMware, Inc.",
       "group": "org.springframework.boot",
       "name": "spring-boot-autoconfigure",
-      "version": "3.1.4",
+      "version": "3.1.5",
       "description": "Spring Boot AutoConfigure",
       "licenses": [
         {
@@ -335,7 +342,7 @@
           }
         }
       ],
-      "purl": "pkg:maven/org.springframework.boot/spring-boot-autoconfigure@3.1.4?type=jar",
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-autoconfigure@3.1.5?type=jar",
       "externalReferences": [
         {
           "type": "vcs",
@@ -343,7 +350,7 @@
         }
       ],
       "type": "framework",
-      "bom-ref": "pkg:maven/org.springframework.boot/spring-boot-autoconfigure@3.1.4?type=jar",
+      "bom-ref": "pkg:maven/org.springframework.boot/spring-boot-autoconfigure@3.1.5?type=jar",
       "properties": [
         {
           "name": "GradleProfileName",
@@ -355,7 +362,7 @@
       "publisher": "VMware, Inc.",
       "group": "org.springframework.boot",
       "name": "spring-boot-starter-logging",
-      "version": "3.1.4",
+      "version": "3.1.5",
       "description": "Starter for logging using Logback. Default logging starter",
       "licenses": [
         {
@@ -365,7 +372,7 @@
           }
         }
       ],
-      "purl": "pkg:maven/org.springframework.boot/spring-boot-starter-logging@3.1.4?type=jar",
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-starter-logging@3.1.5?type=jar",
       "externalReferences": [
         {
           "type": "vcs",
@@ -373,7 +380,7 @@
         }
       ],
       "type": "framework",
-      "bom-ref": "pkg:maven/org.springframework.boot/spring-boot-starter-logging@3.1.4?type=jar",
+      "bom-ref": "pkg:maven/org.springframework.boot/spring-boot-starter-logging@3.1.5?type=jar",
       "properties": [
         {
           "name": "GradleProfileName",
@@ -612,7 +619,7 @@
       "publisher": "VMware, Inc.",
       "group": "org.springframework.boot",
       "name": "spring-boot-starter-json",
-      "version": "3.1.4",
+      "version": "3.1.5",
       "description": "Starter for reading and writing json",
       "licenses": [
         {
@@ -622,7 +629,7 @@
           }
         }
       ],
-      "purl": "pkg:maven/org.springframework.boot/spring-boot-starter-json@3.1.4?type=jar",
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-starter-json@3.1.5?type=jar",
       "externalReferences": [
         {
           "type": "vcs",
@@ -630,7 +637,7 @@
         }
       ],
       "type": "framework",
-      "bom-ref": "pkg:maven/org.springframework.boot/spring-boot-starter-json@3.1.4?type=jar",
+      "bom-ref": "pkg:maven/org.springframework.boot/spring-boot-starter-json@3.1.5?type=jar",
       "properties": [
         {
           "name": "GradleProfileName",
@@ -642,7 +649,7 @@
       "publisher": "Spring IO",
       "group": "org.springframework",
       "name": "spring-web",
-      "version": "6.0.12",
+      "version": "6.0.13",
       "description": "Spring Web",
       "licenses": [
         {
@@ -652,7 +659,7 @@
           }
         }
       ],
-      "purl": "pkg:maven/org.springframework/spring-web@6.0.12?type=jar",
+      "purl": "pkg:maven/org.springframework/spring-web@6.0.13?type=jar",
       "externalReferences": [
         {
           "type": "vcs",
@@ -660,7 +667,7 @@
         }
       ],
       "type": "framework",
-      "bom-ref": "pkg:maven/org.springframework/spring-web@6.0.12?type=jar",
+      "bom-ref": "pkg:maven/org.springframework/spring-web@6.0.13?type=jar",
       "properties": [
         {
           "name": "GradleProfileName",
@@ -671,7 +678,7 @@
     {
       "group": "io.micrometer",
       "name": "micrometer-observation",
-      "version": "1.11.4",
+      "version": "1.11.5",
       "description": "Module containing Observation related code",
       "licenses": [
         {
@@ -681,7 +688,7 @@
           }
         }
       ],
-      "purl": "pkg:maven/io.micrometer/micrometer-observation@1.11.4?type=jar",
+      "purl": "pkg:maven/io.micrometer/micrometer-observation@1.11.5?type=jar",
       "externalReferences": [
         {
           "type": "vcs",
@@ -689,7 +696,7 @@
         }
       ],
       "type": "library",
-      "bom-ref": "pkg:maven/io.micrometer/micrometer-observation@1.11.4?type=jar",
+      "bom-ref": "pkg:maven/io.micrometer/micrometer-observation@1.11.5?type=jar",
       "properties": [
         {
           "name": "GradleProfileName",
@@ -700,7 +707,7 @@
     {
       "group": "io.micrometer",
       "name": "micrometer-commons",
-      "version": "1.11.4",
+      "version": "1.11.5",
       "description": "Module containing common code",
       "licenses": [
         {
@@ -710,7 +717,7 @@
           }
         }
       ],
-      "purl": "pkg:maven/io.micrometer/micrometer-commons@1.11.4?type=jar",
+      "purl": "pkg:maven/io.micrometer/micrometer-commons@1.11.5?type=jar",
       "externalReferences": [
         {
           "type": "vcs",
@@ -718,7 +725,7 @@
         }
       ],
       "type": "library",
-      "bom-ref": "pkg:maven/io.micrometer/micrometer-commons@1.11.4?type=jar",
+      "bom-ref": "pkg:maven/io.micrometer/micrometer-commons@1.11.5?type=jar",
       "properties": [
         {
           "name": "GradleProfileName",
@@ -729,7 +736,7 @@
     {
       "group": "com.fasterxml.jackson.core",
       "name": "jackson-databind",
-      "version": "2.15.2",
+      "version": "2.15.3",
       "description": "General data-binding functionality for Jackson: works on core streaming API",
       "licenses": [
         {
@@ -739,7 +746,7 @@
           }
         }
       ],
-      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.15.2?type=jar",
+      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.15.3?type=jar",
       "externalReferences": [
         {
           "type": "vcs",
@@ -747,7 +754,7 @@
         }
       ],
       "type": "library",
-      "bom-ref": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.15.2?type=jar",
+      "bom-ref": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.15.3?type=jar",
       "properties": [
         {
           "name": "GradleProfileName",
@@ -759,7 +766,7 @@
       "publisher": "FasterXML",
       "group": "com.fasterxml.jackson.core",
       "name": "jackson-annotations",
-      "version": "2.15.2",
+      "version": "2.15.3",
       "description": "Core annotations used for value types, used by Jackson data binding package.\n  ",
       "licenses": [
         {
@@ -769,7 +776,7 @@
           }
         }
       ],
-      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.15.2?type=jar",
+      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.15.3?type=jar",
       "externalReferences": [
         {
           "type": "vcs",
@@ -777,7 +784,7 @@
         }
       ],
       "type": "library",
-      "bom-ref": "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.15.2?type=jar",
+      "bom-ref": "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.15.3?type=jar",
       "properties": [
         {
           "name": "GradleProfileName",
@@ -789,7 +796,7 @@
       "publisher": "FasterXML",
       "group": "com.fasterxml.jackson",
       "name": "jackson-bom",
-      "version": "2.15.2",
+      "version": "2.15.3",
       "description": "Bill of Materials pom for getting full, complete set of compatible versions\nof Jackson components maintained by FasterXML.com\n  ",
       "licenses": [
         {
@@ -799,7 +806,7 @@
           }
         }
       ],
-      "purl": "pkg:maven/com.fasterxml.jackson/jackson-bom@2.15.2?type=jar",
+      "purl": "pkg:maven/com.fasterxml.jackson/jackson-bom@2.15.3?type=jar",
       "externalReferences": [
         {
           "type": "vcs",
@@ -807,7 +814,7 @@
         }
       ],
       "type": "library",
-      "bom-ref": "pkg:maven/com.fasterxml.jackson/jackson-bom@2.15.2?type=jar",
+      "bom-ref": "pkg:maven/com.fasterxml.jackson/jackson-bom@2.15.3?type=jar",
       "properties": [
         {
           "name": "GradleProfileName",
@@ -818,7 +825,7 @@
     {
       "group": "com.fasterxml.jackson.core",
       "name": "jackson-core",
-      "version": "2.15.2",
+      "version": "2.15.3",
       "description": "Core Jackson processing abstractions (aka Streaming API), implementation for JSON",
       "licenses": [
         {
@@ -828,7 +835,7 @@
           }
         }
       ],
-      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.15.2?type=jar",
+      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.15.3?type=jar",
       "externalReferences": [
         {
           "type": "vcs",
@@ -836,7 +843,7 @@
         }
       ],
       "type": "library",
-      "bom-ref": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.15.2?type=jar",
+      "bom-ref": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.15.3?type=jar",
       "properties": [
         {
           "name": "GradleProfileName",
@@ -847,7 +854,7 @@
     {
       "group": "com.fasterxml.jackson.datatype",
       "name": "jackson-datatype-jdk8",
-      "version": "2.15.2",
+      "version": "2.15.3",
       "description": "Add-on module for Jackson (http://jackson.codehaus.org) to support\nJDK 8 data types.\n  ",
       "licenses": [
         {
@@ -857,7 +864,7 @@
           }
         }
       ],
-      "purl": "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jdk8@2.15.2?type=jar",
+      "purl": "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jdk8@2.15.3?type=jar",
       "externalReferences": [
         {
           "type": "vcs",
@@ -865,7 +872,7 @@
         }
       ],
       "type": "library",
-      "bom-ref": "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jdk8@2.15.2?type=jar",
+      "bom-ref": "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jdk8@2.15.3?type=jar",
       "properties": [
         {
           "name": "GradleProfileName",
@@ -876,7 +883,7 @@
     {
       "group": "com.fasterxml.jackson.datatype",
       "name": "jackson-datatype-jsr310",
-      "version": "2.15.2",
+      "version": "2.15.3",
       "description": "Add-on module to support JSR-310 (Java 8 Date & Time API) data types.",
       "licenses": [
         {
@@ -886,7 +893,7 @@
           }
         }
       ],
-      "purl": "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jsr310@2.15.2?type=jar",
+      "purl": "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jsr310@2.15.3?type=jar",
       "externalReferences": [
         {
           "type": "vcs",
@@ -894,7 +901,7 @@
         }
       ],
       "type": "library",
-      "bom-ref": "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jsr310@2.15.2?type=jar",
+      "bom-ref": "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jsr310@2.15.3?type=jar",
       "properties": [
         {
           "name": "GradleProfileName",
@@ -905,7 +912,7 @@
     {
       "group": "com.fasterxml.jackson.module",
       "name": "jackson-module-parameter-names",
-      "version": "2.15.2",
+      "version": "2.15.3",
       "description": "Add-on module for Jackson (http://jackson.codehaus.org) to support\nintrospection of method/constructor parameter names, without having to add explicit property name annotation.\n",
       "licenses": [
         {
@@ -915,7 +922,7 @@
           }
         }
       ],
-      "purl": "pkg:maven/com.fasterxml.jackson.module/jackson-module-parameter-names@2.15.2?type=jar",
+      "purl": "pkg:maven/com.fasterxml.jackson.module/jackson-module-parameter-names@2.15.3?type=jar",
       "externalReferences": [
         {
           "type": "vcs",
@@ -923,7 +930,7 @@
         }
       ],
       "type": "library",
-      "bom-ref": "pkg:maven/com.fasterxml.jackson.module/jackson-module-parameter-names@2.15.2?type=jar",
+      "bom-ref": "pkg:maven/com.fasterxml.jackson.module/jackson-module-parameter-names@2.15.3?type=jar",
       "properties": [
         {
           "name": "GradleProfileName",
@@ -935,7 +942,7 @@
       "publisher": "VMware, Inc.",
       "group": "org.springframework.boot",
       "name": "spring-boot-starter-tomcat",
-      "version": "3.1.4",
+      "version": "3.1.5",
       "description": "Starter for using Tomcat as the embedded servlet container. Default servlet container starter used by spring-boot-starter-web",
       "licenses": [
         {
@@ -945,7 +952,7 @@
           }
         }
       ],
-      "purl": "pkg:maven/org.springframework.boot/spring-boot-starter-tomcat@3.1.4?type=jar",
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-starter-tomcat@3.1.5?type=jar",
       "externalReferences": [
         {
           "type": "vcs",
@@ -953,7 +960,7 @@
         }
       ],
       "type": "framework",
-      "bom-ref": "pkg:maven/org.springframework.boot/spring-boot-starter-tomcat@3.1.4?type=jar",
+      "bom-ref": "pkg:maven/org.springframework.boot/spring-boot-starter-tomcat@3.1.5?type=jar",
       "properties": [
         {
           "name": "GradleProfileName",
@@ -964,7 +971,7 @@
     {
       "group": "org.apache.tomcat.embed",
       "name": "tomcat-embed-core",
-      "version": "10.1.13",
+      "version": "10.1.15",
       "description": "Core Tomcat implementation",
       "licenses": [
         {
@@ -974,9 +981,9 @@
           }
         }
       ],
-      "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.13?type=jar",
+      "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.15?type=jar",
       "type": "framework",
-      "bom-ref": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.13?type=jar",
+      "bom-ref": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.15?type=jar",
       "properties": [
         {
           "name": "GradleProfileName",
@@ -987,7 +994,7 @@
     {
       "group": "org.apache.tomcat.embed",
       "name": "tomcat-embed-el",
-      "version": "10.1.13",
+      "version": "10.1.15",
       "description": "Core Tomcat implementation",
       "licenses": [
         {
@@ -997,9 +1004,9 @@
           }
         }
       ],
-      "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-el@10.1.13?type=jar",
+      "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-el@10.1.15?type=jar",
       "type": "framework",
-      "bom-ref": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-el@10.1.13?type=jar",
+      "bom-ref": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-el@10.1.15?type=jar",
       "properties": [
         {
           "name": "GradleProfileName",
@@ -1010,7 +1017,7 @@
     {
       "group": "org.apache.tomcat.embed",
       "name": "tomcat-embed-websocket",
-      "version": "10.1.13",
+      "version": "10.1.15",
       "description": "Core Tomcat implementation",
       "licenses": [
         {
@@ -1020,9 +1027,9 @@
           }
         }
       ],
-      "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.13?type=jar",
+      "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.15?type=jar",
       "type": "framework",
-      "bom-ref": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.13?type=jar",
+      "bom-ref": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.15?type=jar",
       "properties": [
         {
           "name": "GradleProfileName",
@@ -1034,7 +1041,7 @@
       "publisher": "Spring IO",
       "group": "org.springframework",
       "name": "spring-webmvc",
-      "version": "6.0.12",
+      "version": "6.0.13",
       "description": "Spring Web MVC",
       "licenses": [
         {
@@ -1044,7 +1051,7 @@
           }
         }
       ],
-      "purl": "pkg:maven/org.springframework/spring-webmvc@6.0.12?type=jar",
+      "purl": "pkg:maven/org.springframework/spring-webmvc@6.0.13?type=jar",
       "externalReferences": [
         {
           "type": "vcs",
@@ -1052,7 +1059,7 @@
         }
       ],
       "type": "framework",
-      "bom-ref": "pkg:maven/org.springframework/spring-webmvc@6.0.12?type=jar",
+      "bom-ref": "pkg:maven/org.springframework/spring-webmvc@6.0.13?type=jar",
       "properties": [
         {
           "name": "GradleProfileName",
@@ -1063,7 +1070,7 @@
     {
       "group": "org.springframework.boot",
       "name": "spring-boot-dependencies",
-      "version": "3.1.4",
+      "version": "3.1.5",
       "description": "Spring Boot Dependencies",
       "scope": "optional",
       "licenses": [
@@ -1074,7 +1081,7 @@
           }
         }
       ],
-      "purl": "pkg:maven/org.springframework.boot/spring-boot-dependencies@3.1.4?type=jar",
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-dependencies@3.1.5?type=jar",
       "externalReferences": [
         {
           "type": "vcs",
@@ -1082,7 +1089,7 @@
         }
       ],
       "type": "framework",
-      "bom-ref": "pkg:maven/org.springframework.boot/spring-boot-dependencies@3.1.4?type=jar",
+      "bom-ref": "pkg:maven/org.springframework.boot/spring-boot-dependencies@3.1.5?type=jar",
       "properties": [
         {
           "name": "GradleProfileName",
@@ -1124,7 +1131,7 @@
       "publisher": "VMware, Inc.",
       "group": "org.springframework.boot",
       "name": "spring-boot-starter-test",
-      "version": "3.1.4",
+      "version": "3.1.5",
       "description": "Starter for testing Spring Boot applications with libraries including JUnit Jupiter, Hamcrest and Mockito",
       "scope": "optional",
       "licenses": [
@@ -1135,7 +1142,7 @@
           }
         }
       ],
-      "purl": "pkg:maven/org.springframework.boot/spring-boot-starter-test@3.1.4?type=jar",
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-starter-test@3.1.5?type=jar",
       "externalReferences": [
         {
           "type": "vcs",
@@ -1143,7 +1150,37 @@
         }
       ],
       "type": "framework",
-      "bom-ref": "pkg:maven/org.springframework.boot/spring-boot-starter-test@3.1.4?type=jar",
+      "bom-ref": "pkg:maven/org.springframework.boot/spring-boot-starter-test@3.1.5?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotTestCompileClasspath"
+        }
+      ]
+    },
+    {
+      "group": "org.junit.platform",
+      "name": "junit-platform-engine",
+      "version": "1.9.3",
+      "description": "Module \"junit-platform-engine\" of JUnit 5.",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "EPL-2.0",
+            "url": "https://opensource.org/licenses/EPL-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.junit.platform/junit-platform-engine@1.9.3?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/junit-team/junit5"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:maven/org.junit.platform/junit-platform-engine@1.9.3?type=jar",
       "properties": [
         {
           "name": "GradleProfileName",
@@ -1155,7 +1192,7 @@
       "publisher": "VMware, Inc.",
       "group": "org.springframework.boot",
       "name": "spring-boot-test",
-      "version": "3.1.4",
+      "version": "3.1.5",
       "description": "Spring Boot Test",
       "scope": "optional",
       "licenses": [
@@ -1166,7 +1203,7 @@
           }
         }
       ],
-      "purl": "pkg:maven/org.springframework.boot/spring-boot-test@3.1.4?type=jar",
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-test@3.1.5?type=jar",
       "externalReferences": [
         {
           "type": "vcs",
@@ -1174,7 +1211,7 @@
         }
       ],
       "type": "framework",
-      "bom-ref": "pkg:maven/org.springframework.boot/spring-boot-test@3.1.4?type=jar",
+      "bom-ref": "pkg:maven/org.springframework.boot/spring-boot-test@3.1.5?type=jar",
       "properties": [
         {
           "name": "GradleProfileName",
@@ -1186,7 +1223,7 @@
       "publisher": "VMware, Inc.",
       "group": "org.springframework.boot",
       "name": "spring-boot-test-autoconfigure",
-      "version": "3.1.4",
+      "version": "3.1.5",
       "description": "Spring Boot Test AutoConfigure",
       "scope": "optional",
       "licenses": [
@@ -1197,7 +1234,7 @@
           }
         }
       ],
-      "purl": "pkg:maven/org.springframework.boot/spring-boot-test-autoconfigure@3.1.4?type=jar",
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-test-autoconfigure@3.1.5?type=jar",
       "externalReferences": [
         {
           "type": "vcs",
@@ -1205,7 +1242,7 @@
         }
       ],
       "type": "framework",
-      "bom-ref": "pkg:maven/org.springframework.boot/spring-boot-test-autoconfigure@3.1.4?type=jar",
+      "bom-ref": "pkg:maven/org.springframework.boot/spring-boot-test-autoconfigure@3.1.5?type=jar",
       "properties": [
         {
           "name": "GradleProfileName",
@@ -1472,7 +1509,7 @@
       "publisher": "Spring IO",
       "group": "org.springframework",
       "name": "spring-test",
-      "version": "6.0.12",
+      "version": "6.0.13",
       "description": "Spring TestContext Framework",
       "scope": "optional",
       "licenses": [
@@ -1483,7 +1520,7 @@
           }
         }
       ],
-      "purl": "pkg:maven/org.springframework/spring-test@6.0.12?type=jar",
+      "purl": "pkg:maven/org.springframework/spring-test@6.0.13?type=jar",
       "externalReferences": [
         {
           "type": "vcs",
@@ -1491,7 +1528,7 @@
         }
       ],
       "type": "framework",
-      "bom-ref": "pkg:maven/org.springframework/spring-test@6.0.12?type=jar",
+      "bom-ref": "pkg:maven/org.springframework/spring-test@6.0.13?type=jar",
       "properties": [
         {
           "name": "GradleProfileName",
@@ -1561,6 +1598,36 @@
       ]
     },
     {
+      "group": "org.junit.platform",
+      "name": "junit-platform-commons",
+      "version": "1.9.3",
+      "description": "Module \"junit-platform-commons\" of JUnit 5.",
+      "scope": "optional",
+      "licenses": [
+        {
+          "license": {
+            "id": "EPL-2.0",
+            "url": "https://opensource.org/licenses/EPL-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:maven/org.junit.platform/junit-platform-commons@1.9.3?type=jar",
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/junit-team/junit5"
+        }
+      ],
+      "type": "library",
+      "bom-ref": "pkg:maven/org.junit.platform/junit-platform-commons@1.9.3?type=jar",
+      "properties": [
+        {
+          "name": "GradleProfileName",
+          "value": "aotTestCompileClasspath"
+        }
+      ]
+    },
+    {
       "publisher": "Eclipse Foundation",
       "group": "jakarta.activation",
       "name": "jakarta.activation-api",
@@ -1593,7 +1660,7 @@
     {
       "group": "net.bytebuddy",
       "name": "byte-buddy",
-      "version": "1.14.8",
+      "version": "1.14.9",
       "description": "Byte Buddy is a Java library for creating Java classes at run time.\r\n        This artifact is a build of Byte Buddy with all ASM dependencies repackaged into its own name space.",
       "scope": "optional",
       "licenses": [
@@ -1604,7 +1671,7 @@
           }
         }
       ],
-      "purl": "pkg:maven/net.bytebuddy/byte-buddy@1.14.8?type=jar",
+      "purl": "pkg:maven/net.bytebuddy/byte-buddy@1.14.9?type=jar",
       "externalReferences": [
         {
           "type": "vcs",
@@ -1612,7 +1679,7 @@
         }
       ],
       "type": "library",
-      "bom-ref": "pkg:maven/net.bytebuddy/byte-buddy@1.14.8?type=jar",
+      "bom-ref": "pkg:maven/net.bytebuddy/byte-buddy@1.14.9?type=jar",
       "properties": [
         {
           "name": "GradleProfileName",
@@ -1713,7 +1780,7 @@
     {
       "group": "net.bytebuddy",
       "name": "byte-buddy-agent",
-      "version": "1.14.8",
+      "version": "1.14.9",
       "description": "The Byte Buddy agent offers convenience for attaching an agent to the local or a remote VM.",
       "scope": "optional",
       "licenses": [
@@ -1724,7 +1791,7 @@
           }
         }
       ],
-      "purl": "pkg:maven/net.bytebuddy/byte-buddy-agent@1.14.8?type=jar",
+      "purl": "pkg:maven/net.bytebuddy/byte-buddy-agent@1.14.9?type=jar",
       "externalReferences": [
         {
           "type": "vcs",
@@ -1732,37 +1799,7 @@
         }
       ],
       "type": "library",
-      "bom-ref": "pkg:maven/net.bytebuddy/byte-buddy-agent@1.14.8?type=jar",
-      "properties": [
-        {
-          "name": "GradleProfileName",
-          "value": "aotTestCompileClasspath"
-        }
-      ]
-    },
-    {
-      "group": "org.junit.platform",
-      "name": "junit-platform-engine",
-      "version": "1.9.3",
-      "description": "Module \"junit-platform-engine\" of JUnit 5.",
-      "scope": "optional",
-      "licenses": [
-        {
-          "license": {
-            "id": "EPL-2.0",
-            "url": "https://opensource.org/licenses/EPL-2.0"
-          }
-        }
-      ],
-      "purl": "pkg:maven/org.junit.platform/junit-platform-engine@1.9.3?type=jar",
-      "externalReferences": [
-        {
-          "type": "vcs",
-          "url": "https://github.com/junit-team/junit5"
-        }
-      ],
-      "type": "library",
-      "bom-ref": "pkg:maven/org.junit.platform/junit-platform-engine@1.9.3?type=jar",
+      "bom-ref": "pkg:maven/net.bytebuddy/byte-buddy-agent@1.14.9?type=jar",
       "properties": [
         {
           "name": "GradleProfileName",
@@ -1793,36 +1830,6 @@
       ],
       "type": "library",
       "bom-ref": "pkg:maven/org.junit.platform/junit-platform-reporting@1.9.3?type=jar",
-      "properties": [
-        {
-          "name": "GradleProfileName",
-          "value": "aotTestCompileClasspath"
-        }
-      ]
-    },
-    {
-      "group": "org.junit.platform",
-      "name": "junit-platform-commons",
-      "version": "1.9.3",
-      "description": "Module \"junit-platform-commons\" of JUnit 5.",
-      "scope": "optional",
-      "licenses": [
-        {
-          "license": {
-            "id": "EPL-2.0",
-            "url": "https://opensource.org/licenses/EPL-2.0"
-          }
-        }
-      ],
-      "purl": "pkg:maven/org.junit.platform/junit-platform-commons@1.9.3?type=jar",
-      "externalReferences": [
-        {
-          "type": "vcs",
-          "url": "https://github.com/junit-team/junit5"
-        }
-      ],
-      "type": "library",
-      "bom-ref": "pkg:maven/org.junit.platform/junit-platform-commons@1.9.3?type=jar",
       "properties": [
         {
           "name": "GradleProfileName",
@@ -2109,6 +2116,19 @@
       "purl": "pkg:maven/gradle/gradle@wrapper?type=jar",
       "type": "library",
       "bom-ref": "pkg:maven/gradle/gradle@wrapper?type=jar",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.5,
+          "methods": [
+            {
+              "technique": "filename",
+              "confidence": 0.5,
+              "value": "gradle-wrapper.jar"
+            }
+          ]
+        }
+      },
       "properties": [
         {
           "name": "SrcFile",
@@ -2123,6 +2143,19 @@
       "purl": "pkg:maven/demo-sbom-cdx-gradle/demo-sbom-cdx-gradle@1.0?type=jar",
       "type": "library",
       "bom-ref": "pkg:maven/demo-sbom-cdx-gradle/demo-sbom-cdx-gradle@1.0?type=jar",
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 0.5,
+          "methods": [
+            {
+              "technique": "filename",
+              "confidence": 0.5,
+              "value": "demo-sbom-cdx-gradle-1.0.jar"
+            }
+          ]
+        }
+      },
       "properties": [
         {
           "name": "SrcFile",
@@ -2138,85 +2171,85 @@
       "dependsOn": [
         "pkg:maven/org.graalvm.buildtools/junit-platform-native@0.9.27?type=jar",
         "pkg:maven/org.junit.platform/junit-platform-launcher@1.9.3?type=jar",
-        "pkg:maven/org.springframework.boot/spring-boot-dependencies@3.1.4?type=jar",
-        "pkg:maven/org.springframework.boot/spring-boot-starter-test@3.1.4?type=jar",
-        "pkg:maven/org.springframework.boot/spring-boot-starter-web@3.1.4?type=jar"
+        "pkg:maven/org.springframework.boot/spring-boot-dependencies@3.1.5?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-starter-test@3.1.5?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-starter-web@3.1.5?type=jar"
       ]
     },
     {
-      "ref": "pkg:maven/org.springframework.boot/spring-boot-starter-web@3.1.4?type=jar",
+      "ref": "pkg:maven/org.springframework.boot/spring-boot-starter-web@3.1.5?type=jar",
       "dependsOn": [
-        "pkg:maven/org.springframework.boot/spring-boot-starter-json@3.1.4?type=jar",
-        "pkg:maven/org.springframework.boot/spring-boot-starter-tomcat@3.1.4?type=jar",
-        "pkg:maven/org.springframework.boot/spring-boot-starter@3.1.4?type=jar",
-        "pkg:maven/org.springframework/spring-web@6.0.12?type=jar",
-        "pkg:maven/org.springframework/spring-webmvc@6.0.12?type=jar"
+        "pkg:maven/org.springframework.boot/spring-boot-starter-json@3.1.5?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-starter-tomcat@3.1.5?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-starter@3.1.5?type=jar",
+        "pkg:maven/org.springframework/spring-web@6.0.13?type=jar",
+        "pkg:maven/org.springframework/spring-webmvc@6.0.13?type=jar"
       ]
     },
     {
-      "ref": "pkg:maven/org.springframework.boot/spring-boot-starter@3.1.4?type=jar",
+      "ref": "pkg:maven/org.springframework.boot/spring-boot-starter@3.1.5?type=jar",
       "dependsOn": [
         "pkg:maven/jakarta.annotation/jakarta.annotation-api@2.1.1?type=jar",
-        "pkg:maven/org.springframework.boot/spring-boot-autoconfigure@3.1.4?type=jar",
-        "pkg:maven/org.springframework.boot/spring-boot-starter-logging@3.1.4?type=jar",
-        "pkg:maven/org.springframework.boot/spring-boot@3.1.4?type=jar",
-        "pkg:maven/org.springframework/spring-core@6.0.12?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-autoconfigure@3.1.5?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-starter-logging@3.1.5?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot@3.1.5?type=jar",
+        "pkg:maven/org.springframework/spring-core@6.0.13?type=jar",
         "pkg:maven/org.yaml/snakeyaml@1.33?type=jar"
       ]
     },
     {
-      "ref": "pkg:maven/org.springframework.boot/spring-boot@3.1.4?type=jar",
+      "ref": "pkg:maven/org.springframework.boot/spring-boot@3.1.5?type=jar",
       "dependsOn": [
-        "pkg:maven/org.springframework/spring-context@6.0.12?type=jar",
-        "pkg:maven/org.springframework/spring-core@6.0.12?type=jar"
+        "pkg:maven/org.springframework/spring-context@6.0.13?type=jar",
+        "pkg:maven/org.springframework/spring-core@6.0.13?type=jar"
       ]
     },
     {
-      "ref": "pkg:maven/org.springframework/spring-core@6.0.12?type=jar",
+      "ref": "pkg:maven/org.springframework/spring-core@6.0.13?type=jar",
       "dependsOn": [
-        "pkg:maven/org.springframework/spring-jcl@6.0.12?type=jar"
+        "pkg:maven/org.springframework/spring-jcl@6.0.13?type=jar"
       ]
     },
     {
-      "ref": "pkg:maven/org.springframework/spring-jcl@6.0.12?type=jar",
+      "ref": "pkg:maven/org.springframework/spring-jcl@6.0.13?type=jar",
       "dependsOn": []
     },
     {
-      "ref": "pkg:maven/org.springframework/spring-context@6.0.12?type=jar",
+      "ref": "pkg:maven/org.springframework/spring-context@6.0.13?type=jar",
       "dependsOn": [
-        "pkg:maven/org.springframework/spring-aop@6.0.12?type=jar",
-        "pkg:maven/org.springframework/spring-beans@6.0.12?type=jar",
-        "pkg:maven/org.springframework/spring-core@6.0.12?type=jar",
-        "pkg:maven/org.springframework/spring-expression@6.0.12?type=jar"
+        "pkg:maven/org.springframework/spring-aop@6.0.13?type=jar",
+        "pkg:maven/org.springframework/spring-beans@6.0.13?type=jar",
+        "pkg:maven/org.springframework/spring-core@6.0.13?type=jar",
+        "pkg:maven/org.springframework/spring-expression@6.0.13?type=jar"
       ]
     },
     {
-      "ref": "pkg:maven/org.springframework/spring-aop@6.0.12?type=jar",
+      "ref": "pkg:maven/org.springframework/spring-aop@6.0.13?type=jar",
       "dependsOn": [
-        "pkg:maven/org.springframework/spring-beans@6.0.12?type=jar",
-        "pkg:maven/org.springframework/spring-core@6.0.12?type=jar"
+        "pkg:maven/org.springframework/spring-beans@6.0.13?type=jar",
+        "pkg:maven/org.springframework/spring-core@6.0.13?type=jar"
       ]
     },
     {
-      "ref": "pkg:maven/org.springframework/spring-beans@6.0.12?type=jar",
+      "ref": "pkg:maven/org.springframework/spring-beans@6.0.13?type=jar",
       "dependsOn": [
-        "pkg:maven/org.springframework/spring-core@6.0.12?type=jar"
+        "pkg:maven/org.springframework/spring-core@6.0.13?type=jar"
       ]
     },
     {
-      "ref": "pkg:maven/org.springframework/spring-expression@6.0.12?type=jar",
+      "ref": "pkg:maven/org.springframework/spring-expression@6.0.13?type=jar",
       "dependsOn": [
-        "pkg:maven/org.springframework/spring-core@6.0.12?type=jar"
+        "pkg:maven/org.springframework/spring-core@6.0.13?type=jar"
       ]
     },
     {
-      "ref": "pkg:maven/org.springframework.boot/spring-boot-autoconfigure@3.1.4?type=jar",
+      "ref": "pkg:maven/org.springframework.boot/spring-boot-autoconfigure@3.1.5?type=jar",
       "dependsOn": [
-        "pkg:maven/org.springframework.boot/spring-boot@3.1.4?type=jar"
+        "pkg:maven/org.springframework.boot/spring-boot@3.1.5?type=jar"
       ]
     },
     {
-      "ref": "pkg:maven/org.springframework.boot/spring-boot-starter-logging@3.1.4?type=jar",
+      "ref": "pkg:maven/org.springframework.boot/spring-boot-starter-logging@3.1.5?type=jar",
       "dependsOn": [
         "pkg:maven/ch.qos.logback/logback-classic@1.4.11?type=jar",
         "pkg:maven/org.apache.logging.log4j/log4j-to-slf4j@2.20.0?type=jar",
@@ -2264,149 +2297,149 @@
       "dependsOn": []
     },
     {
-      "ref": "pkg:maven/org.springframework.boot/spring-boot-starter-json@3.1.4?type=jar",
+      "ref": "pkg:maven/org.springframework.boot/spring-boot-starter-json@3.1.5?type=jar",
       "dependsOn": [
-        "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.15.2?type=jar",
-        "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jdk8@2.15.2?type=jar",
-        "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jsr310@2.15.2?type=jar",
-        "pkg:maven/com.fasterxml.jackson.module/jackson-module-parameter-names@2.15.2?type=jar",
-        "pkg:maven/org.springframework.boot/spring-boot-starter@3.1.4?type=jar",
-        "pkg:maven/org.springframework/spring-web@6.0.12?type=jar"
+        "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.15.3?type=jar",
+        "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jdk8@2.15.3?type=jar",
+        "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jsr310@2.15.3?type=jar",
+        "pkg:maven/com.fasterxml.jackson.module/jackson-module-parameter-names@2.15.3?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-starter@3.1.5?type=jar",
+        "pkg:maven/org.springframework/spring-web@6.0.13?type=jar"
       ]
     },
     {
-      "ref": "pkg:maven/org.springframework/spring-web@6.0.12?type=jar",
+      "ref": "pkg:maven/org.springframework/spring-web@6.0.13?type=jar",
       "dependsOn": [
-        "pkg:maven/io.micrometer/micrometer-observation@1.11.4?type=jar",
-        "pkg:maven/org.springframework/spring-beans@6.0.12?type=jar",
-        "pkg:maven/org.springframework/spring-core@6.0.12?type=jar"
+        "pkg:maven/io.micrometer/micrometer-observation@1.11.5?type=jar",
+        "pkg:maven/org.springframework/spring-beans@6.0.13?type=jar",
+        "pkg:maven/org.springframework/spring-core@6.0.13?type=jar"
       ]
     },
     {
-      "ref": "pkg:maven/io.micrometer/micrometer-observation@1.11.4?type=jar",
+      "ref": "pkg:maven/io.micrometer/micrometer-observation@1.11.5?type=jar",
       "dependsOn": [
-        "pkg:maven/io.micrometer/micrometer-commons@1.11.4?type=jar"
+        "pkg:maven/io.micrometer/micrometer-commons@1.11.5?type=jar"
       ]
     },
     {
-      "ref": "pkg:maven/io.micrometer/micrometer-commons@1.11.4?type=jar",
+      "ref": "pkg:maven/io.micrometer/micrometer-commons@1.11.5?type=jar",
       "dependsOn": []
     },
     {
-      "ref": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.15.2?type=jar",
+      "ref": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.15.3?type=jar",
       "dependsOn": [
-        "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.15.2?type=jar",
-        "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.15.2?type=jar",
-        "pkg:maven/com.fasterxml.jackson/jackson-bom@2.15.2?type=jar"
+        "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.15.3?type=jar",
+        "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.15.3?type=jar",
+        "pkg:maven/com.fasterxml.jackson/jackson-bom@2.15.3?type=jar"
       ]
     },
     {
-      "ref": "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.15.2?type=jar",
+      "ref": "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.15.3?type=jar",
       "dependsOn": [
-        "pkg:maven/com.fasterxml.jackson/jackson-bom@2.15.2?type=jar"
+        "pkg:maven/com.fasterxml.jackson/jackson-bom@2.15.3?type=jar"
       ]
     },
     {
-      "ref": "pkg:maven/com.fasterxml.jackson/jackson-bom@2.15.2?type=jar",
+      "ref": "pkg:maven/com.fasterxml.jackson/jackson-bom@2.15.3?type=jar",
       "dependsOn": [
-        "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.15.2?type=jar",
-        "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.15.2?type=jar",
-        "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.15.2?type=jar",
-        "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jdk8@2.15.2?type=jar",
-        "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jsr310@2.15.2?type=jar",
-        "pkg:maven/com.fasterxml.jackson.module/jackson-module-parameter-names@2.15.2?type=jar"
+        "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.15.3?type=jar",
+        "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.15.3?type=jar",
+        "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.15.3?type=jar",
+        "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jdk8@2.15.3?type=jar",
+        "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jsr310@2.15.3?type=jar",
+        "pkg:maven/com.fasterxml.jackson.module/jackson-module-parameter-names@2.15.3?type=jar"
       ]
     },
     {
-      "ref": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.15.2?type=jar",
+      "ref": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.15.3?type=jar",
       "dependsOn": [
-        "pkg:maven/com.fasterxml.jackson/jackson-bom@2.15.2?type=jar"
+        "pkg:maven/com.fasterxml.jackson/jackson-bom@2.15.3?type=jar"
       ]
     },
     {
-      "ref": "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jdk8@2.15.2?type=jar",
+      "ref": "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jdk8@2.15.3?type=jar",
       "dependsOn": [
-        "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.15.2?type=jar",
-        "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.15.2?type=jar",
-        "pkg:maven/com.fasterxml.jackson/jackson-bom@2.15.2?type=jar"
+        "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.15.3?type=jar",
+        "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.15.3?type=jar",
+        "pkg:maven/com.fasterxml.jackson/jackson-bom@2.15.3?type=jar"
       ]
     },
     {
-      "ref": "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jsr310@2.15.2?type=jar",
+      "ref": "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jsr310@2.15.3?type=jar",
       "dependsOn": [
-        "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.15.2?type=jar",
-        "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.15.2?type=jar",
-        "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.15.2?type=jar",
-        "pkg:maven/com.fasterxml.jackson/jackson-bom@2.15.2?type=jar"
+        "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.15.3?type=jar",
+        "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.15.3?type=jar",
+        "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.15.3?type=jar",
+        "pkg:maven/com.fasterxml.jackson/jackson-bom@2.15.3?type=jar"
       ]
     },
     {
-      "ref": "pkg:maven/com.fasterxml.jackson.module/jackson-module-parameter-names@2.15.2?type=jar",
+      "ref": "pkg:maven/com.fasterxml.jackson.module/jackson-module-parameter-names@2.15.3?type=jar",
       "dependsOn": [
-        "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.15.2?type=jar",
-        "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.15.2?type=jar",
-        "pkg:maven/com.fasterxml.jackson/jackson-bom@2.15.2?type=jar"
+        "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.15.3?type=jar",
+        "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.15.3?type=jar",
+        "pkg:maven/com.fasterxml.jackson/jackson-bom@2.15.3?type=jar"
       ]
     },
     {
-      "ref": "pkg:maven/org.springframework.boot/spring-boot-starter-tomcat@3.1.4?type=jar",
+      "ref": "pkg:maven/org.springframework.boot/spring-boot-starter-tomcat@3.1.5?type=jar",
       "dependsOn": [
         "pkg:maven/jakarta.annotation/jakarta.annotation-api@2.1.1?type=jar",
-        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.13?type=jar",
-        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-el@10.1.13?type=jar",
-        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.13?type=jar"
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.15?type=jar",
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-el@10.1.15?type=jar",
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.15?type=jar"
       ]
     },
     {
-      "ref": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.13?type=jar",
+      "ref": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.15?type=jar",
       "dependsOn": []
     },
     {
-      "ref": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-el@10.1.13?type=jar",
+      "ref": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-el@10.1.15?type=jar",
       "dependsOn": []
     },
     {
-      "ref": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.13?type=jar",
+      "ref": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.15?type=jar",
       "dependsOn": [
-        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.13?type=jar"
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.15?type=jar"
       ]
     },
     {
-      "ref": "pkg:maven/org.springframework/spring-webmvc@6.0.12?type=jar",
+      "ref": "pkg:maven/org.springframework/spring-webmvc@6.0.13?type=jar",
       "dependsOn": [
-        "pkg:maven/org.springframework/spring-aop@6.0.12?type=jar",
-        "pkg:maven/org.springframework/spring-beans@6.0.12?type=jar",
-        "pkg:maven/org.springframework/spring-context@6.0.12?type=jar",
-        "pkg:maven/org.springframework/spring-core@6.0.12?type=jar",
-        "pkg:maven/org.springframework/spring-expression@6.0.12?type=jar",
-        "pkg:maven/org.springframework/spring-web@6.0.12?type=jar"
+        "pkg:maven/org.springframework/spring-aop@6.0.13?type=jar",
+        "pkg:maven/org.springframework/spring-beans@6.0.13?type=jar",
+        "pkg:maven/org.springframework/spring-context@6.0.13?type=jar",
+        "pkg:maven/org.springframework/spring-core@6.0.13?type=jar",
+        "pkg:maven/org.springframework/spring-expression@6.0.13?type=jar",
+        "pkg:maven/org.springframework/spring-web@6.0.13?type=jar"
       ]
     },
     {
-      "ref": "pkg:maven/org.springframework.boot/spring-boot-dependencies@3.1.4?type=jar",
+      "ref": "pkg:maven/org.springframework.boot/spring-boot-dependencies@3.1.5?type=jar",
       "dependsOn": [
         "pkg:maven/ch.qos.logback/logback-classic@1.4.11?type=jar",
         "pkg:maven/ch.qos.logback/logback-core@1.4.11?type=jar",
-        "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.15.2?type=jar",
-        "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.15.2?type=jar",
-        "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.15.2?type=jar",
-        "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jdk8@2.15.2?type=jar",
-        "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jsr310@2.15.2?type=jar",
-        "pkg:maven/com.fasterxml.jackson.module/jackson-module-parameter-names@2.15.2?type=jar",
+        "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.15.3?type=jar",
+        "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.15.3?type=jar",
+        "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.15.3?type=jar",
+        "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jdk8@2.15.3?type=jar",
+        "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jsr310@2.15.3?type=jar",
+        "pkg:maven/com.fasterxml.jackson.module/jackson-module-parameter-names@2.15.3?type=jar",
         "pkg:maven/com.jayway.jsonpath/json-path@2.8.0?type=jar",
-        "pkg:maven/io.micrometer/micrometer-commons@1.11.4?type=jar",
-        "pkg:maven/io.micrometer/micrometer-observation@1.11.4?type=jar",
+        "pkg:maven/io.micrometer/micrometer-commons@1.11.5?type=jar",
+        "pkg:maven/io.micrometer/micrometer-observation@1.11.5?type=jar",
         "pkg:maven/jakarta.activation/jakarta.activation-api@2.1.2?type=jar",
         "pkg:maven/jakarta.annotation/jakarta.annotation-api@2.1.1?type=jar",
         "pkg:maven/jakarta.xml.bind/jakarta.xml.bind-api@4.0.1?type=jar",
-        "pkg:maven/net.bytebuddy/byte-buddy-agent@1.14.8?type=jar",
-        "pkg:maven/net.bytebuddy/byte-buddy@1.14.8?type=jar",
+        "pkg:maven/net.bytebuddy/byte-buddy-agent@1.14.9?type=jar",
+        "pkg:maven/net.bytebuddy/byte-buddy@1.14.9?type=jar",
         "pkg:maven/net.minidev/json-smart@2.4.11?type=jar",
         "pkg:maven/org.apache.logging.log4j/log4j-api@2.20.0?type=jar",
         "pkg:maven/org.apache.logging.log4j/log4j-to-slf4j@2.20.0?type=jar",
-        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.13?type=jar",
-        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-el@10.1.13?type=jar",
-        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.13?type=jar",
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.15?type=jar",
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-el@10.1.15?type=jar",
+        "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.15?type=jar",
         "pkg:maven/org.assertj/assertj-core@3.24.2?type=jar",
         "pkg:maven/org.hamcrest/hamcrest@2.2?type=jar",
         "pkg:maven/org.junit.jupiter/junit-jupiter-api@5.9.3?type=jar",
@@ -2423,25 +2456,25 @@
         "pkg:maven/org.skyscreamer/jsonassert@1.5.1?type=jar",
         "pkg:maven/org.slf4j/jul-to-slf4j@2.0.9?type=jar",
         "pkg:maven/org.slf4j/slf4j-api@2.0.9?type=jar",
-        "pkg:maven/org.springframework.boot/spring-boot-autoconfigure@3.1.4?type=jar",
-        "pkg:maven/org.springframework.boot/spring-boot-starter-json@3.1.4?type=jar",
-        "pkg:maven/org.springframework.boot/spring-boot-starter-logging@3.1.4?type=jar",
-        "pkg:maven/org.springframework.boot/spring-boot-starter-test@3.1.4?type=jar",
-        "pkg:maven/org.springframework.boot/spring-boot-starter-tomcat@3.1.4?type=jar",
-        "pkg:maven/org.springframework.boot/spring-boot-starter-web@3.1.4?type=jar",
-        "pkg:maven/org.springframework.boot/spring-boot-starter@3.1.4?type=jar",
-        "pkg:maven/org.springframework.boot/spring-boot-test-autoconfigure@3.1.4?type=jar",
-        "pkg:maven/org.springframework.boot/spring-boot-test@3.1.4?type=jar",
-        "pkg:maven/org.springframework.boot/spring-boot@3.1.4?type=jar",
-        "pkg:maven/org.springframework/spring-aop@6.0.12?type=jar",
-        "pkg:maven/org.springframework/spring-beans@6.0.12?type=jar",
-        "pkg:maven/org.springframework/spring-context@6.0.12?type=jar",
-        "pkg:maven/org.springframework/spring-core@6.0.12?type=jar",
-        "pkg:maven/org.springframework/spring-expression@6.0.12?type=jar",
-        "pkg:maven/org.springframework/spring-jcl@6.0.12?type=jar",
-        "pkg:maven/org.springframework/spring-test@6.0.12?type=jar",
-        "pkg:maven/org.springframework/spring-web@6.0.12?type=jar",
-        "pkg:maven/org.springframework/spring-webmvc@6.0.12?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-autoconfigure@3.1.5?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-starter-json@3.1.5?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-starter-logging@3.1.5?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-starter-test@3.1.5?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-starter-tomcat@3.1.5?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-starter-web@3.1.5?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-starter@3.1.5?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-test-autoconfigure@3.1.5?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-test@3.1.5?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot@3.1.5?type=jar",
+        "pkg:maven/org.springframework/spring-aop@6.0.13?type=jar",
+        "pkg:maven/org.springframework/spring-beans@6.0.13?type=jar",
+        "pkg:maven/org.springframework/spring-context@6.0.13?type=jar",
+        "pkg:maven/org.springframework/spring-core@6.0.13?type=jar",
+        "pkg:maven/org.springframework/spring-expression@6.0.13?type=jar",
+        "pkg:maven/org.springframework/spring-jcl@6.0.13?type=jar",
+        "pkg:maven/org.springframework/spring-test@6.0.13?type=jar",
+        "pkg:maven/org.springframework/spring-web@6.0.13?type=jar",
+        "pkg:maven/org.springframework/spring-webmvc@6.0.13?type=jar",
         "pkg:maven/org.xmlunit/xmlunit-core@2.9.1?type=jar",
         "pkg:maven/org.yaml/snakeyaml@1.33?type=jar"
       ]
@@ -2454,7 +2487,7 @@
       ]
     },
     {
-      "ref": "pkg:maven/org.springframework.boot/spring-boot-starter-test@3.1.4?type=jar",
+      "ref": "pkg:maven/org.springframework.boot/spring-boot-starter-test@3.1.5?type=jar",
       "dependsOn": [
         "pkg:maven/com.jayway.jsonpath/json-path@2.8.0?type=jar",
         "pkg:maven/jakarta.xml.bind/jakarta.xml.bind-api@4.0.1?type=jar",
@@ -2465,26 +2498,34 @@
         "pkg:maven/org.mockito/mockito-core@5.3.1?type=jar",
         "pkg:maven/org.mockito/mockito-junit-jupiter@5.3.1?type=jar",
         "pkg:maven/org.skyscreamer/jsonassert@1.5.1?type=jar",
-        "pkg:maven/org.springframework.boot/spring-boot-starter@3.1.4?type=jar",
-        "pkg:maven/org.springframework.boot/spring-boot-test-autoconfigure@3.1.4?type=jar",
-        "pkg:maven/org.springframework.boot/spring-boot-test@3.1.4?type=jar",
-        "pkg:maven/org.springframework/spring-core@6.0.12?type=jar",
-        "pkg:maven/org.springframework/spring-test@6.0.12?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-starter@3.1.5?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-test-autoconfigure@3.1.5?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-test@3.1.5?type=jar",
+        "pkg:maven/org.springframework/spring-core@6.0.13?type=jar",
+        "pkg:maven/org.springframework/spring-test@6.0.13?type=jar",
         "pkg:maven/org.xmlunit/xmlunit-core@2.9.1?type=jar"
       ]
     },
     {
-      "ref": "pkg:maven/org.springframework.boot/spring-boot-test@3.1.4?type=jar",
+      "ref": "pkg:maven/org.junit.platform/junit-platform-engine@1.9.3?type=jar",
       "dependsOn": [
-        "pkg:maven/org.springframework.boot/spring-boot@3.1.4?type=jar"
+        "pkg:maven/org.junit.platform/junit-platform-commons@1.9.3?type=jar",
+        "pkg:maven/org.junit/junit-bom@5.10.0?type=jar",
+        "pkg:maven/org.opentest4j/opentest4j@1.2.0?type=jar"
       ]
     },
     {
-      "ref": "pkg:maven/org.springframework.boot/spring-boot-test-autoconfigure@3.1.4?type=jar",
+      "ref": "pkg:maven/org.springframework.boot/spring-boot-test@3.1.5?type=jar",
       "dependsOn": [
-        "pkg:maven/org.springframework.boot/spring-boot-autoconfigure@3.1.4?type=jar",
-        "pkg:maven/org.springframework.boot/spring-boot-test@3.1.4?type=jar",
-        "pkg:maven/org.springframework.boot/spring-boot@3.1.4?type=jar"
+        "pkg:maven/org.springframework.boot/spring-boot@3.1.5?type=jar"
+      ]
+    },
+    {
+      "ref": "pkg:maven/org.springframework.boot/spring-boot-test-autoconfigure@3.1.5?type=jar",
+      "dependsOn": [
+        "pkg:maven/org.springframework.boot/spring-boot-autoconfigure@3.1.5?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot-test@3.1.5?type=jar",
+        "pkg:maven/org.springframework.boot/spring-boot@3.1.5?type=jar"
       ]
     },
     {
@@ -2509,7 +2550,7 @@
     {
       "ref": "pkg:maven/org.assertj/assertj-core@3.24.2?type=jar",
       "dependsOn": [
-        "pkg:maven/net.bytebuddy/byte-buddy@1.14.8?type=jar"
+        "pkg:maven/net.bytebuddy/byte-buddy@1.14.9?type=jar"
       ]
     },
     {
@@ -2529,8 +2570,8 @@
     {
       "ref": "pkg:maven/org.mockito/mockito-core@5.3.1?type=jar",
       "dependsOn": [
-        "pkg:maven/net.bytebuddy/byte-buddy-agent@1.14.8?type=jar",
-        "pkg:maven/net.bytebuddy/byte-buddy@1.14.8?type=jar",
+        "pkg:maven/net.bytebuddy/byte-buddy-agent@1.14.9?type=jar",
+        "pkg:maven/net.bytebuddy/byte-buddy@1.14.9?type=jar",
         "pkg:maven/org.objenesis/objenesis@3.3?type=jar"
       ]
     },
@@ -2548,9 +2589,9 @@
       ]
     },
     {
-      "ref": "pkg:maven/org.springframework/spring-test@6.0.12?type=jar",
+      "ref": "pkg:maven/org.springframework/spring-test@6.0.13?type=jar",
       "dependsOn": [
-        "pkg:maven/org.springframework/spring-core@6.0.12?type=jar"
+        "pkg:maven/org.springframework/spring-core@6.0.13?type=jar"
       ]
     },
     {
@@ -2565,11 +2606,19 @@
       ]
     },
     {
+      "ref": "pkg:maven/org.junit.platform/junit-platform-commons@1.9.3?type=jar",
+      "dependsOn": [
+        "pkg:maven/org.apiguardian/apiguardian-api@1.1.2?type=jar",
+        "pkg:maven/org.junit/junit-bom@5.10.0?type=jar",
+        "pkg:maven/org.junit/junit-bom@5.9.3?type=jar"
+      ]
+    },
+    {
       "ref": "pkg:maven/jakarta.activation/jakarta.activation-api@2.1.2?type=jar",
       "dependsOn": []
     },
     {
-      "ref": "pkg:maven/net.bytebuddy/byte-buddy@1.14.8?type=jar",
+      "ref": "pkg:maven/net.bytebuddy/byte-buddy@1.14.9?type=jar",
       "dependsOn": []
     },
     {
@@ -2600,30 +2649,14 @@
       ]
     },
     {
-      "ref": "pkg:maven/net.bytebuddy/byte-buddy-agent@1.14.8?type=jar",
+      "ref": "pkg:maven/net.bytebuddy/byte-buddy-agent@1.14.9?type=jar",
       "dependsOn": []
-    },
-    {
-      "ref": "pkg:maven/org.junit.platform/junit-platform-engine@1.9.3?type=jar",
-      "dependsOn": [
-        "pkg:maven/org.junit.platform/junit-platform-commons@1.9.3?type=jar",
-        "pkg:maven/org.junit/junit-bom@5.10.0?type=jar",
-        "pkg:maven/org.opentest4j/opentest4j@1.2.0?type=jar"
-      ]
     },
     {
       "ref": "pkg:maven/org.junit.platform/junit-platform-reporting@1.9.3?type=jar",
       "dependsOn": [
         "pkg:maven/org.junit.platform/junit-platform-launcher@1.9.3?type=jar",
         "pkg:maven/org.junit/junit-bom@5.10.0?type=jar"
-      ]
-    },
-    {
-      "ref": "pkg:maven/org.junit.platform/junit-platform-commons@1.9.3?type=jar",
-      "dependsOn": [
-        "pkg:maven/org.apiguardian/apiguardian-api@1.1.2?type=jar",
-        "pkg:maven/org.junit/junit-bom@5.10.0?type=jar",
-        "pkg:maven/org.junit/junit-bom@5.9.3?type=jar"
       ]
     },
     {

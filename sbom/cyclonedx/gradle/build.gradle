@@ -33,16 +33,26 @@ tasks.test {
 
 cyclonedxBom {
     projectType = "application"
-    skipConfigs = ["testCompileClasspath"]
+    includeConfigs = ["runtimeClasspath"]
     outputFormat = "json"
-    schemaVersion = "1.4"
+    schemaVersion = "1.5"
 }
-tasks.assemble.finalizedBy 'cyclonedxBom'
+tasks.bootJar.finalizedBy 'cyclonedxBom'
 
 graalvmNative {
     binaries {
         configureEach {
             buildArgs.add("--enable-sbom=cyclonedx,export")
         }
+    }
+}
+
+tasks.bootBuildImage {
+    if (System.getProperty( "os.arch" ).toLowerCase().startsWith('aarch')) {
+        // This builder is only for ARM64 systems.
+        // For more info: https://github.com/dashaun/paketo-arm64
+        builder = "docker.io/dashaun/builder:tiny"
+    } else {
+        builder = "docker.io/paketobuildpacks/builder-jammy-tiny"
     }
 }
