@@ -6,9 +6,9 @@ Samples showing how to secure the supply chain for Java applications, including:
 * Dependency Management with Gradle and Maven
 * Cryptographic signatures, policies, and SLSA
 
-## Pre-requisites
+## Article Series
 
-* Java 21
+* [Supply Chain Security: SBOMs for Java Applications](https://www.thomasvitale.com/supply-chain-security-java-sbom)
 
 ## Devoxx Belgium 2023
 
