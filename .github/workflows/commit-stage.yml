@@ -19,7 +19,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Set up Java
-        uses: actions/setup-java@v3
+        uses: actions/setup-java@v4
         with:
           java-version: 21
           distribution: liberica
@@ -31,7 +31,7 @@ jobs:
           ./gradlew clean build
       
       - name: Upload SBOM
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: sbom.json
           path: policies/gradle/build/reports/bom.json
@@ -45,13 +45,13 @@ jobs:
           output: 'trivy-results-source-code.sarif'
       
       - name: Upload SBOM vulnerability report
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: trivy-results-source-code.sarif
           path: trivy-results-source-code.sarif
 
       - name: Upload vulnerability report
-        uses: github/codeql-action/upload-sarif@v2
+        uses: github/codeql-action/upload-sarif@v3
         if: success() || failure()
         with:
           sarif_file: 'trivy-results-source-code.sarif'
@@ -70,7 +70,7 @@ jobs:
           output: 'trivy-results-oci-image.sarif'
 
       - name: Upload vulnerability report
-        uses: github/codeql-action/upload-sarif@v2
+        uses: github/codeql-action/upload-sarif@v3
         if: success() || failure()
         with:
           sarif_file: 'trivy-results-oci-image.sarif'
