@@ -40,7 +40,7 @@ jobs:
         uses: aquasecurity/trivy-action@master
         with:
           scan-type: 'sbom'
-          image-ref: 'policies/gradle/build/reports/bom.json'
+          scan-ref: 'policies/gradle/build/reports/bom.json'
           format: 'sarif'
           output: 'trivy-results-source-code.sarif'
       
@@ -65,6 +65,7 @@ jobs:
       - name: OCI image vulnerability scanning
         uses: aquasecurity/trivy-action@master
         with:
+          scan-type: 'image'
           image-ref: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ env.VERSION }}
           format: 'sarif'
           output: 'trivy-results-oci-image.sarif'
