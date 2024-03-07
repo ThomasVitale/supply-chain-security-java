@@ -103,6 +103,8 @@ services:
           memory: 8192m
       restart_policy:
         condition: on-failure
+    environment:
+      - SYSTEM_REQUIREMENT_CHECK_ENABLED=false
     ports:
       - '8081:8080'
     volumes:

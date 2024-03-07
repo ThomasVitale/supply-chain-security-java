@@ -3,7 +3,7 @@ on: push
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: thomasvitale/demo
+  IMAGE_NAME: thomasvitale/policy-demo
   VERSION: ${{ github.sha }}
 
 jobs:
