@@ -34,13 +34,13 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: sbom.json
-          path: policies/gradle/build/reports/bom.json
+          path: policies/gradle/build/reports/application.cdx.json
       
       - name: SBOM vulnerability scanning
         uses: aquasecurity/trivy-action@master
         with:
           scan-type: 'sbom'
-          scan-ref: 'policies/gradle/build/reports/bom.json'
+          scan-ref: 'policies/gradle/build/reports/application.cdx.json'
           format: 'sarif'
           output: 'trivy-results-source-code.sarif'
       
