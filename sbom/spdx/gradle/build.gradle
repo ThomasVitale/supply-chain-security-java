@@ -1,24 +1,26 @@
 plugins {
-    id 'application'
     id 'java'
-    id 'org.springframework.boot' version '3.2.3'
+    id 'org.springframework.boot' version '3.3.0-RC1'
     id 'io.spring.dependency-management' version '1.1.4'
-    id 'org.graalvm.buildtools.native' version '0.9.28'
-    id "org.spdx.sbom" version "0.7.0"
+    id "org.spdx.sbom" version '0.8.0'
 }
 
 group = 'com.thomasvitale'
 version = '1.0'
 
 java {
-    sourceCompatibility = '21'
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
 }
 
 repositories {
     mavenCentral()
+    maven { url 'https://repo.spring.io/milestone' }
 }
 
 dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
     implementation 'org.springframework.boot:spring-boot-starter-web'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
@@ -33,3 +35,9 @@ spdxSbom {
     }
 }
 tasks.assemble.finalizedBy 'spdxSbomForRelease'
+
+tasks.named('bootBuildImage') {
+    builder = "paketobuildpacks/builder-jammy-buildpackless-tiny"
+    buildpacks = [ "gcr.io/paketo-buildpacks/java:beta" ]
+    imageName = "${project.name}"
+}

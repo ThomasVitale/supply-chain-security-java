@@ -22,13 +22,13 @@ FETCH_LICENSE=true cdxgen -o bom-cdxgen.cdx.json --spec-version 1.5
 ## Scanning a SBOM for security vulnerabilities with Trivy
 
 ```shell
-trivy sbom build/reports/bom.json
+trivy sbom build/reports/application.cdx.json
 ```
 
 ## Verifying the quality of a SBOM with sbomqs
 
 ```shell
-sbomqs score build/reports/bom.json
+sbomqs score build/reports/application.cdx.json
 ```
 
 ## Generating a SBOM for a GraalVM native executable
@@ -40,5 +40,5 @@ sbomqs score build/reports/bom.json
 ## Scanning a GraalVM SBOM for vulnerabilities with Trivy
 
 ```shell
-trivy sbom build/native/nativeCompile/demo-sbom-cdx-gradle.sbom.json
+trivy sbom build/native/nativeCompile/demo-sbom-cdx-gradle-native.sbom.json
 ```

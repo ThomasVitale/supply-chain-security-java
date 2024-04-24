@@ -1,9 +1,8 @@
 plugins {
-    id 'application'
     id 'java'
-    id 'org.springframework.boot' version '3.2.3'
+    id 'org.springframework.boot' version '3.3.0-RC1'
     id 'io.spring.dependency-management' version '1.1.4'
-    id 'org.graalvm.buildtools.native' version '0.9.28'
+    id 'org.graalvm.buildtools.native' version '0.10.1'
     id 'org.cyclonedx.bom' version '1.8.2'
 }
 
@@ -11,14 +10,18 @@ group = 'com.thomasvitale'
 version = '1.0'
 
 java {
-    sourceCompatibility = '21'
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
 }
 
 repositories {
     mavenCentral()
+    maven { url 'https://repo.spring.io/milestone' }
 }
 
 dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
     implementation 'org.springframework.boot:spring-boot-starter-web'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
@@ -26,14 +29,6 @@ dependencies {
 tasks.test {
     useJUnitPlatform()
 }
-
-cyclonedxBom {
-    projectType = "application"
-    includeConfigs = ["runtimeClasspath"]
-    outputFormat = "json"
-    schemaVersion = "1.5"
-}
-tasks.bootJar.finalizedBy 'cyclonedxBom'
 
 graalvmNative {
     binaries {
@@ -43,12 +38,8 @@ graalvmNative {
     }
 }
 
-tasks.bootBuildImage {
-    if (System.getProperty( "os.arch" ).toLowerCase().startsWith('aarch')) {
-        // This builder is only for ARM64 systems.
-        // For more info: https://github.com/dashaun/paketo-arm64
-        builder = "docker.io/dashaun/builder:tiny"
-    } else {
-        builder = "docker.io/paketobuildpacks/builder-jammy-tiny"
-    }
+tasks.named('bootBuildImage') {
+    builder = "paketobuildpacks/builder-jammy-buildpackless-tiny"
+    buildpacks = [ "paketobuildpacks/java-native-image" ]
+    imageName = "${project.name}"
 }

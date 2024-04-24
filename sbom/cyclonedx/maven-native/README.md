@@ -4,13 +4,13 @@
 
 ```shell
 ./mvnw package
-syft target/demo-sbom-cdx-maven-0.0.1-SNAPSHOT.jar -o cyclonedx-json --file bom-syft.cdx.json
+syft target/demo-sbom-cdx-maven-native-0.0.1-SNAPSHOT.jar -o cyclonedx-json --file bom-syft.cdx.json
 ```
 
 ## Generating a SBOM from the source code using cdxgen
 
 ```shell
-FETCH_LICENSE=true cdxgen -o bom-cdxgen.cdx.json --spec-version 1.4
+FETCH_LICENSE=true cdxgen -o bom-cdxgen.cdx.json --spec-version 1.5
 ```
 
 ## Generating a SBOM at build time using CycloneDX
@@ -40,5 +40,5 @@ sbomqs score target/bom.json
 ## Scanning a GraalVM SBOM for vulnerabilities with Trivy
 
 ```shell
-trivy sbom target/demo-sbom-cdx-maven.sbom.json
+trivy sbom target/demo-sbom-cdx-maven-native.sbom.json
 ```

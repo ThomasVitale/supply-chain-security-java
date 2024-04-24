@@ -1,15 +1,16 @@
 plugins {
     id 'java'
-    id 'org.springframework.boot' version '3.2.3'
+    id 'org.springframework.boot' version '3.2.5'
     id 'io.spring.dependency-management' version '1.1.4'
-    id 'org.cyclonedx.bom' version '1.8.2'
 }
 
 group = 'com.thomasvitale'
 version = '0.0.1-SNAPSHOT'
 
 java {
-    sourceCompatibility = '21'
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
 }
 
 repositories {
@@ -21,29 +22,12 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
-dependencyLocking {
-    lockAllConfigurations()
-}
-
 tasks.named('test') {
     useJUnitPlatform()
 }
 
-tasks.cyclonedxBom {
-    projectType = "application"
-    //skipConfigs = ["testCompileClasspath"]
-    outputFormat = "json"
-}
-tasks.assemble.finalizedBy 'cyclonedxBom'
-
-tasks.bootBuildImage {
-    if (System.getProperty( "os.arch" ).toLowerCase().startsWith('aarch')) {
-        // This builder is only for ARM64 systems.
-        // For more info: https://github.com/dashaun/paketo-arm64
-        builder = "docker.io/dashaun/builder:tiny"
-    } else {
-        builder = "docker.io/paketobuildpacks/builder-jammy-tiny"
-    }
-
+tasks.named('bootBuildImage') {
+    builder = "paketobuildpacks/builder-jammy-buildpackless-tiny"
+    buildpacks = [ "gcr.io/paketo-buildpacks/java:beta" ]
     imageName = "demo"
 }
