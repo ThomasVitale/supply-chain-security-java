@@ -32,5 +32,10 @@ tasks.test {
 tasks.named('bootBuildImage') {
     builder = "paketobuildpacks/builder-jammy-buildpackless-tiny"
     buildpacks = [ "gcr.io/paketo-buildpacks/java:beta" ]
-    imageName = "${project.name}"
+}
+
+tasks.named('cyclonedxBom') {
+    projectType = "application"
+    outputFormat = "json"
+    schemaVersion = "1.5"
 }

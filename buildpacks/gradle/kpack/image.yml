@@ -1,10 +1,10 @@
 apiVersion: kpack.io/v1alpha2
 kind: Image
 metadata:
-  name: demo
+  name: demo-buildpacks
   namespace: default
 spec:
-  tag: ghcr.io/thomasvitale/demo
+  tag: ghcr.io/thomasvitale/demo-buildpacks:1.0
   serviceAccountName: supply-chain
   builder:
     name: default

@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.5",
-  "serialNumber": "urn:uuid:fc1b1f20-6514-40b0-9752-bfa3dde88b4e",
+  "serialNumber": "urn:uuid:93e0a3c4-3453-4c28-a520-971e8bec8848",
   "version": 1,
   "metadata": {
-    "timestamp": "2024-04-25T18:03:07+02:00",
+    "timestamp": "2024-04-25T18:29:41+02:00",
     "tools": {
       "components": [
         {
@@ -17,9 +17,9 @@
       ]
     },
     "component": {
-      "bom-ref": "7140c2d7be485695",
+      "bom-ref": "48e7fd7cfa5e2673",
       "type": "container",
-      "name": "demo-sbom-cdx-gradle",
+      "name": "demo-sbom-cdx-maven",
       "version": "1.0"
     },
     "properties": [
@@ -29,7 +29,7 @@
       },
       {
         "name": "syft:image:labels:io.buildpacks.lifecycle.metadata",
-        "value": "{\"app\":[{\"sha\":\"sha256:2a7d180071fa28ff33f265feff776261a4cdc09da190a569c68a5b617d26ab7a\"},{\"sha\":\"sha256:da183a1d727d71bacaadeab51cb38cfa00eb21cb6ad4a0ea84a376f678bd81e6\"},{\"sha\":\"sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef\"},{\"sha\":\"sha256:33e843a02cb7e2b2322f3144d04dab9b16dc4520ad6cc78fc40fe3f12c83fbea\"},{\"sha\":\"sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef\"}],\"sbom\":{\"sha\":\"sha256:8cbfa96374d7412c935e3796cef2ee8834c98dfbacdc49faeca2f382955cff99\"},\"buildpacks\":[{\"key\":\"paketo-buildpacks/ca-certificates\",\"version\":\"3.7.0\",\"layers\":{\"helper\":{\"sha\":\"sha256:a0b5b187617913ec73a31b17df70e36ddd8ec7de370cc4797f0038344e5465fe\",\"data\":{\"buildpackInfo\":{\"clear-env\":false,\"description\":\"A Cloud Native Buildpack that adds custom CA certificates to a build and a created image\",\"homepage\":\"https://github.com/paketo-buildpacks/ca-certificates\",\"id\":\"paketo-buildpacks/ca-certificates\",\"keywords\":[\"ca-certificates\",\"trust\",\"certificates\"],\"licenses\":[{\"type\":\"Apache-2.0\",\"uri\":\"https://github.com/paketo-buildpacks/ca-certificates/blob/main/LICENSE\"}],\"name\":\"Paketo Buildpack for CA Certificates\",\"sbom-formats\":[\"application/vnd.cyclonedx+json\",\"application/vnd.syft+json\"],\"version\":\"3.7.0\"},\"helperNames\":[\"ca-certificates-helper\"]},\"build\":false,\"launch\":true,\"cache\":false}}},{\"key\":\"paketo-buildpacks/bellsoft-liberica\",\"version\":\"10.6.0\",\"layers\":{\"helper\":{\"sha\":\"sha256:b05975a7a4983ebcdecf9a907d31d55dee77049d82976abcd8e6b71bdbe0ed21\",\"data\":{\"buildpackInfo\":{\"clear-env\":false,\"description\":\"A Cloud Native Buildpack that provides the Bellsoft Liberica implementations of JREs and JDKs\",\"homepage\":\"https://github.com/paketo-buildpacks/bellsoft-liberica\",\"id\":\"paketo-buildpacks/bellsoft-liberica\",\"keywords\":[\"java\",\"jvm\",\"jre\",\"jdk\"],\"licenses\":[{\"type\":\"Apache-2.0\",\"uri\":\"https://github.com/paketo-buildpacks/bellsoft-liberica/blob/main/LICENSE\"}],\"name\":\"Paketo Buildpack for BellSoft Liberica\",\"sbom-formats\":[\"application/vnd.syft+json\",\"application/vnd.cyclonedx+json\"],\"version\":\"10.6.0\"},\"helperNames\":[\"active-processor-count\",\"java-opts\",\"jvm-heap\",\"link-local-dns\",\"memory-calculator\",\"security-providers-configurer\",\"jmx\",\"jfr\",\"openssl-certificate-loader\",\"security-providers-classpath-9\",\"debug-9\",\"nmt\"]},\"build\":false,\"launch\":true,\"cache\":false},\"java-security-properties\":{\"sha\":\"sha256:bea0a3dc2651cac7c9c567a5cb4e7536107b357cb9113e8806f690f050500012\",\"data\":{\"clear-env\":false,\"description\":\"A Cloud Native Buildpack that provides the Bellsoft Liberica implementations of JREs and JDKs\",\"homepage\":\"https://github.com/paketo-buildpacks/bellsoft-liberica\",\"id\":\"paketo-buildpacks/bellsoft-liberica\",\"keywords\":[\"java\",\"jvm\",\"jre\",\"jdk\"],\"licenses\":[{\"type\":\"Apache-2.0\",\"uri\":\"https://github.com/paketo-buildpacks/bellsoft-liberica/blob/main/LICENSE\"}],\"name\":\"Paketo Buildpack for BellSoft Liberica\",\"sbom-formats\":[\"application/vnd.syft+json\",\"application/vnd.cyclonedx+json\"],\"version\":\"10.6.0\"},\"build\":false,\"launch\":true,\"cache\":false},\"jre\":{\"sha\":\"sha256:115794a33cb1918fdce5a7b2a82a80051b3afe59fe1909ec4d90e10026a9d02c\",\"data\":{\"cert-file\":\"82f3a63130e0b47915659d619f177c8157c2bbb29dbf0f58ad2721ff84fb1190\",\"dependency\":{\"cpes\":[\"cpe:2.3:a:oracle:jre:21.0.2:*:*:*:*:*:*:*\"],\"deprecation_date\":\"0001-01-01T00:00:00Z\",\"id\":\"jre\",\"licenses\":[{\"type\":\"GPL-2.0 WITH Classpath-exception-2.0\",\"uri\":\"https://openjdk.java.net/legal/gplv2+ce.html\"}],\"name\":\"BellSoft Liberica JRE\",\"purl\":\"pkg:generic/bellsoft-jre@21.0.2?arch=arm64\",\"sha256\":\"720079459f021b9da8e5508eabd2a52e7473de3f5b2f173abd279bf3dabfdfb3\",\"stacks\":[\"*\"],\"uri\":\"https://github.com/bell-sw/Liberica/releases/download/21.0.2+14/bellsoft-jre21.0.2+14-linux-aarch64.tar.gz\",\"version\":\"21.0.2\"}},\"build\":false,\"launch\":true,\"cache\":false}}},{\"key\":\"paketo-buildpacks/syft\",\"version\":\"1.46.0\",\"layers\":{}},{\"key\":\"paketo-buildpacks/executable-jar\",\"version\":\"6.9.0\",\"layers\":{\"classpath\":{\"sha\":\"sha256:417e5bfc3c82b9373cf6804206e071d2fc74560df867d0f39cb21ac3d15231b6\",\"data\":{\"classpath\":[\"/workspace\"],\"launch\":true},\"build\":true,\"launch\":true,\"cache\":false}}},{\"key\":\"paketo-buildpacks/dist-zip\",\"version\":\"5.7.0\",\"layers\":{}},{\"key\":\"paketo-buildpacks/spring-boot\",\"version\":\"5.28.0\",\"layers\":{\"helper\":{\"sha\":\"sha256:6bb06740c3d63c53fe86c8e44ed1de0d05682881e9fbd9b0fe316e9feebb826b\",\"data\":{\"buildpackInfo\":{\"clear-env\":false,\"description\":\"A Cloud Native Buildpack that contributes Spring Boot dependency information and slices an application into multiple layers\",\"homepage\":\"https://github.com/paketo-buildpacks/spring-boot\",\"id\":\"paketo-buildpacks/spring-boot\",\"keywords\":[\"java\",\"spring\",\"spring-boot\"],\"licenses\":[{\"type\":\"Apache-2.0\",\"uri\":\"https://github.com/paketo-buildpacks/spring-boot/blob/main/LICENSE\"}],\"name\":\"Paketo Buildpack for Spring Boot\",\"sbom-formats\":[\"application/vnd.cyclonedx+json\",\"application/vnd.syft+json\"],\"version\":\"5.28.0\"},\"helperNames\":[\"spring-cloud-bindings\"]},\"build\":false,\"launch\":true,\"cache\":false},\"spring-cloud-bindings\":{\"sha\":\"sha256:ce4e86e0307e01ceb95d3abacfa3e157fb781571d00e698faccf6fe91ccd83ee\",\"data\":{\"cpes\":[\"cpe:2.3:a:vmware:spring_cloud_bindings:2.0.0:*:*:*:*:*:*:*\"],\"deprecation_date\":\"0001-01-01T00:00:00Z\",\"id\":\"spring-cloud-bindings\",\"licenses\":[{\"type\":\"Apache-2.0\",\"uri\":\"https://github.com/spring-cloud/spring-cloud-bindings/blob/main/LICENSE\"}],\"name\":\"Spring Cloud Bindings\",\"purl\":\"pkg:generic/springframework/spring-cloud-bindings@2.0.0\",\"sha256\":\"0390f964e9cadbb0795f44b2b29d2e6755bd8b800a94fee980aed8c26766c124\",\"stacks\":[\"io.buildpacks.stacks.bionic\",\"io.paketo.stacks.tiny\",\"*\"],\"uri\":\"https://repo1.maven.org/maven2/org/springframework/cloud/spring-cloud-bindings/2.0.3/spring-cloud-bindings-2.0.3.jar\",\"version\":\"2.0.3\"},\"build\":false,\"launch\":true,\"cache\":false},\"web-application-type\":{\"sha\":\"sha256:366ce7d1a7f90f2e4ad08752f87510eee3ffca18736fa63c03823c8c4ebf2925\",\"data\":{\"files\":\"37b44d566b68ff37f9026aab1f46da1e8905f008707ccf3b3e6584e07435303f\"},\"build\":false,\"launch\":true,\"cache\":false}}}],\"config\":{\"sha\":\"sha256:d1eabe668cfacdb0fe7a6a8c2e0283e1ea67839fd0b54d716abe36a3c415f025\"},\"launcher\":{\"sha\":\"sha256:b99309ac0502f302fdbc666f488426cbaaf9f0360351f7e330c8e9a76fced9b2\"},\"process-types\":{\"sha\":\"sha256:1dc94a70dbaa2171fb086500a5d27797f779219b126b0a1eebb9180c2792e80e\"},\"runImage\":{\"topLayer\":\"sha256:d6f956ea616482e300fc3c3f0f5d01079ae6e3f4f880be10b72b38be0c577e80\",\"reference\":\"f25435da9719f925da886b8e321363ed77a92e5239e4d1902b59746870c28564\",\"image\":\"index.docker.io/paketobuildpacks/run-jammy-tiny:latest\"},\"stack\":{\"runImage\":{\"image\":\"index.docker.io/paketobuildpacks/run-jammy-tiny:latest\"}}}"
+        "value": "{\"app\":[{\"sha\":\"sha256:55029ddf462494495f357b92d4032896bdf381c10f8b5252f7ce42e08cbc96c2\"},{\"sha\":\"sha256:da183a1d727d71bacaadeab51cb38cfa00eb21cb6ad4a0ea84a376f678bd81e6\"},{\"sha\":\"sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef\"},{\"sha\":\"sha256:c5bb1e3862187462ba0f4cdb7124642871ad6550d7107fce3c195d8d783ad987\"},{\"sha\":\"sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef\"}],\"sbom\":{\"sha\":\"sha256:58eebb29610427e32f9a16d0ce926dbb84d083e8eea8cc65f1d8773b672c2a83\"},\"buildpacks\":[{\"key\":\"paketo-buildpacks/ca-certificates\",\"version\":\"3.7.0\",\"layers\":{\"helper\":{\"sha\":\"sha256:a0b5b187617913ec73a31b17df70e36ddd8ec7de370cc4797f0038344e5465fe\",\"data\":{\"buildpackInfo\":{\"clear-env\":false,\"description\":\"A Cloud Native Buildpack that adds custom CA certificates to a build and a created image\",\"homepage\":\"https://github.com/paketo-buildpacks/ca-certificates\",\"id\":\"paketo-buildpacks/ca-certificates\",\"keywords\":[\"ca-certificates\",\"trust\",\"certificates\"],\"licenses\":[{\"type\":\"Apache-2.0\",\"uri\":\"https://github.com/paketo-buildpacks/ca-certificates/blob/main/LICENSE\"}],\"name\":\"Paketo Buildpack for CA Certificates\",\"sbom-formats\":[\"application/vnd.cyclonedx+json\",\"application/vnd.syft+json\"],\"version\":\"3.7.0\"},\"helperNames\":[\"ca-certificates-helper\"]},\"build\":false,\"launch\":true,\"cache\":false}}},{\"key\":\"paketo-buildpacks/bellsoft-liberica\",\"version\":\"10.6.0\",\"layers\":{\"helper\":{\"sha\":\"sha256:b05975a7a4983ebcdecf9a907d31d55dee77049d82976abcd8e6b71bdbe0ed21\",\"data\":{\"buildpackInfo\":{\"clear-env\":false,\"description\":\"A Cloud Native Buildpack that provides the Bellsoft Liberica implementations of JREs and JDKs\",\"homepage\":\"https://github.com/paketo-buildpacks/bellsoft-liberica\",\"id\":\"paketo-buildpacks/bellsoft-liberica\",\"keywords\":[\"java\",\"jvm\",\"jre\",\"jdk\"],\"licenses\":[{\"type\":\"Apache-2.0\",\"uri\":\"https://github.com/paketo-buildpacks/bellsoft-liberica/blob/main/LICENSE\"}],\"name\":\"Paketo Buildpack for BellSoft Liberica\",\"sbom-formats\":[\"application/vnd.syft+json\",\"application/vnd.cyclonedx+json\"],\"version\":\"10.6.0\"},\"helperNames\":[\"active-processor-count\",\"java-opts\",\"jvm-heap\",\"link-local-dns\",\"memory-calculator\",\"security-providers-configurer\",\"jmx\",\"jfr\",\"openssl-certificate-loader\",\"security-providers-classpath-9\",\"debug-9\",\"nmt\"]},\"build\":false,\"launch\":true,\"cache\":false},\"java-security-properties\":{\"sha\":\"sha256:bea0a3dc2651cac7c9c567a5cb4e7536107b357cb9113e8806f690f050500012\",\"data\":{\"clear-env\":false,\"description\":\"A Cloud Native Buildpack that provides the Bellsoft Liberica implementations of JREs and JDKs\",\"homepage\":\"https://github.com/paketo-buildpacks/bellsoft-liberica\",\"id\":\"paketo-buildpacks/bellsoft-liberica\",\"keywords\":[\"java\",\"jvm\",\"jre\",\"jdk\"],\"licenses\":[{\"type\":\"Apache-2.0\",\"uri\":\"https://github.com/paketo-buildpacks/bellsoft-liberica/blob/main/LICENSE\"}],\"name\":\"Paketo Buildpack for BellSoft Liberica\",\"sbom-formats\":[\"application/vnd.syft+json\",\"application/vnd.cyclonedx+json\"],\"version\":\"10.6.0\"},\"build\":false,\"launch\":true,\"cache\":false},\"jre\":{\"sha\":\"sha256:115794a33cb1918fdce5a7b2a82a80051b3afe59fe1909ec4d90e10026a9d02c\",\"data\":{\"cert-file\":\"82f3a63130e0b47915659d619f177c8157c2bbb29dbf0f58ad2721ff84fb1190\",\"dependency\":{\"cpes\":[\"cpe:2.3:a:oracle:jre:21.0.2:*:*:*:*:*:*:*\"],\"deprecation_date\":\"0001-01-01T00:00:00Z\",\"id\":\"jre\",\"licenses\":[{\"type\":\"GPL-2.0 WITH Classpath-exception-2.0\",\"uri\":\"https://openjdk.java.net/legal/gplv2+ce.html\"}],\"name\":\"BellSoft Liberica JRE\",\"purl\":\"pkg:generic/bellsoft-jre@21.0.2?arch=arm64\",\"sha256\":\"720079459f021b9da8e5508eabd2a52e7473de3f5b2f173abd279bf3dabfdfb3\",\"stacks\":[\"*\"],\"uri\":\"https://github.com/bell-sw/Liberica/releases/download/21.0.2+14/bellsoft-jre21.0.2+14-linux-aarch64.tar.gz\",\"version\":\"21.0.2\"}},\"build\":false,\"launch\":true,\"cache\":false}}},{\"key\":\"paketo-buildpacks/syft\",\"version\":\"1.46.0\",\"layers\":{}},{\"key\":\"paketo-buildpacks/executable-jar\",\"version\":\"6.9.0\",\"layers\":{\"classpath\":{\"sha\":\"sha256:417e5bfc3c82b9373cf6804206e071d2fc74560df867d0f39cb21ac3d15231b6\",\"data\":{\"classpath\":[\"/workspace\"],\"launch\":true},\"build\":true,\"launch\":true,\"cache\":false}}},{\"key\":\"paketo-buildpacks/dist-zip\",\"version\":\"5.7.0\",\"layers\":{}},{\"key\":\"paketo-buildpacks/spring-boot\",\"version\":\"5.28.0\",\"layers\":{\"helper\":{\"sha\":\"sha256:6bb06740c3d63c53fe86c8e44ed1de0d05682881e9fbd9b0fe316e9feebb826b\",\"data\":{\"buildpackInfo\":{\"clear-env\":false,\"description\":\"A Cloud Native Buildpack that contributes Spring Boot dependency information and slices an application into multiple layers\",\"homepage\":\"https://github.com/paketo-buildpacks/spring-boot\",\"id\":\"paketo-buildpacks/spring-boot\",\"keywords\":[\"java\",\"spring\",\"spring-boot\"],\"licenses\":[{\"type\":\"Apache-2.0\",\"uri\":\"https://github.com/paketo-buildpacks/spring-boot/blob/main/LICENSE\"}],\"name\":\"Paketo Buildpack for Spring Boot\",\"sbom-formats\":[\"application/vnd.cyclonedx+json\",\"application/vnd.syft+json\"],\"version\":\"5.28.0\"},\"helperNames\":[\"spring-cloud-bindings\"]},\"build\":false,\"launch\":true,\"cache\":false},\"spring-cloud-bindings\":{\"sha\":\"sha256:ce4e86e0307e01ceb95d3abacfa3e157fb781571d00e698faccf6fe91ccd83ee\",\"data\":{\"cpes\":[\"cpe:2.3:a:vmware:spring_cloud_bindings:2.0.0:*:*:*:*:*:*:*\"],\"deprecation_date\":\"0001-01-01T00:00:00Z\",\"id\":\"spring-cloud-bindings\",\"licenses\":[{\"type\":\"Apache-2.0\",\"uri\":\"https://github.com/spring-cloud/spring-cloud-bindings/blob/main/LICENSE\"}],\"name\":\"Spring Cloud Bindings\",\"purl\":\"pkg:generic/springframework/spring-cloud-bindings@2.0.0\",\"sha256\":\"0390f964e9cadbb0795f44b2b29d2e6755bd8b800a94fee980aed8c26766c124\",\"stacks\":[\"io.buildpacks.stacks.bionic\",\"io.paketo.stacks.tiny\",\"*\"],\"uri\":\"https://repo1.maven.org/maven2/org/springframework/cloud/spring-cloud-bindings/2.0.3/spring-cloud-bindings-2.0.3.jar\",\"version\":\"2.0.3\"},\"build\":false,\"launch\":true,\"cache\":false},\"web-application-type\":{\"sha\":\"sha256:366ce7d1a7f90f2e4ad08752f87510eee3ffca18736fa63c03823c8c4ebf2925\",\"data\":{\"files\":\"8920fef65eaa0179a7d54d24d23df5a25065791fe477cffe1f9554ddcc9a6e05\"},\"build\":false,\"launch\":true,\"cache\":false}}}],\"config\":{\"sha\":\"sha256:af158ac9ef5a499918a61fd506dd8fb1828ca8da2bf3cde1dda32f78b0d20351\"},\"launcher\":{\"sha\":\"sha256:b99309ac0502f302fdbc666f488426cbaaf9f0360351f7e330c8e9a76fced9b2\"},\"process-types\":{\"sha\":\"sha256:1dc94a70dbaa2171fb086500a5d27797f779219b126b0a1eebb9180c2792e80e\"},\"runImage\":{\"topLayer\":\"sha256:d6f956ea616482e300fc3c3f0f5d01079ae6e3f4f880be10b72b38be0c577e80\",\"reference\":\"f25435da9719f925da886b8e321363ed77a92e5239e4d1902b59746870c28564\",\"image\":\"index.docker.io/paketobuildpacks/run-jammy-tiny:latest\"},\"stack\":{\"runImage\":{\"image\":\"index.docker.io/paketobuildpacks/run-jammy-tiny:latest\"}}}"
       },
       {
         "name": "syft:image:labels:io.buildpacks.project.metadata",
@@ -69,7 +69,7 @@
       },
       {
         "name": "syft:image:labels:org.opencontainers.image.title",
-        "value": "demo-sbom-cdx-gradle"
+        "value": "maven"
       },
       {
         "name": "syft:image:labels:org.opencontainers.image.version",
@@ -82,147 +82,6 @@
     ]
   },
   "components": [
-    {
-      "bom-ref": "pkg:maven/org.hdrhistogram/HdrHistogram@2.1.12?package-id=8fe88e903c8fa143",
-      "type": "library",
-      "group": "org.hdrhistogram",
-      "name": "HdrHistogram",
-      "version": "2.1.12",
-      "licenses": [
-        {
-          "license": {
-            "name": "http://creativecommons.org/publicdomain/zero/1.0/, https://opensource.org/licenses/BSD-2-Clause"
-          }
-        }
-      ],
-      "cpe": "cpe:2.3:a:HdrHistogram:HdrHistogram:2.1.12:*:*:*:*:*:*:*",
-      "purl": "pkg:maven/org.hdrhistogram/HdrHistogram@2.1.12",
-      "externalReferences": [
-        {
-          "url": "",
-          "hashes": [
-            {
-              "alg": "SHA-1",
-              "content": "6eb7552156e0d517ae80cc2247be1427c8d90452"
-            }
-          ],
-          "type": "build-meta"
-        }
-      ],
-      "properties": [
-        {
-          "name": "syft:package:foundBy",
-          "value": "java-archive-cataloger"
-        },
-        {
-          "name": "syft:package:language",
-          "value": "java"
-        },
-        {
-          "name": "syft:package:type",
-          "value": "java-archive"
-        },
-        {
-          "name": "syft:package:metadataType",
-          "value": "java-archive"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:hdrhistogram:HdrHistogram:2.1.12:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:location:0:layerID",
-          "value": "sha256:2a7d180071fa28ff33f265feff776261a4cdc09da190a569c68a5b617d26ab7a"
-        },
-        {
-          "name": "syft:location:0:path",
-          "value": "/workspace/BOOT-INF/lib/HdrHistogram-2.1.12.jar"
-        },
-        {
-          "name": "syft:metadata:-:artifactID",
-          "value": "HdrHistogram"
-        },
-        {
-          "name": "syft:metadata:-:groupID",
-          "value": "org.hdrhistogram"
-        },
-        {
-          "name": "syft:metadata:virtualPath",
-          "value": "/workspace/BOOT-INF/lib/HdrHistogram-2.1.12.jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "pkg:maven/org.latencyutils/LatencyUtils@2.0.3?package-id=2a867519670d3e74",
-      "type": "library",
-      "group": "org.latencyutils",
-      "name": "LatencyUtils",
-      "version": "2.0.3",
-      "licenses": [
-        {
-          "license": {
-            "name": "Public Domain, per Creative Commons CC0",
-            "url": "http://creativecommons.org/publicdomain/zero/1.0/"
-          }
-        }
-      ],
-      "cpe": "cpe:2.3:a:LatencyUtils:LatencyUtils:2.0.3:*:*:*:*:*:*:*",
-      "purl": "pkg:maven/org.latencyutils/LatencyUtils@2.0.3",
-      "externalReferences": [
-        {
-          "url": "",
-          "hashes": [
-            {
-              "alg": "SHA-1",
-              "content": "769c0b82cb2421c8256300e907298a9410a2a3d3"
-            }
-          ],
-          "type": "build-meta"
-        }
-      ],
-      "properties": [
-        {
-          "name": "syft:package:foundBy",
-          "value": "java-archive-cataloger"
-        },
-        {
-          "name": "syft:package:language",
-          "value": "java"
-        },
-        {
-          "name": "syft:package:type",
-          "value": "java-archive"
-        },
-        {
-          "name": "syft:package:metadataType",
-          "value": "java-archive"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:latencyutils:LatencyUtils:2.0.3:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:location:0:layerID",
-          "value": "sha256:2a7d180071fa28ff33f265feff776261a4cdc09da190a569c68a5b617d26ab7a"
-        },
-        {
-          "name": "syft:location:0:path",
-          "value": "/workspace/BOOT-INF/lib/LatencyUtils-2.0.3.jar"
-        },
-        {
-          "name": "syft:metadata:-:artifactID",
-          "value": "LatencyUtils"
-        },
-        {
-          "name": "syft:metadata:-:groupID",
-          "value": "org.latencyutils"
-        },
-        {
-          "name": "syft:metadata:virtualPath",
-          "value": "/workspace/BOOT-INF/lib/LatencyUtils-2.0.3.jar"
-        }
-      ]
-    },
     {
       "bom-ref": "pkg:deb/ubuntu/base-files@12ubuntu4.6?arch=arm64&distro=ubuntu-22.04&package-id=52dc9ce9ab018939",
       "type": "library",
@@ -367,7 +226,7 @@
         },
         {
           "name": "syft:location:0:layerID",
-          "value": "sha256:2a7d180071fa28ff33f265feff776261a4cdc09da190a569c68a5b617d26ab7a"
+          "value": "sha256:55029ddf462494495f357b92d4032896bdf381c10f8b5252f7ce42e08cbc96c2"
         },
         {
           "name": "syft:location:0:path",
@@ -3355,7 +3214,7 @@
         },
         {
           "name": "syft:location:0:layerID",
-          "value": "sha256:2a7d180071fa28ff33f265feff776261a4cdc09da190a569c68a5b617d26ab7a"
+          "value": "sha256:55029ddf462494495f357b92d4032896bdf381c10f8b5252f7ce42e08cbc96c2"
         },
         {
           "name": "syft:location:0:path",
@@ -3497,7 +3356,7 @@
         },
         {
           "name": "syft:location:0:layerID",
-          "value": "sha256:2a7d180071fa28ff33f265feff776261a4cdc09da190a569c68a5b617d26ab7a"
+          "value": "sha256:55029ddf462494495f357b92d4032896bdf381c10f8b5252f7ce42e08cbc96c2"
         },
         {
           "name": "syft:location:0:path",
@@ -3619,7 +3478,7 @@
         },
         {
           "name": "syft:location:0:layerID",
-          "value": "sha256:2a7d180071fa28ff33f265feff776261a4cdc09da190a569c68a5b617d26ab7a"
+          "value": "sha256:55029ddf462494495f357b92d4032896bdf381c10f8b5252f7ce42e08cbc96c2"
         },
         {
           "name": "syft:location:0:path",
@@ -3765,7 +3624,7 @@
         },
         {
           "name": "syft:location:0:layerID",
-          "value": "sha256:2a7d180071fa28ff33f265feff776261a4cdc09da190a569c68a5b617d26ab7a"
+          "value": "sha256:55029ddf462494495f357b92d4032896bdf381c10f8b5252f7ce42e08cbc96c2"
         },
         {
           "name": "syft:location:0:path",
@@ -3911,7 +3770,7 @@
         },
         {
           "name": "syft:location:0:layerID",
-          "value": "sha256:2a7d180071fa28ff33f265feff776261a4cdc09da190a569c68a5b617d26ab7a"
+          "value": "sha256:55029ddf462494495f357b92d4032896bdf381c10f8b5252f7ce42e08cbc96c2"
         },
         {
           "name": "syft:location:0:path",
@@ -4081,7 +3940,7 @@
         },
         {
           "name": "syft:location:0:layerID",
-          "value": "sha256:2a7d180071fa28ff33f265feff776261a4cdc09da190a569c68a5b617d26ab7a"
+          "value": "sha256:55029ddf462494495f357b92d4032896bdf381c10f8b5252f7ce42e08cbc96c2"
         },
         {
           "name": "syft:location:0:path",
@@ -4191,7 +4050,7 @@
         },
         {
           "name": "syft:location:0:layerID",
-          "value": "sha256:2a7d180071fa28ff33f265feff776261a4cdc09da190a569c68a5b617d26ab7a"
+          "value": "sha256:55029ddf462494495f357b92d4032896bdf381c10f8b5252f7ce42e08cbc96c2"
         },
         {
           "name": "syft:location:0:path",
@@ -4429,7 +4288,7 @@
         },
         {
           "name": "syft:location:0:layerID",
-          "value": "sha256:2a7d180071fa28ff33f265feff776261a4cdc09da190a569c68a5b617d26ab7a"
+          "value": "sha256:55029ddf462494495f357b92d4032896bdf381c10f8b5252f7ce42e08cbc96c2"
         },
         {
           "name": "syft:location:0:path",
@@ -4640,7 +4499,7 @@
         },
         {
           "name": "syft:location:0:layerID",
-          "value": "sha256:2a7d180071fa28ff33f265feff776261a4cdc09da190a569c68a5b617d26ab7a"
+          "value": "sha256:55029ddf462494495f357b92d4032896bdf381c10f8b5252f7ce42e08cbc96c2"
         },
         {
           "name": "syft:location:0:path",
@@ -4718,7 +4577,7 @@
         },
         {
           "name": "syft:location:0:layerID",
-          "value": "sha256:2a7d180071fa28ff33f265feff776261a4cdc09da190a569c68a5b617d26ab7a"
+          "value": "sha256:55029ddf462494495f357b92d4032896bdf381c10f8b5252f7ce42e08cbc96c2"
         },
         {
           "name": "syft:location:0:path",
@@ -4820,7 +4679,7 @@
         },
         {
           "name": "syft:location:0:layerID",
-          "value": "sha256:2a7d180071fa28ff33f265feff776261a4cdc09da190a569c68a5b617d26ab7a"
+          "value": "sha256:55029ddf462494495f357b92d4032896bdf381c10f8b5252f7ce42e08cbc96c2"
         },
         {
           "name": "syft:location:0:path",
@@ -4922,7 +4781,7 @@
         },
         {
           "name": "syft:location:0:layerID",
-          "value": "sha256:2a7d180071fa28ff33f265feff776261a4cdc09da190a569c68a5b617d26ab7a"
+          "value": "sha256:55029ddf462494495f357b92d4032896bdf381c10f8b5252f7ce42e08cbc96c2"
         },
         {
           "name": "syft:location:0:path",
@@ -5007,7 +4866,7 @@
         },
         {
           "name": "syft:location:0:layerID",
-          "value": "sha256:2a7d180071fa28ff33f265feff776261a4cdc09da190a569c68a5b617d26ab7a"
+          "value": "sha256:55029ddf462494495f357b92d4032896bdf381c10f8b5252f7ce42e08cbc96c2"
         },
         {
           "name": "syft:location:0:path",
@@ -5016,160 +4875,6 @@
         {
           "name": "syft:metadata:virtualPath",
           "value": "/workspace/BOOT-INF/lib/micrometer-commons-1.13.0-RC1.jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "pkg:maven/io.micrometer/micrometer-core@1.13.0-RC1?package-id=6d2ce57515703b1c",
-      "type": "library",
-      "name": "micrometer-core",
-      "version": "1.13.0-RC1",
-      "licenses": [
-        {
-          "license": {
-            "id": "Apache-2.0"
-          }
-        }
-      ],
-      "cpe": "cpe:2.3:a:micrometer-core:micrometer-core:1.13.0-RC1:*:*:*:*:*:*:*",
-      "purl": "pkg:maven/io.micrometer/micrometer-core@1.13.0-RC1",
-      "externalReferences": [
-        {
-          "url": "",
-          "hashes": [
-            {
-              "alg": "SHA-1",
-              "content": "b54984eb1a3d1badd4b5987b6823493703a88497"
-            }
-          ],
-          "type": "build-meta"
-        }
-      ],
-      "properties": [
-        {
-          "name": "syft:package:foundBy",
-          "value": "java-archive-cataloger"
-        },
-        {
-          "name": "syft:package:language",
-          "value": "java"
-        },
-        {
-          "name": "syft:package:type",
-          "value": "java-archive"
-        },
-        {
-          "name": "syft:package:metadataType",
-          "value": "java-archive"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:micrometer-core:micrometer_core:1.13.0-RC1:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:micrometer_core:micrometer-core:1.13.0-RC1:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:micrometer_core:micrometer_core:1.13.0-RC1:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:micrometer:micrometer-core:1.13.0-RC1:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:micrometer:micrometer_core:1.13.0-RC1:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:location:0:layerID",
-          "value": "sha256:2a7d180071fa28ff33f265feff776261a4cdc09da190a569c68a5b617d26ab7a"
-        },
-        {
-          "name": "syft:location:0:path",
-          "value": "/workspace/BOOT-INF/lib/micrometer-core-1.13.0-RC1.jar"
-        },
-        {
-          "name": "syft:metadata:virtualPath",
-          "value": "/workspace/BOOT-INF/lib/micrometer-core-1.13.0-RC1.jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "pkg:maven/io.micrometer/micrometer-jakarta9@1.13.0-RC1?package-id=919ce1e790e51437",
-      "type": "library",
-      "name": "micrometer-jakarta9",
-      "version": "1.13.0-RC1",
-      "licenses": [
-        {
-          "license": {
-            "id": "Apache-2.0"
-          }
-        }
-      ],
-      "cpe": "cpe:2.3:a:micrometer-jakarta9:micrometer-jakarta9:1.13.0-RC1:*:*:*:*:*:*:*",
-      "purl": "pkg:maven/io.micrometer/micrometer-jakarta9@1.13.0-RC1",
-      "externalReferences": [
-        {
-          "url": "",
-          "hashes": [
-            {
-              "alg": "SHA-1",
-              "content": "717d1d0e6b92d2e5f860b8fe181f959da10d923d"
-            }
-          ],
-          "type": "build-meta"
-        }
-      ],
-      "properties": [
-        {
-          "name": "syft:package:foundBy",
-          "value": "java-archive-cataloger"
-        },
-        {
-          "name": "syft:package:language",
-          "value": "java"
-        },
-        {
-          "name": "syft:package:type",
-          "value": "java-archive"
-        },
-        {
-          "name": "syft:package:metadataType",
-          "value": "java-archive"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:micrometer-jakarta9:micrometer_jakarta9:1.13.0-RC1:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:micrometer_jakarta9:micrometer-jakarta9:1.13.0-RC1:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:micrometer_jakarta9:micrometer_jakarta9:1.13.0-RC1:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:micrometer:micrometer-jakarta9:1.13.0-RC1:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:micrometer:micrometer_jakarta9:1.13.0-RC1:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:location:0:layerID",
-          "value": "sha256:2a7d180071fa28ff33f265feff776261a4cdc09da190a569c68a5b617d26ab7a"
-        },
-        {
-          "name": "syft:location:0:path",
-          "value": "/workspace/BOOT-INF/lib/micrometer-jakarta9-1.13.0-RC1.jar"
-        },
-        {
-          "name": "syft:metadata:virtualPath",
-          "value": "/workspace/BOOT-INF/lib/micrometer-jakarta9-1.13.0-RC1.jar"
         }
       ]
     },
@@ -5238,7 +4943,7 @@
         },
         {
           "name": "syft:location:0:layerID",
-          "value": "sha256:2a7d180071fa28ff33f265feff776261a4cdc09da190a569c68a5b617d26ab7a"
+          "value": "sha256:55029ddf462494495f357b92d4032896bdf381c10f8b5252f7ce42e08cbc96c2"
         },
         {
           "name": "syft:location:0:path",
@@ -5465,7 +5170,7 @@
         },
         {
           "name": "syft:location:0:layerID",
-          "value": "sha256:2a7d180071fa28ff33f265feff776261a4cdc09da190a569c68a5b617d26ab7a"
+          "value": "sha256:55029ddf462494495f357b92d4032896bdf381c10f8b5252f7ce42e08cbc96c2"
         },
         {
           "name": "syft:location:0:path",
@@ -5535,7 +5240,7 @@
         },
         {
           "name": "syft:location:0:layerID",
-          "value": "sha256:2a7d180071fa28ff33f265feff776261a4cdc09da190a569c68a5b617d26ab7a"
+          "value": "sha256:55029ddf462494495f357b92d4032896bdf381c10f8b5252f7ce42e08cbc96c2"
         },
         {
           "name": "syft:location:0:path",
@@ -5687,7 +5392,7 @@
         },
         {
           "name": "syft:location:0:layerID",
-          "value": "sha256:2a7d180071fa28ff33f265feff776261a4cdc09da190a569c68a5b617d26ab7a"
+          "value": "sha256:55029ddf462494495f357b92d4032896bdf381c10f8b5252f7ce42e08cbc96c2"
         },
         {
           "name": "syft:location:0:path",
@@ -5777,7 +5482,7 @@
         },
         {
           "name": "syft:location:0:layerID",
-          "value": "sha256:2a7d180071fa28ff33f265feff776261a4cdc09da190a569c68a5b617d26ab7a"
+          "value": "sha256:55029ddf462494495f357b92d4032896bdf381c10f8b5252f7ce42e08cbc96c2"
         },
         {
           "name": "syft:location:0:path",
@@ -5890,7 +5595,7 @@
         },
         {
           "name": "syft:location:0:layerID",
-          "value": "sha256:2a7d180071fa28ff33f265feff776261a4cdc09da190a569c68a5b617d26ab7a"
+          "value": "sha256:55029ddf462494495f357b92d4032896bdf381c10f8b5252f7ce42e08cbc96c2"
         },
         {
           "name": "syft:location:0:path",
@@ -5899,304 +5604,6 @@
         {
           "name": "syft:metadata:virtualPath",
           "value": "/workspace/BOOT-INF/lib/spring-boot-3.3.0-RC1.jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "pkg:maven/org.springframework.boot/spring-boot-actuator@3.3.0-RC1?package-id=0dd2488d5af27013",
-      "type": "library",
-      "name": "spring-boot-actuator",
-      "version": "3.3.0-RC1",
-      "licenses": [
-        {
-          "license": {
-            "id": "Apache-2.0"
-          }
-        }
-      ],
-      "cpe": "cpe:2.3:a:spring-boot-actuator:spring-boot-actuator:3.3.0-RC1:*:*:*:*:*:*:*",
-      "purl": "pkg:maven/org.springframework.boot/spring-boot-actuator@3.3.0-RC1",
-      "externalReferences": [
-        {
-          "url": "",
-          "hashes": [
-            {
-              "alg": "SHA-1",
-              "content": "7a130604e3920ad5ac2a0b9cb371ae817e13b0fc"
-            }
-          ],
-          "type": "build-meta"
-        }
-      ],
-      "properties": [
-        {
-          "name": "syft:package:foundBy",
-          "value": "java-archive-cataloger"
-        },
-        {
-          "name": "syft:package:language",
-          "value": "java"
-        },
-        {
-          "name": "syft:package:type",
-          "value": "java-archive"
-        },
-        {
-          "name": "syft:package:metadataType",
-          "value": "java-archive"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring-boot-actuator:spring_boot_actuator:3.3.0-RC1:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring_boot_actuator:spring-boot-actuator:3.3.0-RC1:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring_boot_actuator:spring_boot_actuator:3.3.0-RC1:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:springframework:spring-boot-actuator:3.3.0-RC1:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:springframework:spring_boot_actuator:3.3.0-RC1:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring-boot:spring-boot-actuator:3.3.0-RC1:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring-boot:spring_boot_actuator:3.3.0-RC1:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring_boot:spring-boot-actuator:3.3.0-RC1:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring_boot:spring_boot_actuator:3.3.0-RC1:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring:spring-boot-actuator:3.3.0-RC1:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring:spring_boot_actuator:3.3.0-RC1:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:boot:spring-boot-actuator:3.3.0-RC1:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:boot:spring_boot_actuator:3.3.0-RC1:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring-boot-actuator:boot:3.3.0-RC1:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring_boot_actuator:boot:3.3.0-RC1:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:springframework:boot:3.3.0-RC1:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring-boot:boot:3.3.0-RC1:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring_boot:boot:3.3.0-RC1:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring:boot:3.3.0-RC1:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:boot:boot:3.3.0-RC1:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:location:0:layerID",
-          "value": "sha256:2a7d180071fa28ff33f265feff776261a4cdc09da190a569c68a5b617d26ab7a"
-        },
-        {
-          "name": "syft:location:0:path",
-          "value": "/workspace/BOOT-INF/lib/spring-boot-actuator-3.3.0-RC1.jar"
-        },
-        {
-          "name": "syft:metadata:virtualPath",
-          "value": "/workspace/BOOT-INF/lib/spring-boot-actuator-3.3.0-RC1.jar"
-        }
-      ]
-    },
-    {
-      "bom-ref": "pkg:maven/org.springframework.boot/spring-boot-actuator-autoconfigure@3.3.0-RC1?package-id=db98a83fa1fe7bfe",
-      "type": "library",
-      "name": "spring-boot-actuator-autoconfigure",
-      "version": "3.3.0-RC1",
-      "licenses": [
-        {
-          "license": {
-            "id": "Apache-2.0"
-          }
-        }
-      ],
-      "cpe": "cpe:2.3:a:spring-boot-actuator-autoconfigure:spring-boot-actuator-autoconfigure:3.3.0-RC1:*:*:*:*:*:*:*",
-      "purl": "pkg:maven/org.springframework.boot/spring-boot-actuator-autoconfigure@3.3.0-RC1",
-      "externalReferences": [
-        {
-          "url": "",
-          "hashes": [
-            {
-              "alg": "SHA-1",
-              "content": "5550e6e26bd7db547cc1d166c0e7faa0e9f8b926"
-            }
-          ],
-          "type": "build-meta"
-        }
-      ],
-      "properties": [
-        {
-          "name": "syft:package:foundBy",
-          "value": "java-archive-cataloger"
-        },
-        {
-          "name": "syft:package:language",
-          "value": "java"
-        },
-        {
-          "name": "syft:package:type",
-          "value": "java-archive"
-        },
-        {
-          "name": "syft:package:metadataType",
-          "value": "java-archive"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring-boot-actuator-autoconfigure:spring_boot_actuator_autoconfigure:3.3.0-RC1:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring_boot_actuator_autoconfigure:spring-boot-actuator-autoconfigure:3.3.0-RC1:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring_boot_actuator_autoconfigure:spring_boot_actuator_autoconfigure:3.3.0-RC1:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring-boot-actuator:spring-boot-actuator-autoconfigure:3.3.0-RC1:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring-boot-actuator:spring_boot_actuator_autoconfigure:3.3.0-RC1:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring_boot_actuator:spring-boot-actuator-autoconfigure:3.3.0-RC1:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring_boot_actuator:spring_boot_actuator_autoconfigure:3.3.0-RC1:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:springframework:spring-boot-actuator-autoconfigure:3.3.0-RC1:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:springframework:spring_boot_actuator_autoconfigure:3.3.0-RC1:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring-boot:spring-boot-actuator-autoconfigure:3.3.0-RC1:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring-boot:spring_boot_actuator_autoconfigure:3.3.0-RC1:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring_boot:spring-boot-actuator-autoconfigure:3.3.0-RC1:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring_boot:spring_boot_actuator_autoconfigure:3.3.0-RC1:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring:spring-boot-actuator-autoconfigure:3.3.0-RC1:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring:spring_boot_actuator_autoconfigure:3.3.0-RC1:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:boot:spring-boot-actuator-autoconfigure:3.3.0-RC1:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:boot:spring_boot_actuator_autoconfigure:3.3.0-RC1:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring-boot-actuator-autoconfigure:boot:3.3.0-RC1:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring_boot_actuator_autoconfigure:boot:3.3.0-RC1:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring-boot-actuator:boot:3.3.0-RC1:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring_boot_actuator:boot:3.3.0-RC1:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:springframework:boot:3.3.0-RC1:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring-boot:boot:3.3.0-RC1:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring_boot:boot:3.3.0-RC1:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring:boot:3.3.0-RC1:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:boot:boot:3.3.0-RC1:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:location:0:layerID",
-          "value": "sha256:2a7d180071fa28ff33f265feff776261a4cdc09da190a569c68a5b617d26ab7a"
-        },
-        {
-          "name": "syft:location:0:path",
-          "value": "/workspace/BOOT-INF/lib/spring-boot-actuator-autoconfigure-3.3.0-RC1.jar"
-        },
-        {
-          "name": "syft:metadata:virtualPath",
-          "value": "/workspace/BOOT-INF/lib/spring-boot-actuator-autoconfigure-3.3.0-RC1.jar"
         }
       ]
     },
@@ -6325,7 +5732,7 @@
         },
         {
           "name": "syft:location:0:layerID",
-          "value": "sha256:2a7d180071fa28ff33f265feff776261a4cdc09da190a569c68a5b617d26ab7a"
+          "value": "sha256:55029ddf462494495f357b92d4032896bdf381c10f8b5252f7ce42e08cbc96c2"
         },
         {
           "name": "syft:location:0:path",
@@ -6434,7 +5841,7 @@
         },
         {
           "name": "syft:location:0:layerID",
-          "value": "sha256:2a7d180071fa28ff33f265feff776261a4cdc09da190a569c68a5b617d26ab7a"
+          "value": "sha256:55029ddf462494495f357b92d4032896bdf381c10f8b5252f7ce42e08cbc96c2"
         },
         {
           "name": "syft:location:0:path",
@@ -6643,7 +6050,7 @@
         },
         {
           "name": "syft:location:0:layerID",
-          "value": "sha256:2a7d180071fa28ff33f265feff776261a4cdc09da190a569c68a5b617d26ab7a"
+          "value": "sha256:55029ddf462494495f357b92d4032896bdf381c10f8b5252f7ce42e08cbc96c2"
         },
         {
           "name": "syft:location:0:path",
@@ -6909,7 +6316,7 @@
         },
         {
           "name": "syft:location:0:layerID",
-          "value": "sha256:2a7d180071fa28ff33f265feff776261a4cdc09da190a569c68a5b617d26ab7a"
+          "value": "sha256:55029ddf462494495f357b92d4032896bdf381c10f8b5252f7ce42e08cbc96c2"
         },
         {
           "name": "syft:location:0:path",
@@ -6999,7 +6406,7 @@
         },
         {
           "name": "syft:location:0:layerID",
-          "value": "sha256:2a7d180071fa28ff33f265feff776261a4cdc09da190a569c68a5b617d26ab7a"
+          "value": "sha256:55029ddf462494495f357b92d4032896bdf381c10f8b5252f7ce42e08cbc96c2"
         },
         {
           "name": "syft:location:0:path",
@@ -7089,7 +6496,7 @@
         },
         {
           "name": "syft:location:0:layerID",
-          "value": "sha256:2a7d180071fa28ff33f265feff776261a4cdc09da190a569c68a5b617d26ab7a"
+          "value": "sha256:55029ddf462494495f357b92d4032896bdf381c10f8b5252f7ce42e08cbc96c2"
         },
         {
           "name": "syft:location:0:path",
@@ -7179,7 +6586,7 @@
         },
         {
           "name": "syft:location:0:layerID",
-          "value": "sha256:2a7d180071fa28ff33f265feff776261a4cdc09da190a569c68a5b617d26ab7a"
+          "value": "sha256:55029ddf462494495f357b92d4032896bdf381c10f8b5252f7ce42e08cbc96c2"
         },
         {
           "name": "syft:location:0:path",
@@ -7269,7 +6676,7 @@
         },
         {
           "name": "syft:location:0:layerID",
-          "value": "sha256:2a7d180071fa28ff33f265feff776261a4cdc09da190a569c68a5b617d26ab7a"
+          "value": "sha256:55029ddf462494495f357b92d4032896bdf381c10f8b5252f7ce42e08cbc96c2"
         },
         {
           "name": "syft:location:0:path",
@@ -7502,7 +6909,7 @@
         },
         {
           "name": "syft:location:0:layerID",
-          "value": "sha256:2a7d180071fa28ff33f265feff776261a4cdc09da190a569c68a5b617d26ab7a"
+          "value": "sha256:55029ddf462494495f357b92d4032896bdf381c10f8b5252f7ce42e08cbc96c2"
         },
         {
           "name": "syft:location:0:path",
@@ -7571,7 +6978,7 @@
         },
         {
           "name": "syft:location:0:layerID",
-          "value": "sha256:2a7d180071fa28ff33f265feff776261a4cdc09da190a569c68a5b617d26ab7a"
+          "value": "sha256:55029ddf462494495f357b92d4032896bdf381c10f8b5252f7ce42e08cbc96c2"
         },
         {
           "name": "syft:location:0:path",
@@ -7640,7 +7047,7 @@
         },
         {
           "name": "syft:location:0:layerID",
-          "value": "sha256:2a7d180071fa28ff33f265feff776261a4cdc09da190a569c68a5b617d26ab7a"
+          "value": "sha256:55029ddf462494495f357b92d4032896bdf381c10f8b5252f7ce42e08cbc96c2"
         },
         {
           "name": "syft:location:0:path",

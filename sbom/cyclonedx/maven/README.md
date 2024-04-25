@@ -4,7 +4,14 @@
 
 ```shell
 ./mvnw package
-syft target/demo-sbom-cdx-maven-0.0.1-SNAPSHOT.jar -o cyclonedx-json --file bom-syft.cdx.json
+syft target/demo-sbom-cdx-maven-1.0.jar -o cyclonedx-json --file bom-syft.cdx.json
+```
+
+## Generating a SBOM from a container image using Syft
+
+```shell
+./mvnwn spring-boot:build-image
+syft demo-sbom-cdx-maven:1.0 -o cyclonedx-json --file bom-oci-syft.cdx.json
 ```
 
 ## Generating a SBOM from the source code using cdxgen
@@ -22,11 +29,11 @@ FETCH_LICENSE=true cdxgen -o bom-cdxgen.cdx.json --spec-version 1.5
 ## Scanning a SBOM for security vulnerabilities with Trivy
 
 ```shell
-trivy sbom target/bom.json
+trivy sbom target/classes/META-INF/sbom/application.cdx.json
 ```
 
 ## Verifying the quality of a SBOM with sbomqs
 
 ```shell
-sbomqs score target/bom.json
+sbomqs score target/classes/META-INF/sbom/application.cdx.json
 ```

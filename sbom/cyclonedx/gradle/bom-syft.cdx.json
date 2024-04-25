@@ -1,40 +1,51 @@
 {
-  "$schema": "http://cyclonedx.org/schema/bom-1.4.schema.json",
+  "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
   "bomFormat": "CycloneDX",
-  "specVersion": "1.4",
-  "serialNumber": "urn:uuid:98f70c15-320d-4c8c-bc97-e560adf5408d",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:fb7f4b4d-d70c-4b0e-86d8-c7edd1d7f1e9",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-11-07T18:33:57+01:00",
-    "tools": [
-      {
-        "vendor": "anchore",
-        "name": "syft",
-        "version": "0.94.0"
-      }
-    ],
+    "timestamp": "2024-04-25T18:00:05+02:00",
+    "tools": {
+      "components": [
+        {
+          "type": "application",
+          "author": "anchore",
+          "name": "syft",
+          "version": "1.2.0"
+        }
+      ]
+    },
     "component": {
       "bom-ref": "b416b5443c7171db",
       "type": "file",
       "name": "demo-sbom-cdx-gradle-1.0.jar",
-      "version": "sha256:sha256:563f6ffff7014d3611449b37d9b3037788bf41a9024c003cd21e84fb90add605"
+      "version": "sha256:a9743edea3d8a9334ab83debf40ec194e3bcbc7e0b96a3b9bf300beafec73f72"
     }
   },
   "components": [
     {
-      "bom-ref": "pkg:maven/org.springframework.boot.loader.JarLauncher/demo-sbom-cdx-gradle@1.0?package-id=4a7c78631987a3b5",
+      "bom-ref": "pkg:maven/org.hdrhistogram/HdrHistogram@2.1.12?package-id=75668e4fe97fc74b",
       "type": "library",
-      "name": "demo-sbom-cdx-gradle",
-      "version": "1.0",
-      "cpe": "cpe:2.3:a:demo-sbom-cdx-gradle:demo-sbom-cdx-gradle:1.0:*:*:*:*:*:*:*",
-      "purl": "pkg:maven/org.springframework.boot.loader.JarLauncher/demo-sbom-cdx-gradle@1.0",
+      "group": "org.hdrhistogram",
+      "name": "HdrHistogram",
+      "version": "2.1.12",
+      "licenses": [
+        {
+          "license": {
+            "name": "http://creativecommons.org/publicdomain/zero/1.0/, https://opensource.org/licenses/BSD-2-Clause"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:HdrHistogram:HdrHistogram:2.1.12:*:*:*:*:*:*:*",
+      "purl": "pkg:maven/org.hdrhistogram/HdrHistogram@2.1.12",
       "externalReferences": [
         {
           "url": "",
           "hashes": [
             {
               "alg": "SHA-1",
-              "content": "1df3d7fa6ccc6bb5d2fa0177a7bd3c9d25a4c044"
+              "content": "6eb7552156e0d517ae80cc2247be1427c8d90452"
             }
           ],
           "type": "build-meta"
@@ -43,18 +54,233 @@
       "properties": [
         {
           "name": "syft:package:foundBy",
-          "value": "java-cataloger"
+          "value": "java-archive-cataloger"
         },
         {
           "name": "syft:package:language",
           "value": "java"
         },
         {
+          "name": "syft:package:type",
+          "value": "java-archive"
+        },
+        {
           "name": "syft:package:metadataType",
-          "value": "JavaMetadata"
+          "value": "java-archive"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:hdrhistogram:HdrHistogram:2.1.12:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/demo-sbom-cdx-gradle-1.0.jar"
+        },
+        {
+          "name": "syft:metadata:-:artifactID",
+          "value": "HdrHistogram"
+        },
+        {
+          "name": "syft:metadata:-:groupID",
+          "value": "org.hdrhistogram"
+        },
+        {
+          "name": "syft:metadata:virtualPath",
+          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/HdrHistogram-2.1.12.jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:maven/org.latencyutils/LatencyUtils@2.0.3?package-id=b9a1bb1d4d5e58ca",
+      "type": "library",
+      "group": "org.latencyutils",
+      "name": "LatencyUtils",
+      "version": "2.0.3",
+      "licenses": [
+        {
+          "license": {
+            "name": "Public Domain, per Creative Commons CC0",
+            "url": "http://creativecommons.org/publicdomain/zero/1.0/"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:LatencyUtils:LatencyUtils:2.0.3:*:*:*:*:*:*:*",
+      "purl": "pkg:maven/org.latencyutils/LatencyUtils@2.0.3",
+      "externalReferences": [
+        {
+          "url": "",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "769c0b82cb2421c8256300e907298a9410a2a3d3"
+            }
+          ],
+          "type": "build-meta"
+        }
+      ],
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "java-archive-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "java"
         },
         {
           "name": "syft:package:type",
+          "value": "java-archive"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "java-archive"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:latencyutils:LatencyUtils:2.0.3:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/demo-sbom-cdx-gradle-1.0.jar"
+        },
+        {
+          "name": "syft:metadata:-:artifactID",
+          "value": "LatencyUtils"
+        },
+        {
+          "name": "syft:metadata:-:groupID",
+          "value": "org.latencyutils"
+        },
+        {
+          "name": "syft:metadata:virtualPath",
+          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/LatencyUtils-2.0.3.jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:maven/net.bytebuddy/byte-buddy@1.14.13?package-id=2993b5c42788d851",
+      "type": "library",
+      "group": "net.bytebuddy",
+      "name": "byte-buddy",
+      "version": "1.14.13",
+      "licenses": [
+        {
+          "license": {
+            "name": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:byte-buddy:byte-buddy:1.14.13:*:*:*:*:*:*:*",
+      "purl": "pkg:maven/net.bytebuddy/byte-buddy@1.14.13",
+      "externalReferences": [
+        {
+          "url": "",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "45cf516d9a23485200950549ff72b204c307fc9d"
+            }
+          ],
+          "type": "build-meta"
+        }
+      ],
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "java-archive-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "java"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "java-archive"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "java-archive"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:byte-buddy:byte_buddy:1.14.13:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:byte_buddy:byte-buddy:1.14.13:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:byte_buddy:byte_buddy:1.14.13:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:bytebuddy:byte-buddy:1.14.13:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:bytebuddy:byte_buddy:1.14.13:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:byte:byte-buddy:1.14.13:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:byte:byte_buddy:1.14.13:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/demo-sbom-cdx-gradle-1.0.jar"
+        },
+        {
+          "name": "syft:metadata:-:artifactID",
+          "value": "byte-buddy"
+        },
+        {
+          "name": "syft:metadata:-:groupID",
+          "value": "net.bytebuddy"
+        },
+        {
+          "name": "syft:metadata:virtualPath",
+          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/byte-buddy-1.14.13.jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:maven/org.springframework.boot.loader.launch.JarLauncher/demo-sbom-cdx-gradle@1.0?package-id=cf7114e9ac76d389",
+      "type": "library",
+      "name": "demo-sbom-cdx-gradle",
+      "version": "1.0",
+      "cpe": "cpe:2.3:a:demo-sbom-cdx-gradle:demo-sbom-cdx-gradle:1.0:*:*:*:*:*:*:*",
+      "purl": "pkg:maven/org.springframework.boot.loader.launch.JarLauncher/demo-sbom-cdx-gradle@1.0",
+      "externalReferences": [
+        {
+          "url": "",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "3a4a29eed92db2b83314d474fb518a56ef165987"
+            }
+          ],
+          "type": "build-meta"
+        }
+      ],
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "java-archive-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "java"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "java-archive"
+        },
+        {
+          "name": "syft:package:metadataType",
           "value": "java-archive"
         },
         {
@@ -127,11 +353,27 @@
         },
         {
           "name": "syft:cpe23",
+          "value": "cpe:2.3:a:demo-sbom-cdx-gradle:launch:1.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
           "value": "cpe:2.3:a:demo-sbom-cdx-gradle:loader:1.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
+          "value": "cpe:2.3:a:demo_sbom_cdx_gradle:launch:1.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
           "value": "cpe:2.3:a:demo_sbom_cdx_gradle:loader:1.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:launch:demo-sbom-cdx-gradle:1.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:launch:demo_sbom_cdx_gradle:1.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
@@ -183,6 +425,10 @@
         },
         {
           "name": "syft:cpe23",
+          "value": "cpe:2.3:a:springframework:launch:1.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
           "value": "cpe:2.3:a:springframework:loader:1.0:*:*:*:*:*:*:*"
         },
         {
@@ -195,7 +441,15 @@
         },
         {
           "name": "syft:cpe23",
+          "value": "cpe:2.3:a:demo-sbom-cdx:launch:1.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
           "value": "cpe:2.3:a:demo-sbom-cdx:loader:1.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:demo_sbom_cdx:launch:1.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
@@ -204,6 +458,10 @@
         {
           "name": "syft:cpe23",
           "value": "cpe:2.3:a:springframework:boot:1.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:JarLauncher:launch:1.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
@@ -219,6 +477,10 @@
         },
         {
           "name": "syft:cpe23",
+          "value": "cpe:2.3:a:launch:JarLauncher:1.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
           "value": "cpe:2.3:a:loader:JarLauncher:1.0:*:*:*:*:*:*:*"
         },
         {
@@ -231,11 +493,19 @@
         },
         {
           "name": "syft:cpe23",
+          "value": "cpe:2.3:a:demo-sbom:launch:1.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
           "value": "cpe:2.3:a:demo-sbom:loader:1.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
           "value": "cpe:2.3:a:demo:JarLauncher:1.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:demo_sbom:launch:1.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
@@ -251,7 +521,23 @@
         },
         {
           "name": "syft:cpe23",
+          "value": "cpe:2.3:a:launch:launch:1.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:launch:loader:1.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:loader:launch:1.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
           "value": "cpe:2.3:a:loader:loader:1.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:boot:launch:1.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
@@ -259,7 +545,15 @@
         },
         {
           "name": "syft:cpe23",
+          "value": "cpe:2.3:a:demo:launch:1.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
           "value": "cpe:2.3:a:demo:loader:1.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:launch:boot:1.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
@@ -284,11 +578,11 @@
       ]
     },
     {
-      "bom-ref": "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.15.2?package-id=508062636d992ed1",
+      "bom-ref": "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.17.0?package-id=40aa8901190d7362",
       "type": "library",
       "group": "com.fasterxml.jackson.core",
       "name": "jackson-annotations",
-      "version": "2.15.2",
+      "version": "2.17.0",
       "licenses": [
         {
           "license": {
@@ -296,15 +590,15 @@
           }
         }
       ],
-      "cpe": "cpe:2.3:a:jackson-annotations:jackson-annotations:2.15.2:*:*:*:*:*:*:*",
-      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.15.2",
+      "cpe": "cpe:2.3:a:jackson-annotations:jackson-annotations:2.17.0:*:*:*:*:*:*:*",
+      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.17.0",
       "externalReferences": [
         {
           "url": "",
           "hashes": [
             {
               "alg": "SHA-1",
-              "content": "4724a65ac8e8d156a24898d50fd5dbd3642870b8"
+              "content": "880a742337010da4c851f843d8cac150e22dff9f"
             }
           ],
           "type": "build-meta"
@@ -313,75 +607,75 @@
       "properties": [
         {
           "name": "syft:package:foundBy",
-          "value": "java-cataloger"
+          "value": "java-archive-cataloger"
         },
         {
           "name": "syft:package:language",
           "value": "java"
         },
         {
-          "name": "syft:package:metadataType",
-          "value": "JavaMetadata"
-        },
-        {
           "name": "syft:package:type",
           "value": "java-archive"
         },
         {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson-annotations:jackson_annotations:2.15.2:*:*:*:*:*:*:*"
+          "name": "syft:package:metadataType",
+          "value": "java-archive"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson_annotations:jackson-annotations:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson-annotations:jackson_annotations:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson_annotations:jackson_annotations:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson_annotations:jackson-annotations:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:fasterxml:jackson-annotations:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson_annotations:jackson_annotations:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:fasterxml:jackson_annotations:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:fasterxml:jackson-annotations:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson-annotations:jackson:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:fasterxml:jackson_annotations:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson:jackson-annotations:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson-annotations:jackson:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson:jackson_annotations:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson:jackson-annotations:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson_annotations:jackson:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson:jackson_annotations:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:core:jackson-annotations:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson_annotations:jackson:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:core:jackson_annotations:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:core:jackson-annotations:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:fasterxml:jackson:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:core:jackson_annotations:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson:jackson:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:fasterxml:jackson:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:core:jackson:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson:jackson:2.17.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:core:jackson:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:location:0:path",
@@ -397,16 +691,16 @@
         },
         {
           "name": "syft:metadata:virtualPath",
-          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/jackson-annotations-2.15.2.jar"
+          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/jackson-annotations-2.17.0.jar"
         }
       ]
     },
     {
-      "bom-ref": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.15.2?package-id=23f602e529800e92",
+      "bom-ref": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.17.0?package-id=4d2a72fb2851077b",
       "type": "library",
       "group": "com.fasterxml.jackson.core",
       "name": "jackson-core",
-      "version": "2.15.2",
+      "version": "2.17.0",
       "licenses": [
         {
           "license": {
@@ -414,15 +708,15 @@
           }
         }
       ],
-      "cpe": "cpe:2.3:a:jackson-core:jackson-core:2.15.2:*:*:*:*:*:*:*",
-      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.15.2",
+      "cpe": "cpe:2.3:a:jackson-core:jackson-core:2.17.0:*:*:*:*:*:*:*",
+      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-core@2.17.0",
       "externalReferences": [
         {
           "url": "",
           "hashes": [
             {
               "alg": "SHA-1",
-              "content": "a6fe1836469a69b3ff66037c324d75fc66ef137c"
+              "content": "a6e5058ef9720623c517252d17162f845306ff3a"
             }
           ],
           "type": "build-meta"
@@ -431,95 +725,95 @@
       "properties": [
         {
           "name": "syft:package:foundBy",
-          "value": "java-cataloger"
+          "value": "java-archive-cataloger"
         },
         {
           "name": "syft:package:language",
           "value": "java"
         },
         {
-          "name": "syft:package:metadataType",
-          "value": "JavaMetadata"
-        },
-        {
           "name": "syft:package:type",
           "value": "java-archive"
         },
         {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson-core:jackson_core:2.15.2:*:*:*:*:*:*:*"
+          "name": "syft:package:metadataType",
+          "value": "java-archive"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson_core:jackson-core:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson-core:jackson_core:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson_core:jackson_core:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson_core:jackson-core:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:fasterxml:jackson-core:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson_core:jackson_core:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:fasterxml:jackson_core:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:fasterxml:jackson-core:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson-core:jackson:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:fasterxml:jackson_core:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson:jackson-core:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson-core:jackson:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson:jackson_core:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson:jackson-core:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson_core:jackson:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson:jackson_core:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:core:jackson-core:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson_core:jackson:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:core:jackson_core:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:core:jackson-core:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:fasterxml:jackson:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:core:jackson_core:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson-core:core:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:fasterxml:jackson:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson_core:core:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson-core:core:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson:jackson:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson_core:core:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:fasterxml:core:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson:jackson:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:core:jackson:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:fasterxml:core:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson:core:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:core:jackson:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:core:core:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson:core:2.17.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:core:core:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:location:0:path",
@@ -535,16 +829,16 @@
         },
         {
           "name": "syft:metadata:virtualPath",
-          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/jackson-core-2.15.2.jar"
+          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/jackson-core-2.17.0.jar"
         }
       ]
     },
     {
-      "bom-ref": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.15.2?package-id=74e30c9f6b733fd9",
+      "bom-ref": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.17.0?package-id=01bc56891b68bd12",
       "type": "library",
       "group": "com.fasterxml.jackson.core",
       "name": "jackson-databind",
-      "version": "2.15.2",
+      "version": "2.17.0",
       "licenses": [
         {
           "license": {
@@ -552,15 +846,15 @@
           }
         }
       ],
-      "cpe": "cpe:2.3:a:jackson-databind:jackson-databind:2.15.2:*:*:*:*:*:*:*",
-      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.15.2",
+      "cpe": "cpe:2.3:a:jackson-databind:jackson-databind:2.17.0:*:*:*:*:*:*:*",
+      "purl": "pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.17.0",
       "externalReferences": [
         {
           "url": "",
           "hashes": [
             {
               "alg": "SHA-1",
-              "content": "9353b021f10c307c00328f52090de2bdb4b6ff9c"
+              "content": "7173e9e1d4bc6d7ca03bc4eeedcd548b8b580b34"
             }
           ],
           "type": "build-meta"
@@ -569,75 +863,75 @@
       "properties": [
         {
           "name": "syft:package:foundBy",
-          "value": "java-cataloger"
+          "value": "java-archive-cataloger"
         },
         {
           "name": "syft:package:language",
           "value": "java"
         },
         {
-          "name": "syft:package:metadataType",
-          "value": "JavaMetadata"
-        },
-        {
           "name": "syft:package:type",
           "value": "java-archive"
         },
         {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson-databind:jackson_databind:2.15.2:*:*:*:*:*:*:*"
+          "name": "syft:package:metadataType",
+          "value": "java-archive"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson_databind:jackson-databind:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson-databind:jackson_databind:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson_databind:jackson_databind:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson_databind:jackson-databind:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:fasterxml:jackson-databind:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson_databind:jackson_databind:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:fasterxml:jackson_databind:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:fasterxml:jackson-databind:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson-databind:jackson:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:fasterxml:jackson_databind:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson:jackson-databind:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson-databind:jackson:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson:jackson_databind:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson:jackson-databind:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson_databind:jackson:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson:jackson_databind:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:core:jackson-databind:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson_databind:jackson:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:core:jackson_databind:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:core:jackson-databind:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:fasterxml:jackson:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:core:jackson_databind:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson:jackson:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:fasterxml:jackson:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:core:jackson:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson:jackson:2.17.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:core:jackson:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:location:0:path",
@@ -653,16 +947,16 @@
         },
         {
           "name": "syft:metadata:virtualPath",
-          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/jackson-databind-2.15.2.jar"
+          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/jackson-databind-2.17.0.jar"
         }
       ]
     },
     {
-      "bom-ref": "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jdk8@2.15.2?package-id=3ec6bd93c5fa8eea",
+      "bom-ref": "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jdk8@2.17.0?package-id=75c2869da0194c09",
       "type": "library",
       "group": "com.fasterxml.jackson.datatype",
       "name": "jackson-datatype-jdk8",
-      "version": "2.15.2",
+      "version": "2.17.0",
       "licenses": [
         {
           "license": {
@@ -670,15 +964,15 @@
           }
         }
       ],
-      "cpe": "cpe:2.3:a:jackson-datatype-jdk8:jackson-datatype-jdk8:2.15.2:*:*:*:*:*:*:*",
-      "purl": "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jdk8@2.15.2",
+      "cpe": "cpe:2.3:a:jackson-datatype-jdk8:jackson-datatype-jdk8:2.17.0:*:*:*:*:*:*:*",
+      "purl": "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jdk8@2.17.0",
       "externalReferences": [
         {
           "url": "",
           "hashes": [
             {
               "alg": "SHA-1",
-              "content": "66a50e089cfd2f93896b9b6f7a734cea7bcf2f31"
+              "content": "95519a116d909faec29da76cf6b944b4a84c2c26"
             }
           ],
           "type": "build-meta"
@@ -687,99 +981,99 @@
       "properties": [
         {
           "name": "syft:package:foundBy",
-          "value": "java-cataloger"
+          "value": "java-archive-cataloger"
         },
         {
           "name": "syft:package:language",
           "value": "java"
         },
         {
-          "name": "syft:package:metadataType",
-          "value": "JavaMetadata"
-        },
-        {
           "name": "syft:package:type",
           "value": "java-archive"
         },
         {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson-datatype-jdk8:jackson_datatype_jdk8:2.15.2:*:*:*:*:*:*:*"
+          "name": "syft:package:metadataType",
+          "value": "java-archive"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson_datatype_jdk8:jackson-datatype-jdk8:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson-datatype-jdk8:jackson_datatype_jdk8:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson_datatype_jdk8:jackson_datatype_jdk8:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson_datatype_jdk8:jackson-datatype-jdk8:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson-datatype:jackson-datatype-jdk8:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson_datatype_jdk8:jackson_datatype_jdk8:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson-datatype:jackson_datatype_jdk8:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson-datatype:jackson-datatype-jdk8:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson_datatype:jackson-datatype-jdk8:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson-datatype:jackson_datatype_jdk8:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson_datatype:jackson_datatype_jdk8:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson_datatype:jackson-datatype-jdk8:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:fasterxml:jackson-datatype-jdk8:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson_datatype:jackson_datatype_jdk8:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:fasterxml:jackson_datatype_jdk8:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:fasterxml:jackson-datatype-jdk8:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:datatype:jackson-datatype-jdk8:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:fasterxml:jackson_datatype_jdk8:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:datatype:jackson_datatype_jdk8:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:datatype:jackson-datatype-jdk8:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson-datatype-jdk8:jackson:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:datatype:jackson_datatype_jdk8:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson:jackson-datatype-jdk8:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson-datatype-jdk8:jackson:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson:jackson_datatype_jdk8:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson:jackson-datatype-jdk8:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson_datatype_jdk8:jackson:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson:jackson_datatype_jdk8:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson-datatype:jackson:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson_datatype_jdk8:jackson:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson_datatype:jackson:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson-datatype:jackson:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:fasterxml:jackson:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson_datatype:jackson:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:datatype:jackson:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:fasterxml:jackson:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson:jackson:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:datatype:jackson:2.17.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:jackson:jackson:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:location:0:path",
@@ -795,16 +1089,16 @@
         },
         {
           "name": "syft:metadata:virtualPath",
-          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/jackson-datatype-jdk8-2.15.2.jar"
+          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/jackson-datatype-jdk8-2.17.0.jar"
         }
       ]
     },
     {
-      "bom-ref": "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jsr310@2.15.2?package-id=f8aef7faf6e475a4",
+      "bom-ref": "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jsr310@2.17.0?package-id=51508c2635b8013d",
       "type": "library",
       "group": "com.fasterxml.jackson.datatype",
       "name": "jackson-datatype-jsr310",
-      "version": "2.15.2",
+      "version": "2.17.0",
       "licenses": [
         {
           "license": {
@@ -812,15 +1106,15 @@
           }
         }
       ],
-      "cpe": "cpe:2.3:a:jackson-datatype-jsr310:jackson-datatype-jsr310:2.15.2:*:*:*:*:*:*:*",
-      "purl": "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jsr310@2.15.2",
+      "cpe": "cpe:2.3:a:jackson-datatype-jsr310:jackson-datatype-jsr310:2.17.0:*:*:*:*:*:*:*",
+      "purl": "pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jsr310@2.17.0",
       "externalReferences": [
         {
           "url": "",
           "hashes": [
             {
               "alg": "SHA-1",
-              "content": "30d16ec2aef6d8094c5e2dce1d95034ca8b6cb42"
+              "content": "3fab507bba9d477e52ed2302dc3ddbd23cbae339"
             }
           ],
           "type": "build-meta"
@@ -829,99 +1123,99 @@
       "properties": [
         {
           "name": "syft:package:foundBy",
-          "value": "java-cataloger"
+          "value": "java-archive-cataloger"
         },
         {
           "name": "syft:package:language",
           "value": "java"
         },
         {
-          "name": "syft:package:metadataType",
-          "value": "JavaMetadata"
-        },
-        {
           "name": "syft:package:type",
           "value": "java-archive"
         },
         {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson-datatype-jsr310:jackson_datatype_jsr310:2.15.2:*:*:*:*:*:*:*"
+          "name": "syft:package:metadataType",
+          "value": "java-archive"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson_datatype_jsr310:jackson-datatype-jsr310:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson-datatype-jsr310:jackson_datatype_jsr310:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson_datatype_jsr310:jackson_datatype_jsr310:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson_datatype_jsr310:jackson-datatype-jsr310:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson-datatype:jackson-datatype-jsr310:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson_datatype_jsr310:jackson_datatype_jsr310:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson-datatype:jackson_datatype_jsr310:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson-datatype:jackson-datatype-jsr310:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson_datatype:jackson-datatype-jsr310:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson-datatype:jackson_datatype_jsr310:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson_datatype:jackson_datatype_jsr310:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson_datatype:jackson-datatype-jsr310:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:fasterxml:jackson-datatype-jsr310:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson_datatype:jackson_datatype_jsr310:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:fasterxml:jackson_datatype_jsr310:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:fasterxml:jackson-datatype-jsr310:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:datatype:jackson-datatype-jsr310:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:fasterxml:jackson_datatype_jsr310:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:datatype:jackson_datatype_jsr310:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:datatype:jackson-datatype-jsr310:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson-datatype-jsr310:jackson:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:datatype:jackson_datatype_jsr310:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson:jackson-datatype-jsr310:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson-datatype-jsr310:jackson:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson:jackson_datatype_jsr310:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson:jackson-datatype-jsr310:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson_datatype_jsr310:jackson:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson:jackson_datatype_jsr310:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson-datatype:jackson:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson_datatype_jsr310:jackson:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson_datatype:jackson:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson-datatype:jackson:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:fasterxml:jackson:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson_datatype:jackson:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:datatype:jackson:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:fasterxml:jackson:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson:jackson:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:datatype:jackson:2.17.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:jackson:jackson:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:location:0:path",
@@ -937,16 +1231,16 @@
         },
         {
           "name": "syft:metadata:virtualPath",
-          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/jackson-datatype-jsr310-2.15.2.jar"
+          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/jackson-datatype-jsr310-2.17.0.jar"
         }
       ]
     },
     {
-      "bom-ref": "pkg:maven/com.fasterxml.jackson.module/jackson-module-parameter-names@2.15.2?package-id=daf1e572c836cdf5",
+      "bom-ref": "pkg:maven/com.fasterxml.jackson.module/jackson-module-parameter-names@2.17.0?package-id=f48eef81907ac85f",
       "type": "library",
       "group": "com.fasterxml.jackson.module",
       "name": "jackson-module-parameter-names",
-      "version": "2.15.2",
+      "version": "2.17.0",
       "licenses": [
         {
           "license": {
@@ -954,15 +1248,15 @@
           }
         }
       ],
-      "cpe": "cpe:2.3:a:jackson-module-parameter-names:jackson-module-parameter-names:2.15.2:*:*:*:*:*:*:*",
-      "purl": "pkg:maven/com.fasterxml.jackson.module/jackson-module-parameter-names@2.15.2",
+      "cpe": "cpe:2.3:a:jackson-module-parameter-names:jackson-module-parameter-names:2.17.0:*:*:*:*:*:*:*",
+      "purl": "pkg:maven/com.fasterxml.jackson.module/jackson-module-parameter-names@2.17.0",
       "externalReferences": [
         {
           "url": "",
           "hashes": [
             {
               "alg": "SHA-1",
-              "content": "75f8d2788db20f6c587c7a19e94fb6248c314241"
+              "content": "59340d6d12c15bcc465a91a4b9a2a93a920c4212"
             }
           ],
           "type": "build-meta"
@@ -971,123 +1265,123 @@
       "properties": [
         {
           "name": "syft:package:foundBy",
-          "value": "java-cataloger"
+          "value": "java-archive-cataloger"
         },
         {
           "name": "syft:package:language",
           "value": "java"
         },
         {
-          "name": "syft:package:metadataType",
-          "value": "JavaMetadata"
-        },
-        {
           "name": "syft:package:type",
           "value": "java-archive"
         },
         {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson-module-parameter-names:jackson_module_parameter_names:2.15.2:*:*:*:*:*:*:*"
+          "name": "syft:package:metadataType",
+          "value": "java-archive"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson_module_parameter_names:jackson-module-parameter-names:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson-module-parameter-names:jackson_module_parameter_names:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson_module_parameter_names:jackson_module_parameter_names:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson_module_parameter_names:jackson-module-parameter-names:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson-module-parameter:jackson-module-parameter-names:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson_module_parameter_names:jackson_module_parameter_names:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson-module-parameter:jackson_module_parameter_names:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson-module-parameter:jackson-module-parameter-names:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson_module_parameter:jackson-module-parameter-names:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson-module-parameter:jackson_module_parameter_names:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson_module_parameter:jackson_module_parameter_names:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson_module_parameter:jackson-module-parameter-names:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson-module:jackson-module-parameter-names:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson_module_parameter:jackson_module_parameter_names:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson-module:jackson_module_parameter_names:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson-module:jackson-module-parameter-names:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson_module:jackson-module-parameter-names:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson-module:jackson_module_parameter_names:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson_module:jackson_module_parameter_names:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson_module:jackson-module-parameter-names:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:fasterxml:jackson-module-parameter-names:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson_module:jackson_module_parameter_names:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:fasterxml:jackson_module_parameter_names:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:fasterxml:jackson-module-parameter-names:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson-module-parameter-names:jackson:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:fasterxml:jackson_module_parameter_names:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson:jackson-module-parameter-names:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson-module-parameter-names:jackson:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson:jackson_module_parameter_names:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson:jackson-module-parameter-names:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson_module_parameter_names:jackson:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson:jackson_module_parameter_names:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:module:jackson-module-parameter-names:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson_module_parameter_names:jackson:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:module:jackson_module_parameter_names:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:module:jackson-module-parameter-names:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson-module-parameter:jackson:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:module:jackson_module_parameter_names:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson_module_parameter:jackson:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson-module-parameter:jackson:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson-module:jackson:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson_module_parameter:jackson:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson_module:jackson:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson-module:jackson:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:fasterxml:jackson:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson_module:jackson:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jackson:jackson:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:fasterxml:jackson:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:module:jackson:2.15.2:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jackson:jackson:2.17.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:module:jackson:2.17.0:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:location:0:path",
@@ -1103,12 +1397,12 @@
         },
         {
           "name": "syft:metadata:virtualPath",
-          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/jackson-module-parameter-names-2.15.2.jar"
+          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/jackson-module-parameter-names-2.17.0.jar"
         }
       ]
     },
     {
-      "bom-ref": "pkg:maven/jakarta.annotation/jakarta.annotation-api@2.1.1?package-id=294148b1bda9278d",
+      "bom-ref": "pkg:maven/jakarta.annotation/jakarta.annotation-api@2.1.1?package-id=89bcc83b68d3f2ab",
       "type": "library",
       "group": "jakarta.annotation",
       "name": "jakarta.annotation-api",
@@ -1137,18 +1431,18 @@
       "properties": [
         {
           "name": "syft:package:foundBy",
-          "value": "java-cataloger"
+          "value": "java-archive-cataloger"
         },
         {
           "name": "syft:package:language",
           "value": "java"
         },
         {
-          "name": "syft:package:metadataType",
-          "value": "JavaMetadata"
+          "name": "syft:package:type",
+          "value": "java-archive"
         },
         {
-          "name": "syft:package:type",
+          "name": "syft:package:metadataType",
           "value": "java-archive"
         },
         {
@@ -1214,11 +1508,11 @@
       ]
     },
     {
-      "bom-ref": "pkg:maven/org.slf4j/jul-to-slf4j@2.0.9?package-id=aa39b853cbb8a256",
+      "bom-ref": "pkg:maven/org.slf4j/jul-to-slf4j@2.0.13?package-id=0b1323e1e3c8fe0c",
       "type": "library",
       "group": "org.slf4j",
       "name": "jul-to-slf4j",
-      "version": "2.0.9",
+      "version": "2.0.13",
       "licenses": [
         {
           "license": {
@@ -1226,15 +1520,15 @@
           }
         }
       ],
-      "cpe": "cpe:2.3:a:jul-to-slf4j:jul-to-slf4j:2.0.9:*:*:*:*:*:*:*",
-      "purl": "pkg:maven/org.slf4j/jul-to-slf4j@2.0.9",
+      "cpe": "cpe:2.3:a:jul-to-slf4j:jul-to-slf4j:2.0.13:*:*:*:*:*:*:*",
+      "purl": "pkg:maven/org.slf4j/jul-to-slf4j@2.0.13",
       "externalReferences": [
         {
           "url": "",
           "hashes": [
             {
               "alg": "SHA-1",
-              "content": "09ef7c70b248185845f013f49a33ff9ca65b7975"
+              "content": "a3bcd9d9dd50c71ce69f06b1fd05e40fdeff6ba5"
             }
           ],
           "type": "build-meta"
@@ -1243,63 +1537,63 @@
       "properties": [
         {
           "name": "syft:package:foundBy",
-          "value": "java-cataloger"
+          "value": "java-archive-cataloger"
         },
         {
           "name": "syft:package:language",
           "value": "java"
         },
         {
-          "name": "syft:package:metadataType",
-          "value": "JavaMetadata"
-        },
-        {
           "name": "syft:package:type",
           "value": "java-archive"
         },
         {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jul-to-slf4j:jul_to_slf4j:2.0.9:*:*:*:*:*:*:*"
+          "name": "syft:package:metadataType",
+          "value": "java-archive"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jul_to_slf4j:jul-to-slf4j:2.0.9:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jul-to-slf4j:jul_to_slf4j:2.0.13:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jul_to_slf4j:jul_to_slf4j:2.0.9:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jul_to_slf4j:jul-to-slf4j:2.0.13:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jul-to:jul-to-slf4j:2.0.9:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jul_to_slf4j:jul_to_slf4j:2.0.13:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jul-to:jul_to_slf4j:2.0.9:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jul-to:jul-to-slf4j:2.0.13:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jul_to:jul-to-slf4j:2.0.9:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jul-to:jul_to_slf4j:2.0.13:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jul_to:jul_to_slf4j:2.0.9:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jul_to:jul-to-slf4j:2.0.13:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:slf4j:jul-to-slf4j:2.0.9:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jul_to:jul_to_slf4j:2.0.13:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:slf4j:jul_to_slf4j:2.0.9:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:slf4j:jul-to-slf4j:2.0.13:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jul:jul-to-slf4j:2.0.9:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:slf4j:jul_to_slf4j:2.0.13:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:jul:jul_to_slf4j:2.0.9:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:jul:jul-to-slf4j:2.0.13:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:jul:jul_to_slf4j:2.0.13:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:location:0:path",
@@ -1315,32 +1609,32 @@
         },
         {
           "name": "syft:metadata:virtualPath",
-          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/jul-to-slf4j-2.0.9.jar"
+          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/jul-to-slf4j-2.0.13.jar"
         }
       ]
     },
     {
-      "bom-ref": "pkg:maven/org.apache.logging.log4j/log4j-api@2.20.0?package-id=b5842a384590e3a5",
+      "bom-ref": "pkg:maven/org.apache.logging.log4j/log4j-api@2.23.1?package-id=477e6594ef1bed13",
       "type": "library",
       "group": "org.apache.logging.log4j",
       "name": "log4j-api",
-      "version": "2.20.0",
+      "version": "2.23.1",
       "licenses": [
         {
           "license": {
-            "name": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+            "name": "\"Apache-2.0\";link=\"https://www.apache.org/licenses/LICENSE-2.0.txt\""
           }
         }
       ],
-      "cpe": "cpe:2.3:a:apache:log4j-api:2.20.0:*:*:*:*:*:*:*",
-      "purl": "pkg:maven/org.apache.logging.log4j/log4j-api@2.20.0",
+      "cpe": "cpe:2.3:a:apache:log4j-api:2.23.1:*:*:*:*:*:*:*",
+      "purl": "pkg:maven/org.apache.logging.log4j/log4j-api@2.23.1",
       "externalReferences": [
         {
           "url": "",
           "hashes": [
             {
               "alg": "SHA-1",
-              "content": "1fe6082e660daf07c689a89c94dc0f49c26b44bb"
+              "content": "9c15c29c526d9c6783049c0a77722693c66706e1"
             }
           ],
           "type": "build-meta"
@@ -1349,31 +1643,31 @@
       "properties": [
         {
           "name": "syft:package:foundBy",
-          "value": "java-cataloger"
+          "value": "java-archive-cataloger"
         },
         {
           "name": "syft:package:language",
           "value": "java"
         },
         {
-          "name": "syft:package:metadataType",
-          "value": "JavaMetadata"
-        },
-        {
           "name": "syft:package:type",
           "value": "java-archive"
         },
         {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:apache:log4j_api:2.20.0:*:*:*:*:*:*:*"
+          "name": "syft:package:metadataType",
+          "value": "java-archive"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:apache:log4j:2.20.0:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:apache:log4j_api:2.23.1:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:apache:api:2.20.0:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:apache:log4j:2.23.1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:apache:api:2.23.1:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:location:0:path",
@@ -1389,32 +1683,32 @@
         },
         {
           "name": "syft:metadata:virtualPath",
-          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/log4j-api-2.20.0.jar"
+          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/log4j-api-2.23.1.jar"
         }
       ]
     },
     {
-      "bom-ref": "pkg:maven/org.apache.logging.log4j/log4j-to-slf4j@2.20.0?package-id=3572600513da9ee8",
+      "bom-ref": "pkg:maven/org.apache.logging.log4j/log4j-to-slf4j@2.23.1?package-id=7b23cdaa61b514fd",
       "type": "library",
       "group": "org.apache.logging.log4j",
       "name": "log4j-to-slf4j",
-      "version": "2.20.0",
+      "version": "2.23.1",
       "licenses": [
         {
           "license": {
-            "name": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+            "name": "\"Apache-2.0\";link=\"https://www.apache.org/licenses/LICENSE-2.0.txt\""
           }
         }
       ],
-      "cpe": "cpe:2.3:a:apache:log4j-to-slf4j:2.20.0:*:*:*:*:*:*:*",
-      "purl": "pkg:maven/org.apache.logging.log4j/log4j-to-slf4j@2.20.0",
+      "cpe": "cpe:2.3:a:apache:log4j-to-slf4j:2.23.1:*:*:*:*:*:*:*",
+      "purl": "pkg:maven/org.apache.logging.log4j/log4j-to-slf4j@2.23.1",
       "externalReferences": [
         {
           "url": "",
           "hashes": [
             {
               "alg": "SHA-1",
-              "content": "d37f81f8978e2672bc32c82712ab4b3f66624adc"
+              "content": "425ad1eb8a39904d2830e907a324e956fb456520"
             }
           ],
           "type": "build-meta"
@@ -1423,39 +1717,31 @@
       "properties": [
         {
           "name": "syft:package:foundBy",
-          "value": "java-cataloger"
+          "value": "java-archive-cataloger"
         },
         {
           "name": "syft:package:language",
           "value": "java"
         },
         {
-          "name": "syft:package:metadataType",
-          "value": "JavaMetadata"
-        },
-        {
           "name": "syft:package:type",
           "value": "java-archive"
         },
         {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:apache:log4j_to_slf4j:2.20.0:*:*:*:*:*:*:*"
+          "name": "syft:package:metadataType",
+          "value": "java-archive"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:apache:to-slf4j:2.20.0:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:apache:log4j_to_slf4j:2.23.1:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:apache:to_slf4j:2.20.0:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:apache:log4j:2.23.1:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:apache:log4j:2.20.0:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:apache:slf4j:2.20.0:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:apache:slf4j:2.23.1:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:location:0:path",
@@ -1471,16 +1757,16 @@
         },
         {
           "name": "syft:metadata:virtualPath",
-          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/log4j-to-slf4j-2.20.0.jar"
+          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/log4j-to-slf4j-2.23.1.jar"
         }
       ]
     },
     {
-      "bom-ref": "pkg:maven/ch.qos.logback/logback-classic@1.4.11?package-id=d26ea897b965be77",
+      "bom-ref": "pkg:maven/ch.qos.logback/logback-classic@1.5.6?package-id=ed5ce16925e6d855",
       "type": "library",
       "group": "ch.qos.logback",
       "name": "logback-classic",
-      "version": "1.4.11",
+      "version": "1.5.6",
       "licenses": [
         {
           "license": {
@@ -1488,15 +1774,15 @@
           }
         }
       ],
-      "cpe": "cpe:2.3:a:logback-classic:logback-classic:1.4.11:*:*:*:*:*:*:*",
-      "purl": "pkg:maven/ch.qos.logback/logback-classic@1.4.11",
+      "cpe": "cpe:2.3:a:logback-classic:logback-classic:1.5.6:*:*:*:*:*:*:*",
+      "purl": "pkg:maven/ch.qos.logback/logback-classic@1.5.6",
       "externalReferences": [
         {
           "url": "",
           "hashes": [
             {
               "alg": "SHA-1",
-              "content": "54450c0c783e896a1a6d88c043bd2f1daba1c382"
+              "content": "afc75d260d838a3bddfb8f207c2805ed7d1b34f9"
             }
           ],
           "type": "build-meta"
@@ -1505,55 +1791,55 @@
       "properties": [
         {
           "name": "syft:package:foundBy",
-          "value": "java-cataloger"
+          "value": "java-archive-cataloger"
         },
         {
           "name": "syft:package:language",
           "value": "java"
         },
         {
-          "name": "syft:package:metadataType",
-          "value": "JavaMetadata"
-        },
-        {
           "name": "syft:package:type",
           "value": "java-archive"
         },
         {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:logback-classic:logback_classic:1.4.11:*:*:*:*:*:*:*"
+          "name": "syft:package:metadataType",
+          "value": "java-archive"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:logback_classic:logback-classic:1.4.11:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:logback-classic:logback_classic:1.5.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:logback_classic:logback_classic:1.4.11:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:logback_classic:logback-classic:1.5.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:logback:logback-classic:1.4.11:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:logback_classic:logback_classic:1.5.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:logback:logback_classic:1.4.11:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:logback:logback-classic:1.5.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:qos-ch:logback-classic:1.4.11:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:logback:logback_classic:1.5.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:qos-ch:logback_classic:1.4.11:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:qos-ch:logback-classic:1.5.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:qos_ch:logback-classic:1.4.11:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:qos-ch:logback_classic:1.5.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:qos_ch:logback_classic:1.4.11:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:qos_ch:logback-classic:1.5.6:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:qos_ch:logback_classic:1.5.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:location:0:path",
@@ -1569,16 +1855,16 @@
         },
         {
           "name": "syft:metadata:virtualPath",
-          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/logback-classic-1.4.11.jar"
+          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/logback-classic-1.5.6.jar"
         }
       ]
     },
     {
-      "bom-ref": "pkg:maven/ch.qos.logback/logback-core@1.4.11?package-id=da54ad8318c430ef",
+      "bom-ref": "pkg:maven/ch.qos.logback/logback-core@1.5.6?package-id=cf6c5292346fc92b",
       "type": "library",
       "group": "ch.qos.logback",
       "name": "logback-core",
-      "version": "1.4.11",
+      "version": "1.5.6",
       "licenses": [
         {
           "license": {
@@ -1586,15 +1872,15 @@
           }
         }
       ],
-      "cpe": "cpe:2.3:a:logback-core:logback-core:1.4.11:*:*:*:*:*:*:*",
-      "purl": "pkg:maven/ch.qos.logback/logback-core@1.4.11",
+      "cpe": "cpe:2.3:a:logback-core:logback-core:1.5.6:*:*:*:*:*:*:*",
+      "purl": "pkg:maven/ch.qos.logback/logback-core@1.5.6",
       "externalReferences": [
         {
           "url": "",
           "hashes": [
             {
               "alg": "SHA-1",
-              "content": "2f9f280219a9922a74200eaf7138c4c17fb87c0f"
+              "content": "41cbe874701200c5624c19e0ab50d1b88dfcc77d"
             }
           ],
           "type": "build-meta"
@@ -1603,55 +1889,55 @@
       "properties": [
         {
           "name": "syft:package:foundBy",
-          "value": "java-cataloger"
+          "value": "java-archive-cataloger"
         },
         {
           "name": "syft:package:language",
           "value": "java"
         },
         {
-          "name": "syft:package:metadataType",
-          "value": "JavaMetadata"
-        },
-        {
           "name": "syft:package:type",
           "value": "java-archive"
         },
         {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:logback-core:logback_core:1.4.11:*:*:*:*:*:*:*"
+          "name": "syft:package:metadataType",
+          "value": "java-archive"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:logback_core:logback-core:1.4.11:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:logback-core:logback_core:1.5.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:logback_core:logback_core:1.4.11:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:logback_core:logback-core:1.5.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:logback:logback-core:1.4.11:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:logback_core:logback_core:1.5.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:logback:logback_core:1.4.11:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:logback:logback-core:1.5.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:qos-ch:logback-core:1.4.11:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:logback:logback_core:1.5.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:qos-ch:logback_core:1.4.11:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:qos-ch:logback-core:1.5.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:qos_ch:logback-core:1.4.11:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:qos-ch:logback_core:1.5.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:qos_ch:logback_core:1.4.11:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:qos_ch:logback-core:1.5.6:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:qos_ch:logback_core:1.5.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:location:0:path",
@@ -1667,15 +1953,15 @@
         },
         {
           "name": "syft:metadata:virtualPath",
-          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/logback-core-1.4.11.jar"
+          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/logback-core-1.5.6.jar"
         }
       ]
     },
     {
-      "bom-ref": "pkg:maven/io.micrometer%23micrometer-commons/micrometer-commons@1.11.4?package-id=bc44bcd60072ebfd",
+      "bom-ref": "pkg:maven/io.micrometer/micrometer-commons@1.13.0-RC1?package-id=933882c4daf834d1",
       "type": "library",
       "name": "micrometer-commons",
-      "version": "1.11.4",
+      "version": "1.13.0-RC1",
       "licenses": [
         {
           "license": {
@@ -1683,15 +1969,15 @@
           }
         }
       ],
-      "cpe": "cpe:2.3:a:micrometer\\#micrometer-commons:micrometer-commons:1.11.4:*:*:*:*:*:*:*",
-      "purl": "pkg:maven/io.micrometer%23micrometer-commons/micrometer-commons@1.11.4",
+      "cpe": "cpe:2.3:a:micrometer-commons:micrometer-commons:1.13.0-RC1:*:*:*:*:*:*:*",
+      "purl": "pkg:maven/io.micrometer/micrometer-commons@1.13.0-RC1",
       "externalReferences": [
         {
           "url": "",
           "hashes": [
             {
               "alg": "SHA-1",
-              "content": "6dfbbc07ecad294bffacff0648d6eaa4de78f332"
+              "content": "63f08fc273b44773c417014a8f1897502137bcbe"
             }
           ],
           "type": "build-meta"
@@ -1700,63 +1986,39 @@
       "properties": [
         {
           "name": "syft:package:foundBy",
-          "value": "java-cataloger"
+          "value": "java-archive-cataloger"
         },
         {
           "name": "syft:package:language",
           "value": "java"
         },
         {
-          "name": "syft:package:metadataType",
-          "value": "JavaMetadata"
-        },
-        {
           "name": "syft:package:type",
           "value": "java-archive"
         },
         {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:micrometer\\#micrometer-commons:micrometer_commons:1.11.4:*:*:*:*:*:*:*"
+          "name": "syft:package:metadataType",
+          "value": "java-archive"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:micrometer\\#micrometer_commons:micrometer-commons:1.11.4:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:micrometer-commons:micrometer_commons:1.13.0-RC1:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:micrometer\\#micrometer_commons:micrometer_commons:1.11.4:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:micrometer_commons:micrometer-commons:1.13.0-RC1:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:micrometer\\#micrometer:micrometer-commons:1.11.4:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:micrometer_commons:micrometer_commons:1.13.0-RC1:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:micrometer\\#micrometer:micrometer_commons:1.11.4:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:micrometer:micrometer-commons:1.13.0-RC1:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:micrometer-commons:micrometer-commons:1.11.4:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:micrometer-commons:micrometer_commons:1.11.4:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:micrometer_commons:micrometer-commons:1.11.4:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:micrometer_commons:micrometer_commons:1.11.4:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:micrometer:micrometer-commons:1.11.4:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:micrometer:micrometer_commons:1.11.4:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:micrometer:micrometer_commons:1.13.0-RC1:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:location:0:path",
@@ -1764,15 +2026,161 @@
         },
         {
           "name": "syft:metadata:virtualPath",
-          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/micrometer-commons-1.11.4.jar"
+          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/micrometer-commons-1.13.0-RC1.jar"
         }
       ]
     },
     {
-      "bom-ref": "pkg:maven/io.micrometer%23micrometer-observation/micrometer-observation@1.11.4?package-id=29df187046745c03",
+      "bom-ref": "pkg:maven/io.micrometer/micrometer-core@1.13.0-RC1?package-id=713ae05ae85ee2b9",
+      "type": "library",
+      "name": "micrometer-core",
+      "version": "1.13.0-RC1",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:micrometer-core:micrometer-core:1.13.0-RC1:*:*:*:*:*:*:*",
+      "purl": "pkg:maven/io.micrometer/micrometer-core@1.13.0-RC1",
+      "externalReferences": [
+        {
+          "url": "",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "b54984eb1a3d1badd4b5987b6823493703a88497"
+            }
+          ],
+          "type": "build-meta"
+        }
+      ],
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "java-archive-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "java"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "java-archive"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "java-archive"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:micrometer-core:micrometer_core:1.13.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:micrometer_core:micrometer-core:1.13.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:micrometer_core:micrometer_core:1.13.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:micrometer:micrometer-core:1.13.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:micrometer:micrometer_core:1.13.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/demo-sbom-cdx-gradle-1.0.jar"
+        },
+        {
+          "name": "syft:metadata:virtualPath",
+          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/micrometer-core-1.13.0-RC1.jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:maven/io.micrometer/micrometer-jakarta9@1.13.0-RC1?package-id=75251afd3c16e671",
+      "type": "library",
+      "name": "micrometer-jakarta9",
+      "version": "1.13.0-RC1",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:micrometer-jakarta9:micrometer-jakarta9:1.13.0-RC1:*:*:*:*:*:*:*",
+      "purl": "pkg:maven/io.micrometer/micrometer-jakarta9@1.13.0-RC1",
+      "externalReferences": [
+        {
+          "url": "",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "717d1d0e6b92d2e5f860b8fe181f959da10d923d"
+            }
+          ],
+          "type": "build-meta"
+        }
+      ],
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "java-archive-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "java"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "java-archive"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "java-archive"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:micrometer-jakarta9:micrometer_jakarta9:1.13.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:micrometer_jakarta9:micrometer-jakarta9:1.13.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:micrometer_jakarta9:micrometer_jakarta9:1.13.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:micrometer:micrometer-jakarta9:1.13.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:micrometer:micrometer_jakarta9:1.13.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/demo-sbom-cdx-gradle-1.0.jar"
+        },
+        {
+          "name": "syft:metadata:virtualPath",
+          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/micrometer-jakarta9-1.13.0-RC1.jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:maven/io.micrometer/micrometer-observation@1.13.0-RC1?package-id=5a2b348946e76e2c",
       "type": "library",
       "name": "micrometer-observation",
-      "version": "1.11.4",
+      "version": "1.13.0-RC1",
       "licenses": [
         {
           "license": {
@@ -1780,15 +2188,15 @@
           }
         }
       ],
-      "cpe": "cpe:2.3:a:micrometer\\#micrometer-observation:micrometer-observation:1.11.4:*:*:*:*:*:*:*",
-      "purl": "pkg:maven/io.micrometer%23micrometer-observation/micrometer-observation@1.11.4",
+      "cpe": "cpe:2.3:a:micrometer-observation:micrometer-observation:1.13.0-RC1:*:*:*:*:*:*:*",
+      "purl": "pkg:maven/io.micrometer/micrometer-observation@1.13.0-RC1",
       "externalReferences": [
         {
           "url": "",
           "hashes": [
             {
               "alg": "SHA-1",
-              "content": "1aa2f6ba1dae42c403543bd14ea5f302d7ed6d85"
+              "content": "a9977cbdfad0d4271377c197e4273260e7d05200"
             }
           ],
           "type": "build-meta"
@@ -1797,63 +2205,39 @@
       "properties": [
         {
           "name": "syft:package:foundBy",
-          "value": "java-cataloger"
+          "value": "java-archive-cataloger"
         },
         {
           "name": "syft:package:language",
           "value": "java"
         },
         {
-          "name": "syft:package:metadataType",
-          "value": "JavaMetadata"
-        },
-        {
           "name": "syft:package:type",
           "value": "java-archive"
         },
         {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:micrometer\\#micrometer-observation:micrometer_observation:1.11.4:*:*:*:*:*:*:*"
+          "name": "syft:package:metadataType",
+          "value": "java-archive"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:micrometer\\#micrometer_observation:micrometer-observation:1.11.4:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:micrometer-observation:micrometer_observation:1.13.0-RC1:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:micrometer\\#micrometer_observation:micrometer_observation:1.11.4:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:micrometer_observation:micrometer-observation:1.13.0-RC1:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:micrometer-observation:micrometer-observation:1.11.4:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:micrometer_observation:micrometer_observation:1.13.0-RC1:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:micrometer-observation:micrometer_observation:1.11.4:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:micrometer:micrometer-observation:1.13.0-RC1:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:micrometer_observation:micrometer-observation:1.11.4:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:micrometer_observation:micrometer_observation:1.11.4:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:micrometer\\#micrometer:micrometer-observation:1.11.4:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:micrometer\\#micrometer:micrometer_observation:1.11.4:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:micrometer:micrometer-observation:1.11.4:*:*:*:*:*:*:*"
-        },
-        {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:micrometer:micrometer_observation:1.11.4:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:micrometer:micrometer_observation:1.13.0-RC1:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:location:0:path",
@@ -1861,16 +2245,16 @@
         },
         {
           "name": "syft:metadata:virtualPath",
-          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/micrometer-observation-1.11.4.jar"
+          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/micrometer-observation-1.13.0-RC1.jar"
         }
       ]
     },
     {
-      "bom-ref": "pkg:maven/org.slf4j/slf4j-api@2.0.9?package-id=355dc0fdfdd41daa",
+      "bom-ref": "pkg:maven/org.slf4j/slf4j-api@2.0.13?package-id=7fb2defefeb126e5",
       "type": "library",
       "group": "org.slf4j",
       "name": "slf4j-api",
-      "version": "2.0.9",
+      "version": "2.0.13",
       "licenses": [
         {
           "license": {
@@ -1878,15 +2262,15 @@
           }
         }
       ],
-      "cpe": "cpe:2.3:a:slf4j-api:slf4j-api:2.0.9:*:*:*:*:*:*:*",
-      "purl": "pkg:maven/org.slf4j/slf4j-api@2.0.9",
+      "cpe": "cpe:2.3:a:slf4j-api:slf4j-api:2.0.13:*:*:*:*:*:*:*",
+      "purl": "pkg:maven/org.slf4j/slf4j-api@2.0.13",
       "externalReferences": [
         {
           "url": "",
           "hashes": [
             {
               "alg": "SHA-1",
-              "content": "7cf2726fdcfbc8610f9a71fb3ed639871f315340"
+              "content": "80229737f704b121a318bba5d5deacbcf395bc77"
             }
           ],
           "type": "build-meta"
@@ -1895,39 +2279,39 @@
       "properties": [
         {
           "name": "syft:package:foundBy",
-          "value": "java-cataloger"
+          "value": "java-archive-cataloger"
         },
         {
           "name": "syft:package:language",
           "value": "java"
         },
         {
-          "name": "syft:package:metadataType",
-          "value": "JavaMetadata"
-        },
-        {
           "name": "syft:package:type",
           "value": "java-archive"
         },
         {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:slf4j-api:slf4j_api:2.0.9:*:*:*:*:*:*:*"
+          "name": "syft:package:metadataType",
+          "value": "java-archive"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:slf4j_api:slf4j-api:2.0.9:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:slf4j-api:slf4j_api:2.0.13:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:slf4j_api:slf4j_api:2.0.9:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:slf4j_api:slf4j-api:2.0.13:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:slf4j:slf4j-api:2.0.9:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:slf4j_api:slf4j_api:2.0.13:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:slf4j:slf4j_api:2.0.9:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:slf4j:slf4j-api:2.0.13:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:slf4j:slf4j_api:2.0.13:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:location:0:path",
@@ -1943,16 +2327,16 @@
         },
         {
           "name": "syft:metadata:virtualPath",
-          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/slf4j-api-2.0.9.jar"
+          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/slf4j-api-2.0.13.jar"
         }
       ]
     },
     {
-      "bom-ref": "pkg:maven/org.yaml/snakeyaml@1.33?package-id=f7d26b1f0bd7e39a",
+      "bom-ref": "pkg:maven/org.yaml/snakeyaml@2.2?package-id=44ea01f0ef0579b9",
       "type": "library",
       "group": "org.yaml",
       "name": "snakeyaml",
-      "version": "1.33",
+      "version": "2.2",
       "licenses": [
         {
           "license": {
@@ -1960,15 +2344,15 @@
           }
         }
       ],
-      "cpe": "cpe:2.3:a:snakeyaml:snakeyaml:1.33:*:*:*:*:*:*:*",
-      "purl": "pkg:maven/org.yaml/snakeyaml@1.33",
+      "cpe": "cpe:2.3:a:snakeyaml:snakeyaml:2.2:*:*:*:*:*:*:*",
+      "purl": "pkg:maven/org.yaml/snakeyaml@2.2",
       "externalReferences": [
         {
           "url": "",
           "hashes": [
             {
               "alg": "SHA-1",
-              "content": "2cd0a87ff7df953f810c344bdf2fe3340b954c69"
+              "content": "3af797a25458550a16bf89acc8e4ab2b7f2bfce0"
             }
           ],
           "type": "build-meta"
@@ -1977,23 +2361,23 @@
       "properties": [
         {
           "name": "syft:package:foundBy",
-          "value": "java-cataloger"
+          "value": "java-archive-cataloger"
         },
         {
           "name": "syft:package:language",
           "value": "java"
         },
         {
-          "name": "syft:package:metadataType",
-          "value": "JavaMetadata"
-        },
-        {
           "name": "syft:package:type",
           "value": "java-archive"
         },
         {
+          "name": "syft:package:metadataType",
+          "value": "java-archive"
+        },
+        {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:yaml:snakeyaml:1.33:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:yaml:snakeyaml:2.2:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:location:0:path",
@@ -2009,15 +2393,15 @@
         },
         {
           "name": "syft:metadata:virtualPath",
-          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/snakeyaml-1.33.jar"
+          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/snakeyaml-2.2.jar"
         }
       ]
     },
     {
-      "bom-ref": "pkg:maven/spring-aop/spring-aop@6.0.12?package-id=c29f0c9bcbf8e8a9",
+      "bom-ref": "pkg:maven/org.springframework/spring-aop@6.1.6?package-id=808e7e9e4c4c23f5",
       "type": "library",
       "name": "spring-aop",
-      "version": "6.0.12",
+      "version": "6.1.6",
       "licenses": [
         {
           "license": {
@@ -2030,15 +2414,15 @@
           }
         }
       ],
-      "cpe": "cpe:2.3:a:spring-aop:spring-aop:6.0.12:*:*:*:*:*:*:*",
-      "purl": "pkg:maven/spring-aop/spring-aop@6.0.12",
+      "cpe": "cpe:2.3:a:springframework:spring-aop:6.1.6:*:*:*:*:*:*:*",
+      "purl": "pkg:maven/org.springframework/spring-aop@6.1.6",
       "externalReferences": [
         {
           "url": "",
           "hashes": [
             {
               "alg": "SHA-1",
-              "content": "ba7ecdbdc2abaf172d49692b8110f65ecd2d250c"
+              "content": "4958f52cb9fcb3adf7e836304550de5431a9347e"
             }
           ],
           "type": "build-meta"
@@ -2047,39 +2431,47 @@
       "properties": [
         {
           "name": "syft:package:foundBy",
-          "value": "java-cataloger"
+          "value": "java-archive-cataloger"
         },
         {
           "name": "syft:package:language",
           "value": "java"
         },
         {
-          "name": "syft:package:metadataType",
-          "value": "JavaMetadata"
-        },
-        {
           "name": "syft:package:type",
           "value": "java-archive"
         },
         {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring-aop:spring_aop:6.0.12:*:*:*:*:*:*:*"
+          "name": "syft:package:metadataType",
+          "value": "java-archive"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring_aop:spring-aop:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:springframework:spring_aop:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring_aop:spring_aop:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring-aop:spring-aop:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring:spring-aop:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring-aop:spring_aop:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring:spring_aop:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring_aop:spring-aop:6.1.6:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:spring_aop:spring_aop:6.1.6:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:spring:spring-aop:6.1.6:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:spring:spring_aop:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:location:0:path",
@@ -2087,15 +2479,15 @@
         },
         {
           "name": "syft:metadata:virtualPath",
-          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/spring-aop-6.0.12.jar"
+          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/spring-aop-6.1.6.jar"
         }
       ]
     },
     {
-      "bom-ref": "pkg:maven/org.springframework/spring-beans@6.0.12?package-id=b0b77be18814edbc",
+      "bom-ref": "pkg:maven/org.springframework/spring-beans@6.1.6?package-id=5417ed8578578c31",
       "type": "library",
       "name": "spring-beans",
-      "version": "6.0.12",
+      "version": "6.1.6",
       "licenses": [
         {
           "license": {
@@ -2108,15 +2500,15 @@
           }
         }
       ],
-      "cpe": "cpe:2.3:a:springframework:spring-beans:6.0.12:*:*:*:*:*:*:*",
-      "purl": "pkg:maven/org.springframework/spring-beans@6.0.12",
+      "cpe": "cpe:2.3:a:springframework:spring-beans:6.1.6:*:*:*:*:*:*:*",
+      "purl": "pkg:maven/org.springframework/spring-beans@6.1.6",
       "externalReferences": [
         {
           "url": "",
           "hashes": [
             {
               "alg": "SHA-1",
-              "content": "dfa53afbf1ab65f36c60333443ed1109ed331504"
+              "content": "332d80ff134420db4ebf7614758e6a02a9bd3c41"
             }
           ],
           "type": "build-meta"
@@ -2125,47 +2517,47 @@
       "properties": [
         {
           "name": "syft:package:foundBy",
-          "value": "java-cataloger"
+          "value": "java-archive-cataloger"
         },
         {
           "name": "syft:package:language",
           "value": "java"
         },
         {
-          "name": "syft:package:metadataType",
-          "value": "JavaMetadata"
-        },
-        {
           "name": "syft:package:type",
           "value": "java-archive"
         },
         {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:springframework:spring_beans:6.0.12:*:*:*:*:*:*:*"
+          "name": "syft:package:metadataType",
+          "value": "java-archive"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring-beans:spring-beans:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:springframework:spring_beans:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring-beans:spring_beans:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring-beans:spring-beans:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring_beans:spring-beans:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring-beans:spring_beans:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring_beans:spring_beans:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring_beans:spring-beans:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring:spring-beans:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring_beans:spring_beans:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring:spring_beans:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring:spring-beans:6.1.6:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:spring:spring_beans:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:location:0:path",
@@ -2173,15 +2565,15 @@
         },
         {
           "name": "syft:metadata:virtualPath",
-          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/spring-beans-6.0.12.jar"
+          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/spring-beans-6.1.6.jar"
         }
       ]
     },
     {
-      "bom-ref": "pkg:maven/org.springframework.boot/spring-boot@3.1.4?package-id=308de4581336ba51",
+      "bom-ref": "pkg:maven/org.springframework.boot/spring-boot@3.3.0-RC1?package-id=ff9776981f5479d7",
       "type": "library",
       "name": "spring-boot",
-      "version": "3.1.4",
+      "version": "3.3.0-RC1",
       "licenses": [
         {
           "license": {
@@ -2189,15 +2581,15 @@
           }
         }
       ],
-      "cpe": "cpe:2.3:a:springframework:spring-boot:3.1.4:*:*:*:*:*:*:*",
-      "purl": "pkg:maven/org.springframework.boot/spring-boot@3.1.4",
+      "cpe": "cpe:2.3:a:springframework:spring-boot:3.3.0-RC1:*:*:*:*:*:*:*",
+      "purl": "pkg:maven/org.springframework.boot/spring-boot@3.3.0-RC1",
       "externalReferences": [
         {
           "url": "",
           "hashes": [
             {
               "alg": "SHA-1",
-              "content": "7a0a6349e28227a93f2b4efde897e87b3343bf3a"
+              "content": "b861466d5af7da9954661f20f851405aa5f8f5d0"
             }
           ],
           "type": "build-meta"
@@ -2206,75 +2598,75 @@
       "properties": [
         {
           "name": "syft:package:foundBy",
-          "value": "java-cataloger"
+          "value": "java-archive-cataloger"
         },
         {
           "name": "syft:package:language",
           "value": "java"
         },
         {
-          "name": "syft:package:metadataType",
-          "value": "JavaMetadata"
-        },
-        {
           "name": "syft:package:type",
           "value": "java-archive"
         },
         {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:springframework:spring_boot:3.1.4:*:*:*:*:*:*:*"
+          "name": "syft:package:metadataType",
+          "value": "java-archive"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring-boot:spring-boot:3.1.4:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:springframework:spring_boot:3.3.0-RC1:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring-boot:spring_boot:3.1.4:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring-boot:spring-boot:3.3.0-RC1:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring_boot:spring-boot:3.1.4:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring-boot:spring_boot:3.3.0-RC1:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring_boot:spring_boot:3.1.4:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring_boot:spring-boot:3.3.0-RC1:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:springframework:boot:3.1.4:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring_boot:spring_boot:3.3.0-RC1:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring:spring-boot:3.1.4:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:springframework:boot:3.3.0-RC1:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring:spring_boot:3.1.4:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring:spring-boot:3.3.0-RC1:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:boot:spring-boot:3.1.4:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring:spring_boot:3.3.0-RC1:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:boot:spring_boot:3.1.4:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:boot:spring-boot:3.3.0-RC1:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring-boot:boot:3.1.4:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:boot:spring_boot:3.3.0-RC1:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring_boot:boot:3.1.4:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring-boot:boot:3.3.0-RC1:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring:boot:3.1.4:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring_boot:boot:3.3.0-RC1:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:boot:boot:3.1.4:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring:boot:3.3.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:boot:boot:3.3.0-RC1:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:location:0:path",
@@ -2282,15 +2674,305 @@
         },
         {
           "name": "syft:metadata:virtualPath",
-          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/spring-boot-3.1.4.jar"
+          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/spring-boot-3.3.0-RC1.jar"
         }
       ]
     },
     {
-      "bom-ref": "pkg:maven/spring-boot-autoconfigure/spring-boot-autoconfigure@3.1.4?package-id=c83511896b79bdd9",
+      "bom-ref": "pkg:maven/org.springframework.boot/spring-boot-actuator@3.3.0-RC1?package-id=b762fab645b18f59",
+      "type": "library",
+      "name": "spring-boot-actuator",
+      "version": "3.3.0-RC1",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:spring-boot-actuator:spring-boot-actuator:3.3.0-RC1:*:*:*:*:*:*:*",
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-actuator@3.3.0-RC1",
+      "externalReferences": [
+        {
+          "url": "",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "7a130604e3920ad5ac2a0b9cb371ae817e13b0fc"
+            }
+          ],
+          "type": "build-meta"
+        }
+      ],
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "java-archive-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "java"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "java-archive"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "java-archive"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:spring-boot-actuator:spring_boot_actuator:3.3.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:spring_boot_actuator:spring-boot-actuator:3.3.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:spring_boot_actuator:spring_boot_actuator:3.3.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:springframework:spring-boot-actuator:3.3.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:springframework:spring_boot_actuator:3.3.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:spring-boot:spring-boot-actuator:3.3.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:spring-boot:spring_boot_actuator:3.3.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:spring_boot:spring-boot-actuator:3.3.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:spring_boot:spring_boot_actuator:3.3.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:spring:spring-boot-actuator:3.3.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:spring:spring_boot_actuator:3.3.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:boot:spring-boot-actuator:3.3.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:boot:spring_boot_actuator:3.3.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:spring-boot-actuator:boot:3.3.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:spring_boot_actuator:boot:3.3.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:springframework:boot:3.3.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:spring-boot:boot:3.3.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:spring_boot:boot:3.3.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:spring:boot:3.3.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:boot:boot:3.3.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/demo-sbom-cdx-gradle-1.0.jar"
+        },
+        {
+          "name": "syft:metadata:virtualPath",
+          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/spring-boot-actuator-3.3.0-RC1.jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:maven/org.springframework.boot/spring-boot-actuator-autoconfigure@3.3.0-RC1?package-id=c3cd94bd621e70e4",
+      "type": "library",
+      "name": "spring-boot-actuator-autoconfigure",
+      "version": "3.3.0-RC1",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:spring-boot-actuator-autoconfigure:spring-boot-actuator-autoconfigure:3.3.0-RC1:*:*:*:*:*:*:*",
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-actuator-autoconfigure@3.3.0-RC1",
+      "externalReferences": [
+        {
+          "url": "",
+          "hashes": [
+            {
+              "alg": "SHA-1",
+              "content": "5550e6e26bd7db547cc1d166c0e7faa0e9f8b926"
+            }
+          ],
+          "type": "build-meta"
+        }
+      ],
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "java-archive-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "java"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "java-archive"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "java-archive"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:spring-boot-actuator-autoconfigure:spring_boot_actuator_autoconfigure:3.3.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:spring_boot_actuator_autoconfigure:spring-boot-actuator-autoconfigure:3.3.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:spring_boot_actuator_autoconfigure:spring_boot_actuator_autoconfigure:3.3.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:spring-boot-actuator:spring-boot-actuator-autoconfigure:3.3.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:spring-boot-actuator:spring_boot_actuator_autoconfigure:3.3.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:spring_boot_actuator:spring-boot-actuator-autoconfigure:3.3.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:spring_boot_actuator:spring_boot_actuator_autoconfigure:3.3.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:springframework:spring-boot-actuator-autoconfigure:3.3.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:springframework:spring_boot_actuator_autoconfigure:3.3.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:spring-boot:spring-boot-actuator-autoconfigure:3.3.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:spring-boot:spring_boot_actuator_autoconfigure:3.3.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:spring_boot:spring-boot-actuator-autoconfigure:3.3.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:spring_boot:spring_boot_actuator_autoconfigure:3.3.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:spring:spring-boot-actuator-autoconfigure:3.3.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:spring:spring_boot_actuator_autoconfigure:3.3.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:boot:spring-boot-actuator-autoconfigure:3.3.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:boot:spring_boot_actuator_autoconfigure:3.3.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:spring-boot-actuator-autoconfigure:boot:3.3.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:spring_boot_actuator_autoconfigure:boot:3.3.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:spring-boot-actuator:boot:3.3.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:spring_boot_actuator:boot:3.3.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:springframework:boot:3.3.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:spring-boot:boot:3.3.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:spring_boot:boot:3.3.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:spring:boot:3.3.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:boot:boot:3.3.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/demo-sbom-cdx-gradle-1.0.jar"
+        },
+        {
+          "name": "syft:metadata:virtualPath",
+          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/spring-boot-actuator-autoconfigure-3.3.0-RC1.jar"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:maven/org.springframework.boot/spring-boot-autoconfigure@3.3.0-RC1?package-id=d58bb7643dcdf137",
       "type": "library",
       "name": "spring-boot-autoconfigure",
-      "version": "3.1.4",
+      "version": "3.3.0-RC1",
       "licenses": [
         {
           "license": {
@@ -2298,15 +2980,15 @@
           }
         }
       ],
-      "cpe": "cpe:2.3:a:spring-boot-autoconfigure:spring-boot-autoconfigure:3.1.4:*:*:*:*:*:*:*",
-      "purl": "pkg:maven/spring-boot-autoconfigure/spring-boot-autoconfigure@3.1.4",
+      "cpe": "cpe:2.3:a:spring-boot-autoconfigure:spring-boot-autoconfigure:3.3.0-RC1:*:*:*:*:*:*:*",
+      "purl": "pkg:maven/org.springframework.boot/spring-boot-autoconfigure@3.3.0-RC1",
       "externalReferences": [
         {
           "url": "",
           "hashes": [
             {
               "alg": "SHA-1",
-              "content": "ae53253f6330787f8b77a13aa90d6514597a20d0"
+              "content": "8f2eac2c0527567fbe3149dcda0d86c56fcf658e"
             }
           ],
           "type": "build-meta"
@@ -2315,55 +2997,99 @@
       "properties": [
         {
           "name": "syft:package:foundBy",
-          "value": "java-cataloger"
+          "value": "java-archive-cataloger"
         },
         {
           "name": "syft:package:language",
           "value": "java"
         },
         {
-          "name": "syft:package:metadataType",
-          "value": "JavaMetadata"
-        },
-        {
           "name": "syft:package:type",
           "value": "java-archive"
         },
         {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring-boot-autoconfigure:spring_boot_autoconfigure:3.1.4:*:*:*:*:*:*:*"
+          "name": "syft:package:metadataType",
+          "value": "java-archive"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring_boot_autoconfigure:spring-boot-autoconfigure:3.1.4:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring-boot-autoconfigure:spring_boot_autoconfigure:3.3.0-RC1:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring_boot_autoconfigure:spring_boot_autoconfigure:3.1.4:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring_boot_autoconfigure:spring-boot-autoconfigure:3.3.0-RC1:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring-boot:spring-boot-autoconfigure:3.1.4:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring_boot_autoconfigure:spring_boot_autoconfigure:3.3.0-RC1:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring-boot:spring_boot_autoconfigure:3.1.4:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:springframework:spring-boot-autoconfigure:3.3.0-RC1:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring_boot:spring-boot-autoconfigure:3.1.4:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:springframework:spring_boot_autoconfigure:3.3.0-RC1:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring_boot:spring_boot_autoconfigure:3.1.4:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring-boot:spring-boot-autoconfigure:3.3.0-RC1:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring:spring-boot-autoconfigure:3.1.4:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring-boot:spring_boot_autoconfigure:3.3.0-RC1:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring:spring_boot_autoconfigure:3.1.4:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring_boot:spring-boot-autoconfigure:3.3.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:spring_boot:spring_boot_autoconfigure:3.3.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:spring:spring-boot-autoconfigure:3.3.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:spring:spring_boot_autoconfigure:3.3.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:boot:spring-boot-autoconfigure:3.3.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:boot:spring_boot_autoconfigure:3.3.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:spring-boot-autoconfigure:boot:3.3.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:spring_boot_autoconfigure:boot:3.3.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:springframework:boot:3.3.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:spring-boot:boot:3.3.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:spring_boot:boot:3.3.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:spring:boot:3.3.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:boot:boot:3.3.0-RC1:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:location:0:path",
@@ -2371,15 +3097,15 @@
         },
         {
           "name": "syft:metadata:virtualPath",
-          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/spring-boot-autoconfigure-3.1.4.jar"
+          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/spring-boot-autoconfigure-3.3.0-RC1.jar"
         }
       ]
     },
     {
-      "bom-ref": "pkg:maven/spring-boot-jarmode-layertools/spring-boot-jarmode-layertools@3.1.4?package-id=48e6178250d2099e",
+      "bom-ref": "pkg:maven/spring-boot-jarmode-tools/spring-boot-jarmode-tools@3.3.0-RC1?package-id=86413c01c5353655",
       "type": "library",
-      "name": "spring-boot-jarmode-layertools",
-      "version": "3.1.4",
+      "name": "spring-boot-jarmode-tools",
+      "version": "3.3.0-RC1",
       "licenses": [
         {
           "license": {
@@ -2387,15 +3113,15 @@
           }
         }
       ],
-      "cpe": "cpe:2.3:a:spring-boot-jarmode-layertools:spring-boot-jarmode-layertools:3.1.4:*:*:*:*:*:*:*",
-      "purl": "pkg:maven/spring-boot-jarmode-layertools/spring-boot-jarmode-layertools@3.1.4",
+      "cpe": "cpe:2.3:a:spring-boot-jarmode-tools:spring-boot-jarmode-tools:3.3.0-RC1:*:*:*:*:*:*:*",
+      "purl": "pkg:maven/spring-boot-jarmode-tools/spring-boot-jarmode-tools@3.3.0-RC1",
       "externalReferences": [
         {
           "url": "",
           "hashes": [
             {
               "alg": "SHA-1",
-              "content": "f67313d3ff115a899c79288aed47285224a81c0a"
+              "content": "c3014be12b0c8215155267fa07a5702ea8c3be05"
             }
           ],
           "type": "build-meta"
@@ -2404,71 +3130,71 @@
       "properties": [
         {
           "name": "syft:package:foundBy",
-          "value": "java-cataloger"
+          "value": "java-archive-cataloger"
         },
         {
           "name": "syft:package:language",
           "value": "java"
         },
         {
-          "name": "syft:package:metadataType",
-          "value": "JavaMetadata"
-        },
-        {
           "name": "syft:package:type",
           "value": "java-archive"
         },
         {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring-boot-jarmode-layertools:spring_boot_jarmode_layertools:3.1.4:*:*:*:*:*:*:*"
+          "name": "syft:package:metadataType",
+          "value": "java-archive"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring_boot_jarmode_layertools:spring-boot-jarmode-layertools:3.1.4:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring-boot-jarmode-tools:spring_boot_jarmode_tools:3.3.0-RC1:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring_boot_jarmode_layertools:spring_boot_jarmode_layertools:3.1.4:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring_boot_jarmode_tools:spring-boot-jarmode-tools:3.3.0-RC1:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring-boot-jarmode:spring-boot-jarmode-layertools:3.1.4:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring_boot_jarmode_tools:spring_boot_jarmode_tools:3.3.0-RC1:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring-boot-jarmode:spring_boot_jarmode_layertools:3.1.4:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring-boot-jarmode:spring-boot-jarmode-tools:3.3.0-RC1:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring_boot_jarmode:spring-boot-jarmode-layertools:3.1.4:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring-boot-jarmode:spring_boot_jarmode_tools:3.3.0-RC1:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring_boot_jarmode:spring_boot_jarmode_layertools:3.1.4:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring_boot_jarmode:spring-boot-jarmode-tools:3.3.0-RC1:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring-boot:spring-boot-jarmode-layertools:3.1.4:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring_boot_jarmode:spring_boot_jarmode_tools:3.3.0-RC1:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring-boot:spring_boot_jarmode_layertools:3.1.4:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring-boot:spring-boot-jarmode-tools:3.3.0-RC1:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring_boot:spring-boot-jarmode-layertools:3.1.4:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring-boot:spring_boot_jarmode_tools:3.3.0-RC1:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring_boot:spring_boot_jarmode_layertools:3.1.4:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring_boot:spring-boot-jarmode-tools:3.3.0-RC1:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring:spring-boot-jarmode-layertools:3.1.4:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring_boot:spring_boot_jarmode_tools:3.3.0-RC1:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring:spring_boot_jarmode_layertools:3.1.4:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring:spring-boot-jarmode-tools:3.3.0-RC1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:spring:spring_boot_jarmode_tools:3.3.0-RC1:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:location:0:path",
@@ -2476,15 +3202,15 @@
         },
         {
           "name": "syft:metadata:virtualPath",
-          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/spring-boot-jarmode-layertools-3.1.4.jar"
+          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/spring-boot-jarmode-tools-3.3.0-RC1.jar"
         }
       ]
     },
     {
-      "bom-ref": "pkg:maven/spring-context/spring-context@6.0.12?package-id=9966085b6dcc932d",
+      "bom-ref": "pkg:maven/org.springframework/spring-context@6.1.6?package-id=dce95b5f8e92d11e",
       "type": "library",
       "name": "spring-context",
-      "version": "6.0.12",
+      "version": "6.1.6",
       "licenses": [
         {
           "license": {
@@ -2497,15 +3223,15 @@
           }
         }
       ],
-      "cpe": "cpe:2.3:a:spring-context:spring-context:6.0.12:*:*:*:*:*:*:*",
-      "purl": "pkg:maven/spring-context/spring-context@6.0.12",
+      "cpe": "cpe:2.3:a:springframework:spring-context:6.1.6:*:*:*:*:*:*:*",
+      "purl": "pkg:maven/org.springframework/spring-context@6.1.6",
       "externalReferences": [
         {
           "url": "",
           "hashes": [
             {
               "alg": "SHA-1",
-              "content": "f1964518e07796b2fdc1b9be2108485ffe1b4566"
+              "content": "2be30298638975efaf7fff22f1570d79b2679814"
             }
           ],
           "type": "build-meta"
@@ -2514,39 +3240,47 @@
       "properties": [
         {
           "name": "syft:package:foundBy",
-          "value": "java-cataloger"
+          "value": "java-archive-cataloger"
         },
         {
           "name": "syft:package:language",
           "value": "java"
         },
         {
-          "name": "syft:package:metadataType",
-          "value": "JavaMetadata"
-        },
-        {
           "name": "syft:package:type",
           "value": "java-archive"
         },
         {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring-context:spring_context:6.0.12:*:*:*:*:*:*:*"
+          "name": "syft:package:metadataType",
+          "value": "java-archive"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring_context:spring-context:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:springframework:spring_context:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring_context:spring_context:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring-context:spring-context:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring:spring-context:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring-context:spring_context:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring:spring_context:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring_context:spring-context:6.1.6:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:spring_context:spring_context:6.1.6:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:spring:spring-context:6.1.6:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:spring:spring_context:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:location:0:path",
@@ -2554,15 +3288,15 @@
         },
         {
           "name": "syft:metadata:virtualPath",
-          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/spring-context-6.0.12.jar"
+          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/spring-context-6.1.6.jar"
         }
       ]
     },
     {
-      "bom-ref": "pkg:maven/org.springframework/spring-core@6.0.12?package-id=c17c5e8b5fcc9b0b",
+      "bom-ref": "pkg:maven/org.springframework/spring-core@6.1.6?package-id=186142f7bfde09f3",
       "type": "library",
       "name": "spring-core",
-      "version": "6.0.12",
+      "version": "6.1.6",
       "licenses": [
         {
           "license": {
@@ -2575,15 +3309,15 @@
           }
         }
       ],
-      "cpe": "cpe:2.3:a:springsource-spring-framework:springsource_spring_framework:6.0.12:*:*:*:*:*:*:*",
-      "purl": "pkg:maven/org.springframework/spring-core@6.0.12",
+      "cpe": "cpe:2.3:a:springsource-spring-framework:springsource_spring_framework:6.1.6:*:*:*:*:*:*:*",
+      "purl": "pkg:maven/org.springframework/spring-core@6.1.6",
       "externalReferences": [
         {
           "url": "",
           "hashes": [
             {
               "alg": "SHA-1",
-              "content": "a55e70359371b03ee29dacd75c3b40d0baf3a656"
+              "content": "dea4b8e110b7b54a02a4907e32dbb0adee8a7168"
             }
           ],
           "type": "build-meta"
@@ -2592,223 +3326,223 @@
       "properties": [
         {
           "name": "syft:package:foundBy",
-          "value": "java-cataloger"
+          "value": "java-archive-cataloger"
         },
         {
           "name": "syft:package:language",
           "value": "java"
         },
         {
-          "name": "syft:package:metadataType",
-          "value": "JavaMetadata"
-        },
-        {
           "name": "syft:package:type",
           "value": "java-archive"
         },
         {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:springsource_spring_framework:springsource_spring_framework:6.0.12:*:*:*:*:*:*:*"
+          "name": "syft:package:metadataType",
+          "value": "java-archive"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:springsource-spring:springsource_spring_framework:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:springsource_spring_framework:springsource_spring_framework:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:springsource_spring:springsource_spring_framework:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:springsource-spring:springsource_spring_framework:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:pivotal_software:springsource_spring_framework:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:springsource_spring:springsource_spring_framework:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring-framework:springsource_spring_framework:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:pivotal_software:springsource_spring_framework:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring_framework:springsource_spring_framework:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring-framework:springsource_spring_framework:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:springsource-spring-framework:spring_framework:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring_framework:springsource_spring_framework:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:springsource_spring_framework:spring_framework:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:springsource-spring-framework:spring_framework:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:springframework:springsource_spring_framework:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:springsource_spring_framework:spring_framework:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:springsource:springsource_spring_framework:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:springframework:springsource_spring_framework:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring-core:springsource_spring_framework:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:springsource:springsource_spring_framework:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring_core:springsource_spring_framework:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring-core:springsource_spring_framework:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:springsource-spring-framework:spring-core:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring_core:springsource_spring_framework:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:springsource-spring-framework:spring_core:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:springsource-spring-framework:spring-core:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:springsource_spring_framework:spring-core:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:springsource-spring-framework:spring_core:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:springsource_spring_framework:spring_core:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:springsource_spring_framework:spring-core:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring:springsource_spring_framework:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:springsource_spring_framework:spring_core:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:springsource-spring:spring_framework:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring:springsource_spring_framework:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:springsource_spring:spring_framework:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:springsource-spring:spring_framework:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:vmware:springsource_spring_framework:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:springsource_spring:spring_framework:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:pivotal_software:spring_framework:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:vmware:springsource_spring_framework:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring-framework:spring_framework:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:pivotal_software:spring_framework:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring_framework:spring_framework:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring-framework:spring_framework:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:springframework:spring_framework:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring_framework:spring_framework:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:springsource-spring:spring-core:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:springframework:spring_framework:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:springsource-spring:spring_core:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:springsource-spring:spring-core:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:springsource_spring:spring-core:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:springsource-spring:spring_core:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:springsource_spring:spring_core:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:springsource_spring:spring-core:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:springsource:spring_framework:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:springsource_spring:spring_core:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:pivotal_software:spring-core:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:springsource:spring_framework:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:pivotal_software:spring_core:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:pivotal_software:spring-core:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring-core:spring_framework:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:pivotal_software:spring_core:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring-framework:spring-core:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring-core:spring_framework:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring-framework:spring_core:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring-framework:spring-core:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring_core:spring_framework:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring-framework:spring_core:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring_framework:spring-core:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring_core:spring_framework:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring_framework:spring_core:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring_framework:spring-core:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:springframework:spring-core:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring_framework:spring_core:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:springframework:spring_core:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:springframework:spring-core:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:springsource:spring-core:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:springframework:spring_core:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:springsource:spring_core:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:springsource:spring-core:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring-core:spring-core:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:springsource:spring_core:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring-core:spring_core:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring-core:spring-core:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring:spring_framework:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring-core:spring_core:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring_core:spring-core:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring:spring_framework:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring_core:spring_core:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring_core:spring-core:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:vmware:spring_framework:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring_core:spring_core:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring:spring-core:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:vmware:spring_framework:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring:spring_core:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring:spring-core:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:vmware:spring-core:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring:spring_core:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:vmware:spring_core:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:vmware:spring-core:6.1.6:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:vmware:spring_core:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:location:0:path",
@@ -2816,15 +3550,15 @@
         },
         {
           "name": "syft:metadata:virtualPath",
-          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/spring-core-6.0.12.jar"
+          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/spring-core-6.1.6.jar"
         }
       ]
     },
     {
-      "bom-ref": "pkg:maven/org.springframework/spring-expression@6.0.12?package-id=ebc46e776dfdeac7",
+      "bom-ref": "pkg:maven/org.springframework/spring-expression@6.1.6?package-id=c6091623dc724314",
       "type": "library",
       "name": "spring-expression",
-      "version": "6.0.12",
+      "version": "6.1.6",
       "licenses": [
         {
           "license": {
@@ -2837,15 +3571,15 @@
           }
         }
       ],
-      "cpe": "cpe:2.3:a:spring-expression:spring-expression:6.0.12:*:*:*:*:*:*:*",
-      "purl": "pkg:maven/org.springframework/spring-expression@6.0.12",
+      "cpe": "cpe:2.3:a:spring-expression:spring-expression:6.1.6:*:*:*:*:*:*:*",
+      "purl": "pkg:maven/org.springframework/spring-expression@6.1.6",
       "externalReferences": [
         {
           "url": "",
           "hashes": [
             {
               "alg": "SHA-1",
-              "content": "9283ad418f06f918e834b1981998a5f62a05b355"
+              "content": "9c3d7f0e17a919a4ea9f087e4e2140ad39776bc8"
             }
           ],
           "type": "build-meta"
@@ -2854,47 +3588,47 @@
       "properties": [
         {
           "name": "syft:package:foundBy",
-          "value": "java-cataloger"
+          "value": "java-archive-cataloger"
         },
         {
           "name": "syft:package:language",
           "value": "java"
         },
         {
-          "name": "syft:package:metadataType",
-          "value": "JavaMetadata"
-        },
-        {
           "name": "syft:package:type",
           "value": "java-archive"
         },
         {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring-expression:spring_expression:6.0.12:*:*:*:*:*:*:*"
+          "name": "syft:package:metadataType",
+          "value": "java-archive"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring_expression:spring-expression:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring-expression:spring_expression:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring_expression:spring_expression:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring_expression:spring-expression:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:springframework:spring-expression:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring_expression:spring_expression:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:springframework:spring_expression:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:springframework:spring-expression:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring:spring-expression:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:springframework:spring_expression:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring:spring_expression:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring:spring-expression:6.1.6:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:spring:spring_expression:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:location:0:path",
@@ -2902,15 +3636,15 @@
         },
         {
           "name": "syft:metadata:virtualPath",
-          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/spring-expression-6.0.12.jar"
+          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/spring-expression-6.1.6.jar"
         }
       ]
     },
     {
-      "bom-ref": "pkg:maven/spring-jcl/spring-jcl@6.0.12?package-id=60828a71ef999130",
+      "bom-ref": "pkg:maven/org.springframework/spring-jcl@6.1.6?package-id=3b1abeb4cc5d5499",
       "type": "library",
       "name": "spring-jcl",
-      "version": "6.0.12",
+      "version": "6.1.6",
       "licenses": [
         {
           "license": {
@@ -2923,15 +3657,15 @@
           }
         }
       ],
-      "cpe": "cpe:2.3:a:spring-jcl:spring-jcl:6.0.12:*:*:*:*:*:*:*",
-      "purl": "pkg:maven/spring-jcl/spring-jcl@6.0.12",
+      "cpe": "cpe:2.3:a:springframework:spring-jcl:6.1.6:*:*:*:*:*:*:*",
+      "purl": "pkg:maven/org.springframework/spring-jcl@6.1.6",
       "externalReferences": [
         {
           "url": "",
           "hashes": [
             {
               "alg": "SHA-1",
-              "content": "44a1d1d105063d4eb9c5dc705245ef6fa4162520"
+              "content": "84cb19b30b22feca73c2ac005ca849c5890935a3"
             }
           ],
           "type": "build-meta"
@@ -2940,39 +3674,47 @@
       "properties": [
         {
           "name": "syft:package:foundBy",
-          "value": "java-cataloger"
+          "value": "java-archive-cataloger"
         },
         {
           "name": "syft:package:language",
           "value": "java"
         },
         {
-          "name": "syft:package:metadataType",
-          "value": "JavaMetadata"
-        },
-        {
           "name": "syft:package:type",
           "value": "java-archive"
         },
         {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring-jcl:spring_jcl:6.0.12:*:*:*:*:*:*:*"
+          "name": "syft:package:metadataType",
+          "value": "java-archive"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring_jcl:spring-jcl:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:springframework:spring_jcl:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring_jcl:spring_jcl:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring-jcl:spring-jcl:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring:spring-jcl:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring-jcl:spring_jcl:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring:spring_jcl:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring_jcl:spring-jcl:6.1.6:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:spring_jcl:spring_jcl:6.1.6:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:spring:spring-jcl:6.1.6:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:spring:spring_jcl:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:location:0:path",
@@ -2980,15 +3722,15 @@
         },
         {
           "name": "syft:metadata:virtualPath",
-          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/spring-jcl-6.0.12.jar"
+          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/spring-jcl-6.1.6.jar"
         }
       ]
     },
     {
-      "bom-ref": "pkg:maven/org.springframework/spring-web@6.0.12?package-id=3767c9bce6206d2a",
+      "bom-ref": "pkg:maven/org.springframework/spring-web@6.1.6?package-id=f5bd841835334320",
       "type": "library",
       "name": "spring-web",
-      "version": "6.0.12",
+      "version": "6.1.6",
       "licenses": [
         {
           "license": {
@@ -3001,15 +3743,15 @@
           }
         }
       ],
-      "cpe": "cpe:2.3:a:springframework:spring-web:6.0.12:*:*:*:*:*:*:*",
-      "purl": "pkg:maven/org.springframework/spring-web@6.0.12",
+      "cpe": "cpe:2.3:a:springframework:spring-web:6.1.6:*:*:*:*:*:*:*",
+      "purl": "pkg:maven/org.springframework/spring-web@6.1.6",
       "externalReferences": [
         {
           "url": "",
           "hashes": [
             {
               "alg": "SHA-1",
-              "content": "89a20bbd7c1f973dc246b1d790b34e0b3e28e74d"
+              "content": "49a32e3497fe39550da3b280bda5d9933ae2d51d"
             }
           ],
           "type": "build-meta"
@@ -3018,47 +3760,47 @@
       "properties": [
         {
           "name": "syft:package:foundBy",
-          "value": "java-cataloger"
+          "value": "java-archive-cataloger"
         },
         {
           "name": "syft:package:language",
           "value": "java"
         },
         {
-          "name": "syft:package:metadataType",
-          "value": "JavaMetadata"
-        },
-        {
           "name": "syft:package:type",
           "value": "java-archive"
         },
         {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:springframework:spring_web:6.0.12:*:*:*:*:*:*:*"
+          "name": "syft:package:metadataType",
+          "value": "java-archive"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring-web:spring-web:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:springframework:spring_web:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring-web:spring_web:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring-web:spring-web:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring_web:spring-web:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring-web:spring_web:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring_web:spring_web:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring_web:spring-web:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring:spring-web:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring_web:spring_web:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring:spring_web:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring:spring-web:6.1.6:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:spring:spring_web:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:location:0:path",
@@ -3066,15 +3808,15 @@
         },
         {
           "name": "syft:metadata:virtualPath",
-          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/spring-web-6.0.12.jar"
+          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/spring-web-6.1.6.jar"
         }
       ]
     },
     {
-      "bom-ref": "pkg:maven/org.springframework/spring-webmvc@6.0.12?package-id=1391dd233a19b7ad",
+      "bom-ref": "pkg:maven/org.springframework/spring-webmvc@6.1.6?package-id=58a305b65b3d1821",
       "type": "library",
       "name": "spring-webmvc",
-      "version": "6.0.12",
+      "version": "6.1.6",
       "licenses": [
         {
           "license": {
@@ -3087,15 +3829,15 @@
           }
         }
       ],
-      "cpe": "cpe:2.3:a:springframework:spring-webmvc:6.0.12:*:*:*:*:*:*:*",
-      "purl": "pkg:maven/org.springframework/spring-webmvc@6.0.12",
+      "cpe": "cpe:2.3:a:springframework:spring-webmvc:6.1.6:*:*:*:*:*:*:*",
+      "purl": "pkg:maven/org.springframework/spring-webmvc@6.1.6",
       "externalReferences": [
         {
           "url": "",
           "hashes": [
             {
               "alg": "SHA-1",
-              "content": "c7cf897d23da555a20e570d170f8f1541b04564d"
+              "content": "ef1f76db6d94bac428839cb91fa59235c8356e56"
             }
           ],
           "type": "build-meta"
@@ -3104,47 +3846,47 @@
       "properties": [
         {
           "name": "syft:package:foundBy",
-          "value": "java-cataloger"
+          "value": "java-archive-cataloger"
         },
         {
           "name": "syft:package:language",
           "value": "java"
         },
         {
-          "name": "syft:package:metadataType",
-          "value": "JavaMetadata"
-        },
-        {
           "name": "syft:package:type",
           "value": "java-archive"
         },
         {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:springframework:spring_webmvc:6.0.12:*:*:*:*:*:*:*"
+          "name": "syft:package:metadataType",
+          "value": "java-archive"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring-webmvc:spring-webmvc:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:springframework:spring_webmvc:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring-webmvc:spring_webmvc:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring-webmvc:spring-webmvc:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring_webmvc:spring-webmvc:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring-webmvc:spring_webmvc:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring_webmvc:spring_webmvc:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring_webmvc:spring-webmvc:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring:spring-webmvc:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring_webmvc:spring_webmvc:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:spring:spring_webmvc:6.0.12:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:spring:spring-webmvc:6.1.6:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:spring:spring_webmvc:6.1.6:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:location:0:path",
@@ -3152,41 +3894,31 @@
         },
         {
           "name": "syft:metadata:virtualPath",
-          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/spring-webmvc-6.0.12.jar"
+          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/spring-webmvc-6.1.6.jar"
         }
       ]
     },
     {
-      "bom-ref": "pkg:maven/org.apache.tomcat-embed-core/tomcat-embed-core@10.1.13?package-id=551e899570dadbf0",
+      "bom-ref": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.20?package-id=4bf28ac4742a3935",
       "type": "library",
       "name": "tomcat-embed-core",
-      "version": "10.1.13",
+      "version": "10.1.20",
       "licenses": [
         {
           "license": {
-            "id": "Apache-2.0"
-          }
-        },
-        {
-          "license": {
-            "id": "CDDL-1.0"
-          }
-        },
-        {
-          "license": {
-            "id": "EPL-2.0"
+            "name": "https://www.apache.org/licenses/LICENSE-2.0.txt"
           }
         }
       ],
-      "cpe": "cpe:2.3:a:apache:tomcat-embed-core:10.1.13:*:*:*:*:*:*:*",
-      "purl": "pkg:maven/org.apache.tomcat-embed-core/tomcat-embed-core@10.1.13",
+      "cpe": "cpe:2.3:a:apache:tomcat-embed-core:10.1.20:*:*:*:*:*:*:*",
+      "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-core@10.1.20",
       "externalReferences": [
         {
           "url": "",
           "hashes": [
             {
               "alg": "SHA-1",
-              "content": "6909967f2ed6c323108c2cc7f20586d6f7eb6455"
+              "content": "ba0dc784e12086f83d8e1d5a10443b166abf5780"
             }
           ],
           "type": "build-meta"
@@ -3195,23 +3927,31 @@
       "properties": [
         {
           "name": "syft:package:foundBy",
-          "value": "java-cataloger"
+          "value": "java-archive-cataloger"
         },
         {
           "name": "syft:package:language",
           "value": "java"
         },
         {
-          "name": "syft:package:metadataType",
-          "value": "JavaMetadata"
-        },
-        {
           "name": "syft:package:type",
           "value": "java-archive"
         },
         {
+          "name": "syft:package:metadataType",
+          "value": "java-archive"
+        },
+        {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:apache:tomcat_embed_core:10.1.13:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:apache:tomcat_embed_core:10.1.20:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:apache:tomcat:10.1.20:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:apache:embed:10.1.20:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:location:0:path",
@@ -3219,31 +3959,31 @@
         },
         {
           "name": "syft:metadata:virtualPath",
-          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/tomcat-embed-core-10.1.13.jar"
+          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/tomcat-embed-core-10.1.20.jar"
         }
       ]
     },
     {
-      "bom-ref": "pkg:maven/org.apache.tomcat-embed-jasper-el/tomcat-embed-el@10.1.13?package-id=a21a40d12b92e585",
+      "bom-ref": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-el@10.1.20?package-id=3fbb4a9ffc955bc5",
       "type": "library",
       "name": "tomcat-embed-el",
-      "version": "10.1.13",
+      "version": "10.1.20",
       "licenses": [
         {
           "license": {
-            "id": "Apache-2.0"
+            "name": "https://www.apache.org/licenses/LICENSE-2.0.txt"
           }
         }
       ],
-      "cpe": "cpe:2.3:a:apache:tomcat-embed-jasper-el:10.1.13:*:*:*:*:*:*:*",
-      "purl": "pkg:maven/org.apache.tomcat-embed-jasper-el/tomcat-embed-el@10.1.13",
+      "cpe": "cpe:2.3:a:apache:tomcat-embed-el:10.1.20:*:*:*:*:*:*:*",
+      "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-el@10.1.20",
       "externalReferences": [
         {
           "url": "",
           "hashes": [
             {
               "alg": "SHA-1",
-              "content": "22c8845f7528334905c582e48a3eeefab616b0a5"
+              "content": "cc1a42b8228699e92c8eba0187eccf54bf892802"
             }
           ],
           "type": "build-meta"
@@ -3252,31 +3992,31 @@
       "properties": [
         {
           "name": "syft:package:foundBy",
-          "value": "java-cataloger"
+          "value": "java-archive-cataloger"
         },
         {
           "name": "syft:package:language",
           "value": "java"
         },
         {
-          "name": "syft:package:metadataType",
-          "value": "JavaMetadata"
-        },
-        {
           "name": "syft:package:type",
           "value": "java-archive"
         },
         {
-          "name": "syft:cpe23",
-          "value": "cpe:2.3:a:apache:tomcat_embed_jasper_el:10.1.13:*:*:*:*:*:*:*"
+          "name": "syft:package:metadataType",
+          "value": "java-archive"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:apache:tomcat-embed-el:10.1.13:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:apache:tomcat_embed_el:10.1.20:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:apache:tomcat_embed_el:10.1.13:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:apache:tomcat:10.1.20:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:apache:embed:10.1.20:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:location:0:path",
@@ -3284,31 +4024,31 @@
         },
         {
           "name": "syft:metadata:virtualPath",
-          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/tomcat-embed-el-10.1.13.jar"
+          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/tomcat-embed-el-10.1.20.jar"
         }
       ]
     },
     {
-      "bom-ref": "pkg:maven/org.apache.tomcat-embed-websocket/tomcat-embed-websocket@10.1.13?package-id=6f507125c2e339d9",
+      "bom-ref": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.20?package-id=dc306c71a8bb2159",
       "type": "library",
       "name": "tomcat-embed-websocket",
-      "version": "10.1.13",
+      "version": "10.1.20",
       "licenses": [
         {
           "license": {
-            "id": "Apache-2.0"
+            "name": "https://www.apache.org/licenses/LICENSE-2.0.txt"
           }
         }
       ],
-      "cpe": "cpe:2.3:a:apache:tomcat-embed-websocket:10.1.13:*:*:*:*:*:*:*",
-      "purl": "pkg:maven/org.apache.tomcat-embed-websocket/tomcat-embed-websocket@10.1.13",
+      "cpe": "cpe:2.3:a:apache:tomcat-embed-websocket:10.1.20:*:*:*:*:*:*:*",
+      "purl": "pkg:maven/org.apache.tomcat.embed/tomcat-embed-websocket@10.1.20",
       "externalReferences": [
         {
           "url": "",
           "hashes": [
             {
               "alg": "SHA-1",
-              "content": "540a79df9699435e4f7cb8983daab272d29d093f"
+              "content": "21502adffaf9e6e4bc2b63a557e348d7f6c0faf7"
             }
           ],
           "type": "build-meta"
@@ -3317,23 +4057,31 @@
       "properties": [
         {
           "name": "syft:package:foundBy",
-          "value": "java-cataloger"
+          "value": "java-archive-cataloger"
         },
         {
           "name": "syft:package:language",
           "value": "java"
         },
         {
-          "name": "syft:package:metadataType",
-          "value": "JavaMetadata"
-        },
-        {
           "name": "syft:package:type",
           "value": "java-archive"
         },
         {
+          "name": "syft:package:metadataType",
+          "value": "java-archive"
+        },
+        {
           "name": "syft:cpe23",
-          "value": "cpe:2.3:a:apache:tomcat_embed_websocket:10.1.13:*:*:*:*:*:*:*"
+          "value": "cpe:2.3:a:apache:tomcat_embed_websocket:10.1.20:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:apache:tomcat:10.1.20:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:apache:embed:10.1.20:*:*:*:*:*:*:*"
         },
         {
           "name": "syft:location:0:path",
@@ -3341,7 +4089,7 @@
         },
         {
           "name": "syft:metadata:virtualPath",
-          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/tomcat-embed-websocket-10.1.13.jar"
+          "value": "/demo-sbom-cdx-gradle-1.0.jar:BOOT-INF/lib/tomcat-embed-websocket-10.1.20.jar"
         }
       ]
     }

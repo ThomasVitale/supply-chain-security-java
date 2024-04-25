@@ -3,8 +3,15 @@
 ## Generating a SBOM from an artifact using Syft
 
 ```shell
-./gradlew bootJar
+./gradlew clean bootJar
 syft build/libs/demo-sbom-cdx-gradle-1.0.jar -o cyclonedx-json --file bom-syft.cdx.json
+```
+
+## Generating a SBOM from a container image using Syft
+
+```shell
+./gradlew bootBuildImage
+syft demo-sbom-cdx-gradle:1.0 -o cyclonedx-json --file bom-oci-syft.cdx.json
 ```
 
 ## Generating a SBOM from the source code using cdxgen

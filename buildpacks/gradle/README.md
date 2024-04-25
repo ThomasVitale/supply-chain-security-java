@@ -9,7 +9,7 @@
 ## Extracting the SBOMs from each layer of the image with pack
 
 ```shell
-pack sbom download demo --output-dir image-sboms
+pack sbom download demo-buildpacks:1.0 --output-dir image-sboms
 ```
 
 ## Scanning the SBOMs for security vulnerabilities with Trivy

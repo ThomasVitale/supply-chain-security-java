@@ -7,6 +7,13 @@
 syft build/libs/demo-sbom-spdx-gradle-1.0.jar -o spdx-json --file bom-syft.spdx.json
 ```
 
+## Generating a SBOM from a container image using Syft
+
+```shell
+./gradlew bootBuildImage
+syft demo-sbom-spdx-gradle:1.0 -o spdx-json --file bom-oci-syft.spdx.json
+```
+
 ## Generating a SBOM from the source code using Trivy
 
 ```shell
