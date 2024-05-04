@@ -89,7 +89,7 @@ jobs:
         uses: docker/login-action@v3
         with:
           username: ${{ github.actor }}
-          password: ${{ secrets.IMAGE_PUSH_TOKEN }}
+          password: ${{ secrets.GITHUB_TOKEN }}
           registry: ${{ env.REGISTRY }}
 
       - name: Publish OCI image
@@ -125,4 +125,4 @@ jobs:
       digest: ${{ needs.build.outputs.image-digest }}
       registry-username: ${{ github.actor }}
     secrets:
-      registry-password: ${{ secrets.IMAGE_PUSH_TOKEN }}
+      registry-password: ${{ secrets.GITHUB_TOKEN }}
