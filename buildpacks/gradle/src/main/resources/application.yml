@@ -1,1 +1,22 @@
-
+management:
+  endpoints:
+    web:
+      exposure:
+        include: sbom
+  endpoint:
+    sbom:
+      additional:
+        buildpacks-lifecycle:
+          location: "optional:file:/layers/sbom/launch/buildpacksio_lifecycle/launcher/sbom.cdx.json"
+        buildpacks-liberica-helper:
+          location: "optional:file:/layers/sbom/launch/paketo-buildpacks_bellsoft-liberica/helper/sbom.syft.json"
+        buildpacks-liberica-jre:
+          location: "optional:file:/layers/sbom/launch/paketo-buildpacks_bellsoft-liberica/jre/sbom.syft.json"
+        buildpacks-ca-certificates:
+          location: "optional:file:/layers/sbom/launch/paketo-buildpacks_ca-certificates/helper/sbom.syft.json"
+        buildpacks-executable-jar:
+          location: "optional:file:/layers/sbom/launch/paketo-buildpacks_executable-jar/sbom.cdx.json"
+        buildpacks-spring-boot-helper:
+          location: "optional:file:/layers/sbom/launch/paketo-buildpacks_spring-boot/helper/sbom.syft.json"
+        buildpacks-spring-boot-spring-cloud-bindings:
+          location: "optional:file:/layers/sbom/launch/paketo-buildpacks_spring-boot/spring-cloud-bindings/sbom.syft.json"
