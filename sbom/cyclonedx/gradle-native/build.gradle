@@ -42,3 +42,8 @@ tasks.named('bootBuildImage') {
     builder = "paketobuildpacks/builder-jammy-buildpackless-tiny"
     buildpacks = [ "paketobuildpacks/java-native-image" ]
 }
+
+tasks.named('cyclonedxBom') {
+    schemaVersion = "1.5"
+    includeConfigs = ["runtimeClasspath"]
+}

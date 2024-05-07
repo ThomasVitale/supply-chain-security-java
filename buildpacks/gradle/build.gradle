@@ -33,3 +33,8 @@ tasks.named('bootBuildImage') {
     builder = "paketobuildpacks/builder-jammy-buildpackless-tiny"
     buildpacks = [ "gcr.io/paketo-buildpacks/java:beta" ]
 }
+
+tasks.named('cyclonedxBom') {
+    schemaVersion = "1.5"
+    includeConfigs = ["runtimeClasspath"]
+}

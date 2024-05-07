@@ -29,14 +29,15 @@ tasks.test {
     useJUnitPlatform()
 }
 
-spdxSbom {
-    targets {
-        create("release") {}
-    }
-}
-tasks.assemble.finalizedBy 'spdxSbomForRelease'
-
 tasks.named('bootBuildImage') {
     builder = "paketobuildpacks/builder-jammy-buildpackless-tiny"
     buildpacks = [ "gcr.io/paketo-buildpacks/java:beta" ]
+}
+
+spdxSbom {
+    targets {
+        create("release") {
+            outputFile.set(layout.buildDirectory.file("application.spdx.json"))
+        }
+    }
 }

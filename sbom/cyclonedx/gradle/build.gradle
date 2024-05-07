@@ -35,7 +35,6 @@ tasks.named('bootBuildImage') {
 }
 
 tasks.named('cyclonedxBom') {
-    projectType = "application"
-    outputFormat = "json"
     schemaVersion = "1.5"
+    includeConfigs = ["runtimeClasspath"]
 }

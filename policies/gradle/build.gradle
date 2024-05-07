@@ -38,3 +38,8 @@ tasks.named('bootBuildImage') {
 
     imageName = "demo"
 }
+
+tasks.named('cyclonedxBom') {
+    schemaVersion = "1.5"
+    includeConfigs = ["runtimeClasspath"]
+}
