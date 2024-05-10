@@ -37,7 +37,7 @@
                 <configuration>
                     <image>
                         <buildpacks>
-                            <buildpack>paketobuildpacks/java:beta</buildpack>
+                            <buildpack>paketobuildpacks/java</buildpack>
                         </buildpacks>
                         <builder>paketobuildpacks/builder-jammy-buildpackless-tiny</builder>
                     </image>

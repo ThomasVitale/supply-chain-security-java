@@ -29,12 +29,8 @@ tasks.named('test') {
 }
 
 tasks.named('bootBuildImage') {
-    if (System.getProperty( "os.arch" ).toLowerCase().startsWith('aarch')) {
-        builder = "docker.io/paketobuildpacks/builder-jammy-buildpackless-tiny"
-        buildpacks = [ "gcr.io/paketo-buildpacks/java:beta" ]
-    } else {
-        builder = "docker.io/paketobuildpacks/builder-jammy-tiny"
-    }
+    builder = "docker.io/paketobuildpacks/builder-jammy-buildpackless-tiny"
+    buildpacks = [ "gcr.io/paketo-buildpacks/java" ]
 
     imageName = "demo"
 }
