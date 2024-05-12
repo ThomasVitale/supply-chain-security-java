@@ -34,6 +34,14 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <image>
+                        <buildpacks>
+                            <buildpack>paketobuildpacks/java</buildpack>
+                        </buildpacks>
+                        <builder>paketobuildpacks/builder-jammy-buildpackless-tiny</builder>
+                    </image>
+                </configuration>
             </plugin>
             <plugin>
                 <groupId>se.vandmo</groupId>
