@@ -27,6 +27,18 @@
     9091
   ],
 
+  "portsAttributes": {
+    "8080": {
+      "label": "Spring Boot Application"
+    },
+    "9090": {
+      "label": "DependencyTrack Frontend"
+    },
+    "9091": {
+      "label": "DependencyTrack API Server"
+    }
+  }
+
   //"postCreateCommand": "brew install gitsign cosign slsa-verifier trivy cdxgen grype syft"
 
   // Configure tool-specific properties.
