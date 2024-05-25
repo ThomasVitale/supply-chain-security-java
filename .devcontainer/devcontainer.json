@@ -1,0 +1,40 @@
+{
+  "name": "Java",
+  "image": "mcr.microsoft.com/devcontainers/java:1-21-bullseye",
+
+  "features": {
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "21",
+      "jdkDistro": "graal",
+      "installGradle": "true",
+      "gradleVersion": "8.7"
+    },
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {
+      "version": "26.1.1"
+    },
+    "ghcr.io/meaningful-ooo/devcontainer-features/homebrew:2": {}
+  },
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vmware.vscode-boot-dev-pack",
+        "vscjava.vscode-gradle"
+      ]
+    }
+  },
+
+  "forwardPorts": [
+    8080,
+    9090,
+    9091
+  ],
+
+  "postCreateCommand": "brew install gitsign cosign slsa-verifier trivy cdxgen grype syft"
+
+  // Configure tool-specific properties.
+  // "customizations": {},
+
+  // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+  // "remoteUser": "root"
+}

@@ -3,13 +3,13 @@
   "dataLicense": "CC0-1.0",
   "SPDXID": "SPDXRef-DOCUMENT",
   "name": ".",
-  "documentNamespace": "http://aquasecurity.github.io/trivy/filesystem/.-2b50a1ec-d653-4994-a15f-3de604890fdd",
+  "documentNamespace": "http://aquasecurity.github.io/trivy/filesystem/.-678841b9-24fe-40a8-8342-5ccac631384f",
   "creationInfo": {
     "creators": [
       "Organization: aquasecurity",
-      "Tool: trivy-0.50.4"
+      "Tool: trivy-0.51.4"
     ],
-    "created": "2024-04-25T16:43:16Z"
+    "created": "2024-05-25T14:19:53Z"
   },
   "packages": [
     {

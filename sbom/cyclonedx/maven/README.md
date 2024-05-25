@@ -10,7 +10,7 @@ syft target/demo-sbom-cdx-maven-1.0.jar -o cyclonedx-json --file bom-syft.cdx.js
 ## Generating a SBOM from a container image using Syft
 
 ```shell
-./mvnwn spring-boot:build-image
+./mvnw spring-boot:build-image
 syft demo-sbom-cdx-maven:1.0 -o cyclonedx-json --file bom-oci-syft.cdx.json
 ```
 

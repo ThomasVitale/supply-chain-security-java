@@ -13,6 +13,10 @@ Samples showing how to secure the supply chain for Java applications, including:
 
 ## Conference Presentations
 
+### Devoxx UK 2024
+
+[![Watch the video](https://img.youtube.com/vi/VM7lJ0f_xhQ/hqdefault.jpg)](https://www.youtube.com/embed/VM7lJ0f_xhQ)
+
 ### Voxxed Days Zurich 2024
 
 [![Watch the video](https://img.youtube.com/vi/pS4cmqNN1QY/hqdefault.jpg)](https://www.youtube.com/embed/pS4cmqNN1QY)
