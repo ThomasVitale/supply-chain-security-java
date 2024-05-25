@@ -5,9 +5,7 @@
   "features": {
     "ghcr.io/devcontainers/features/java:1": {
       "version": "21",
-      "jdkDistro": "graal",
-      "installGradle": "true",
-      "gradleVersion": "8.7"
+      "jdkDistro": "graal"
     },
     "ghcr.io/devcontainers/features/docker-in-docker:2": {
       "version": "26.1.1"
