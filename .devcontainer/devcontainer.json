@@ -9,8 +9,7 @@
     },
     "ghcr.io/devcontainers/features/docker-in-docker:2": {
       "version": "26.1.1"
-    },
-    "ghcr.io/meaningful-ooo/devcontainer-features/homebrew:2": {}
+    }
   },
 
   "customizations": {
@@ -28,7 +27,7 @@
     9091
   ],
 
-  "postCreateCommand": "brew install gitsign cosign slsa-verifier trivy cdxgen grype syft"
+  //"postCreateCommand": "brew install gitsign cosign slsa-verifier trivy cdxgen grype syft"
 
   // Configure tool-specific properties.
   // "customizations": {},
