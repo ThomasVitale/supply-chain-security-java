@@ -4,7 +4,9 @@ Maven fetches dependencies from a cascaded sequence of `pom.xml` file. By defaul
 
 If you're curious about all the default configuration applied by the super-pom, run this command.
 
+```shell
 ./mvnw help:effective-pom
+```
 
 In a corporate environment, you might want to include your internal repository and delegate to it the mirroring of Maven Central in order to ensure a more controlled dependency resolving strategy.
 

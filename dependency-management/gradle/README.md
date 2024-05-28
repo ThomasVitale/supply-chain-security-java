@@ -30,6 +30,16 @@ pluginManagement {
 }
 ```
 
+You can block any dynamic dependency resolution with the following configuration.
+
+```groovy
+configurations.configureEach {
+    resolutionStrategy {
+        failOnNonReproducibleResolution()
+    }
+}
+```
+
 You can lock all dependency versions by running the following command.
 
 ```shell
