@@ -1,6 +1,6 @@
 services:
   dtrack-apiserver:
-    image: docker.io/dependencytrack/apiserver:4.11.1
+    image: docker.io/dependencytrack/apiserver:4.11.3
     ports:
       - '9091:8080'
     volumes:
@@ -8,7 +8,7 @@ services:
     restart: unless-stopped
 
   dtrack-frontend:
-    image: docker.io/dependencytrack/frontend:4.11.1
+    image: docker.io/dependencytrack/frontend:4.11.3
     depends_on:
       - dtrack-apiserver
     environment:

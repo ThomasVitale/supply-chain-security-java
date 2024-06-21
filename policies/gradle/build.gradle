@@ -1,6 +1,6 @@
 plugins {
     id 'java'
-    id 'org.springframework.boot' version '3.3.0'
+    id 'org.springframework.boot' version '3.3.1'
     id 'io.spring.dependency-management' version '1.1.5'
     id 'org.cyclonedx.bom' version '1.8.2'
 }
@@ -10,7 +10,7 @@ version = '1.0'
 
 java {
     toolchain {
-        languageVersion = JavaLanguageVersion.of(21)
+        languageVersion = JavaLanguageVersion.of(22)
     }
 }
 
@@ -29,13 +29,8 @@ tasks.named('test') {
 }
 
 tasks.named('bootBuildImage') {
-    if (System.getProperty( "os.arch" ).toLowerCase().startsWith('aarch')) {
-        builder = "paketobuildpacks/builder-jammy-buildpackless-tiny"
-        buildpacks = [ "gcr.io/paketo-buildpacks/java" ]
-    } else {
-        builder = "docker.io/paketobuildpacks/builder-jammy-tiny"
-    }
-
+    builder = "paketobuildpacks/builder-jammy-buildpackless-tiny"
+    buildpacks = [ "gcr.io/paketo-buildpacks/java" ]
     imageName = "demo"
 }
 

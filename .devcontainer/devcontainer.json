@@ -6,11 +6,11 @@
 
   "features": {
     "ghcr.io/devcontainers/features/java:1": {
-      "version": "21",
+      "version": "22",
       "jdkDistro": "graal"
     },
     "ghcr.io/devcontainers/features/docker-in-docker:2": {
-      "version": "26.1.1"
+      "version": "26.1.4"
     }
   },
 
