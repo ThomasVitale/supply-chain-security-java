@@ -30,7 +30,7 @@ jobs:
         uses: actions/setup-java@v4
         with:
           java-version: 22
-          distribution: liberica
+          distribution: temurin
           cache: gradle
       
       - name: Compile and test
@@ -41,7 +41,7 @@ jobs:
       - name: Upload SBOM
         uses: actions/upload-artifact@v4
         with:
-          name: sbom.json
+          name: sbom.cdx.json
           path: policies/gradle/build/reports/application.cdx.json
       
       - name: SBOM vulnerability scanning
@@ -77,6 +77,12 @@ jobs:
           image-ref: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ env.VERSION }}
           format: 'sarif'
           output: 'trivy-results-oci-image.sarif'
+      
+      - name: Upload SBOM vulnerability report
+        uses: actions/upload-artifact@v4
+        with:
+          name: trivy-results-oci-image.sarif
+          path: trivy-results-oci-image.sarif
 
       - name: Upload vulnerability report
         uses: github/codeql-action/upload-sarif@v3
