@@ -17,4 +17,4 @@ spec:
   build:
     env:
       - name: BP_JAVA_VERSION
-        value: "21"
+        value: "22"

@@ -29,11 +29,11 @@ trivy fs --format spdx-json -o bom-trivy.spdx.json .
 ## Scanning a SBOM for security vulnerabilities with Trivy
 
 ```shell
-trivy sbom build/spdx/release.spdx.json
+trivy sbom build/application.spdx.json
 ```
 
 ## Verifying the quality of a SBOM with sbomqs
 
 ```shell
-sbomqs score build/spdx/release.spdx.json
+sbomqs score build/application.spdx.json
 ```

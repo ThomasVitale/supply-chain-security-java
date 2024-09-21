@@ -9,7 +9,7 @@ env:
 jobs:
   build:
     name: Build
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     permissions:
       attestations: write
       contents: read
@@ -118,3 +118,17 @@ jobs:
           subject-digest: ${{ env.IMAGE_DIGEST }}
           push-to-registry: true
           github-token: ${{ secrets.IMAGE_PUSH_TOKEN }}
+
+  provenance:
+    needs: [build]
+    permissions:
+      actions: read
+      id-token: write
+      packages: write
+    uses: slsa-framework/slsa-github-generator/.github/workflows/generator_container_slsa3.yml@v2.0.0
+    with:
+      image: ${{ needs.sign.outputs.image-name }}
+      digest: ${{ needs.sign.outputs.image-digest }}
+      registry-username: ${{ github.actor }}
+    secrets:
+      registry-password: ${{ secrets.IMAGE_PUSH_TOKEN }}

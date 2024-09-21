@@ -10,7 +10,7 @@
       "jdkDistro": "graal"
     },
     "ghcr.io/devcontainers/features/docker-in-docker:2": {
-      "version": "26.1.4"
+      "version": "27.2.0"
     }
   },
 

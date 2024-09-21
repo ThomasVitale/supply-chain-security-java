@@ -17,7 +17,7 @@ syft demo-sbom-cdx-maven:1.0 -o cyclonedx-json --file bom-oci-syft.cdx.json
 ## Generating a SBOM from the source code using cdxgen
 
 ```shell
-FETCH_LICENSE=true cdxgen -o bom-cdxgen.cdx.json --spec-version 1.5
+FETCH_LICENSE=true cdxgen -o bom-cdxgen.cdx.json --spec-version 1.6
 ```
 
 ## Generating a SBOM at build time using CycloneDX
