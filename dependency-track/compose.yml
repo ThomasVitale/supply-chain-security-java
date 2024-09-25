@@ -1,21 +1,77 @@
 services:
-  dtrack-apiserver:
-    image: docker.io/dependencytrack/apiserver:4.11.3
+
+  postgres:
+    image: docker.io/library/postgres:16.4
+    container_name: postgres
+    environment:
+      - POSTGRES_USER=${DT_DATABASE_USERNAME:-securinator}
+      - POSTGRES_PASSWORD=${DT_DATABASE_PASSWORD:-wouldntyouliketoknow}
+      - POSTGRES_DB=dependency_track
+    deploy:
+      resources:
+        limits:
+          cpus: '3'
+          memory: 450m
+        reservations:
+          cpus: '0.1'
+          memory: 250m
+      restart_policy:
+        condition: on-failure
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    restart: always
+
+  dependency-track-server:
+    image: docker.io/dependencytrack/apiserver:4.11.7
+    container_name: dependency-track-server
+    depends_on:
+      - postgres
+    environment:
+      - ALPINE_DATABASE_USERNAME=${DT_DATABASE_USERNAME:-securinator}
+      - ALPINE_DATABASE_PASSWORD=${DT_DATABASE_PASSWORD:-wouldntyouliketoknow}
+      - EXTRA_JAVA_OPTIONS=-Dalpine.application.properties=/etc/config/application.properties
+      - LOGGING_CONFIG_PATH=/etc/config/logback.xml
+      - LOGGING_LEVEL=info
+      - SYSTEM_REQUIREMENT_CHECK_ENABLED=false
+    deploy:
+      resources:
+        limits:
+          cpus: '4'
+          memory: 12288m
+        reservations:
+          cpus: '0.5'
+          memory: 1024m
+      restart_policy:
+        condition: on-failure
     ports:
       - '9091:8080'
     volumes:
-      - 'dependency-track:/data'
-    restart: unless-stopped
+      - 'dependency-track-data:/data'
+      - ./config/application.properties:/etc/config/application.properties
+      - ./config/logback.xml:/etc/config/logback.xml
+    restart: always
 
-  dtrack-frontend:
-    image: docker.io/dependencytrack/frontend:4.11.3
+  dependency-track-frontend:
+    image: docker.io/dependencytrack/frontend:4.11.7
+    container_name: dependency-track-frontend
     depends_on:
-      - dtrack-apiserver
+      - dependency-track-server
     environment:
-      - API_BASE_URL=http://localhost:9091
+      - API_BASE_URL=${DT_API_SERVER_URL:-http://localhost:9091}
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+          memory: 200m
+        reservations:
+          cpus: '0.2'
+          memory: 25m
+      restart_policy:
+        condition: on-failure
     ports:
       - "9090:8080"
-    restart: unless-stopped
+    restart: always
 
 volumes:
-  dependency-track:
+  dependency-track-data: {}
+  postgres-data: {}
