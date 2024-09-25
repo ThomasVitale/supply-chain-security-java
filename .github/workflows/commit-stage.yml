@@ -1,101 +1,83 @@
 name: Commit Stage
-on: push
+
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - '.editorconfig'
+      - '.gitignore'
+      - '.sdkmanrc'
+      - '*.adoc'
+      - '*.png'
+      - '*.md'
+      - 'docs/**'
+      - '.github/ISSUE_TEMPLATE/**'
+      - '.github/*.md'
+      - '.github/*.yml'
+      - '.github/*.yaml'
 
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: thomasvitale/policy-demo
   VERSION: ${{ github.sha }}
 
+permissions:
+  contents: read
+
 jobs:
   build:
     name: Build
     runs-on: ubuntu-24.04
     permissions:
-      attestations: write
       contents: read
-      id-token: write
       packages: write
       security-events: write
-    outputs:
-      image-digest: ${{ steps.image-info.outputs.digest }}
-      image-name: ${{ steps.image-info.outputs.name }}
     steps:
       - name: Check out source code
-        uses: actions/checkout@v4
-
-      - name: Install Cosign
-        uses: sigstore/cosign-installer@v3
+        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
+        with:
+          fetch-depth: 0
 
       - name: Set up Java
-        uses: actions/setup-java@v4
+        uses: actions/setup-java@b36c23c0d998641eff861008f374ee103c25ac73 # v4.4.0
         with:
           java-version: 22
-          distribution: temurin
-          cache: gradle
+          distribution: 'graalvm'
+      
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@d156388eb19639ec20ade50009f3d199ce1e2808 # v4.1.0
       
       - name: Compile and test
         run: |
           cd policies/gradle
           ./gradlew clean build
       
-      - name: Upload SBOM
-        uses: actions/upload-artifact@v4
-        with:
-          name: sbom.cdx.json
-          path: policies/gradle/build/reports/application.cdx.json
-      
       - name: SBOM vulnerability scanning
-        uses: aquasecurity/trivy-action@master
+        uses: aquasecurity/trivy-action@97646fedde05bcd0961217c60b50e23f721e7ec7 # master
         with:
           scan-type: 'sbom'
           scan-ref: 'policies/gradle/build/reports/application.cdx.json'
           format: 'sarif'
-          output: 'trivy-results-source-code.sarif'
-      
-      - name: Upload SBOM vulnerability report
-        uses: actions/upload-artifact@v4
-        with:
-          name: trivy-results-source-code.sarif
-          path: trivy-results-source-code.sarif
+          output: 'trivy-results-build.sarif'
 
       - name: Upload vulnerability report
-        uses: github/codeql-action/upload-sarif@v3
+        uses: github/codeql-action/upload-sarif@461ef6c76dfe95d5c364de2f431ddbd31a417628 # v3.26.9
         if: success() || failure()
         with:
-          sarif_file: 'trivy-results-source-code.sarif'
-          category: "source-code"
-
+          sarif_file: 'trivy-results-build.sarif'
+          category: build
+      
       - name: Package as OCI image
         run: |
           cd policies/gradle
           ./gradlew bootBuildImage --imageName ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ env.VERSION }}
       
-      - name: OCI image vulnerability scanning
-        uses: aquasecurity/trivy-action@master
-        with:
-          scan-type: 'image'
-          image-ref: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ env.VERSION }}
-          format: 'sarif'
-          output: 'trivy-results-oci-image.sarif'
-      
-      - name: Upload SBOM vulnerability report
-        uses: actions/upload-artifact@v4
-        with:
-          name: trivy-results-oci-image.sarif
-          path: trivy-results-oci-image.sarif
-
-      # - name: Upload vulnerability report
-      #   uses: github/codeql-action/upload-sarif@v3
-      #   if: success() || failure()
-      #   with:
-      #     sarif_file: 'trivy-results-oci-image.sarif'
-      #     category: "oci-image"
-
       - name: Authenticate with the container registry
-        uses: docker/login-action@v3
+        uses: docker/login-action@9780b0c442fbb1117ed29e0efdff1e18412f7567 # v3.3.0
         with:
           username: ${{ github.actor }}
-          password: ${{ secrets.IMAGE_PUSH_TOKEN }}
+          password: ${{ secrets.GITHUB_TOKEN }}
           registry: ${{ env.REGISTRY }}
 
       - name: Publish OCI image
@@ -103,30 +85,46 @@ jobs:
           docker tag ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ env.VERSION }} ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
           docker push ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ env.VERSION }}
           docker push ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
+  
+  sign:
+    name: Sign
+    runs-on: ubuntu-24.04
+    needs: [ build ]
+    permissions:
+      contents: read
+      packages: write
+      id-token: write
+    outputs:
+      image-digest: ${{ steps.image-info.outputs.digest }}
+      image-name: ${{ steps.image-info.outputs.name }}
+    steps:
+      - name: Install Cosign
+        uses: sigstore/cosign-installer@4959ce089c160fddf62f7b42464195ba1a56d382 # v3.6.0
 
-      - name: Get OCI image info
+      - uses: redhat-actions/podman-login@4934294ad0449894bcd1e9f191899d7292469603 # v1.7
+        with:
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+          registry: ${{ env.REGISTRY }}
+
+      - name: Fetch OCI image
+        run: podman pull ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ env.VERSION }}
+
+      - name: Get OCI image digest
         id: image-info
         run: |
-          image_reference=$(docker inspect --format='{{index .RepoDigests 0}}' ${REGISTRY}/${IMAGE_NAME}:${VERSION})
-          echo $image_reference
-          image_digest=$(echo "$image_reference" | awk -F '@' '{print $2}')
+          image_digest=$(podman inspect --format='{{.Digest}}' ${REGISTRY}/${IMAGE_NAME}:${VERSION})
           echo $image_digest
           echo "IMAGE_DIGEST=${image_digest}" >> $GITHUB_ENV
+          echo "digest=${image_digest}" >> $GITHUB_OUTPUT
+          echo "name=${REGISTRY}/${IMAGE_NAME}" >> $GITHUB_OUTPUT
 
       - name: Sign image
         run: |
           cosign sign --yes "${REGISTRY}/${IMAGE_NAME}@${IMAGE_DIGEST}"
 
-      - name: Generate SLSA Build Attestation
-        uses: actions/attest-build-provenance@v1
-        with:
-          subject-name: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
-          subject-digest: ${{ env.IMAGE_DIGEST }}
-          push-to-registry: true
-          github-token: ${{ secrets.IMAGE_PUSH_TOKEN }}
-
   provenance:
-    needs: [build]
+    needs: [ sign ]
     permissions:
       actions: read
       id-token: write
@@ -137,4 +135,4 @@ jobs:
       digest: ${{ needs.sign.outputs.image-digest }}
       registry-username: ${{ github.actor }}
     secrets:
-      registry-password: ${{ secrets.IMAGE_PUSH_TOKEN }}
+      registry-password: ${{ secrets.GITHUB_TOKEN }}
