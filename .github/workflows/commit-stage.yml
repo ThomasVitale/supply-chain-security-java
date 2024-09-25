@@ -77,7 +77,7 @@ jobs:
         uses: docker/login-action@9780b0c442fbb1117ed29e0efdff1e18412f7567 # v3.3.0
         with:
           username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          password: ${{ secrets.IMAGE_PUSH_TOKEN }}
           registry: ${{ env.REGISTRY }}
 
       - name: Publish OCI image
@@ -104,7 +104,7 @@ jobs:
       - uses: redhat-actions/podman-login@4934294ad0449894bcd1e9f191899d7292469603 # v1.7
         with:
           username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          password: ${{ secrets.IMAGE_PUSH_TOKEN }}
           registry: ${{ env.REGISTRY }}
 
       - name: Fetch OCI image
@@ -135,4 +135,4 @@ jobs:
       digest: ${{ needs.sign.outputs.image-digest }}
       registry-username: ${{ github.actor }}
     secrets:
-      registry-password: ${{ secrets.GITHUB_TOKEN }}
+      registry-password: ${{ secrets.IMAGE_PUSH_TOKEN }}
