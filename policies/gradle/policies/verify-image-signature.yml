@@ -2,8 +2,21 @@
 apiVersion: kyverno.io/v1
 kind: Policy
 metadata:
-  name: verify-image-signature
-  namespace: default
+  name: verify-image-signature-keyless
+  namespace: apps
+  annotations:
+    policies.kyverno.io/title: Verify Image Signature (Keyless)
+    policies.kyverno.io/category: Software Supply Chain Security, EKS Best Practices
+    policies.kyverno.io/severity: medium
+    policies.kyverno.io/subject: Pod
+    policies.kyverno.io/minversion: 1.7.0
+    policies.kyverno.io/description: >-
+      Using the Cosign project, OCI images may be signed to ensure supply chain
+      security is maintained. Those signatures can be verified before pulling into
+      a cluster. This policy checks the signature of an image repo called
+      ghcr.io/kyverno/test-verify-image to ensure it has been signed by verifying
+      its signature against the provided public key. This policy serves as an illustration for
+      how to configure a similar rule and will require replacing with your image(s) and keys.
 spec:
   validationFailureAction: Enforce
   webhookTimeoutSeconds: 30
@@ -22,3 +35,5 @@ spec:
                 - keyless:
                     subject: "https://github.com/ThomasVitale/supply-chain-security-java/.github/workflows/commit-stage.yml@refs/*"
                     issuer: "https://token.actions.githubusercontent.com"
+                    rekor:
+                      url: https://rekor.sigstore.dev
