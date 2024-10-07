@@ -22,15 +22,10 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
-dependencyLocking {
-    lockAllConfigurations()
-}
-
 tasks.named('test') {
     useJUnitPlatform()
 }
 
 tasks.named('bootBuildImage') {
-    builder = "paketobuildpacks/builder-jammy-buildpackless-tiny"
-    buildpacks = [ "gcr.io/paketo-buildpacks/java" ]
+    builder = "docker.io/paketobuildpacks/builder-jammy-java-tiny"
 }

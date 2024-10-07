@@ -1,8 +1,8 @@
 plugins {
     id 'java'
-    id 'org.springframework.boot' version '3.3.1'
-    id 'io.spring.dependency-management' version '1.1.5'
-    id 'org.graalvm.buildtools.native' version '0.10.2'
+    id 'org.springframework.boot' version '3.3.4'
+    id 'io.spring.dependency-management' version '1.1.6'
+    id 'org.graalvm.buildtools.native' version '0.10.3'
     id 'org.cyclonedx.bom' version '1.8.2'
 }
 
@@ -38,8 +38,7 @@ graalvmNative {
 }
 
 tasks.named('bootBuildImage') {
-    builder = "paketobuildpacks/builder-jammy-buildpackless-tiny"
-    buildpacks = [ "paketobuildpacks/java-native-image" ]
+    builder = "docker.io/paketobuildpacks/builder-jammy-java-tiny"
 }
 
 tasks.named('cyclonedxBom') {

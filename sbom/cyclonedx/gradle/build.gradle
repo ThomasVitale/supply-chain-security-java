@@ -29,8 +29,7 @@ tasks.test {
 }
 
 tasks.named('bootBuildImage') {
-    builder = "paketobuildpacks/builder-jammy-buildpackless-tiny"
-    buildpacks = [ "gcr.io/paketo-buildpacks/java" ]
+    builder = "docker.io/paketobuildpacks/builder-jammy-java-tiny"
 }
 
 tasks.named('cyclonedxBom') {

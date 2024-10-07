@@ -45,10 +45,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <image>
-                        <buildpacks>
-                            <buildpack>paketobuildpacks/java-native-image</buildpack>
-                        </buildpacks>
-                        <builder>paketobuildpacks/builder-jammy-buildpackless-tiny</builder>
+                        <builder>docker.io/paketobuildpacks/builder-jammy-java-tiny</builder>
                     </image>
                 </configuration>
             </plugin>

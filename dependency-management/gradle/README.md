@@ -46,6 +46,14 @@ You can lock all dependency versions by running the following command.
 ./gradlew dependencies --write-locks
 ```
 
+And enforce it like this:
+
+```groovy
+dependencyLocking {
+    lockAllConfigurations()
+}
+```
+
 You can resolve and verify the checksums for all dependencies by running the following command.
 
 ```shell
