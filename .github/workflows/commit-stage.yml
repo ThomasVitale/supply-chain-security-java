@@ -54,7 +54,7 @@ jobs:
           ./gradlew clean build
       
       - name: SBOM vulnerability scanning
-        uses: aquasecurity/trivy-action@a20de5420d57c4102486cdd9578b45609c99d7eb # master
+        uses: aquasecurity/trivy-action@5681af892cd0f4997658e2bacc62bd0a894cf564 # master
         with:
           scan-type: 'sbom'
           scan-ref: 'policies/gradle/build/reports/application.cdx.json'
