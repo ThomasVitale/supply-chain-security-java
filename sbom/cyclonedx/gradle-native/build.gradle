@@ -11,7 +11,7 @@ version = '1.0'
 
 java {
     toolchain {
-        languageVersion = JavaLanguageVersion.of(22)
+        languageVersion = JavaLanguageVersion.of(23)
     }
 }
 
@@ -38,7 +38,7 @@ graalvmNative {
 }
 
 tasks.named('bootBuildImage') {
-    builder = "docker.io/paketobuildpacks/builder-jammy-java-tiny"
+    builder = "docker.io/paketobuildpacks/builder-noble-java-tiny"
 }
 
 tasks.named('cyclonedxBom') {
