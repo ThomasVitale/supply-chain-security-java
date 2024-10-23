@@ -42,7 +42,7 @@ jobs:
       - name: Set up Java
         uses: actions/setup-java@b36c23c0d998641eff861008f374ee103c25ac73 # v4.4.0
         with:
-          java-version: 22
+          java-version: 23
           distribution: 'graalvm'
       
       - name: Setup Gradle
